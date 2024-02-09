@@ -6,18 +6,20 @@
 # 检查系统
 export LANG=en_US.UTF-8
 
+zzzdomain="zlocaltest.zizigooloovpn.com"
+zzzport="443"
+
 zzzselectCoreType="1"
 zzzselectSSLType="1"
-zzzport="443"
 zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
 zzzselectCloudflareType="1"
 zzzselectCDNType="1"
 zzzselectCore="1"
 zzzselectInstallType="1"
 zzzhistoryDomainStatus="n"
-zzzdomain="zlocaltest.zizigooloovpn.com"
 zzzhistoryCustomPortStatus="n"
 zzzreInstallStatus="y"
+zzzhistoryPathStatus="n"
 
 sleeptime=0
 echo "Started!"
@@ -1805,7 +1807,8 @@ randomPathFunction() {
 
     if [[ -n "${currentPath}" ]]; then
         echo
-        read -r -p "读取到上次安装记录，是否使用上次安装时的path路径 ？[y/n]:" historyPathStatus
+        # read -r -p "读取到上次安装记录，是否使用上次安装时的path路径 ？[y/n]:" historyPathStatus
+        historyPathStatus=$zzzhistoryPathStatus
         echo
     fi
 
