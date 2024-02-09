@@ -4518,7 +4518,7 @@ customCDNIP() {
 
     echoContent skyBlue "----------------------------"
     # read -r -p "请选择[回车不使用]:" selectCloudflareType
-    selectCloudflareType = $zzzselectCloudflareType
+    selectCloudflareType=$zzzselectCloudflareType
 
     case ${selectCloudflareType} in
     1)
