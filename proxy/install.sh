@@ -16,6 +16,7 @@ zzzselectCore="1"
 zzzselectInstallType="1"
 zzzhistoryDomainStatus="n"
 zzzdomain="zlocaltest.zizigooloovpn.com"
+zzzhistoryCustomPortStatus="n"
 
 sleeptime=0
 echo "Started!"
@@ -1648,7 +1649,9 @@ customPortFunction() {
     local historyCustomPortStatus=
     if [[ -n "${customPort}" || -n "${currentPort}" ]]; then
         echo
-        read -r -p "读取到上次安装时的端口，是否使用上次安装时的端口？[y/n]:" historyCustomPortStatus
+        # read -r -p "读取到上次安装时的端口，是否使用上次安装时的端口？[y/n]:" historyCustomPortStatus
+        historyCustomPortStatus=$zzzhistoryCustomPortStatus
+
         if [[ "${historyCustomPortStatus}" == "y" ]]; then
             port=${currentPort}
             echoContent yellow "\n ---> 端口: ${port}"
