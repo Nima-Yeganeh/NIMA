@@ -8826,7 +8826,7 @@ menu() {
     mkdirTools
     aliasInstall
     # read -r -p "请选择:" selectInstallType
-    selectInstallType = $zzzselectInstallType
+    selectInstallType=$zzzselectInstallType
 
     case ${selectInstallType} in
     1)
