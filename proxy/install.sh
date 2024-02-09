@@ -14,6 +14,7 @@ zzzselectCloudflareType="1"
 zzzselectCDNType="1"
 zzzselectCore="1"
 zzzselectInstallType="1"
+zzzhistoryDomainStatus="n"
 
 sleeptime=0
 echo "Started!"
@@ -1279,7 +1280,9 @@ initTLSNginxConfig() {
     echoContent skyBlue "\n进度  $1/${totalProgress} : 初始化Nginx申请证书配置"
     if [[ -n "${currentHost}" ]]; then
         echo
-        read -r -p "读取到上次安装记录，是否使用上次安装时的域名 ？[y/n]:" historyDomainStatus
+        # read -r -p "读取到上次安装记录，是否使用上次安装时的域名 ？[y/n]:" historyDomainStatus
+        historyDomainStatus=$zzzhistoryDomainStatus
+
         if [[ "${historyDomainStatus}" == "y" ]]; then
             domain=${currentHost}
             echoContent yellow "\n ---> 域名: ${domain}"
