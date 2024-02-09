@@ -8,6 +8,7 @@ export LANG=en_US.UTF-8
 
 zzzdomain="zlocaltest.zizigooloovpn.com"
 zzzport="443"
+zzzcustomPath="zizigooloovpn"
 
 zzzselectCoreType="1"
 zzzselectSSLType="1"
@@ -1817,7 +1818,9 @@ randomPathFunction() {
         echoContent green " ---> 使用成功\n"
     else
         echoContent yellow "请输入自定义路径[例: alone]，不需要斜杠，[回车]随机路径"
-        read -r -p '路径:' customPath
+        # read -r -p '路径:' customPath
+        customPath=$zzzcustomPath
+
         if [[ -z "${customPath}" ]]; then
             initRandomPath
             currentPath=${customPath}
