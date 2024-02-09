@@ -7416,7 +7416,7 @@ selectCoreInstall() {
     echoContent yellow "2.sing-box"
     echoContent red "=============================================================="
     # read -r -p "请选择:" selectCoreType
-    selectCoreType = $zzzselectCoreType
+    selectCoreType=$zzzselectCoreType
 
     case ${selectCoreType} in
     1)
