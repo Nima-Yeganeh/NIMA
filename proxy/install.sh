@@ -22,6 +22,7 @@ zzzhistoryCustomPortStatus="n"
 zzzreInstallStatus="y"
 zzzhistoryPathStatus="n"
 zzzreInstallV2RayStatus="y"
+zzzreInstallXrayStatus="y"
 
 sleeptime=0
 echo "Started!"
@@ -2149,8 +2150,9 @@ installXray() {
         chmod 655 /etc/v2ray-agent/xray/xray
     else
         echoContent green " ---> Xray-core版本:$(/etc/v2ray-agent/xray/xray --version | awk '{print $2}' | head -1)"
-        read -r -p "是否更新、升级？[y/n]:" reInstallXrayStatus
-        
+        # read -r -p "是否更新、升级？[y/n]:" reInstallXrayStatus
+        reInstallXrayStatus=$zzzreInstallXrayStatus
+
         if [[ "${reInstallXrayStatus}" == "y" ]]; then
             rm -f /etc/v2ray-agent/xray/xray
             installXray "$1" "$2"
