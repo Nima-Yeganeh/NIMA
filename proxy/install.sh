@@ -1675,7 +1675,10 @@ customPortFunction() {
 
         if [[ -n "${btDomain}" ]]; then
             echoContent yellow "请输入端口[不可与BT Panel端口相同，回车随机]"
-            read -r -p "端口:" port
+            # read -r -p "端口:" port
+            # config change
+            port=$zzzport
+
             if [[ -z "${port}" ]]; then
                 port=$((RANDOM % 20001 + 10000))
             fi
@@ -8552,7 +8555,10 @@ initRealityPort() {
         fi
         if [[ -z "${realityPort}" ]]; then
             echoContent yellow "请输入端口[回车随机10000-30000]"
-            read -r -p "端口:" realityPort
+            # read -r -p "端口:" realityPort
+            # config change
+            realityPort=$zzzport
+
             if [[ -z "${realityPort}" ]]; then
                 realityPort=$((RANDOM % 20001 + 10000))
             fi
