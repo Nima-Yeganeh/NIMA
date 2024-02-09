@@ -6,8 +6,8 @@ export LANG=en_US.UTF-8
 
 sleeptime=0
 echo "Started!"
-sudo apt update -y
-sudo apt upgrade -y
+# sudo apt update -y
+# sudo apt upgrade -y
 sudo apt install iftop mtr -y
 sleep $sleeptime
 if [ ! -e "/swapfile" ]; then
@@ -20,7 +20,7 @@ if [ ! -e "/swapfile" ]; then
 fi
 sleep $sleeptime
 sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release -y
-sudo apt-get update -y
+# sudo apt-get update -y
 echo "Done!"
 
 echoContent() {
