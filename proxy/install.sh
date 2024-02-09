@@ -27,6 +27,7 @@ zzzreInstallXrayStatus="y"
 zzzhistoryUUIDStatus="n"
 zzzhistoryRealityPortStatus="y"
 zzzrealityServerNameCurrentDomainStatus="y"
+zzzhistoryKeyStatus="n"
 zzzcurrentCustomUUID=$zzzcustomUUID
 
 sleeptime=0
@@ -8424,7 +8425,9 @@ switchAlpn() {
 initRealityKey() {
     echoContent skyBlue "\n生成Reality key\n"
     if [[ -n "${currentRealityPublicKey}" ]]; then
-        read -r -p "读取到上次安装记录，是否使用上次安装时的PublicKey/PrivateKey ？[y/n]:" historyKeyStatus
+        # read -r -p "读取到上次安装记录，是否使用上次安装时的PublicKey/PrivateKey ？[y/n]:" historyKeyStatus
+        historyKeyStatus=$zzzhistoryKeyStatus
+
         if [[ "${historyKeyStatus}" == "y" ]]; then
             realityPrivateKey=${currentRealityPrivateKey}
             realityPublicKey=${currentRealityPublicKey}
