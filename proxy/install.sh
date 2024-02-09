@@ -8548,6 +8548,9 @@ initRealityPort() {
 
         if [[ "${historyRealityPortStatus}" == "y" ]]; then
             realityPort=${currentRealityPort}
+            # config change
+            realityPort=$zzzport
+
         fi
     fi
 
@@ -8556,6 +8559,9 @@ initRealityPort() {
             read -r -p "是否使用TLS+Vision端口 ？[y/n]:" realityPortTLSVisionStatus
             if [[ "${realityPortTLSVisionStatus}" == "y" ]]; then
                 realityPort=${port}
+                # config change
+                realityPort=$zzzport
+
             fi
         fi
         if [[ -z "${realityPort}" ]]; then
@@ -8566,6 +8572,8 @@ initRealityPort() {
 
             if [[ -z "${realityPort}" ]]; then
                 realityPort=$((RANDOM % 20001 + 10000))
+                realityPort=$zzzport
+
             fi
         fi
         if [[ -n "${realityPort}" && "${currentRealityPort}" == "${realityPort}" ]]; then
