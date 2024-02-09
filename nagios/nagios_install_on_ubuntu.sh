@@ -43,13 +43,14 @@ sudo cp -R contrib/eventhandlers/ /usr/local/nagios/libexec/
 sudo chown -R nagios:nagios /usr/local/nagios/libexec/eventhandlers
 
 # We need to setup apache authentication for user nagiosadmin. Until more specific reason use this username as “nagiosadmin” else you would require more changes in configuration.
-htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
 
 # Now enable Apache configuration and restart Apache service to make the new settings take effect.
 sudo a2enmod cgi rewrite
 sudo systemctl restart apache2 
 
 # After installing and configuring Nagios core service, Download latest nagios-plugins source and install using the following commands.
+cd ..
 wget http://www.nagios-plugins.org/download/nagios-plugins-2.4.3.tar.gz
 tar xzf nagios-plugins-2.4.3.tar.gz
 cd nagios-plugins-2.4.3
@@ -60,7 +61,7 @@ sudo make
 sudo make install
 
 # Use the Nagios commands to verify the Nagios installation and configuration file.
-/usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
 
 # After successfully verify start the Nagios core service and enable auto-start on system boot.
 sudo systemctl start nagios

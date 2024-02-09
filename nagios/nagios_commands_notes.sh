@@ -106,7 +106,7 @@ cat contacts.cfg
 
 cat timeperiods.cfg
 
-vi host1.cfg
+sudo vi host1.cfg
 
 # Define a host for linux server
 define host {
@@ -130,7 +130,7 @@ define service {
 
 cat /usr/local/nagios/etc/nagios.cfg
 
-vi /usr/local/nagios/etc/nagios.cfg
+sudo vi /usr/local/nagios/etc/nagios.cfg
 cfg_file=/usr/local/nagios/etc/objects/host1.cfg
 
 verifynagios

@@ -60,29 +60,29 @@ systemctl restart apache2
 sudo apt update -y
 sudo apt install nagios-nrpe-server monitoring-plugins -y
 cd /etc/nagios/
-vim nrpe.cfg
+sudo vim nrpe.cfg
 server_address=5.161.58.208
 allowed_hosts=127.0.0.1,::1,5.161.49.202
 
-vim nrpe_local.cfg
+sudo vim nrpe_local.cfg
 command[check_root]=/usr/lib/nagios/plugins/check_disk -w 20% -c 10% -p /
 command[check_ping]=/usr/lib/nagios/plugins/check_ping -H 5.161.58.208 -w 100.0,20% -c 500.0,60% -p 5
 command[check_ssh]=/usr/lib/nagios/plugins/check_ssh -4 5.161.58.208
 command[check_http]=/usr/lib/nagios/plugins/check_http -I 5.161.58.208
 command[check_apt]=/usr/lib/nagios/plugins/check_apt
 
-systemctl restart nagios-nrpe-server
-systemctl enable nagios-nrpe-server
-systemctl status nagios-nrpe-server
+sudo systemctl restart nagios-nrpe-server
+sudo systemctl enable nagios-nrpe-server
+sudo systemctl status nagios-nrpe-server
 
 sudo ufw allow 5666/tcp
 
 # Nagios Server Config
-/usr/lib/nagios/plugins/check_nrpe -H 5.161.58.208
-/usr/lib/nagios/plugins/check_nrpe -H 5.161.58.208 -c check_ping
+sudo /usr/lib/nagios/plugins/check_nrpe -H 5.161.58.208
+sudo /usr/lib/nagios/plugins/check_nrpe -H 5.161.58.208 -c check_ping
 
 cd /usr/local/nagios/etc
-vim servers/client01.cfg
+sudo vim servers/client01.cfg
 # Ubuntu Host Configuration
 define host {
         use                          linux-server
