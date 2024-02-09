@@ -23,6 +23,7 @@ zzzreInstallStatus="y"
 zzzhistoryPathStatus="n"
 zzzreInstallV2RayStatus="y"
 zzzreInstallXrayStatus="y"
+zzzhistoryUUIDStatus="n"
 
 sleeptime=0
 echo "Started!"
@@ -3782,7 +3783,9 @@ initXrayConfig() {
     local uuid=
     local addClientsStatus=
     if [[ -n "${currentUUID}" ]]; then
-        read -r -p "读取到上次用户配置，是否使用上次安装的配置 ？[y/n]:" historyUUIDStatus
+        # read -r -p "读取到上次用户配置，是否使用上次安装的配置 ？[y/n]:" historyUUIDStatus
+        historyUUIDStatus=$zzzhistoryUUIDStatus
+
         if [[ "${historyUUIDStatus}" == "y" ]]; then
             addClientsStatus=true
             echoContent green "\n ---> 使用成功"
@@ -4197,7 +4200,9 @@ initSingBoxConfig() {
         sslDomain="${currentHost}"
     fi
     if [[ -n "${currentUUID}" ]]; then
-        read -r -p "读取到上次用户配置，是否使用上次安装的配置 ？[y/n]:" historyUUIDStatus
+        # read -r -p "读取到上次用户配置，是否使用上次安装的配置 ？[y/n]:" historyUUIDStatus
+        historyUUIDStatus=$zzzhistoryUUIDStatus
+
         if [[ "${historyUUIDStatus}" == "y" ]]; then
             addClientsStatus=true
             echoContent green "\n ---> 使用成功"
