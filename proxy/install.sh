@@ -8499,12 +8499,15 @@ initRealityClientServersName() {
     if [[ -n "${domain}" ]]; then
         echo
         # read -r -p "是否使用${domain}此域名作为Reality目标域名 ？[y/n]:" realityServerNameCurrentDomainStatus
+        # config change
         realityServerNameCurrentDomainStatus=$zzzrealityServerNameCurrentDomainStatus
         
         if [[ "${realityServerNameCurrentDomainStatus}" == "y" ]]; then
             realityServerName="${domain}"
             if [[ "${selectCoreType}" == "1" ]]; then
                 realityDomainPort="${port}"
+                realityDomainPort=$zzzport
+                # config change
             fi
 
             if [[ "${selectCoreType}" == "2" && -z "${subscribePort}" ]]; then
@@ -8512,6 +8515,8 @@ initRealityClientServersName() {
                 installSubscribe
                 readNginxSubscribe
                 realityDomainPort="${subscribePort}"
+                realityDomainPort=$zzzport
+                # config change
             fi
         fi
     fi
