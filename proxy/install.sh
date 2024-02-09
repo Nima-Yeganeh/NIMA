@@ -13,7 +13,7 @@ zzzcustomUUID = "a04be4ef-1797-4ca9-a549-4385ce42494c"
 zzzselectCloudflareType = "1"
 zzzselectCDNType = "1"
 zzzselectCore = "1"
-zzzselectInstallType = "1"
+zzzselectInstallType=1
 
 sleeptime=0
 echo "Started!"
