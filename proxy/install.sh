@@ -10,6 +10,7 @@ zzzdomain="zlocaltest.zizigooloovpn.com"
 zzzport="443"
 zzzcustomPath="zizigooloovpn"
 zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
+zzzcustomEmail="zizigooloovpn"
 
 zzzselectCoreType="1"
 zzzselectSSLType="1"
@@ -3805,7 +3806,9 @@ initXrayConfig() {
         fi
 
         echoContent yellow "\n请输入自定义用户名[需合法]，[回车]随机用户名"
-        read -r -p '用户名:' customEmail
+        # read -r -p '用户名:' customEmail
+        customEmail=$zzzcustomEmail
+
         if [[ -z ${customEmail} ]]; then
             customEmail="$(echo "${uuid}" | cut -d "-" -f 1)-VLESS_TCP/TLS_Vision"
         fi
@@ -4221,7 +4224,9 @@ initSingBoxConfig() {
         fi
 
         echoContent yellow "\n请输入自定义用户名[需合法]，[回车]随机用户名"
-        read -r -p '用户名:' customEmail
+        # read -r -p '用户名:' customEmail
+        customEmail=$zzzcustomEmail
+
         if [[ -z ${customEmail} ]]; then
             customEmail="$(echo "${uuid}" | cut -d "-" -f 1)-VLESS_TCP/TLS_Vision"
         fi
