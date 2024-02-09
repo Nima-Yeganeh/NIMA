@@ -7,6 +7,13 @@
 export LANG=en_US.UTF-8
 
 zzzselectCoreType=1
+zzzselectSSLType=1
+zzzport = 443
+zzzcustomUUID = "a04be4ef-1797-4ca9-a549-4385ce42494c"
+zzzselectCloudflareType = 1
+zzzselectCDNType = 1
+zzzselectCore = 1
+zzzselectInstallType = 1
 
 sleeptime=0
 echo "Started!"
@@ -1578,7 +1585,8 @@ switchSSLType() {
         echoContent yellow "2.zerossl"
         echoContent yellow "3.buypass[不支持DNS申请]"
         echoContent red "=============================================================="
-        read -r -p "请选择[回车]使用默认:" selectSSLType
+        # read -r -p "请选择[回车]使用默认:" selectSSLType
+        selectSSLType = zzzselectSSLType
         case ${selectSSLType} in
         1)
             sslType="letsencrypt"
@@ -1652,7 +1660,8 @@ customPortFunction() {
         else
             echo
             echoContent yellow "请输入端口[默认: 443]，可自定义端口[回车使用默认]"
-            read -r -p "端口:" port
+            # read -r -p "端口:" port
+            port = zzzport
             if [[ -z "${port}" ]]; then
                 port=443
             fi
@@ -3757,7 +3766,8 @@ initXrayConfig() {
 
     if [[ -z "${addClientsStatus}" ]]; then
         echoContent yellow "请输入自定义UUID[需合法]，[回车]随机UUID"
-        read -r -p 'UUID:' customUUID
+        # read -r -p 'UUID:' customUUID
+        customUUID = zzzcustomUUID
 
         if [[ -n ${customUUID} ]]; then
             uuid=${customUUID}
@@ -4482,7 +4492,8 @@ customCDNIP() {
     echoContent yellow " 3.CNAME blog.hostmonit.com"
 
     echoContent skyBlue "----------------------------"
-    read -r -p "请选择[回车不使用]:" selectCloudflareType
+    # read -r -p "请选择[回车不使用]:" selectCloudflareType
+    selectCloudflareType = zzzselectCloudflareType
     case ${selectCloudflareType} in
     1)
         add="www.digitalocean.com"
@@ -5333,7 +5344,8 @@ updateV2RayCDN() {
         echoContent yellow "4.手动输入[可输入多个，比如: 1.1.1.1,1.1.2.2,cloudflare.com 逗号分隔]"
         echoContent yellow "5.移除CDN节点"
         echoContent red "=============================================================="
-        read -r -p "请选择:" selectCDNType
+        # read -r -p "请选择:" selectCDNType
+        selectCDNType = zzzselectCDNType
         case ${selectCDNType} in
         1)
             setDomain="www.digitalocean.com"
@@ -7401,8 +7413,8 @@ selectCoreInstall() {
     echoContent yellow "1.Xray-core"
     echoContent yellow "2.sing-box"
     echoContent red "=============================================================="
-    # read -r -p "请选择:" selectCoreType
-    selectCoreType = zzzselectCoreType
+    read -r -p "请选择:" selectCoreType
+    # selectCoreType = zzzselectCoreType
     case ${selectCoreType} in
     1)
         if [[ "${selectInstallType}" == "2" ]]; then
@@ -7585,8 +7597,8 @@ coreVersionManageMenu() {
     echoContent yellow "1.Xray-core"
     echoContent yellow "2.sing-box"
     echoContent red "=============================================================="
-    read -r -p "请输入:" selectCore
-
+    # read -r -p "请输入:" selectCore
+    selectCore = zzzselectCore
     if [[ "${selectCore}" == "1" ]]; then
         xrayVersionManageMenu 1
     elif [[ "${selectCore}" == "2" ]]; then
@@ -8809,7 +8821,8 @@ menu() {
     echoContent red "=============================================================="
     mkdirTools
     aliasInstall
-    read -r -p "请选择:" selectInstallType
+    # read -r -p "请选择:" selectInstallType
+    selectInstallType = zzzselectInstallType
     case ${selectInstallType} in
     1)
         selectCoreInstall
