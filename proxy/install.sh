@@ -15,6 +15,7 @@ zzzselectCDNType="1"
 zzzselectCore="1"
 zzzselectInstallType="1"
 zzzhistoryDomainStatus="n"
+zzzdomain="zlocaltest.zizigooloovpn.com"
 
 sleeptime=0
 echo "Started!"
@@ -1289,12 +1290,14 @@ initTLSNginxConfig() {
         else
             echo
             echoContent yellow "请输入要配置的域名 例: www.v2ray-agent.com --->"
-            read -r -p "域名:" domain
+            # read -r -p "域名:" domain
+            domain=$zzzdomain
         fi
     else
         echo
         echoContent yellow "请输入要配置的域名 例: www.v2ray-agent.com --->"
-        read -r -p "域名:" domain
+        # read -r -p "域名:" domain
+        domain=$zzzdomain
     fi
 
     if [[ -z ${domain} ]]; then
