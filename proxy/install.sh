@@ -9,10 +9,10 @@ export LANG=en_US.UTF-8
 zzzdomain="zlocaltest.zizigooloovpn.com"
 zzzport="443"
 zzzcustomPath="zizigooloovpn"
+zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
 
 zzzselectCoreType="1"
 zzzselectSSLType="1"
-zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
 zzzselectCloudflareType="1"
 zzzselectCDNType="1"
 zzzselectCore="1"
@@ -24,6 +24,7 @@ zzzhistoryPathStatus="n"
 zzzreInstallV2RayStatus="y"
 zzzreInstallXrayStatus="y"
 zzzhistoryUUIDStatus="n"
+zzzcurrentCustomUUID=$zzzcustomUUID
 
 sleeptime=0
 echo "Started!"
@@ -5409,7 +5410,9 @@ updateV2RayCDN() {
 }
 # 自定义uuid
 customUUID() {
-    read -r -p "请输入合法的UUID，[回车]随机UUID:" currentCustomUUID
+    # read -r -p "请输入合法的UUID，[回车]随机UUID:" currentCustomUUID
+    currentCustomUUID=$zzzcurrentCustomUUID
+
     echo
     if [[ -z "${currentCustomUUID}" ]]; then
         if [[ "${selectInstallType}" == "1" || "${coreInstallType}" == "1" ]]; then
