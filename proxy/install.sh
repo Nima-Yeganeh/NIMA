@@ -25,6 +25,7 @@ zzzhistoryPathStatus="n"
 zzzreInstallV2RayStatus="y"
 zzzreInstallXrayStatus="y"
 zzzhistoryUUIDStatus="n"
+zzzhistoryRealityPortStatus="y"
 zzzcurrentCustomUUID=$zzzcustomUUID
 
 sleeptime=0
@@ -8526,6 +8527,8 @@ initRealityClientServersName() {
 initRealityPort() {
     if [[ -n "${currentRealityPort}" ]]; then
         read -r -p "读取到上次安装记录，是否使用上次安装时的端口 ？[y/n]:" historyRealityPortStatus
+        historyRealityPortStatus=$zzzhistoryRealityPortStatus
+
         if [[ "${historyRealityPortStatus}" == "y" ]]; then
             realityPort=${currentRealityPort}
         fi
