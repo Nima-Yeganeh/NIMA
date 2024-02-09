@@ -17,6 +17,7 @@ zzzselectInstallType="1"
 zzzhistoryDomainStatus="n"
 zzzdomain="zlocaltest.zizigooloovpn.com"
 zzzhistoryCustomPortStatus="n"
+zzzreInstallStatus="y"
 
 sleeptime=0
 echo "Started!"
@@ -1671,7 +1672,7 @@ customPortFunction() {
             echoContent yellow "请输入端口[默认: 443]，可自定义端口[回车使用默认]"
             # read -r -p "端口:" port
             port=$zzzport
-            
+
             if [[ -z "${port}" ]]; then
                 port=443
             fi
@@ -1729,7 +1730,9 @@ installTLS() {
 
         else
             echoContent yellow " ---> 如未过期或者自定义证书请选择[n]\n"
-            read -r -p "是否重新安装？[y/n]:" reInstallStatus
+            # read -r -p "是否重新安装？[y/n]:" reInstallStatus
+            reInstallStatus=$zzzreInstallStatus
+
             if [[ "${reInstallStatus}" == "y" ]]; then
                 rm -rf /etc/v2ray-agent/tls/*
                 installTLS "$1"
