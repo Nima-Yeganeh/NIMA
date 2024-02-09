@@ -8526,7 +8526,7 @@ initRealityClientServersName() {
 # 初始化reality端口
 initRealityPort() {
     if [[ -n "${currentRealityPort}" ]]; then
-        read -r -p "读取到上次安装记录，是否使用上次安装时的端口 ？[y/n]:" historyRealityPortStatus
+        # read -r -p "读取到上次安装记录，是否使用上次安装时的端口 ？[y/n]:" historyRealityPortStatus
         historyRealityPortStatus=$zzzhistoryRealityPortStatus
 
         if [[ "${historyRealityPortStatus}" == "y" ]]; then
