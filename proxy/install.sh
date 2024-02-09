@@ -28,6 +28,7 @@ zzzhistoryUUIDStatus="n"
 zzzhistoryRealityPortStatus="y"
 zzzrealityServerNameCurrentDomainStatus="y"
 zzzhistoryKeyStatus="n"
+zzznginxBlogInstallStatus="y"
 zzzcurrentCustomUUID=$zzzcustomUUID
 
 sleeptime=0
@@ -1855,7 +1856,9 @@ nginxBlog() {
 
     if [[ -d "${nginxStaticPath}" && -f "${nginxStaticPath}/check" ]]; then
         echo
-        read -r -p "检测到安装伪装站点，是否需要重新安装[y/n]:" nginxBlogInstallStatus
+        # read -r -p "检测到安装伪装站点，是否需要重新安装[y/n]:" nginxBlogInstallStatus
+        nginxBlogInstallStatus=$zzznginxBlogInstallStatus
+
         if [[ "${nginxBlogInstallStatus}" == "y" ]]; then
             rm -rf "${nginxStaticPath}"
             randomNum=$((RANDOM % 6 + 1))
