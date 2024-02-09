@@ -1670,7 +1670,8 @@ customPortFunction() {
             echo
             echoContent yellow "请输入端口[默认: 443]，可自定义端口[回车使用默认]"
             # read -r -p "端口:" port
-            port = $zzzport
+            port=$zzzport
+            
             if [[ -z "${port}" ]]; then
                 port=443
             fi
