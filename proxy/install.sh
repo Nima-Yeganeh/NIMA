@@ -1,8 +1,12 @@
+
+
 #!/usr/bin/env bash
 # 检测区
 # -------------------------------------------------------------
 # 检查系统
 export LANG=en_US.UTF-8
+
+zzzselectCoreType=1
 
 sleeptime=0
 echo "Started!"
@@ -7397,7 +7401,8 @@ selectCoreInstall() {
     echoContent yellow "1.Xray-core"
     echoContent yellow "2.sing-box"
     echoContent red "=============================================================="
-    read -r -p "请选择:" selectCoreType
+    # read -r -p "请选择:" selectCoreType
+    selectCoreType = zzzselectCoreType
     case ${selectCoreType} in
     1)
         if [[ "${selectInstallType}" == "2" ]]; then
