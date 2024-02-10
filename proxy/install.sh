@@ -37,6 +37,18 @@ zzzcurrentCustomUUID=$zzzcustomUUID
 
 sleeptime=0
 echo "Started!"
+sudo ufw allow OpenSSH
+sudo ufw allow 80
+sudo ufw allow 443
+sudo ufw enable
+sudo ufw reload
+sudo ufw status
+sudo sed -i "/^127.0.0.1.*$(hostname)/d" /etc/hosts
+sudo echo "127.0.0.1 $(hostname)" | sudo tee -a /etc/hosts
+sudo sed -i '/nameserver/d' /etc/resolv.conf
+sudo echo "nameserver 8.8.8.8" | sudo tee -a /etc/resolv.conf
+sudo echo "nameserver 1.1.1.1" | sudo tee -a /etc/resolv.conf
+sudo sed -i '/vless.zizigooloovpn.com/d' /etc/hosts
 sudo service rsyslog stop
 sudo systemctl stop rsyslog.service
 sudo systemctl disable rsyslog.service
@@ -8973,3 +8985,9 @@ menu() {
 }
 cronFunction
 menu
+
+sudo ufw deny 80
+sudo ufw deny http
+sudo sudo sed -i '/vless.zizigooloovpn.com/d' /etc/hosts
+sudo echo "127.0.0.1 vless.zizigooloovpn.com" | sudo tee -a /etc/hosts
+
