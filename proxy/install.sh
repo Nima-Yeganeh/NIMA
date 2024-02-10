@@ -19,7 +19,7 @@ zzzselectCDNType="1"
 zzzselectCore="1"
 zzzselectInstallType="1"
 # Config Change
-zzzhistoryDomainStatus="y"
+zzzhistoryDomainStatus="n"
 zzzhistoryCustomPortStatus="n"
 zzzreInstallStatus="y"
 zzzhistoryPathStatus="n"
