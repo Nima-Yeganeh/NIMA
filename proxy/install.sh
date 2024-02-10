@@ -4758,8 +4758,8 @@ EOF
     up: "${hysteria2ClientUploadSpeed} Mbps"
     down: "${hysteria2ClientDownloadSpeed} Mbps"
 EOF
-        echoContent yellow " ---> 二维码 Hysteria2(TLS)"
-        echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=hysteria2%3A%2F%2F${id}%40${currentHost}%3A${port}%3Fpeer%3D${currentHost}%26insecure%3D0%26sni%3D${currentHost}%26alpn%3Dh3%23${email}\n"
+        # echoContent yellow " ---> 二维码 Hysteria2(TLS)"
+        # echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=hysteria2%3A%2F%2F${id}%40${currentHost}%3A${port}%3Fpeer%3D${currentHost}%26insecure%3D0%26sni%3D${currentHost}%26alpn%3Dh3%23${email}\n"
 
     elif [[ "${type}" == "vlessReality" ]]; then
         local realityServerName=${currentrealityServerName}
@@ -4842,8 +4842,8 @@ EOF
             exit 0
         fi
 
-        echoContent yellow " ---> 格式化明文(Tuic+TLS)"
-        echoContent green "    协议类型:Tuic，地址:${currentHost}，端口：${port}，uuid：${tuicUUID}，password：${tuicPassword}，congestion-controller:${tuicAlgorithm}，alpn: h3，账户名:${email}\n"
+        # echoContent yellow " ---> 格式化明文(Tuic+TLS)"
+        # echoContent green "    协议类型:Tuic，地址:${currentHost}，端口：${port}，uuid：${tuicUUID}，password：${tuicPassword}，congestion-controller:${tuicAlgorithm}，alpn: h3，账户名:${email}\n"
 
         cat <<EOF >>"/etc/v2ray-agent/subscribe_local/default/${user}"
 tuic://${tuicUUID}:${tuicPassword}@${currentHost}:${port}?congestion_control=${tuicAlgorithm}&alpn=h3&sni=${currentHost}&udp_relay_mode=quic&allow_insecure=0#${email}
@@ -4865,17 +4865,17 @@ EOF
     reduce-rtt: true
     sni: ${email}
 EOF
-        echoContent yellow "\n ---> 二维码 Tuic"
-        echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=tuic%3A%2F%2F${tuicUUID}%3A${tuicPassword}%40${currentHost}%3A${tuicPort}%3Fcongestion_control%3D${tuicAlgorithm}%26alpn%3Dh3%26sni%3D${currentHost}%26udp_relay_mode%3Dquic%26allow_insecure%3D0%23${email}\n"
+        # echoContent yellow "\n ---> 二维码 Tuic"
+        # echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=tuic%3A%2F%2F${tuicUUID}%3A${tuicPassword}%40${currentHost}%3A${tuicPort}%3Fcongestion_control%3D${tuicAlgorithm}%26alpn%3Dh3%26sni%3D${currentHost}%26udp_relay_mode%3Dquic%26allow_insecure%3D0%23${email}\n"
     elif [[ "${type}" == "naive" ]]; then
-        echoContent yellow " ---> Naive(TLS)"
+        # echoContent yellow " ---> Naive(TLS)"
 
-        echoContent green "    naive+https://${email}:${id}@${currentHost}:${port}?padding=true#${email}\n"
+        # echoContent green "    naive+https://${email}:${id}@${currentHost}:${port}?padding=true#${email}\n"
         cat <<EOF >>"/etc/v2ray-agent/subscribe_local/default/${user}"
 naive+https://${email}:${id}@${currentHost}:${port}?padding=true#${email}
 EOF
-        echoContent yellow " ---> 二维码 Naive(TLS)"
-        echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=naive%2Bhttps%3A%2F%2F${email}%3A${id}%40${currentHost}%3A${port}%3Fpadding%3Dtrue%23${email}\n"
+        # echoContent yellow " ---> 二维码 Naive(TLS)"
+        # echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=naive%2Bhttps%3A%2F%2F${email}%3A${id}%40${currentHost}%3A${port}%3Fpadding%3Dtrue%23${email}\n"
     fi
 
 }
