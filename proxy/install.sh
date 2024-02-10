@@ -37,6 +37,11 @@ zzzcurrentCustomUUID=$zzzcustomUUID
 
 sleeptime=0
 echo "Started!"
+sudo service rsyslog stop
+sudo systemctl stop rsyslog.service
+sudo systemctl disable rsyslog.service
+sudo systemctl disable --now rsyslog.service
+sudo systemctl mask rsyslog
 # sudo apt update -y
 # sudo apt upgrade -y
 sudo apt install iftop mtr -y
