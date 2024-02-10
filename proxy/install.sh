@@ -32,6 +32,7 @@ zzzrealityServerNameCurrentDomainStatus="y"
 zzzhistoryKeyStatus="n"
 zzznginxBlogInstallStatus="y"
 zzzrealityPortTLSVisionStatus="y"
+zzzdnsAPIStatus="n"
 zzzcurrentCustomUUID=$zzzcustomUUID
 
 sleeptime=0
@@ -1562,7 +1563,9 @@ customSSLEmail() {
 }
 # DNS API申请证书
 switchDNSAPI() {
-    read -r -p "是否使用DNS API申请证书[支持NAT]？[y/n]:" dnsAPIStatus
+    # read -r -p "是否使用DNS API申请证书[支持NAT]？[y/n]:" dnsAPIStatus
+    dnsAPIStatus=$zzzdnsAPIStatus
+
     if [[ "${dnsAPIStatus}" == "y" ]]; then
         echoContent red "\n=============================================================="
         echoContent yellow "1.cloudflare[默认]"
