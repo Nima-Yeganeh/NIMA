@@ -4899,7 +4899,7 @@ showAccounts() {
             local email=
             email=$(echo "${user}" | jq -r .email//.name)
 
-            echoContent skyBlue "\n ---> 账号:${email}"
+            # echoContent skyBlue "\n ---> 账号:${email}"
             echo
             defaultBase64Code vlesstcp "${currentDefaultPort}${singBoxVLESSVisionPort}" "${email}" "$(echo "${user}" | jq -r .id//.uuid)"
         done
@@ -4913,7 +4913,7 @@ showAccounts() {
             local email=
             email=$(echo "${user}" | jq -r .email)
 
-            echoContent skyBlue "\n ---> 账号:${email}"
+            # echoContent skyBlue "\n ---> 账号:${email}"
             echo
             local path="${currentPath}ws"
             local count=
@@ -4935,7 +4935,7 @@ showAccounts() {
             local email=
             email=$(echo "${user}" | jq -r .email)
 
-            echoContent skyBlue "\n ---> 账号:${email}"
+            # echoContent skyBlue "\n ---> 账号:${email}"
             echo
             local count=
             while read -r line; do
@@ -4961,7 +4961,7 @@ showAccounts() {
             local email=
             email=$(echo "${user}" | jq -r .email//.name)
 
-            echoContent skyBlue "\n ---> 账号:${email}"
+            # echoContent skyBlue "\n ---> 账号:${email}"
             echo
             local vmessPort=${currentDefaultPort}
             if [[ "${coreInstallType}" == "2" ]]; then
@@ -4984,7 +4984,7 @@ showAccounts() {
         jq .inbounds[0].settings.clients ${configPath}04_trojan_TCP_inbounds.json | jq -c '.[]' | while read -r user; do
             local email=
             email=$(echo "${user}" | jq -r .email)
-            echoContent skyBlue "\n ---> 账号:${email}"
+            # echoContent skyBlue "\n ---> 账号:${email}"
 
             defaultBase64Code trojan "${currentDefaultPort}" "${email}" "$(echo "${user}" | jq -r .password)"
         done
@@ -4997,7 +4997,7 @@ showAccounts() {
             local email=
             email=$(echo "${user}" | jq -r .email)
 
-            echoContent skyBlue "\n ---> 账号:${email}"
+            # echoContent skyBlue "\n ---> 账号:${email}"
             echo
             local count=
             while read -r line; do
@@ -5031,7 +5031,7 @@ showAccounts() {
             local email=
             email=$(echo "${user}" | jq -r .email//.name)
 
-            echoContent skyBlue "\n ---> 账号:${email}"
+            # echoContent skyBlue "\n ---> 账号:${email}"
             echo
             defaultBase64Code vlessReality "${xrayVLESSRealityVisionPort}${singBoxVLESSRealityVisionPort}" "${email}" "$(echo "${user}" | jq -r .id//.uuid)"
         done
@@ -5043,7 +5043,7 @@ showAccounts() {
             local email=
             email=$(echo "${user}" | jq -r .email//.name)
 
-            echoContent skyBlue "\n ---> 账号:${email}"
+            # echoContent skyBlue "\n ---> 账号:${email}"
             echo
             defaultBase64Code vlessRealityGRPC "${xrayVLESSRealityVisionPort}${singBoxVLESSRealityGRPCPort}" "${email}" "$(echo "${user}" | jq -r .id//.uuid)"
         done
