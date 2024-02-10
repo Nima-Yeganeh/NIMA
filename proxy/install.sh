@@ -1612,7 +1612,8 @@ switchSSLType() {
         echoContent yellow "3.buypass[不支持DNS申请]"
         echoContent red "=============================================================="
         # read -r -p "请选择[回车]使用默认:" selectSSLType
-        selectSSLType = $zzzselectSSLType
+        selectSSLType=$zzzselectSSLType
+        
         case ${selectSSLType} in
         1)
             sslType="letsencrypt"
