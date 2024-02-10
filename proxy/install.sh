@@ -18,17 +18,20 @@ zzzselectCloudflareType="1"
 zzzselectCDNType="1"
 zzzselectCore="1"
 zzzselectInstallType="1"
-zzzhistoryDomainStatus="n"
+# Config Change
+zzzhistoryDomainStatus="y"
 zzzhistoryCustomPortStatus="n"
 zzzreInstallStatus="y"
 zzzhistoryPathStatus="n"
-zzzreInstallV2RayStatus="y"
+zzzreInstallV2RayStatus="n"
 zzzreInstallXrayStatus="y"
 zzzhistoryUUIDStatus="n"
-zzzhistoryRealityPortStatus="y"
+# Config Change
+zzzhistoryRealityPortStatus="n"
 zzzrealityServerNameCurrentDomainStatus="y"
 zzzhistoryKeyStatus="n"
 zzznginxBlogInstallStatus="y"
+zzzrealityPortTLSVisionStatus="y"
 zzzcurrentCustomUUID=$zzzcustomUUID
 
 sleeptime=0
@@ -8556,7 +8559,9 @@ initRealityPort() {
 
     if [[ -z "${realityPort}" ]]; then
         if [[ -n "${port}" ]]; then
-            read -r -p "是否使用TLS+Vision端口 ？[y/n]:" realityPortTLSVisionStatus
+            # read -r -p "是否使用TLS+Vision端口 ？[y/n]:" realityPortTLSVisionStatus
+            realityPortTLSVisionStatus=$zzzrealityPortTLSVisionStatus
+
             if [[ "${realityPortTLSVisionStatus}" == "y" ]]; then
                 realityPort=${port}
                 # config change
