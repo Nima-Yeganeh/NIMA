@@ -6,11 +6,11 @@
 # 检查系统
 export LANG=en_US.UTF-8
 
-zzzdomain="zlocaltest.zizigooloovpn.com"
-zzzport="443"
+zzzdomain="us1vless.zizigooloovpn.com"
+zzzport="4000"
 zzzcustomPath="zizigooloovpn"
-zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
 zzzcustomEmail="zizigooloovpn"
+zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
 
 zzzselectCoreType="1"
 zzzselectSSLType="1"
