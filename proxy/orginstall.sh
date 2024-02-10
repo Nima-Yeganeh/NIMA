@@ -4576,11 +4576,11 @@ defaultBase64Code() {
 
     if [[ "${type}" == "vlesstcp" ]]; then
 
-        # echoContent yellow " ---> 通用格式(VLESS+TCP+TLS_Vision)"
+        echoContent yellow " ---> 通用格式(VLESS+TCP+TLS_Vision)"
         echoContent green "    vless://${id}@${currentHost}:${port}?encryption=none&security=tls&fp=chrome&type=tcp&host=${currentHost}&headerType=none&sni=${currentHost}&flow=xtls-rprx-vision#${email}\n"
 
-        # echoContent yellow " ---> 格式化明文(VLESS+TCP+TLS_Vision)"
-        # echoContent green "协议类型:VLESS，地址:${currentHost}，端口:${port}，用户ID:${id}，安全:tls，client-fingerprint: chrome，传输方式:tcp，flow:xtls-rprx-vision，账户名:${email}\n"
+        echoContent yellow " ---> 格式化明文(VLESS+TCP+TLS_Vision)"
+        echoContent green "协议类型:VLESS，地址:${currentHost}，端口:${port}，用户ID:${id}，安全:tls，client-fingerprint: chrome，传输方式:tcp，flow:xtls-rprx-vision，账户名:${email}\n"
         cat <<EOF >>"/etc/v2ray-agent/subscribe_local/default/${user}"
 vless://${id}@${currentHost}:${port}?encryption=none&security=tls&type=tcp&host=${currentHost}&fp=chrome&headerType=none&sni=${currentHost}&flow=xtls-rprx-vision#${email}
 EOF
@@ -4596,18 +4596,18 @@ EOF
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 EOF
-        # echoContent yellow " ---> 二维码 VLESS(VLESS+TCP+TLS_Vision)"
-        # echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless%3A%2F%2F${id}%40${currentHost}%3A${port}%3Fencryption%3Dnone%26fp%3Dchrome%26security%3Dtls%26type%3Dtcp%26${currentHost}%3D${currentHost}%26headerType%3Dnone%26sni%3D${currentHost}%26flow%3Dxtls-rprx-vision%23${email}\n"
+        echoContent yellow " ---> 二维码 VLESS(VLESS+TCP+TLS_Vision)"
+        echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless%3A%2F%2F${id}%40${currentHost}%3A${port}%3Fencryption%3Dnone%26fp%3Dchrome%26security%3Dtls%26type%3Dtcp%26${currentHost}%3D${currentHost}%26headerType%3Dnone%26sni%3D${currentHost}%26flow%3Dxtls-rprx-vision%23${email}\n"
 
     elif [[ "${type}" == "vmessws" ]]; then
         qrCodeBase64Default=$(echo -n "{\"port\":${port},\"ps\":\"${email}\",\"tls\":\"tls\",\"id\":\"${id}\",\"aid\":0,\"v\":2,\"host\":\"${currentHost}\",\"type\":\"none\",\"path\":\"${path}\",\"net\":\"ws\",\"add\":\"${add}\",\"allowInsecure\":0,\"method\":\"none\",\"peer\":\"${currentHost}\",\"sni\":\"${currentHost}\"}" | base64 -w 0)
         qrCodeBase64Default="${qrCodeBase64Default// /}"
 
-        #echoContent yellow " ---> 通用json(VMess+WS+TLS)"
-        # echoContent green "    {\"port\":${port},\"ps\":\"${email}\",\"tls\":\"tls\",\"id\":\"${id}\",\"aid\":0,\"v\":2,\"host\":\"${currentHost}\",\"type\":\"none\",\"path\":\"${path}\",\"net\":\"ws\",\"add\":\"${add}\",\"allowInsecure\":0,\"method\":\"none\",\"peer\":\"${currentHost}\",\"sni\":\"${currentHost}\"}\n"
-        # echoContent yellow " ---> 通用vmess(VMess+WS+TLS)链接"
+        echoContent yellow " ---> 通用json(VMess+WS+TLS)"
+        echoContent green "    {\"port\":${port},\"ps\":\"${email}\",\"tls\":\"tls\",\"id\":\"${id}\",\"aid\":0,\"v\":2,\"host\":\"${currentHost}\",\"type\":\"none\",\"path\":\"${path}\",\"net\":\"ws\",\"add\":\"${add}\",\"allowInsecure\":0,\"method\":\"none\",\"peer\":\"${currentHost}\",\"sni\":\"${currentHost}\"}\n"
+        echoContent yellow " ---> 通用vmess(VMess+WS+TLS)链接"
         echoContent green "    vmess://${qrCodeBase64Default}\n"
-        #echoContent yellow " ---> 二维码 vmess(VMess+WS+TLS)"
+        echoContent yellow " ---> 二维码 vmess(VMess+WS+TLS)"
 
         cat <<EOF >>"/etc/v2ray-agent/subscribe_local/default/${user}"
 vmess://${qrCodeBase64Default}
@@ -4634,11 +4634,11 @@ EOF
 
     elif [[ "${type}" == "vlessws" ]]; then
 
-        # echoContent yellow " ---> 通用格式(VLESS+WS+TLS)"
+        echoContent yellow " ---> 通用格式(VLESS+WS+TLS)"
         echoContent green "    vless://${id}@${add}:${port}?encryption=none&security=tls&type=ws&host=${currentHost}&sni=${currentHost}&fp=chrome&path=/${currentPath}ws#${email}\n"
 
-        # echoContent yellow " ---> 格式化明文(VLESS+WS+TLS)"
-        # echoContent green "    协议类型:VLESS，地址:${add}，伪装域名/SNI:${currentHost}，端口:${port}，client-fingerprint: chrome,用户ID:${id}，安全:tls，传输方式:ws，路径:/${currentPath}ws，账户名:${email}\n"
+        echoContent yellow " ---> 格式化明文(VLESS+WS+TLS)"
+        echoContent green "    协议类型:VLESS，地址:${add}，伪装域名/SNI:${currentHost}，端口:${port}，client-fingerprint: chrome,用户ID:${id}，安全:tls，传输方式:ws，路径:/${currentPath}ws，账户名:${email}\n"
 
         cat <<EOF >>"/etc/v2ray-agent/subscribe_local/default/${user}"
 vless://${id}@${add}:${port}?encryption=none&security=tls&type=ws&host=${currentHost}&sni=${currentHost}&fp=chrome&path=/${currentPath}ws#${email}
@@ -4660,16 +4660,16 @@ EOF
         Host: ${currentHost}
 EOF
 
-        # echoContent yellow " ---> 二维码 VLESS(VLESS+WS+TLS)"
-        # echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless%3A%2F%2F${id}%40${add}%3A${port}%3Fencryption%3Dnone%26security%3Dtls%26type%3Dws%26host%3D${currentHost}%26fp%3Dchrome%26sni%3D${currentHost}%26path%3D%252f${currentPath}ws%23${email}"
+        echoContent yellow " ---> 二维码 VLESS(VLESS+WS+TLS)"
+        echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless%3A%2F%2F${id}%40${add}%3A${port}%3Fencryption%3Dnone%26security%3Dtls%26type%3Dws%26host%3D${currentHost}%26fp%3Dchrome%26sni%3D${currentHost}%26path%3D%252f${currentPath}ws%23${email}"
 
     elif [[ "${type}" == "vlessgrpc" ]]; then
 
-        # echoContent yellow " ---> 通用格式(VLESS+gRPC+TLS)"
+        echoContent yellow " ---> 通用格式(VLESS+gRPC+TLS)"
         echoContent green "    vless://${id}@${add}:${port}?encryption=none&security=tls&type=grpc&host=${currentHost}&path=${currentPath}grpc&fp=chrome&serviceName=${currentPath}grpc&alpn=h2&sni=${currentHost}#${email}\n"
 
-        # echoContent yellow " ---> 格式化明文(VLESS+gRPC+TLS)"
-        # echoContent green "    协议类型:VLESS，地址:${add}，伪装域名/SNI:${currentHost}，端口:${port}，用户ID:${id}，安全:tls，传输方式:gRPC，alpn:h2，client-fingerprint: chrome,serviceName:${currentPath}grpc，账户名:${email}\n"
+        echoContent yellow " ---> 格式化明文(VLESS+gRPC+TLS)"
+        echoContent green "    协议类型:VLESS，地址:${add}，伪装域名/SNI:${currentHost}，端口:${port}，用户ID:${id}，安全:tls，传输方式:gRPC，alpn:h2，client-fingerprint: chrome,serviceName:${currentPath}grpc，账户名:${email}\n"
 
         cat <<EOF >>"/etc/v2ray-agent/subscribe_local/default/${user}"
 vless://${id}@${add}:${port}?encryption=none&security=tls&type=grpc&host=${currentHost}&path=${currentPath}grpc&serviceName=${currentPath}grpc&fp=chrome&alpn=h2&sni=${currentHost}#${email}
@@ -4688,12 +4688,12 @@ EOF
     grpc-opts:
       grpc-service-name: ${currentPath}grpc
 EOF
-        # echoContent yellow " ---> 二维码 VLESS(VLESS+gRPC+TLS)"
-        # echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless%3A%2F%2F${id}%40${add}%3A${port}%3Fencryption%3Dnone%26security%3Dtls%26type%3Dgrpc%26host%3D${currentHost}%26serviceName%3D${currentPath}grpc%26fp%3Dchrome%26path%3D${currentPath}grpc%26sni%3D${currentHost}%26alpn%3Dh2%23${email}"
+        echoContent yellow " ---> 二维码 VLESS(VLESS+gRPC+TLS)"
+        echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless%3A%2F%2F${id}%40${add}%3A${port}%3Fencryption%3Dnone%26security%3Dtls%26type%3Dgrpc%26host%3D${currentHost}%26serviceName%3D${currentPath}grpc%26fp%3Dchrome%26path%3D${currentPath}grpc%26sni%3D${currentHost}%26alpn%3Dh2%23${email}"
 
     elif [[ "${type}" == "trojan" ]]; then
         # URLEncode
-        # echoContent yellow " ---> Trojan(TLS)"
+        echoContent yellow " ---> Trojan(TLS)"
         echoContent green "    trojan://${id}@${currentHost}:${port}?peer=${currentHost}&fp=chrome&sni=${currentHost}&alpn=http/1.1#${currentHost}_Trojan\n"
 
         cat <<EOF >>"/etc/v2ray-agent/subscribe_local/default/${user}"
@@ -4710,13 +4710,13 @@ EOF
     udp: true
     sni: ${currentHost}
 EOF
-        # echoContent yellow " ---> 二维码 Trojan(TLS)"
-        # echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=trojan%3a%2f%2f${id}%40${currentHost}%3a${port}%3fpeer%3d${currentHost}%26fp%3Dchrome%26sni%3d${currentHost}%26alpn%3Dhttp/1.1%23${email}\n"
+        echoContent yellow " ---> 二维码 Trojan(TLS)"
+        echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=trojan%3a%2f%2f${id}%40${currentHost}%3a${port}%3fpeer%3d${currentHost}%26fp%3Dchrome%26sni%3d${currentHost}%26alpn%3Dhttp/1.1%23${email}\n"
 
     elif [[ "${type}" == "trojangrpc" ]]; then
         # URLEncode
 
-        # echoContent yellow " ---> Trojan gRPC(TLS)"
+        echoContent yellow " ---> Trojan gRPC(TLS)"
         echoContent green "    trojan://${id}@${add}:${port}?encryption=none&peer=${currentHost}&fp=chrome&security=tls&type=grpc&sni=${currentHost}&alpn=h2&path=${currentPath}trojangrpc&serviceName=${currentPath}trojangrpc#${email}\n"
         cat <<EOF >>"/etc/v2ray-agent/subscribe_local/default/${user}"
 trojan://${id}@${add}:${port}?encryption=none&peer=${currentHost}&security=tls&type=grpc&fp=chrome&sni=${currentHost}&alpn=h2&path=${currentPath}trojangrpc&serviceName=${currentPath}trojangrpc#${email}
@@ -4733,13 +4733,13 @@ EOF
     grpc-opts:
       grpc-service-name: ${currentPath}trojangrpc
 EOF
-        # echoContent yellow " ---> 二维码 Trojan gRPC(TLS)"
-        # echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=trojan%3a%2f%2f${id}%40${add}%3a${port}%3Fencryption%3Dnone%26fp%3Dchrome%26security%3Dtls%26peer%3d${currentHost}%26type%3Dgrpc%26sni%3d${currentHost}%26path%3D${currentPath}trojangrpc%26alpn%3Dh2%26serviceName%3D${currentPath}trojangrpc%23${email}\n"
+        echoContent yellow " ---> 二维码 Trojan gRPC(TLS)"
+        echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=trojan%3a%2f%2f${id}%40${add}%3a${port}%3Fencryption%3Dnone%26fp%3Dchrome%26security%3Dtls%26peer%3d${currentHost}%26type%3Dgrpc%26sni%3d${currentHost}%26path%3D${currentPath}trojangrpc%26alpn%3Dh2%26serviceName%3D${currentPath}trojangrpc%23${email}\n"
 
     elif [[ "${type}" == "hysteria" ]]; then
-        # echoContent yellow " ---> Hysteria(TLS)"
+        echoContent yellow " ---> Hysteria(TLS)"
 
-        # echoContent green "    hysteria2://${id}@${currentHost}:${port}?peer=${currentHost}&insecure=0&sni=${currentHost}&alpn=h3#${email}\n"
+        echoContent green "    hysteria2://${id}@${currentHost}:${port}?peer=${currentHost}&insecure=0&sni=${currentHost}&alpn=h3#${email}\n"
         cat <<EOF >>"/etc/v2ray-agent/subscribe_local/default/${user}"
 hysteria2://${id}@${currentHost}:${port}?peer=${currentHost}&insecure=0&sni=${currentHost}&alpn=h3#${email}
 EOF
@@ -4768,11 +4768,11 @@ EOF
             realityServerName=${singBoxVLESSRealityVisionServerName}
             publicKey=${singBoxVLESSRealityPublicKey}
         fi
-        # echoContent yellow " ---> 通用格式(VLESS+reality+uTLS+Vision)"
+        echoContent yellow " ---> 通用格式(VLESS+reality+uTLS+Vision)"
         echoContent green "    vless://${id}@$(getPublicIP):${port}?encryption=none&security=reality&type=tcp&sni=${realityServerName}&fp=chrome&pbk=${publicKey}&sid=6ba85179e30d4fc2&flow=xtls-rprx-vision#${email}\n"
 
-        # echoContent yellow " ---> 格式化明文(VLESS+reality+uTLS+Vision)"
-        # echoContent green "协议类型:VLESS reality，地址:$(getPublicIP)，publicKey:${publicKey}，shortId: 6ba85179e30d4fc2,serverNames：${realityServerName}，端口:${port}，用户ID:${id}，传输方式:tcp，账户名:${email}\n"
+        echoContent yellow " ---> 格式化明文(VLESS+reality+uTLS+Vision)"
+        echoContent green "协议类型:VLESS reality，地址:$(getPublicIP)，publicKey:${publicKey}，shortId: 6ba85179e30d4fc2,serverNames：${realityServerName}，端口:${port}，用户ID:${id}，传输方式:tcp，账户名:${email}\n"
         cat <<EOF >>"/etc/v2ray-agent/subscribe_local/default/${user}"
 vless://${id}@$(getPublicIP):${port}?encryption=none&security=reality&type=tcp&sni=${realityServerName}&fp=chrome&pbk=${publicKey}&sid=6ba85179e30d4fc2&flow=xtls-rprx-vision#${email}
 EOF
@@ -4792,8 +4792,8 @@ EOF
       short-id: 6ba85179e30d4fc2
     client-fingerprint: chrome
 EOF
-        # echoContent yellow " ---> 二维码 VLESS(VLESS+reality+uTLS+Vision)"
-        # echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless%3A%2F%2F${id}%40$(getPublicIP)%3A${port}%3Fencryption%3Dnone%26security%3Dreality%26type%3Dtcp%26sni%3D${realityServerName}%26fp%3Dchrome%26pbk%3D${publicKey}%26sid%3D6ba85179e30d4fc2%26flow%3Dxtls-rprx-vision%23${email}\n"
+        echoContent yellow " ---> 二维码 VLESS(VLESS+reality+uTLS+Vision)"
+        echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless%3A%2F%2F${id}%40$(getPublicIP)%3A${port}%3Fencryption%3Dnone%26security%3Dreality%26type%3Dtcp%26sni%3D${realityServerName}%26fp%3Dchrome%26pbk%3D${publicKey}%26sid%3D6ba85179e30d4fc2%26flow%3Dxtls-rprx-vision%23${email}\n"
 
     elif [[ "${type}" == "vlessRealityGRPC" ]]; then
         local realityServerName=${currentrealityServerName}
@@ -4803,11 +4803,11 @@ EOF
             publicKey=${singBoxVLESSRealityPublicKey}
         fi
 
-        # echoContent yellow " ---> 通用格式(VLESS+reality+uTLS+gRPC)"
+        echoContent yellow " ---> 通用格式(VLESS+reality+uTLS+gRPC)"
         echoContent green "    vless://${id}@$(getPublicIP):${port}?encryption=none&security=reality&type=grpc&sni=${realityServerName}&fp=chrome&pbk=${publicKey}&sid=6ba85179e30d4fc2&path=grpc&serviceName=grpc#${email}\n"
 
-        # echoContent yellow " ---> 格式化明文(VLESS+reality+uTLS+gRPC)"
-        # echoContent green "协议类型:VLESS reality，serviceName:grpc，地址:$(getPublicIP)，publicKey:${publicKey}，shortId: 6ba85179e30d4fc2，serverNames：${realityServerName}，端口:${port}，用户ID:${id}，传输方式:gRPC，client-fingerprint：chrome，账户名:${email}\n"
+        echoContent yellow " ---> 格式化明文(VLESS+reality+uTLS+gRPC)"
+        echoContent green "协议类型:VLESS reality，serviceName:grpc，地址:$(getPublicIP)，publicKey:${publicKey}，shortId: 6ba85179e30d4fc2，serverNames：${realityServerName}，端口:${port}，用户ID:${id}，传输方式:gRPC，client-fingerprint：chrome，账户名:${email}\n"
         cat <<EOF >>"/etc/v2ray-agent/subscribe_local/default/${user}"
 vless://${id}@$(getPublicIP):${port}?encryption=none&security=reality&type=grpc&sni=${realityServerName}&fp=chrome&pbk=${publicKey}&sid=6ba85179e30d4fc2&path=grpc&serviceName=grpc#${email}
 EOF
@@ -4828,8 +4828,8 @@ EOF
       grpc-service-name: "grpc"
     client-fingerprint: chrome
 EOF
-        # echoContent yellow " ---> 二维码 VLESS(VLESS+reality+uTLS+gRPC)"
-        # echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless%3A%2F%2F${id}%40$(getPublicIP)%3A${port}%3Fencryption%3Dnone%26security%3Dreality%26type%3Dgrpc%26sni%3D${realityServerName}%26fp%3Dchrome%26pbk%3D${publicKey}%26sid%3D6ba85179e30d4fc2%26path%3Dgrpc%26serviceName%3Dgrpc%23${email}\n"
+        echoContent yellow " ---> 二维码 VLESS(VLESS+reality+uTLS+gRPC)"
+        echoContent green "    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless%3A%2F%2F${id}%40$(getPublicIP)%3A${port}%3Fencryption%3Dnone%26security%3Dreality%26type%3Dgrpc%26sni%3D${realityServerName}%26fp%3Dchrome%26pbk%3D${publicKey}%26sid%3D6ba85179e30d4fc2%26path%3Dgrpc%26serviceName%3Dgrpc%23${email}\n"
     elif [[ "${type}" == "tuic" ]]; then
         local tuicUUID=
         tuicUUID=$(echo "${id}" | awk -F "[_]" '{print $1}')
