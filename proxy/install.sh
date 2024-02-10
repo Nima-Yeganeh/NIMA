@@ -3813,7 +3813,7 @@ initXrayConfig() {
     if [[ -z "${addClientsStatus}" ]]; then
         echoContent yellow "请输入自定义UUID[需合法]，[回车]随机UUID"
         # read -r -p 'UUID:' customUUID
-        customUUID = $zzzcustomUUID
+        customUUID=$zzzcustomUUID
 
         if [[ -n ${customUUID} ]]; then
             uuid=${customUUID}
@@ -5399,7 +5399,7 @@ updateV2RayCDN() {
         echoContent red "=============================================================="
         # read -r -p "请选择:" selectCDNType
 
-        selectCDNType = $zzzselectCDNType
+        selectCDNType=$zzzselectCDNType
         case ${selectCDNType} in
         1)
             setDomain="www.digitalocean.com"
@@ -7655,7 +7655,7 @@ coreVersionManageMenu() {
     echoContent yellow "2.sing-box"
     echoContent red "=============================================================="
     # read -r -p "请输入:" selectCore
-    selectCore = $zzzselectCore
+    selectCore=$zzzselectCore
 
     if [[ "${selectCore}" == "1" ]]; then
         xrayVersionManageMenu 1
