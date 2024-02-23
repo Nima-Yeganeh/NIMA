@@ -47,6 +47,8 @@ sudo ufw reload
 sudo ufw status
 sudo sed -i "/^127.0.0.1.*$(hostname)/d" /etc/hosts
 sudo echo "127.0.0.1 $(hostname)" | sudo tee -a /etc/hosts
+sudo sed -i "/^127.0.0.1.*$(zzzdomain)/d" /etc/hosts
+sudo echo "127.0.0.1 $(zzzdomain)" | sudo tee -a /etc/hosts
 sudo sed -i '/nameserver/d' /etc/resolv.conf
 sudo echo "nameserver 8.8.8.8" | sudo tee -a /etc/resolv.conf
 sudo echo "nameserver 1.1.1.1" | sudo tee -a /etc/resolv.conf
