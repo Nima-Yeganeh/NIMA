@@ -25,8 +25,8 @@ while true; do
 done
 
 zzzport="443"
-zzzcustomPath="$domain_hostname-zizigooloovpn"
-zzzcustomEmail="$domain_hostname-zizigooloovpn"
+zzzcustomPath="$domain_hostname$zizigooloovpn"
+zzzcustomEmail="$domain_hostname@zizigooloovpn"
 zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
 
 zzzselectCoreType="1"
