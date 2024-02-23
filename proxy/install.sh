@@ -1239,6 +1239,7 @@ checkDNSIP() {
         echoContent red " ---> 无法通过DNS获取域名 IPv4 地址"
         echoContent green " ---> 尝试检查域名 IPv6 地址"
         dnsIP=$(dig @2606:4700:4700::1111 +time=2 aaaa +short "${domain}")
+        dnsIP="127.0.0.1"
         type=6
         if echo "${dnsIP}" | grep -q "network unreachable" || [[ -z "${dnsIP}" ]]; then
             echoContent red " ---> 无法通过DNS获取域名IPv6地址，退出安装"
@@ -1248,14 +1249,15 @@ checkDNSIP() {
     local publicIP=
 
     publicIP=$(getPublicIP "${type}")
+    publicIP="127.0.0.1"
     zzzpublicip=$publicIP
-    zzzpublicip="127.0.0.1"
+    # zzzpublicip="127.0.0.1"
     if [[ "${publicIP}" != "${dnsIP}" ]]; then
         echoContent red " ---> 域名解析IP与当前服务器IP不一致\n"
         echoContent yellow " ---> 请检查域名解析是否生效以及正确"
         echoContent green " ---> 当前VPS IP：${publicIP}"
         echoContent green " ---> DNS解析 IP：${dnsIP}"
-        # exit 0
+        exit 0
     else
         echoContent green " ---> 域名IP校验通过"
     fi
@@ -1293,27 +1295,29 @@ EOF
     handleNginx start
     # 检查域名+端口的开放
     checkPortOpenResult=$(curl -s -m 10 "http://${domain}:${port}/checkPort")
+    checkPortOpenResult=$(curl -s -m 10 "http://${zzzpublicip}:${port}/checkPort")
     localIP=$(curl -s -m 10 "http://${domain}:${port}/ip")
+    localIP=$(curl -s -m 10 "http://${zzzpublicip}:${port}/ip")
     localIP=$zzzpublicip
     echo "********** PUBLIC IP = $zzzpublicip **********"
     rm "${nginxConfigPath}checkPortOpen.conf"
     handleNginx stop
-    # if [[ "${checkPortOpenResult}" == "fjkvymb6len" ]]; then
-    #     echoContent green " ---> 检测到${port}端口已开放"
-    # else
-    #     echoContent green " ---> 未检测到${port}端口开放，退出安装"
-    #     if echo "${checkPortOpenResult}" | grep -q "cloudflare"; then
-    #         echoContent yellow " ---> 请关闭云朵后等待三分钟重新尝试"
-    #     else
-    #         if [[ -z "${checkPortOpenResult}" ]]; then
-    #             echoContent red " ---> 请检查是否有网页防火墙，比如Oracle等云服务商"
-    #             echoContent red " ---> 检查是否自己安装过nginx并且有配置冲突，可以尝试DD纯净系统后重新尝试"
-    #         else
-    #             echoContent red " ---> 错误日志：${checkPortOpenResult}，请将此错误日志通过issues提交反馈"
-    #         fi
-    #     fi
-    #     exit 0
-    # fi
+    if [[ "${checkPortOpenResult}" == "fjkvymb6len" ]]; then
+        echoContent green " ---> 检测到${port}端口已开放"
+    else
+        echoContent green " ---> 未检测到${port}端口开放，退出安装"
+        if echo "${checkPortOpenResult}" | grep -q "cloudflare"; then
+            echoContent yellow " ---> 请关闭云朵后等待三分钟重新尝试"
+        else
+            if [[ -z "${checkPortOpenResult}" ]]; then
+                echoContent red " ---> 请检查是否有网页防火墙，比如Oracle等云服务商"
+                echoContent red " ---> 检查是否自己安装过nginx并且有配置冲突，可以尝试DD纯净系统后重新尝试"
+            else
+                echoContent red " ---> 错误日志：${checkPortOpenResult}，请将此错误日志通过issues提交反馈"
+            fi
+        fi
+        exit 0
+    fi
     checkIP "${localIP}"
 }
 
