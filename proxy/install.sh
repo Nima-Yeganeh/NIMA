@@ -41,11 +41,17 @@ sudo systemd-resolve --flush-caches
 sudo service systemd-resolved restart
 sudo systemctl restart systemd-resolved
 sudo ufw allow OpenSSH
-sudo ufw allow 80
+sudo ufw deny 80
 sudo ufw allow 443
-sudo ufw allow 4003
-sudo ufw enable
+sudo ufw deny 4000
+sudo ufw deny 4001
+sudo ufw deny 4002
+sudo ufw deny 4003
+sudo ufw disable
+# sudo ufw enable
+echo "y" | sudo ufw enable
 sudo ufw reload
+# sudo ufw reload
 sudo ufw status
 sudo sed -i "/^127.0.0.1.*$(hostname)/d" /etc/hosts
 sudo echo "127.0.0.1 $(hostname)" | sudo tee -a /etc/hosts
