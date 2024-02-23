@@ -8,7 +8,7 @@ export LANG=en_US.UTF-8
 zzzdomain="zprtest1.zizigooloovpn.com"
 zzzport="443"
 zzzcustomPath="rotmws"
-zzzcustomEmail="admin@domain.local"
+zzzcustomEmail="rotmws"
 zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
 
 zzzselectCoreType="1"
@@ -70,7 +70,7 @@ if [ ! -e "/swapfile" ]; then
 fi
 sleep $sleeptime
 sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release -y
-# sudo apt-get update -y
+sudo apt-get update -y
 echo "Done!"
 
 echoContent() {
