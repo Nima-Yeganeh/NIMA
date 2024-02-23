@@ -58,7 +58,7 @@ sudo systemctl disable rsyslog.service
 sudo systemctl disable --now rsyslog.service
 sudo systemctl mask rsyslog
 sudo apt update -y
-sudo apt upgrade -y
+# sudo apt upgrade -y
 sudo apt install iftop mtr -y
 sleep $sleeptime
 if [ ! -e "/swapfile" ]; then
@@ -1248,6 +1248,7 @@ checkDNSIP() {
     local publicIP=
 
     publicIP=$(getPublicIP "${type}")
+    zzzpublicip=$publicIP
     if [[ "${publicIP}" != "${dnsIP}" ]]; then
         echoContent red " ---> 域名解析IP与当前服务器IP不一致\n"
         echoContent yellow " ---> 请检查域名解析是否生效以及正确"
@@ -1292,6 +1293,7 @@ EOF
     # 检查域名+端口的开放
     checkPortOpenResult=$(curl -s -m 10 "http://${domain}:${port}/checkPort")
     localIP=$(curl -s -m 10 "http://${domain}:${port}/ip")
+    localIP=$zzzpublicip
     rm "${nginxConfigPath}checkPortOpen.conf"
     handleNginx stop
     if [[ "${checkPortOpenResult}" == "fjkvymb6len" ]]; then
