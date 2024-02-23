@@ -4,8 +4,25 @@
 # -------------------------------------------------------------
 # 检查系统
 export LANG=en_US.UTF-8
+realdomainname="zizigooloovpn.com"
 
-zzzdomain="zprtest4.zizigooloovpn.com"
+is_empty_or_space() {
+    [[ -z "${1// }" ]]
+}
+
+while true; do
+    read -p "Enter a domain hostname: " domain_hostname
+    if ! is_empty_or_space "$domain_hostname"; then
+        zzzdomain="$domain_hostname.$realdomainname"
+        echo $domain_hostname
+        echo $zzzdomain
+        sleep 2
+        break
+    else
+        echo "Please enter a non-empty and non-space domain hostname."
+    fi
+done
+
 zzzport="443"
 zzzcustomPath="zizigooloovpn"
 zzzcustomEmail="zizigooloovpn"
