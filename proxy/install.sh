@@ -37,6 +37,9 @@ zzzcurrentCustomUUID=$zzzcustomUUID
 sleeptime=0
 
 echo "Started!"
+sudo systemd-resolve --flush-caches
+sudo service systemd-resolved restart
+sudo systemctl restart systemd-resolved
 sudo ufw allow OpenSSH
 sudo ufw allow 80
 sudo ufw allow 443
