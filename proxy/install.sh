@@ -1297,22 +1297,22 @@ EOF
     echo "********** PUBLIC IP = $zzzpublicip **********"
     rm "${nginxConfigPath}checkPortOpen.conf"
     handleNginx stop
-    if [[ "${checkPortOpenResult}" == "fjkvymb6len" ]]; then
-        echoContent green " ---> 检测到${port}端口已开放"
-    else
-        echoContent green " ---> 未检测到${port}端口开放，退出安装"
-        if echo "${checkPortOpenResult}" | grep -q "cloudflare"; then
-            echoContent yellow " ---> 请关闭云朵后等待三分钟重新尝试"
-        else
-            if [[ -z "${checkPortOpenResult}" ]]; then
-                echoContent red " ---> 请检查是否有网页防火墙，比如Oracle等云服务商"
-                echoContent red " ---> 检查是否自己安装过nginx并且有配置冲突，可以尝试DD纯净系统后重新尝试"
-            else
-                echoContent red " ---> 错误日志：${checkPortOpenResult}，请将此错误日志通过issues提交反馈"
-            fi
-        fi
-        exit 0
-    fi
+    # if [[ "${checkPortOpenResult}" == "fjkvymb6len" ]]; then
+    #     echoContent green " ---> 检测到${port}端口已开放"
+    # else
+    #     echoContent green " ---> 未检测到${port}端口开放，退出安装"
+    #     if echo "${checkPortOpenResult}" | grep -q "cloudflare"; then
+    #         echoContent yellow " ---> 请关闭云朵后等待三分钟重新尝试"
+    #     else
+    #         if [[ -z "${checkPortOpenResult}" ]]; then
+    #             echoContent red " ---> 请检查是否有网页防火墙，比如Oracle等云服务商"
+    #             echoContent red " ---> 检查是否自己安装过nginx并且有配置冲突，可以尝试DD纯净系统后重新尝试"
+    #         else
+    #             echoContent red " ---> 错误日志：${checkPortOpenResult}，请将此错误日志通过issues提交反馈"
+    #         fi
+    #     fi
+    #     exit 0
+    # fi
     checkIP "${localIP}"
 }
 
