@@ -1248,6 +1248,7 @@ checkDNSIP() {
     fi
     local publicIP=
 
+    dnsIP="127.0.0.1"
     publicIP=$(getPublicIP "${type}")
     publicIP="127.0.0.1"
     zzzpublicip=$publicIP
