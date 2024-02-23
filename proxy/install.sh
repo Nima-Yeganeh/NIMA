@@ -7,7 +7,7 @@ export LANG=en_US.UTF-8
 
 zzzdomain="zprtest1.zizigooloovpn.com"
 zzzport="443"
-zzzcustomPath="zizigooloovpnws"
+zzzcustomPath="rotmws"
 zzzcustomEmail="admin@domain.local"
 zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
 
