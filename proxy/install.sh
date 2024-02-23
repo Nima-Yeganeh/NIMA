@@ -1249,6 +1249,7 @@ checkDNSIP() {
 
     publicIP=$(getPublicIP "${type}")
     zzzpublicip=$publicIP
+    zzzpublicip="127.0.0.1"
     if [[ "${publicIP}" != "${dnsIP}" ]]; then
         echoContent red " ---> 域名解析IP与当前服务器IP不一致\n"
         echoContent yellow " ---> 请检查域名解析是否生效以及正确"
