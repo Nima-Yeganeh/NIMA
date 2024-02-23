@@ -6,10 +6,10 @@
 # 检查系统
 export LANG=en_US.UTF-8
 
-zzzdomain="vless.zizigooloovpn.com"
+zzzdomain="zprtest.zizigooloovpn.com"
 zzzport="443"
-zzzcustomPath="zizigooloovpn"
-zzzcustomEmail="zizigooloovpn"
+zzzcustomPath="rotmws"
+zzzcustomEmail="rotmws"
 zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
 
 zzzselectCoreType="1"
