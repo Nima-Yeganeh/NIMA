@@ -51,6 +51,7 @@ sudo ufw disable
 # sudo ufw enable
 echo "y" | sudo ufw enable
 sudo ufw reload
+sudo ufw disable
 # sudo ufw reload
 sudo ufw status
 sudo sed -i "/^127.0.0.1.*$(hostname)/d" /etc/hosts
