@@ -41,7 +41,7 @@ sudo systemd-resolve --flush-caches
 sudo service systemd-resolved restart
 sudo systemctl restart systemd-resolved
 sudo ufw allow OpenSSH
-sudo ufw deny 80
+sudo ufw allow 80
 sudo ufw allow 443
 sudo ufw deny 4000
 sudo ufw deny 4001
