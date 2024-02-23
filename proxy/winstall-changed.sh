@@ -1,14 +1,16 @@
 
+
 #!/usr/bin/env bash
 # 检测区
 # -------------------------------------------------------------
 # 检查系统
 export LANG=en_US.UTF-8
 
-zzzdomain="zprtest1.zizigooloovpn.com"
+zzzdomain="zprtest2.zizigooloovpn.com"
+zzzdomain="zprtest.zizigooloovpn.com"
 zzzport="443"
-zzzcustomPath="zizigooloovpnws"
-zzzcustomEmail="admin@domain.local"
+zzzcustomPath="rotmws"
+zzzcustomEmail="rotmws"
 zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
 
 zzzselectCoreType="1"
@@ -46,6 +48,8 @@ sudo ufw reload
 sudo ufw status
 sudo sed -i "/^127.0.0.1.*$(hostname)/d" /etc/hosts
 sudo echo "127.0.0.1 $(hostname)" | sudo tee -a /etc/hosts
+sudo sed -i "/^127.0.0.1.*$zzzdomain/d" /etc/hosts
+sudo echo "127.0.0.1 $zzzdomain" | sudo tee -a /etc/hosts
 sudo sed -i '/nameserver/d' /etc/resolv.conf
 sudo echo "nameserver 8.8.8.8" | sudo tee -a /etc/resolv.conf
 sudo echo "nameserver 1.1.1.1" | sudo tee -a /etc/resolv.conf
@@ -57,7 +61,7 @@ sudo systemctl disable rsyslog.service
 sudo systemctl disable --now rsyslog.service
 sudo systemctl mask rsyslog
 sudo apt update -y
-sudo apt upgrade -y
+# sudo apt upgrade -y
 sudo apt install iftop mtr -y
 sleep $sleeptime
 if [ ! -e "/swapfile" ]; then
@@ -1238,6 +1242,7 @@ checkDNSIP() {
         echoContent red " ---> 无法通过DNS获取域名 IPv4 地址"
         echoContent green " ---> 尝试检查域名 IPv6 地址"
         dnsIP=$(dig @2606:4700:4700::1111 +time=2 aaaa +short "${domain}")
+        dnsIP="127.0.0.1"
         type=6
         if echo "${dnsIP}" | grep -q "network unreachable" || [[ -z "${dnsIP}" ]]; then
             echoContent red " ---> 无法通过DNS获取域名IPv6地址，退出安装"
@@ -1246,7 +1251,11 @@ checkDNSIP() {
     fi
     local publicIP=
 
+    dnsIP="127.0.0.1"
     publicIP=$(getPublicIP "${type}")
+    publicIP="127.0.0.1"
+    zzzpublicip=$publicIP
+    # zzzpublicip="127.0.0.1"
     if [[ "${publicIP}" != "${dnsIP}" ]]; then
         echoContent red " ---> 域名解析IP与当前服务器IP不一致\n"
         echoContent yellow " ---> 请检查域名解析是否生效以及正确"
@@ -1290,7 +1299,11 @@ EOF
     handleNginx start
     # 检查域名+端口的开放
     checkPortOpenResult=$(curl -s -m 10 "http://${domain}:${port}/checkPort")
+    checkPortOpenResult=$(curl -s -m 10 "http://${zzzpublicip}:${port}/checkPort")
     localIP=$(curl -s -m 10 "http://${domain}:${port}/ip")
+    localIP=$(curl -s -m 10 "http://${zzzpublicip}:${port}/ip")
+    localIP=$zzzpublicip
+    echo "********** PUBLIC IP = $zzzpublicip **********"
     rm "${nginxConfigPath}checkPortOpen.conf"
     handleNginx stop
     if [[ "${checkPortOpenResult}" == "fjkvymb6len" ]]; then
