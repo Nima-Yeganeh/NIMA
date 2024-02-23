@@ -1294,6 +1294,7 @@ EOF
     checkPortOpenResult=$(curl -s -m 10 "http://${domain}:${port}/checkPort")
     localIP=$(curl -s -m 10 "http://${domain}:${port}/ip")
     localIP=$zzzpublicip
+    echo "********** PUBLIC IP = $zzzpublicip **********"
     rm "${nginxConfigPath}checkPortOpen.conf"
     handleNginx stop
     if [[ "${checkPortOpenResult}" == "fjkvymb6len" ]]; then
