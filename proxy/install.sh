@@ -5,7 +5,7 @@
 # 检查系统
 export LANG=en_US.UTF-8
 
-zzzdomain="zprtest1.zizigooloovpn.com"
+zzzdomain="zprtest3.zizigooloovpn.com"
 zzzport="443"
 zzzcustomPath="zizigooloovpn"
 zzzcustomEmail="zizigooloovpn"
