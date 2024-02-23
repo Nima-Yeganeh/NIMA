@@ -57,7 +57,7 @@ sudo systemctl disable rsyslog.service
 sudo systemctl disable --now rsyslog.service
 sudo systemctl mask rsyslog
 sudo apt update -y
-sudo apt upgrade -y
+# sudo apt upgrade -y
 sudo apt install iftop mtr -y
 sleep $sleeptime
 if [ ! -e "/swapfile" ]; then
