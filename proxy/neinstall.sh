@@ -18,4 +18,4 @@ sudo systemctl start node_exporter
 sudo systemctl status node_exporter
 sudo ufw allow 9100
 sudo ps aux | grep node
-sudo netstat -anp | grep 9100
+# sudo netstat -anp | grep 9100
