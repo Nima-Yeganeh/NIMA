@@ -37,5 +37,6 @@ sudo bash bbr.sh
 sleep $sleeptime
 cd ..
 sudo docker compose up -d
-./vmess.py
+ sudo docker ps -a
+python3 vmess.py
 echo "Done!"
