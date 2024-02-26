@@ -5,11 +5,21 @@
 # -------------------------------------------------------------
 # 检查系统
 export LANG=en_US.UTF-8
-realdomainname="zizigooloovpn.com"
+realdomainname=""
 
 is_empty_or_space() {
     [[ -z "${1// }" ]]
 }
+
+while true; do
+    read -p "Enter a domain: " realdomainname
+    if ! is_empty_or_space "$realdomainname"; then
+        echo $realdomainname
+        break
+    else
+        echo "Please enter a non-empty and non-space domain."
+    fi
+done
 
 while true; do
     read -p "Enter a domain hostname: " domain_hostname
@@ -17,7 +27,7 @@ while true; do
         zzzdomain="$domain_hostname.$realdomainname"
         echo $domain_hostname
         echo $zzzdomain
-        sleep 2
+        sleep 10
         break
     else
         echo "Please enter a non-empty and non-space domain hostname."
