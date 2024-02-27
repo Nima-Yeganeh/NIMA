@@ -17,4 +17,8 @@ sleep $sleeptime
 sudo apt update -y
 sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release -y
 sleep $sleeptime
+cd utils
+sudo bash bbr.sh
+sleep $sleeptime
+cd ..
 echo "Done!"
