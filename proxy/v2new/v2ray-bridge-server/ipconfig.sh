@@ -1,13 +1,14 @@
-interfaces=$(ip link | awk -F: '$0 !~ "lo|vir|wl|^[^0-9]"{print $2;getline}')
-interfacename=""
-for interface in $interfaces; do
-    if [[ $interface == ens* ]] || [[ $interface == eth* ]]; then
-        interfacename="$interface"
+
+while true; do
+    read -p "Enter an IP address: " ip_address
+    ip_regex="^([0-9]{1,3}\.){3}[0-9]{1,3}$"
+    if [[ $ip_address =~ $ip_regex ]]; then
+        echo "Entered IP address: $ip_address"
+        break
+    else
+        echo "Invalid or blank IP address format. Please try again."
     fi
 done
-interfacename=$(echo $interfacename | sed 's/ *$//')
-echo $interfacename
-ip_address=$(ip -4 addr show $interfacename | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | head -n1)
 echo "$ip_address"
 cat v2ray/config/config.json | grep address
 sed -i "s/<UPSTREAM-IP>/$ip_address/g" v2ray/config/config.json
