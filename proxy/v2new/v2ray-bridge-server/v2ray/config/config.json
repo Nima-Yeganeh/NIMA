@@ -33,7 +33,7 @@
     },
     {
       "listen": "0.0.0.0",
-      "port": 443,
+      "port": 35278,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -54,7 +54,7 @@
         "vnext": [
           {
             "address": "<UPSTREAM-IP>",
-            "port": 443,
+            "port": 35278,
             "users": [
               {
                 "id": "7c215b11-8cd4-4b9c-bb06-f97f1e8e8038",
