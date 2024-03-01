@@ -33,10 +33,10 @@ cd utils
 sudo bash bbr.sh
 sleep $sleeptime
 cd ..
+sudo bash zupdate_nameservers.sh
 cd v2new/v2ray-bridge-server/
 ls -anp
 sudo bash ipconfig.sh
-sudo bash zupdate_nameservers.sh
 docker-compose up -d
 docker ps -a
 sudo bash info.sh
