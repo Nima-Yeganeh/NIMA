@@ -2,6 +2,7 @@
 sleeptime=0
 echo "Started!"
 sleep $sleeptime
+sudo bash zupdate_nameservers.sh
 sudo apt update -y
 sudo apt install iftop mtr -y
 sleep $sleeptime
