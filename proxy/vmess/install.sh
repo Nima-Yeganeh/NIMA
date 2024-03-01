@@ -1,5 +1,5 @@
+
 sleeptime=0
-read -p "Do you want to change the default configuration? (yes/no): " answer
 echo "Started!"
 sleep $sleeptime
 # apt install sudo -y
