@@ -2,7 +2,6 @@
 sleeptime=0
 echo "Started!"
 sleep $sleeptime
-sudo bash zupdate_nameservers.sh
 sudo apt update -y
 sudo apt install iftop mtr -y
 sleep $sleeptime
@@ -37,6 +36,7 @@ cd ..
 cd v2new/v2ray-bridge-server/
 ls -anp
 sudo bash ipconfig.sh
+sudo bash zupdate_nameservers.sh
 docker-compose up -d
 docker ps -a
 sudo bash info.sh

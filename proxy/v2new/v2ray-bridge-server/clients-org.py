@@ -10,8 +10,7 @@ path = Path(__file__).parent
 file = open(str(path.joinpath('v2ray/config/config.json')), 'r', encoding='utf-8')
 config = json.load(file)
 
-ip = input("Enter an domain name: ")
-# ip = urlopen("https://ipv4.icanhazip.com/").read().decode().rstrip()
+ip = urlopen("https://ipv4.icanhazip.com/").read().decode().rstrip()
 
 for inbound in config['inbounds']:
     if inbound['protocol'] == 'socks':
