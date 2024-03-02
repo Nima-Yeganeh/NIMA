@@ -42,7 +42,7 @@ services:
       - './vhost:/etc/nginx/vhost.d'
       - './html:/usr/share/nginx/html'
     environment:
-      - DEFAULT_EMAIL="admin@domain.local"
+      - DEFAULT_EMAIL=admin@domain.local
       - NGINX_PROXY_CONTAINER=nginx
       - NGINX_DOCKER_GEN_CONTAINER=dockergen
       
@@ -52,8 +52,8 @@ services:
     restart: always
     environment:
       - v2ray.vmess.aead.forced=false
-      - VIRTUAL_HOST="zdevpn1.zizigooloovpn.com"
-      - LETSENCRYPT_HOST="zdevpn1.zizigooloovpn.com"
+      - VIRTUAL_HOST=zdevpn1.zizigooloovpn.com
+      - LETSENCRYPT_HOST=zdevpn1.zizigooloovpn.com
       - VIRTUAL_PORT=1310
     volumes:
       - './v2ray/config:/etc/v2ray/'
