@@ -7,10 +7,10 @@ zuaecdnservice1.zizigooloovpn.com {
     header Upgrade    websocket
   }
 
-  reverse_proxy @websockets localhost:8443/ws
+  reverse_proxy @websockets 20.46.155.15:8443/ws
 
   route {
-    reverse_proxy /ws localhost:8443
+    reverse_proxy /ws 20.46.155.15:8443
     file_server
   }
 
