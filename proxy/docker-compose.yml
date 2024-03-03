@@ -16,6 +16,8 @@ services:
     image: ghcr.io/getimages/caddy:2.6.2-alpine
     restart: always
     ports:
+      - "80:80"
+      - "80:80/udp"
       - "443:443"
       - "443:443/udp"
     volumes:
