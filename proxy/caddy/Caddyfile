@@ -1,4 +1,4 @@
-xyz.zizigooloovpn.com {
+zuaecdnservice1.zizigooloovpn.com {
   root * /usr/share/caddy
 
   @websockets {
