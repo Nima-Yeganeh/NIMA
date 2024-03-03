@@ -15,7 +15,7 @@ uuid = config['inbounds'][0]['settings']['clients'][0]['id']
 domain = caddy[:caddy.find(' {')]
 
 j = json.dumps({
-    "v": "2", "ps": domain, "add": "www.digitalocean.com", "port": "443", "id": uuid, "aid": "0", "net": "ws", "type": "none",
+    "v": "2", "ps": "@zizigooloovpn", "add": "www.digitalocean.com", "port": "443", "id": uuid, "aid": "0", "net": "ws", "type": "none",
     "host": domain, "path": "/ws", "tls": "tls"
 })
 
