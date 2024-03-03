@@ -10,8 +10,8 @@ services:
       - ./v2ray/config/:/etc/v2ray/
       - ./v2ray/logs:/var/log/v2ray/
     ports:
-      - "8443:1310"
-      - "8443:1310/udp"
+      - "8443:8443"
+      - "8443:8443/udp"
   caddy:
     image: ghcr.io/getimages/caddy:2.6.2-alpine
     restart: always

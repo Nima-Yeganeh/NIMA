@@ -9,7 +9,7 @@ zuaecdnservice1.zizigooloovpn.com {
   reverse_proxy @websockets v2ray:1310/ws
 
   route {
-    reverse_proxy /ws v2ray:8443
+    reverse_proxy /ws v2ray:1310
     file_server
   }
 
