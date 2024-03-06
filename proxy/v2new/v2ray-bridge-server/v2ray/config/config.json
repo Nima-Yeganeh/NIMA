@@ -33,7 +33,10 @@
               {
                 "id": "0e3d2dda-216f-4922-83a1-1bbcdace508e",
                 "alterId": 0,
-                "security": "none"
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
