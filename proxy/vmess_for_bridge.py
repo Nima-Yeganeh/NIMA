@@ -22,6 +22,7 @@ domain = caddy[:caddy.find(' {')]
 
 domain="www.digitalocean.com"
 # domain="denewcdn1.zizigooloovpn.com"
+domain="test.nimaxmusic.ir"
 ipaddr="188.213.199.195"
 ipaddr = urlopen("https://ipv4.icanhazip.com/").read().decode().rstrip()
 zpath="/ws"
