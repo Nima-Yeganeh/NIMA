@@ -1,6 +1,7 @@
 
 sleeptime=0
 echo "Started!"
+git pull
 sleep $sleeptime
 sudo bash zupdate_nameservers_org.sh
 sudo apt update -y
@@ -47,4 +48,7 @@ docker ps -a
 sudo bash info.sh
 cd ..
 cd ..
+python3 vmess_for_bridge.py
+sudo bash zupdate_nameservers_org.sh
 ls -anp
+

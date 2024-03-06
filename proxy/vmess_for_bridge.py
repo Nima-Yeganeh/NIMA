@@ -3,6 +3,11 @@
 
 import base64
 import json
+import base64
+import json
+import re
+from pathlib import Path
+from urllib.request import urlopen
 from pathlib import Path
 
 path = Path(__file__).parent
@@ -18,6 +23,7 @@ domain = caddy[:caddy.find(' {')]
 domain="www.digitalocean.com"
 domain=""
 ipaddr="188.213.199.195"
+ipaddr = urlopen("https://ipv4.icanhazip.com/").read().decode().rstrip()
 zpath="/ws"
 zpath="/"
 ztls="tls"
