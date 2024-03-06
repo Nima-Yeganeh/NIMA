@@ -23,12 +23,6 @@
         "network": "ws",
         "wsSettings": {
           "path": "/"
-        },
-        "sockopt": {
-          "dialerProxy": "fragment",
-          "tcpKeepAliveIdle": 100,
-          "mark": 255,
-          "tcpNoDelay": true
         }
       },
       "mux": {
