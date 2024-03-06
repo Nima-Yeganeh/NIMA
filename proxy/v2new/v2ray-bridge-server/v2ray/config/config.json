@@ -27,7 +27,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "uaecdn2vraypan.zizigooloovpn.com",
+            "address": "20.46.148.54",
             "port": 2087,
             "users": [
               {
@@ -47,7 +47,7 @@
         "wsSettings": {
           "path": "/?ed=2048",
           "headers": {
-            "Host": "TEst.local"
+            "Host": "www.diGItALoceaN.cOm"
           }
         },
         "sockopt": {
@@ -72,7 +72,7 @@
         "fragment": {
           "packets": "1-1",
           "length": "1-3",
-          "interval": "1-5"
+          "interval": "5"
         }
       },
       "streamSettings": {
@@ -83,8 +83,18 @@
       }
     },
     {
+      "tag": "direct",
       "protocol": "freedom",
-      "tag": "freedom"
+      "settings": {}
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      }
     }
   ],
   "dns": {
