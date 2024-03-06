@@ -15,6 +15,7 @@ uuid = config['inbounds'][0]['settings']['clients'][0]['id']
 domain = caddy[:caddy.find(' {')]
 
 domain="www.digitalocean.com"
+domain=""
 ipaddr="188.213.199.195"
 zpath="/ws"
 zpath="/"
@@ -27,3 +28,4 @@ j = json.dumps({
 })
 
 print("vmess://" + base64.b64encode(j.encode('ascii')).decode('ascii'))
+
