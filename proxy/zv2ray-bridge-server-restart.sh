@@ -1,5 +1,6 @@
 
 echo "Started!"
+git pull
 sudo bash zupdate_nameservers_org.sh
 sudo docker rm -f $(sudo docker ps -q)
 cd utils
@@ -13,3 +14,4 @@ sudo bash info.sh
 cd ..
 cd ..
 ls -anp
+
