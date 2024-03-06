@@ -70,9 +70,9 @@
       "settings": {
         "domainStrategy": "AsIs",
         "fragment": {
-          "packets": "5",
-          "length": "10",
-          "interval": "10"
+          "packets": "1",
+          "length": "1",
+          "interval": "1"
         }
       },
       "streamSettings": {
