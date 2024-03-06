@@ -14,6 +14,7 @@ caddy = open(str(path.joinpath('caddy/Caddyfile')), 'r', encoding='utf-8').read(
 uuid = config['inbounds'][0]['settings']['clients'][0]['id']
 domain = caddy[:caddy.find(' {')]
 
+domain="www.digitalocean.com"
 ipaddr="188.213.199.195"
 
 j = json.dumps({
