@@ -18,7 +18,7 @@ domain="www.digitalocean.com"
 domain=""
 ipaddr="188.213.199.195"
 zpath="/ws"
-zpath="/"
+zpath="/?ed=2048"
 ztls="tls"
 ztls=""
 
