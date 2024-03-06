@@ -21,7 +21,7 @@ uuid = config['inbounds'][0]['settings']['clients'][0]['id']
 domain = caddy[:caddy.find(' {')]
 
 domain="www.digitalocean.com"
-domain=""
+# domain="denewcdn1.zizigooloovpn.com"
 ipaddr="188.213.199.195"
 ipaddr = urlopen("https://ipv4.icanhazip.com/").read().decode().rstrip()
 zpath="/ws"
