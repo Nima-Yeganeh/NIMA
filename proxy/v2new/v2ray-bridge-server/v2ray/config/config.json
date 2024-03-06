@@ -1,3 +1,4 @@
+
 {
   "log": {
     "access": "/dev/null",
@@ -21,7 +22,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/?ed=2048"
+          "path": "/"
         }
       },
       "mux": {
