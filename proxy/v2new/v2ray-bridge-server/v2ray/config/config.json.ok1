@@ -27,7 +27,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.digitalocean.com",
+            "address": "20.46.148.54",
             "port": 2087,
             "users": [
               {
@@ -44,21 +44,10 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "uAEcdn2.ziziGoOLoOVpN.COm",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "show": false
-        },
         "wsSettings": {
           "path": "/?ed=2048",
           "headers": {
-            "Host": "uAEcdn2.ziziGoOLoOVpN.COm"
+            "Host": "TEst.local"
           }
         },
         "sockopt": {
@@ -81,9 +70,9 @@
       "settings": {
         "domainStrategy": "AsIs",
         "fragment": {
-          "packets": "tlshello",
-          "length": "15",
-          "interval": "10"
+          "packets": "1-1",
+          "length": "1-3",
+          "interval": "1-5"
         }
       },
       "streamSettings": {
@@ -94,60 +83,30 @@
       }
     },
     {
-      "tag": "direct",
       "protocol": "freedom",
-      "settings": {}
-    },
-    {
-      "tag": "block",
-      "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      }
+      "tag": "freedom"
     }
   ],
-  "routing": {
-    "domainStrategy": "AsIs",
-    "rules": [
-      {
-        "type": "field",
-        "inboundTag": [
-          "api"
-        ],
-        "outboundTag": "api",
-        "enabled": true
-      },
-      {
-        "id": "5465425548310166497",
-        "type": "field",
-        "outboundTag": "direct",
-        "domain": [
-          "domain:ir",
-          "geosite:cn"
-        ],
-        "enabled": true
-      },
-      {
-        "id": "5425034033205580637",
-        "type": "field",
-        "outboundTag": "direct",
-        "ip": [
-          "geoip:private",
-          "geoip:cn",
-          "geoip:ir"
-        ],
-        "enabled": true
-      },
-      {
-        "id": "5627785659655799759",
-        "type": "field",
-        "port": "0-65535",
-        "outboundTag": "proxy",
-        "enabled": true
-      }
+  "dns": {
+    "servers": [
+      "8.8.8.8",
+      "8.8.4.4",
+      "localhost"
     ]
+  },
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "settings": {
+      "rules": [
+        {
+          "type": "field",
+          "outboundTag": "freedom",
+          "domain": [
+            "regexp:.*\\.abcxyzabcxyz$"
+          ]
+        }
+      ]
+    }
   }
 }
 
