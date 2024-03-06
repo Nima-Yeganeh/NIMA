@@ -50,7 +50,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.digitalocean.com",
+            "address": "20.46.148.54",
             "port": 8080,
             "users": [
               {
