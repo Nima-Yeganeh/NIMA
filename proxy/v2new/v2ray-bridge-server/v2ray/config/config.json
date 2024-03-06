@@ -47,13 +47,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "20.46.148.54",
+            "address": "www.digitalocean.com",
             "port": 8080,
             "users": [
               {
                 "id": "e9f39519-ec3a-4900-9008-09b52435cd75",
                 "alterId": 0,
-                "email": "t@t.tt",
+                "email": "admin@domain.local",
                 "security": "auto",
                 "encryption": "none",
                 "flow": ""
@@ -91,8 +91,8 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "1",
-          "length": "15",
-          "interval": "10"
+          "length": "200",
+          "interval": "2"
         }
       },
       "streamSettings": {
