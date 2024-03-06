@@ -16,10 +16,11 @@ domain = caddy[:caddy.find(' {')]
 
 domain="www.digitalocean.com"
 ipaddr="188.213.199.195"
+zpath=""
 
 j = json.dumps({
     "v": "2", "ps": "@zizigooloovpn", "add": ipaddr, "port": "443", "id": uuid, "aid": "0", "net": "ws", "type": "none",
-    "host": domain, "path": "/ws", "tls": "tls"
+    "host": domain, "path": zpath, "tls": "tls"
 })
 
 print("vmess://" + base64.b64encode(j.encode('ascii')).decode('ascii'))
