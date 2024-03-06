@@ -17,7 +17,7 @@ domain = caddy[:caddy.find(' {')]
 domain="www.digitalocean.com"
 ipaddr="188.213.199.195"
 zpath="/ws"
-zpath=""
+zpath="/"
 ztls="tls"
 ztls=""
 
