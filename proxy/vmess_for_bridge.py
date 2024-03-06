@@ -28,9 +28,11 @@ zpath="/ws"
 zpath="/"
 ztls="tls"
 ztls=""
+zport="443"
+zport="8080"
 
 j = json.dumps({
-    "v": "2", "ps": "@zizigooloovpn", "add": ipaddr, "port": "443", "id": uuid, "aid": "0", "net": "ws", "type": "none",
+    "v": "2", "ps": "@zizigooloovpn", "add": ipaddr, "port": zport, "id": uuid, "aid": "0", "net": "ws", "type": "none",
     "host": domain, "path": zpath, "tls": ztls
 })
 
