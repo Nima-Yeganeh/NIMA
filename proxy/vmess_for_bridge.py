@@ -19,7 +19,7 @@ ipaddr="188.213.199.195"
 zpath="/ws"
 zpath=""
 ztls="tls"
-ztls="none"
+ztls=""
 
 j = json.dumps({
     "v": "2", "ps": "@zizigooloovpn", "add": ipaddr, "port": "443", "id": uuid, "aid": "0", "net": "ws", "type": "none",
