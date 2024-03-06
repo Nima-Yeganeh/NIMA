@@ -66,7 +66,13 @@
         ]
       },
       "streamSettings": {
-        "network": "ws"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/?ed=2048",
+          "headers": {
+            "Host": "TEst.local"
+          }
+        }
       },
       "mux": {
         "enabled": true,
