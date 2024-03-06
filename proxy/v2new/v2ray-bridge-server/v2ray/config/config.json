@@ -65,9 +65,9 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/?ed=2048",
+          "path": "/",
           "headers": {
-            "Host": "WWw.dIgItaloCEan.COm"
+            "Host": "uaecdn2.zizigooloovpn.com"
           }
         },
         "sockopt": {
