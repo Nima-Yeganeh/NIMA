@@ -94,18 +94,8 @@
       }
     },
     {
-      "tag": "direct",
       "protocol": "freedom",
-      "settings": {}
-    },
-    {
-      "tag": "block",
-      "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      }
+      "tag": "freedom"
     }
   ],
   "dns": {
