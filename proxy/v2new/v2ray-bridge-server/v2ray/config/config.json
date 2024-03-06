@@ -108,46 +108,26 @@
       }
     }
   ],
-  "routing": {
-    "domainStrategy": "AsIs",
-    "rules": [
-      {
-        "type": "field",
-        "inboundTag": [
-          "api"
-        ],
-        "outboundTag": "api",
-        "enabled": true
-      },
-      {
-        "id": "5465425548310166497",
-        "type": "field",
-        "outboundTag": "direct",
-        "domain": [
-          "domain:ir",
-          "geosite:cn"
-        ],
-        "enabled": true
-      },
-      {
-        "id": "5425034033205580637",
-        "type": "field",
-        "outboundTag": "direct",
-        "ip": [
-          "geoip:private",
-          "geoip:cn",
-          "geoip:ir"
-        ],
-        "enabled": true
-      },
-      {
-        "id": "5627785659655799759",
-        "type": "field",
-        "port": "0-65535",
-        "outboundTag": "proxy",
-        "enabled": true
-      }
+  "dns": {
+    "servers": [
+      "8.8.8.8",
+      "8.8.4.4",
+      "localhost"
     ]
+  },
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "settings": {
+      "rules": [
+        {
+          "type": "field",
+          "outboundTag": "freedom",
+          "domain": [
+            "regexp:.*\\.abcxyzabcxyz$"
+          ]
+        }
+      ]
+    }
   }
 }
 
