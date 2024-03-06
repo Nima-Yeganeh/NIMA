@@ -47,7 +47,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "uaecdn2.zizigooloovpn.com",
+            "address": "www.digitalocean.com",
             "port": 8080,
             "users": [
               {
@@ -91,8 +91,8 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "1",
-          "length": "10",
-          "interval": "2"
+          "length": "15",
+          "interval": "10"
         }
       },
       "streamSettings": {
