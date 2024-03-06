@@ -88,6 +88,24 @@
       }
     },
     {
+      "tag": "fragment",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "AsIs",
+        "fragment": {
+          "packets": "1-1",
+          "length": "15",
+          "interval": "10"
+        }
+      },
+      "streamSettings": {
+        "sockopt": {
+          "tcpNoDelay": true,
+          "tcpKeepAliveIdle": 100
+        }
+      }
+    },
+    {
       "protocol": "freedom",
       "tag": "freedom"
     }
