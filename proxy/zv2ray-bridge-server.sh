@@ -2,6 +2,7 @@
 sleeptime=0
 echo "Started!"
 sleep $sleeptime
+sudo bash zupdate_nameservers_org.sh
 sudo apt update -y
 sudo apt install iftop mtr -y
 sleep $sleeptime
@@ -21,7 +22,6 @@ python3 --version
 sleep $sleeptime
 sudo apt update -y
 sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release -y
-sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release -y
 # if [ ! -e "/usr/share/keyrings/docker-archive-keyring.gpg" ]; then
 #     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 # fi
@@ -29,7 +29,6 @@ sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release 
 sudo apt-get update -y
 sudo apt-get install docker-ce -y
 sudo apt install docker docker-compose docker.io -y
-sudo apt-get update -y
 # sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 # sudo apt install docker-compose -y
 sudo systemctl start docker
@@ -43,7 +42,7 @@ cd ..
 sudo bash zupdate_nameservers.sh
 cd v2new/v2ray-bridge-server/
 ls -anp
-sudo bash ipconfig.sh
+# sudo bash ipconfig.sh
 docker-compose up -d
 docker ps -a
 sudo bash info.sh
