@@ -27,7 +27,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.digitalocean.com",
+            "address": "uaecdn2.zizigooloovpn.com",
             "port": 2087,
             "users": [
               {
@@ -44,21 +44,10 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "uAEcdn2.ziziGoOLoOVpN.COm",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "show": false
-        },
         "wsSettings": {
           "path": "/?ed=2048",
           "headers": {
-            "Host": "uAEcdn2.ziziGoOLoOVpN.COm"
+            "Host": "TEst.local"
           }
         },
         "sockopt": {
@@ -81,9 +70,9 @@
       "settings": {
         "domainStrategy": "AsIs",
         "fragment": {
-          "packets": "tlshello",
-          "length": "15",
-          "interval": "10"
+          "packets": "1-1",
+          "length": "1-3",
+          "interval": "1-5"
         }
       },
       "streamSettings": {
