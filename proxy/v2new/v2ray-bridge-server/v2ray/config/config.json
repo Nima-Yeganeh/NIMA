@@ -36,12 +36,11 @@
   "outbounds": [
     {
       "tag": "proxy",
-      "remarks": "IRCF Fragment",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "uaecdn2.zizigooloovpn.com",
+            "address": "20.46.148.54",
             "port": 2087,
             "users": [
               {
@@ -58,21 +57,10 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "UaECDn2.ZizIgOoLoOVPN.CoM",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "show": false
-        },
         "wsSettings": {
-          "path": "/",
+          "path": "/?ed=2048",
           "headers": {
-            "Host": "UaECDn2.ZizIgOoLoOVPN.CoM"
+            "Host": "WWw.dIgItaloCEan.COm"
           }
         },
         "sockopt": {
@@ -95,9 +83,9 @@
       "settings": {
         "domainStrategy": "AsIs",
         "fragment": {
-          "packets": "tlshello",
-          "length": "15",
-          "interval": "10"
+          "packets": "1-1",
+          "length": "1-3",
+          "interval": "5"
         }
       },
       "streamSettings": {
