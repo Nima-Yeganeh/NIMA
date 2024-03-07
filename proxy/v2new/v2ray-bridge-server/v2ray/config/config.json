@@ -76,7 +76,7 @@
         },
         "sockopt": {
           "dialerProxy": "fragment",
-          "tcpKeepAliveIdle": 100,
+          "tcpKeepAliveIdle": 500,
           "mark": 255,
           "tcpNoDelay": true
         }
@@ -95,7 +95,7 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "1",
-          "length": "100",
+          "length": "20",
           "interval": "2"
         }
       },
