@@ -9,7 +9,7 @@
   "inbounds": [
     {
       "listen": "0.0.0.0",
-      "port": 8080,
+      "port": 80,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -51,12 +51,12 @@
         "vnext": [
           {
             "address": "www.digitalocean.com",
-            "port": 2083,
+            "port": 80,
             "users": [
               {
                 "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
                 "alterId": 0,
-                "email": "t@t.tt",
+                "email": "admin@domain.local",
                 "security": "auto",
                 "encryption": "none",
                 "flow": ""
@@ -67,21 +67,10 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "uaeCDN2.ziZIGOOlOovpN.COm",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "show": false
-        },
         "wsSettings": {
-          "path": "/",
+          "path": "/abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
           "headers": {
-            "Host": "uaeCDN2.ziZIGOOlOovpN.COm"
+            "Host": "srv2.zizigooloovpn.com"
           }
         },
         "sockopt": {
@@ -93,8 +82,8 @@
       },
       "mux": {
         "enabled": true,
-        "concurrency": 0,
-        "xudpConcurrency": 0,
+        "concurrency": 16,
+        "xudpConcurrency": 16,
         "xudpProxyUDP443": "reject"
       }
     },
@@ -104,9 +93,9 @@
       "settings": {
         "domainStrategy": "AsIs",
         "fragment": {
-          "packets": "tlshello",
-          "length": "10-20",
-          "interval": "10-20"
+          "packets": "1",
+          "length": "200",
+          "interval": "2"
         }
       },
       "streamSettings": {
