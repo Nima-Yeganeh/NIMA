@@ -58,7 +58,7 @@
                 "alterId": 0,
                 "email": "admin@domain.local",
                 "security": "aes-128-gcm",
-                "encryption": "none",
+                "encryption": "aes-128-gcm",
                 "flow": ""
               }
             ]
