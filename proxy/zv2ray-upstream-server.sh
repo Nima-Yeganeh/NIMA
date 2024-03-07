@@ -22,16 +22,9 @@ python3 --version
 sleep $sleeptime
 sudo apt update -y
 sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release -y
-# if [ ! -e "/usr/share/keyrings/docker-archive-keyring.gpg" ]; then
-#     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-# fi
-# echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update -y
-sudo apt-get install docker-ce -y
 sudo apt install docker docker-compose docker.io -y
 sudo apt-get update -y
-# sudo apt-get install docker-ce docker-ce-cli containerd.io -y
-# sudo apt install docker-compose -y
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo docker rm -f $(sudo docker ps -q)
