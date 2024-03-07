@@ -39,4 +39,5 @@ sudo systemctl start prometheus
 sudo ufw allow 9090/tcp
 cat /etc/prometheus/prometheus.yml
 sudo systemctl restart prometheus
+# sudo vi /etc/prometheus/prometheus.yml
 
