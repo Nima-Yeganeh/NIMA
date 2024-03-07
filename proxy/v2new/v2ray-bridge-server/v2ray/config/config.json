@@ -25,7 +25,7 @@
         "wsSettings": {
           "path": "/abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
           "headers": {
-            "Host": ""
+            "Host": "test.nimaxmusic.ir"
           }
         },
         "sockopt": {
@@ -70,7 +70,7 @@
         "wsSettings": {
           "path": "/abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
           "headers": {
-            "Host": "srv1.zizigooloovpn.com"
+            "Host": "srv2.zizigooloovpn.com"
           }
         },
         "sockopt": {
