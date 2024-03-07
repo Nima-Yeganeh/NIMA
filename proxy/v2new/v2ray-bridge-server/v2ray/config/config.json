@@ -51,7 +51,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.digitalocean.com",
+            "address": "service.zizigooloovpn.com",
             "port": 80,
             "users": [
               {
