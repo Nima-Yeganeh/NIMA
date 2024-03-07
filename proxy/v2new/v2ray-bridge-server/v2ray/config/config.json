@@ -23,7 +23,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+          "path": "/",
           "headers": {
             "Host": "test.nimaxmusic.ir"
           }
