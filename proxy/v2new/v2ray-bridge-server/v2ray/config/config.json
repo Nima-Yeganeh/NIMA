@@ -46,15 +46,15 @@
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
             "address": "www.digitalocean.com",
-            "port": 8443,
+            "port": 2083,
             "users": [
               {
-                "id": "498d8d28-5ccd-45a8-8246-6313979c190f",
+                "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -70,7 +70,7 @@
         "security": "tls",
         "tlsSettings": {
           "allowInsecure": true,
-          "serverName": "uAeCdN2.ziZIGOolOOVPn.com",
+          "serverName": "uaeCDN2.ziZIGOOlOovpN.COm",
           "alpn": [
             "h2",
             "http/1.1"
@@ -79,9 +79,9 @@
           "show": false
         },
         "wsSettings": {
-          "path": "/?ed=2048",
+          "path": "/",
           "headers": {
-            "Host": "uAeCdN2.ziZIGOolOOVPn.com"
+            "Host": "uaeCDN2.ziZIGOOlOovpN.COm"
           }
         },
         "sockopt": {
@@ -93,8 +93,8 @@
       },
       "mux": {
         "enabled": true,
-        "concurrency": 8,
-        "xudpConcurrency": 8,
+        "concurrency": 0,
+        "xudpConcurrency": 0,
         "xudpProxyUDP443": "reject"
       }
     },
