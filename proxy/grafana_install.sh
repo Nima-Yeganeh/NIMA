@@ -36,7 +36,6 @@ sudo cp promservice.conf /etc/systemd/system/prometheus.service
 sudo systemctl daemon-reload
 sudo systemctl enable prometheus
 sudo systemctl start prometheus
-sudo systemctl status prometheus
 sudo ufw allow 9090/tcp
 cat /etc/prometheus/prometheus.yml
 sudo systemctl restart prometheus
