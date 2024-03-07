@@ -3,6 +3,15 @@ sleeptime=0
 echo "Started!"
 git pull
 sleep $sleeptime
+hostname=$(hostname)
+if grep -q "^127.0.0.1[[:space:]]*$hostname$" /etc/hosts; then
+    echo "Hostname $hostname already exists in /etc/hosts."
+else
+    # Add the hostname and IP address to /etc/hosts
+    echo "127.0.0.1 $hostname" | sudo tee -a /etc/hosts
+    echo "Hostname $hostname added to /etc/hosts."
+fi
+cat /etc/hosts
 sudo bash zupdate_nameservers_org.sh
 sudo apt update -y
 sudo apt install iftop mtr -y
