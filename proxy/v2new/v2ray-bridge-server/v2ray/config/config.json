@@ -68,7 +68,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+          "path": "/",
           "headers": {
             "Host": "srv1.zizigooloovpn.com"
           }
@@ -82,8 +82,8 @@
       },
       "mux": {
         "enabled": true,
-        "concurrency": 8,
-        "xudpConcurrency": 8,
+        "concurrency": 32,
+        "xudpConcurrency": 32,
         "xudpProxyUDP443": "reject"
       }
     },
