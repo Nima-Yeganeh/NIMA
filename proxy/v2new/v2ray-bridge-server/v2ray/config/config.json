@@ -95,8 +95,8 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "1",
-          "length": "15",
-          "interval": "2"
+          "length": "400",
+          "interval": "4"
         }
       },
       "streamSettings": {
