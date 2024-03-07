@@ -1,6 +1,7 @@
 
 
 echo "Started!"
+git pull
 sudo docker rm -f $(sudo docker ps -q)
 cd utils
 sudo bash bbr.sh
