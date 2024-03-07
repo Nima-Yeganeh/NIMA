@@ -21,17 +21,17 @@ from pathlib import Path
 # domain = caddy[:caddy.find(' {')]
 
 uuid="a04be4ef-1797-4ca9-a549-4385ce42494c"
-domain="www.digitalocean.com"
+# domain="www.digitalocean.com"
 # domain="denewcdn1.zizigooloovpn.com"
-domain="test.nimaxmusic.ir"
+domain="srv1.zizigooloovpn.com"
 ipaddr=urlopen("https://ipv4.icanhazip.com/").read().decode().rstrip()
-# ipaddr="test.nimaxmusic.ir"
+# ipaddr="www.digitalocean.com"
 zpath="/ws"
 zpath="/abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
 ztls="tls"
 ztls=""
 zport="443"
-zport="8080"
+zport="80"
 
 j = json.dumps({
     "v": "2", "ps": "@zizigooloovpn", "add": ipaddr, "port": zport, "id": uuid, "aid": "0", "net": "ws", "type": "none",

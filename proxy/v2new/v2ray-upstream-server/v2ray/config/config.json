@@ -1,18 +1,20 @@
+
+
 {
   "log": {
     "access": "/dev/null",
     "error": "/dev/null",
-    "loglevel": "warning"
+    "loglevel": "none"
   },
   "inbounds": [
     {
       "listen": "0.0.0.0",
-      "port": 35278,
+      "port": 80,
       "protocol": "vmess",
       "settings": {
         "clients": [
           {
-            "id": "7c215b11-8cd4-4b9c-bb06-f97f1e8e8038",
+            "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
             "alterId": 0,
             "security": "auto"
           }
@@ -21,11 +23,23 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/"
+          "path": "/abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+          "headers": {
+            "Host": "srv1.zizigooloovpn.com"
+          }
+        },
+        "sockopt": {
+          "dialerProxy": "fragment",
+          "tcpKeepAliveIdle": 100,
+          "mark": 255,
+          "tcpNoDelay": true
         }
       },
       "mux": {
-        "enabled": true
+        "enabled": true,
+        "concurrency": 16,
+        "xudpConcurrency": 16,
+        "xudpProxyUDP443": "reject"
       }
     }
   ],
@@ -43,3 +57,4 @@
     ]
   }
 }
+
