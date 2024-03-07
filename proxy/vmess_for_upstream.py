@@ -12,7 +12,7 @@ from pathlib import Path
 
 uuid="a04be4ef-1797-4ca9-a549-4385ce42494c"
 domain="www.digitalocean.com"
-domain="imaginativedomainnamesmaketheinternetinterestingsrv1deservice.fantasticdomainnamesthatyouwilllovearethebest.site"
+domain="srv1.fantasticdomainnamesthatyouwilllovearethebest.site"
 ipaddr=urlopen("https://ipv4.icanhazip.com/").read().decode().rstrip()
 ipaddr="www.digitalocean.com"
 zpath="/ws"
