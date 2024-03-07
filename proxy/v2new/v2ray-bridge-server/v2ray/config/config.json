@@ -46,17 +46,17 @@
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "www.digitalocean.com",
-            "port": 2087,
+            "address": "20.46.148.54",
+            "port": 8080,
             "users": [
               {
-                "id": "f70a4a46-3b52-4fda-8875-af564828b992",
+                "id": "e9f39519-ec3a-4900-9008-09b52435cd75",
                 "alterId": 0,
-                "email": "t@t.tt",
+                "email": "admin@domain.local",
                 "security": "auto",
                 "encryption": "none",
                 "flow": ""
@@ -67,21 +67,10 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "UaECDn2.zizIgOOlOoVpn.Com",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "show": false
-        },
         "wsSettings": {
-          "path": "/?ed=2048",
+          "path": "/abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
           "headers": {
-            "Host": "UaECDn2.zizIgOOlOoVpn.Com"
+            "Host": "uaecdn2.zizigooloovpn.com"
           }
         },
         "sockopt": {
@@ -93,8 +82,8 @@
       },
       "mux": {
         "enabled": true,
-        "concurrency": 8,
-        "xudpConcurrency": 8,
+        "concurrency": 16,
+        "xudpConcurrency": 16,
         "xudpProxyUDP443": "reject"
       }
     },
@@ -104,9 +93,9 @@
       "settings": {
         "domainStrategy": "AsIs",
         "fragment": {
-          "packets": "tlshello",
-          "length": "10-20",
-          "interval": "10-20"
+          "packets": "1",
+          "length": "200",
+          "interval": "2"
         }
       },
       "streamSettings": {
