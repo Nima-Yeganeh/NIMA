@@ -54,7 +54,7 @@ ls -anp
 # sudo bash ipconfig.sh
 docker-compose up -d
 docker ps -a
-sudo bash info.sh
+# sudo bash info.sh
 cd ..
 cd ..
 python3 vmess_for_bridge.py
