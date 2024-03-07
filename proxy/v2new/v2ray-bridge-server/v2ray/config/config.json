@@ -70,7 +70,7 @@
         "wsSettings": {
           "path": "/abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
           "headers": {
-            "Host": "srv2.zizigooloovpn.com"
+            "Host": "srv1.zizigooloovpn.com"
           }
         },
         "sockopt": {
