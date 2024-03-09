@@ -14,10 +14,10 @@ while true; do
         echo "Error: Invalid remote IP address format. Try again."
         continue
     fi
-    echo "Local IP: $local_ip"
-    echo "Remote IP: $remote_ip"
     break
 done
+echo "Local IP: $local_ip"
+echo "Remote IP: $remote_ip"
 sleep 50
 sudo apt update -y
 sudo ip tunnel show
