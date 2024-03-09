@@ -18,7 +18,6 @@ while true; do
 done
 echo "Local IP: $local_ip"
 echo "Remote IP: $remote_ip"
-sleep 50
 sudo apt update -y
 sudo ip tunnel show
 sudo ip tunnel add 6to4tun_IR mode sit remote $remote_ip local $local_ip
