@@ -18,17 +18,12 @@ ztls="tls"
 ztls=""
 zport="443"
 zport="80"
-
-j = json.dumps({
-    "v": "2", "ps": "@zizigooloovpn", "add": ipaddr, "port": zport, "id": uuid, "aid": "0", "net": "ws", "type": "none",
-    "host": domain, "path": zpath, "tls": ztls
-})
-
 ip = urlopen("https://ipv4.icanhazip.com/").read().decode().rstrip()
 port = "80"
 uuid = "a04be4ef-1797-4ca9-a549-4385ce42494c"
 # security = inbound['settings']['clients'][0]['security']
 ps = "{}:{}".format(ip, port)
+ps = "@zizigooloovpn"
 c = {"add": ip, "aid": "0", "host": "", "id": uuid, "net": "tcp", "path": "", "port": port, "ps": ps,
         "tls": "none", "type": "none", "v": "2"}
 j = json.dumps(c)
