@@ -24,7 +24,7 @@ sudo apt install docker docker-compose docker.io -y
 sudo apt-get update -y
 sudo systemctl start docker
 sudo systemctl enable docker
-# sudo docker rm -f $(sudo docker ps -q)
+sudo docker rm -f $(sudo docker ps -q)
 cd utils
 sudo bash bbr.sh
 cd ..
