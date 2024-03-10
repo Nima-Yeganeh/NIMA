@@ -20,6 +20,9 @@ echo "Local IP: $local_ip"
 echo "Remote IP: $remote_ip"
 sudo apt update -y
 sudo ip tunnel show
+sudo ip tunnel del 6to4tun_IR
+sudo ip tunnel del GRE6Tun_IR
+sudo ip tunnel show
 sudo ip tunnel add 6to4tun_IR mode sit remote $remote_ip local $local_ip
 sudo ip -6 addr add 2001:470:1f10:e1f::2/64 dev 6to4tun_IR
 sudo ip link set 6to4tun_IR mtu 1480
