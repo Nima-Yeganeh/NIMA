@@ -22,8 +22,8 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
+        "network": "grpc",
+        "grpcSettings": {
           "path": "/",
           "headers": {
             "Host": "newvpnbridgetcpcfcdnservice.zizigooloovpn.com"
