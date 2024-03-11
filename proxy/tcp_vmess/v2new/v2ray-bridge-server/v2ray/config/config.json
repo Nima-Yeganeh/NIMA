@@ -50,7 +50,7 @@
         "wsSettings": {
           "path": "/",
           "headers": {
-            "Host": "newvpntunnelservice.zizigooloovpn.com"
+            "Host": "newvpnupstreamtcpcfcdnservice.zizigooloovpn.com"
           }
         },
         "sockopt": {
