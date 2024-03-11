@@ -24,10 +24,8 @@
       "streamSettings": {
         "network": "grpc",
         "grpcSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "newvpnbridgetcpcfcdnservice.zizigooloovpn.com"
-          }
+          "multiMode": true,
+          "serviceName": "newvpnbridgetcpcfcdnservice.zizigooloovpn.com"
         },
         "sockopt": {
           "dialerProxy": "fragment",
