@@ -22,8 +22,8 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
+        "network": "tcp",
+        "tcpSettings": {
           "path": "/",
           "headers": {
             "Host": "newvpnbridgetcpcfcdnservice.zizigooloovpn.com"
