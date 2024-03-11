@@ -1,6 +1,7 @@
 
 
 echo "Started!"
+git pull
 sudo apt update -y
 sudo ip addr add 172.16.1.2/32 dev lo
 ip addr show lo
