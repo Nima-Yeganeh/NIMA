@@ -30,7 +30,7 @@
               "method": "GET",
               "path": ["/"],
               "headers": {
-                "Host": ["newvpnbridgetcpcfcdnservice.zizigooloovpn.com"]
+                "Host": ["speedtest.net"]
               }
             }
           }
