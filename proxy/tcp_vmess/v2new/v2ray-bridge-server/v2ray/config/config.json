@@ -20,7 +20,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "version": "1.1",
+              "method": "GET",
+              "path": ["/"],
+              "headers": {
+                "Host": ["newvpnbridgetcpcfcdnservice.zizigooloovpn.com"]
+              }
+            }
+          }
+        }
       }
     }
   ],
