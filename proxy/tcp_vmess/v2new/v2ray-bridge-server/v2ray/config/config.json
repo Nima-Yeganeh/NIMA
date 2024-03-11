@@ -20,13 +20,6 @@
             "encryption": "aes-128-gcm"
           }
         ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "grpcSettings": {
-          "multiMode": true,
-          "serviceName": "test.local"
-        }
       }
     }
   ],
