@@ -26,19 +26,7 @@
         "grpcSettings": {
           "multiMode": true,
           "serviceName": "test.local"
-        },
-        "sockopt": {
-          "dialerProxy": "fragment",
-          "tcpKeepAliveIdle": 100,
-          "mark": 255,
-          "tcpNoDelay": true
         }
-      },
-      "mux": {
-        "enabled": true,
-        "concurrency": 32,
-        "xudpConcurrency": 32,
-        "xudpProxyUDP443": "reject"
       }
     }
   ],
