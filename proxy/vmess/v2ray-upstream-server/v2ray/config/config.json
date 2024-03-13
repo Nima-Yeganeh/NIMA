@@ -4,7 +4,7 @@
   "log": {
     "access": "/dev/null",
     "error": "/dev/null",
-    "loglevel": "none"
+    "loglevel": "warning"
   },
   "inbounds": [
     {
@@ -24,19 +24,10 @@
         "network": "ws",
         "wsSettings": {
           "path": "/"
-        },
-        "sockopt": {
-          "dialerProxy": "fragment",
-          "tcpKeepAliveIdle": 100,
-          "mark": 255,
-          "tcpNoDelay": true
         }
       },
       "mux": {
-        "enabled": true,
-        "concurrency": 32,
-        "xudpConcurrency": 32,
-        "xudpProxyUDP443": "reject"
+        "enabled": true
       }
     }
   ],
@@ -54,4 +45,3 @@
     ]
   }
 }
-
