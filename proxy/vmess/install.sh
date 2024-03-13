@@ -1,7 +1,17 @@
 
+
 sleeptime=0
 echo "Started!"
 sleep $sleeptime
+hostname=$(hostname)
+if grep -q "^127.0.0.1[[:space:]]*$hostname$" /etc/hosts; then
+    echo "Hostname $hostname already exists in /etc/hosts."
+else
+    # Add the hostname and IP address to /etc/hosts
+    echo "127.0.0.1 $hostname" | sudo tee -a /etc/hosts
+    echo "Hostname $hostname added to /etc/hosts."
+fi
+cat /etc/hosts
 # apt install sudo -y
 sudo apt update -y
 sudo apt install iftop mtr -y
@@ -50,7 +60,8 @@ sleep $sleeptime
 sudo bash info.sh
 cd ..
 echo "Done!"
-shadowsocks_port=$(cat shadowsocks_port.conf)
+# shadowsocks_port=$(cat shadowsocks_port.conf)
 vmess_port=$(cat vmess_port.conf)
-echo "Allow On Your Cloud/VPS >> TCP Shadowsocks Port: $shadowsocks_port"
+# echo "Allow On Your Cloud/VPS >> TCP Shadowsocks Port: $shadowsocks_port"
 echo "Allow On Your Cloud/VPS >> TCP VMess Port: $vmess_port"
+

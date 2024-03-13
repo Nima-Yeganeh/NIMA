@@ -1,8 +1,10 @@
+
+
 {
   "log": {
     "access": "/dev/null",
     "error": "/dev/null",
-    "loglevel": "warning"
+    "loglevel": "none"
   },
   "inbounds": [
     {
@@ -14,7 +16,7 @@
           {
             "id": "7c215b11-8cd4-4b9c-bb06-f97f1e8e8038",
             "alterId": 0,
-            "security": "auto"
+            "security": "auto",
           }
         ]
       },
@@ -22,10 +24,19 @@
         "network": "ws",
         "wsSettings": {
           "path": "/"
+        },
+        "sockopt": {
+          "dialerProxy": "fragment",
+          "tcpKeepAliveIdle": 100,
+          "mark": 255,
+          "tcpNoDelay": true
         }
       },
       "mux": {
-        "enabled": true
+        "enabled": true,
+        "concurrency": 32,
+        "xudpConcurrency": 32,
+        "xudpProxyUDP443": "reject"
       }
     }
   ],
@@ -43,3 +54,4 @@
     ]
   }
 }
+

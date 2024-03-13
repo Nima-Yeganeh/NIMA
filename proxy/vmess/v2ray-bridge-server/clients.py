@@ -14,17 +14,17 @@ ip = input("Enter an domain name: ")
 # ip = urlopen("https://ipv4.icanhazip.com/").read().decode().rstrip()
 
 for inbound in config['inbounds']:
-    if inbound['protocol'] == 'socks':
-        print("SOCKS: 127.0.0.1:{}".format(str(inbound['port'])))
-    if inbound['protocol'] == 'http':
-        print("HTTP: 127.0.0.1:{}".format(str(inbound['port'])))
-    if inbound['protocol'] == 'shadowsocks':
-        port = str(inbound['port'])
-        method = inbound['settings']['method']
-        password = inbound['settings']['password']
-        security = base64.b64encode((method + ":" + password).encode('ascii')).decode('ascii')
-        link = "ss://{}@{}:{}#{}:{}".format(security, ip, port, ip, port)
-        print("\nShadowsocks:\n" + link)
+#     if inbound['protocol'] == 'socks':
+#         print("SOCKS: 127.0.0.1:{}".format(str(inbound['port'])))
+#     if inbound['protocol'] == 'http':
+#         print("HTTP: 127.0.0.1:{}".format(str(inbound['port'])))
+#     if inbound['protocol'] == 'shadowsocks':
+#         port = str(inbound['port'])
+#         method = inbound['settings']['method']
+#         password = inbound['settings']['password']
+#         security = base64.b64encode((method + ":" + password).encode('ascii')).decode('ascii')
+#         link = "ss://{}@{}:{}#{}:{}".format(security, ip, port, ip, port)
+#         print("\nShadowsocks:\n" + link)
     if inbound['protocol'] == 'vmess':
         port = str(inbound['port'])
         uuid = inbound['settings']['clients'][0]['id']
