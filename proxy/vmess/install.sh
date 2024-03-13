@@ -12,6 +12,7 @@ else
     echo "Hostname $hostname added to /etc/hosts."
 fi
 cat /etc/hosts
+git pull
 # apt install sudo -y
 sudo apt update -y
 sudo apt install iftop mtr -y
