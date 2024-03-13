@@ -30,6 +30,7 @@ for inbound in config['inbounds']:
         uuid = inbound['settings']['clients'][0]['id']
         security = inbound['settings']['clients'][0]['security']
         ps = "{}:{}".format(ip, port)
+        ps = "@v2rayng_ip_vpn | @xyzserviceadmin"
         c = {"add": ip, "aid": "0", "host": "", "id": uuid, "net": "tcp", "path": "", "port": port, "ps": ps,
              "tls": "none", "type": "none", "v": "2"}
         j = json.dumps(c)
