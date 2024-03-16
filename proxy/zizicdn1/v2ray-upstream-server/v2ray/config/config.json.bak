@@ -1,4 +1,5 @@
 
+
 {
   "log": {
     "access": "/dev/null",
@@ -23,10 +24,19 @@
         "network": "ws",
         "wsSettings": {
           "path": "/ws"
+        },
+        "sockopt": {
+          "dialerProxy": "fragment",
+          "tcpKeepAliveIdle": 100,
+          "mark": 255,
+          "tcpNoDelay": true
         }
       },
       "mux": {
-        "enabled": true
+        "enabled": true,
+        "concurrency": 32,
+        "xudpConcurrency": 32,
+        "xudpProxyUDP443": "reject"
       }
     }
   ],
