@@ -11,11 +11,7 @@ if [ ! -e "/swapfile" ]; then
     sudo swapon /swapfile
     echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 fi
-sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release -y
-sudo apt install iotop iftop mtr -y
-sudo apt install python3 -y
-sudo apt install docker-compose -y
-sudo apt install python3-pip -y
+sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release iotop iftop mtr python3 docker-compose python3-pip -y
 python3 --version
 sudo apt update -y
 sudo systemctl start docker
@@ -25,7 +21,7 @@ cd utils
 sudo bash bbr.sh
 cd ..
 cd v2ray-upstream-server
-# docker-compose up -d
+docker-compose up -d
 cd ..
 cd v2ray-bridge-server
 # docker-compose up -d
