@@ -9,8 +9,8 @@ services:
     environment:
       - v2ray.vmess.aead.forced=false
     ports:
-      - "127.0.0.1:1310:1320"
-      - "127.0.0.1:1310:1320/udp"
+      - "127.0.0.1:1310:1310"
+      - "127.0.0.1:1310:1310/udp"
     volumes:
       - ./v2ray_upstream_config/config/:/etc/v2ray/
 
