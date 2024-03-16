@@ -11,7 +11,7 @@ services:
       - "127.0.0.1:1310:1310"
       - "127.0.0.1:1310:1310/udp"
     volumes:
-      - ./upstream_config_v2ray/config/:/etc/v2ray/
+      - ./upstream/config/:/etc/v2ray/
   caddy:
     image: ghcr.io/getimages/caddy:2.6.2-alpine
     restart: always
