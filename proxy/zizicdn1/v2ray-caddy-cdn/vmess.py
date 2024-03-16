@@ -15,10 +15,10 @@ uuid = config['inbounds'][0]['settings']['clients'][0]['id']
 domain = caddy[:caddy.find(' {')]
 
 ps = "@v2rayng_ip_vpn | @xyzserviceadmin"
-domain = "www.digitalocean.com"
+addr = "www.digitalocean.com"
 
 j = json.dumps({
-    "v": "2", "ps": ps, "add": domain, "port": "443", "id": uuid, "aid": "0", "net": "ws", "type": "none",
+    "v": "2", "ps": ps, "add": addr, "port": "443", "id": uuid, "aid": "0", "net": "ws", "type": "none",
     "host": domain, "path": "/ws", "tls": "tls"
 })
 
