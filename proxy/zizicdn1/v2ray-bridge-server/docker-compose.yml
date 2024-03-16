@@ -1,3 +1,4 @@
+
 version: "3"
 
 services:
@@ -7,7 +8,8 @@ services:
     environment:
       - v2ray.vmess.aead.forced=false
     ports:
-      - "8080:8080"
+      - "127.0.0.1:1310:1310"
+      - "127.0.0.1:1310:1310/udp"
     volumes:
       - ./v2ray/config/:/etc/v2ray/
 
