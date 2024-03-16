@@ -24,10 +24,10 @@ sudo docker rm -f $(sudo docker ps -q)
 cd utils
 sudo bash bbr.sh
 cd ..
-# cd v2ray-upstream-server
+cd v2ray-upstream-server
 # docker-compose up -d
 cd ..
-# cd v2ray-bridge-server
+cd v2ray-bridge-server
 # docker-compose up -d
 cd ..
 cd v2ray-caddy-cdn
