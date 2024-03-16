@@ -23,8 +23,6 @@ cd v2ray-caddy-cdn
 docker-compose up -d
 python3 vmess.py
 cd ..
-pwd
-echo "Done!"
 
 # cd v2new/v2ray-upstream-server/
 # ls -anp
