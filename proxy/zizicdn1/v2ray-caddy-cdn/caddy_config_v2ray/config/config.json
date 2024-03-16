@@ -1,0 +1,46 @@
+
+{
+  "log": {
+    "access": "/dev/null",
+    "error": "/dev/null",
+    "loglevel": "none"
+  },
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 1310,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
+            "alterId": 0,
+            "security": "auto"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/ws"
+        }
+      },
+      "mux": {
+        "enabled": true
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "freedom"
+    }
+  ],
+  "dns": {
+    "servers": [
+      "8.8.8.8",
+      "8.8.4.4",
+      "localhost"
+    ]
+  }
+}
