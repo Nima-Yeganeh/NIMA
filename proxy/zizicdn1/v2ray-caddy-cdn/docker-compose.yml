@@ -2,6 +2,7 @@
 version: "3"
 
 services:
+
   v2ray_upstream:
     image: ghcr.io/getimages/v2fly-core:v4.45.2
     restart: always
