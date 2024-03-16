@@ -3,16 +3,27 @@ version: "3"
 
 services:
 
+  v2ray_upstream:
+    image: ghcr.io/getimages/v2fly-core:v4.45.2
+    restart: always
+    environment:
+      - v2ray.vmess.aead.forced=false
+    ports:
+      - "1320:1320"
+      - "1320:1320/udp"
+    volumes:
+      - ./v2ray_upstream_config/config/:/etc/v2ray/
+
   v2ray:
     image: ghcr.io/getimages/v2fly-core:v4.45.2
     restart: always
     environment:
       - v2ray.vmess.aead.forced=false
     ports:
-      - "127.0.0.1:1310:1320"
-      - "127.0.0.1:1310:1320/udp"
+      - "172.16.1.2:1310:1310"
+      - "172.16.1.2:1310:1310/udp"
     volumes:
-      - ./v2ray_upstream_config/config/:/etc/v2ray/
+      - ./v2ray_bridge_config/config/:/etc/v2ray/
 
   caddy:
     image: ghcr.io/getimages/caddy:2.6.2-alpine
