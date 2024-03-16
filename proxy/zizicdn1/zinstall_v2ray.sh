@@ -11,11 +11,11 @@ if [ ! -e "/swapfile" ]; then
     sudo swapon /swapfile
     echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 fi
-sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release -y
+sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release -y
 sudo apt install iotop iftop mtr -y
-sudo apt-get install python3 -y
+sudo apt install python3 -y
 sudo apt install docker-compose -y
-sudo apt-get install python3-pip -y
+sudo apt install python3-pip -y
 python3 --version
 sudo apt update -y
 sudo systemctl start docker
