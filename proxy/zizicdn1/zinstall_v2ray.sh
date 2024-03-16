@@ -13,7 +13,6 @@ if [ ! -e "/swapfile" ]; then
 fi
 sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release iotop iftop mtr python3 docker-compose python3-pip -y
 python3 --version
-sudo apt update -y
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo docker rm -f $(sudo docker ps -q)
@@ -31,6 +30,7 @@ docker-compose up -d
 python3 vmess.py
 cd ..
 pwd
+echo "Done!"
 
 # cd v2new/v2ray-upstream-server/
 # ls -anp
