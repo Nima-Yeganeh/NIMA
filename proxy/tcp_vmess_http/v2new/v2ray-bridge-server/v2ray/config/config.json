@@ -125,20 +125,6 @@
       "8.8.8.8",
       "8.8.4.4"
     ]
-  },
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "settings": {
-      "rules": [
-        {
-          "type": "field",
-          "outboundTag": "freedom",
-          "domain": [
-            "regexp:.*\\.abcxyzabcxyz$"
-          ]
-        }
-      ]
-    }
   }
 }
 
