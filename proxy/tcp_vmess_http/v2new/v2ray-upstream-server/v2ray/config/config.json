@@ -23,10 +23,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "newvpnupstreamtcpcfcdnservice.zizigooloovpn.com"
-          }
+          "path": "/"
         },
         "sockopt": {
           "dialerProxy": "fragment",
