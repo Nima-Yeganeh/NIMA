@@ -71,7 +71,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": ""
+          "path": "/"
         },
         "sockopt": {
           "dialerProxy": "fragment",
