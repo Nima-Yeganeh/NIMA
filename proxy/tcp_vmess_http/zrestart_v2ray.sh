@@ -6,9 +6,7 @@ docker-compose up -d
 docker ps -a
 cd ..
 cd ..
-ls -anp
 cd v2new/v2ray-bridge-server/
-ls -anp
 docker-compose up -d
 docker ps -a
 cd ..
