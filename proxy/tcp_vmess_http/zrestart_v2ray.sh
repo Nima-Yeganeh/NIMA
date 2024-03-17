@@ -1,6 +1,7 @@
 
 git pull
 sudo docker rm -f v2ray-upstream-server_v2ray_1 v2ray-bridge-server_v2ray_1
+sudo docker rm -f $(sudo docker ps -q)
 cd v2new/v2ray-upstream-server/
 docker-compose up -d
 cd ..
