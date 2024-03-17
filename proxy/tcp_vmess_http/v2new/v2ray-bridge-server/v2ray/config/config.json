@@ -71,7 +71,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/"
+          "path": ""
         },
         "sockopt": {
           "dialerProxy": "fragment",
@@ -82,8 +82,8 @@
       },
       "mux": {
         "enabled": true,
-        "concurrency": 16,
-        "xudpConcurrency": 16,
+        "concurrency": 32,
+        "xudpConcurrency": 32,
         "xudpProxyUDP443": "reject"
       }
     },
