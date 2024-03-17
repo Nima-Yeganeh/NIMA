@@ -21,6 +21,7 @@
       "streamSettings": {
         "network": "tcp",
         "security": "none",
+        "encryption": "none",
         "tcpSettings": {
           "header": {
             "type": "http",
