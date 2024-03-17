@@ -69,9 +69,10 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/"
+        "network": "tcp",
+        "security": "none",
+        "encryption": "none",
+        "tcpSettings": {
         },
         "sockopt": {
           "dialerProxy": "fragment",
