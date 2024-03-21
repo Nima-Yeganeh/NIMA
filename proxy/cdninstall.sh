@@ -1,5 +1,6 @@
 
 echo "Started!"
+git pull
 if [ ! -e "/swapfile" ]; then
     sudo fallocate -l 4G /swapfile
     ls -anp /swapfile
