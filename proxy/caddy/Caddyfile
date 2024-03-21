@@ -6,10 +6,10 @@ zcdnservice.zizigooloovpn.com {
     header Upgrade    websocket
   }
 
-  reverse_proxy @websockets v2ray:1320/ws
+  reverse_proxy @websockets v2raycaddy:1320/ws
 
   route {
-    reverse_proxy /ws v2ray:1320
+    reverse_proxy /ws v2raycaddy:1320
     file_server
   }
 
