@@ -15,7 +15,7 @@ sudo systemctl enable docker
 cd utils
 sudo bash bbr.sh
 cd ..
-sudo docker compose up -d
+sudo docker-compose up -d
 sudo docker ps -a
 python3 vmess.py
 echo "Done!"
