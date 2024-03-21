@@ -13,9 +13,9 @@ sudo apt update -y
 sudo apt install screen iftop mtr python3 python3-pip apt-transport-https ca-certificates curl gnupg lsb-release docker-compose -y
 sudo systemctl start docker
 sudo systemctl enable docker
-cd utils
-sudo bash bbr.sh
-cd ..
+# cd utils
+# sudo bash bbr.sh
+# cd ..
 sudo docker rm -f proxy_v2raycaddy_1 proxy_caddy_1
 sudo docker-compose up -d
 sudo docker ps -a
