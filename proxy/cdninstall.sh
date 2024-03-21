@@ -16,6 +16,7 @@ sudo systemctl enable docker
 cd utils
 sudo bash bbr.sh
 cd ..
+sudo docker rm -f proxy_v2raycaddy_1 proxy_caddy_1
 sudo docker-compose up -d
 sudo docker ps -a
 python3 vmess.py
