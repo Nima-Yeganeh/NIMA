@@ -1,4 +1,4 @@
-zuaecdnservice1.zizigooloovpn.com {
+zcdnservice.zizigooloovpn.com {
   root * /usr/share/caddy
 
   @websockets {
@@ -6,10 +6,10 @@ zuaecdnservice1.zizigooloovpn.com {
     header Upgrade    websocket
   }
 
-  reverse_proxy @websockets v2ray:1310/ws
+  reverse_proxy @websockets v2ray:1320/ws
 
   route {
-    reverse_proxy /ws v2ray:1310
+    reverse_proxy /ws v2ray:1320
     file_server
   }
 

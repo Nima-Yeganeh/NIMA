@@ -8,10 +8,9 @@ services:
       - v2ray.vmess.aead.forced=false
     volumes:
       - ./v2ray/config/:/etc/v2ray/
-      - ./v2ray/logs:/var/log/v2ray/
     ports:
-      - "127.0.0.1:1310:1310"
-      - "127.0.0.1:1310:1310/udp"
+      - "127.0.0.1:1320:1320"
+      - "127.0.0.1:1320:1320/udp"
   caddy:
     image: ghcr.io/getimages/caddy:2.6.2-alpine
     restart: always
