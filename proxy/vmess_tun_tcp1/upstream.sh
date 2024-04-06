@@ -13,6 +13,14 @@ while true; do
     fi
     break
 done
+if [ ! -e "/swapfile" ]; then
+    sudo fallocate -l 4G /swapfile
+    ls -anp /swapfile
+    sudo chmod 600 /swapfile
+    sudo mkswap /swapfile
+    sudo swapon /swapfile
+    echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+fi
 echo "Local IP: $local_ip"
 echo "Remote IP: $remote_ip"
 sudo ip tunnel show
