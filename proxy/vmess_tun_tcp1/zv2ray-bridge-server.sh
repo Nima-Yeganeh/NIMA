@@ -13,6 +13,9 @@ while true; do
     fi
     break
 done
+echo "br" | sudo tee /etc/hostname >/dev/null
+hostname br
+set hostname br
 hostname=$(hostname)
 if grep -q "^127.0.0.1[[:space:]]*$hostname$" /etc/hosts; then
     echo "Hostname $hostname already exists in /etc/hosts."
