@@ -13,16 +13,6 @@ while true; do
     fi
     break
 done
-echo "br" | sudo tee /etc/hostname >/dev/null
-hostname br
-set hostname br
-hostname=$(hostname)
-if grep -q "^127.0.0.1[[:space:]]*$hostname$" /etc/hosts; then
-    echo "Hostname $hostname already exists in /etc/hosts."
-else
-    echo "127.0.0.1 $hostname" | sudo tee -a /etc/hosts
-    echo "Hostname $hostname added to /etc/hosts."
-fi
 echo "Local IP: $local_ip"
 echo "Remote IP: $remote_ip"
 sudo ip tunnel show
@@ -38,13 +28,6 @@ sudo ip link set GRE6Tun_IR12 mtu 1436
 sudo ip link set GRE6Tun_IR12 up
 sudo ip tunnel show
 git pull
-sudo bash zupdate_nameservers_org.sh
-sudo apt update -y
-sudo apt install iftop mtr python3 python3-pip apt-transport-https ca-certificates curl gnupg lsb-release docker-compose -y
-sudo systemctl start docker
-sudo systemctl enable docker
-sudo bash bbr.sh
-sudo bash zupdate_nameservers.sh
 cd v2ray-bridge-server/
 docker-compose up -d
 docker ps -a
