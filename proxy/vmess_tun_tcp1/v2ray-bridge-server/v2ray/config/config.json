@@ -14,9 +14,7 @@
         "clients": [
           {
             "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
-            "alterId": 0,
-            "security": "aes-128-gcm",
-            "encryption": "aes-128-gcm"
+            "alterId": 0
           }
         ]
       }
@@ -35,9 +33,8 @@
               {
                 "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
                 "alterId": 0,
-                "email": "admin@domain.local",
-                "security": "aes-128-gcm",
-                "encryption": "aes-128-gcm",
+                "security": "none",
+                "encryption": "none",
                 "flow": ""
               }
             ]
@@ -47,10 +44,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "newvpntunnelservice.zizigooloovpn.com"
-          }
+          "path": "/"
         },
         "sockopt": {
           "dialerProxy": "fragment",
@@ -104,19 +98,5 @@
       "8.8.8.8",
       "8.8.4.4"
     ]
-  },
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "settings": {
-      "rules": [
-        {
-          "type": "field",
-          "outboundTag": "freedom",
-          "domain": [
-            "regexp:.*\\.abcxyzabcxyz$"
-          ]
-        }
-      ]
-    }
   }
 }
