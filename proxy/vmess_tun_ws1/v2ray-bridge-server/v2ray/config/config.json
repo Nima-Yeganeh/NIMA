@@ -8,7 +8,7 @@
   "inbounds": [
     {
       "listen": "0.0.0.0",
-      "port": 35012,
+      "port": 35021,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -20,6 +20,24 @@
             "flow": ""
           }
         ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/"
+        },
+        "sockopt": {
+          "dialerProxy": "fragment",
+          "tcpKeepAliveIdle": 100,
+          "mark": 255,
+          "tcpNoDelay": true
+        }
+      },
+      "mux": {
+        "enabled": true,
+        "concurrency": 32,
+        "xudpConcurrency": 32,
+        "xudpProxyUDP443": "reject"
       }
     }
   ],
@@ -30,8 +48,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.16.12.2",
-            "port": 35012,
+            "address": "172.16.21.2",
+            "port": 35021,
             "users": [
               {
                 "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
