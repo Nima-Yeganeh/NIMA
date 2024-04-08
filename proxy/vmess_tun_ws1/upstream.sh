@@ -26,14 +26,6 @@ echo "Remote IP: $remote_ip"
 sudo ip tunnel show
 sudo ip tunnel del 6to4tun_IR21
 sudo ip tunnel del GRE6Tun_IR21
-sudo ip tunnel add 6to4tun_IR21 mode sit remote $remote_ip local $local_ip
-sudo ip -6 addr add 2001:2001:2001:21::2/64 dev 6to4tun_IR21
-sudo ip link set 6to4tun_IR21 mtu 1480
-sudo ip link set 6to4tun_IR21 up
-sudo ip -6 tunnel add GRE6Tun_IR21 mode ip6gre remote 2001:2001:2001:21::1 local 2001:2001:2001:21::2
-sudo ip addr add 172.16.21.2/30 dev GRE6Tun_IR21
-sudo ip link set GRE6Tun_IR21 mtu 1436
-sudo ip link set GRE6Tun_IR21 up
 sudo ip tunnel show
 sudo apt update -y
 sudo apt install iftop mtr python3 python3-pip apt-transport-https ca-certificates curl gnupg lsb-release docker-compose -y
