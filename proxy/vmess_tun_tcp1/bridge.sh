@@ -25,7 +25,6 @@ else
 fi
 echo "Local IP: $local_ip"
 echo "Remote IP: $remote_ip"
-sudo ip tunnel show
 echo "" >> /etc/script11.sh
 sudo chmod +x /etc/script11.sh
 echo "sudo ip tunnel del 6to4tun_IR11">> /etc/script11.sh
