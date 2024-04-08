@@ -15,17 +15,20 @@ while true; do
 done
 echo "Local IP: $local_ip"
 echo "Remote IP: $remote_ip"
-sudo ip tunnel show
-sudo ip tunnel del 6to4tun_IR12
-sudo ip tunnel del GRE6Tun_IR12
-sudo ip tunnel add 6to4tun_IR12 mode sit remote $remote_ip local $local_ip
-sudo ip -6 addr add 2001:2001:2001:12::1/64 dev 6to4tun_IR12
-sudo ip link set 6to4tun_IR12 mtu 1480
-sudo ip link set 6to4tun_IR12 up
-sudo ip -6 tunnel add GRE6Tun_IR12 mode ip6gre remote 2001:2001:2001:12::2 local 2001:2001:2001:12::1
-sudo ip addr add 172.16.12.1/30 dev GRE6Tun_IR12
-sudo ip link set GRE6Tun_IR12 mtu 1436
-sudo ip link set GRE6Tun_IR12 up
+echo "" >> /etc/script12.sh
+sudo chmod +x /etc/script12.sh
+echo "sudo ip tunnel del 6to4tun_IR12">> /etc/script12.sh
+echo "sudo ip tunnel del GRE6Tun_IR12">> /etc/script12.sh
+echo "sudo ip tunnel add 6to4tun_IR12 mode sit remote $remote_ip local $local_ip">> /etc/script12.sh
+echo "sudo ip -6 addr add 2001:2001:2001:12::1/64 dev 6to4tun_IR12">> /etc/script12.sh
+echo "sudo ip link set 6to4tun_IR12 mtu 1480">> /etc/script12.sh
+echo "sudo ip link set 6to4tun_IR12 up">> /etc/script12.sh
+echo "sudo ip -6 tunnel add GRE6Tun_IR12 mode ip6gre remote 2001:2001:2001:12::2 local 2001:2001:2001:12::1">> /etc/script12.sh
+echo "sudo ip addr add 172.16.12.1/30 dev GRE6Tun_IR12">> /etc/script12.sh
+echo "sudo ip link set GRE6Tun_IR12 mtu 1436">> /etc/script12.sh
+echo "sudo ip link set GRE6Tun_IR12 up">> /etc/script12.sh
+sudo bash /etc/script12.sh
+sudo cat /etc/script12.sh >> /etc/script.sh
 sudo ip tunnel show
 git pull
 cd v2ray-bridge-server/
