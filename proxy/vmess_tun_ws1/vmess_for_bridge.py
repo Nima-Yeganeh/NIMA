@@ -18,7 +18,7 @@ zport="35021"
 ps = "SRV21 @v2rayng_ip_vpn | @zizigooloovpn << Telegram"
 
 j = json.dumps({
-    "v": "2", "ps": "@v2rayng_ip_vpn | @xyzserviceadmin", "add": ipaddr, "port": zport, "id": uuid, "aid": "0", "net": "ws", "type": "none",
+    "v": "2", "ps": ps, "add": ipaddr, "port": zport, "id": uuid, "aid": "0", "net": "ws", "type": "none",
     "host": domain, "path": zpath, "tls": ztls
 })
 print("vmess://" + base64.b64encode(j.encode('ascii')).decode('ascii'))
