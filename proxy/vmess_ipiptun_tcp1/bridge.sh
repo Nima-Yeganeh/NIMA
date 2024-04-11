@@ -43,7 +43,7 @@ echo "" >> /etc/script11.sh
 sudo chmod +x /etc/script11.sh
 echo "sudo ip tunnel del 6to4tun_IR11">> /etc/script11.sh
 echo "sudo ip tunnel del IPIP6Tun_IR11">> /etc/script11.sh
-echo "sudo ip tunnel add 6to4tun_IR11 mode ipip remote $remote_ip local $local_ip">> /etc/script11.sh
+echo "sudo ip tunnel add 6to4tun_IR11 mode ipip6 remote $remote_ip local $local_ip">> /etc/script11.sh
 echo "sudo ip -6 addr add 2001:2001:2001:11::1/64 dev 6to4tun_IR11">> /etc/script11.sh
 echo "sudo ip link set 6to4tun_IR11 mtu 1480">> /etc/script11.sh
 echo "sudo ip link set 6to4tun_IR11 up">> /etc/script11.sh

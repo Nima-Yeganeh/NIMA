@@ -30,7 +30,7 @@ sudo ip tunnel add 6to4tun_IR11 mode ipip remote $remote_ip local $local_ip
 sudo ip -6 addr add 2001:2001:2001:11::2/64 dev 6to4tun_IR11
 sudo ip link set 6to4tun_IR11 mtu 1480
 sudo ip link set 6to4tun_IR11 up
-sudo ip -6 tunnel add IPIP6Tun_IR11 mode ipip remote 2001:2001:2001:11::1 local 2001:2001:2001:11::2
+sudo ip -6 tunnel add IPIP6Tun_IR11 mode ipip6 remote 2001:2001:2001:11::1 local 2001:2001:2001:11::2
 sudo ip addr add 172.16.11.2/30 dev IPIP6Tun_IR11
 sudo ip link set IPIP6Tun_IR11 mtu 1436
 sudo ip link set IPIP6Tun_IR11 up
