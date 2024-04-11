@@ -10,7 +10,6 @@ if [ ! -e "/swapfile" ]; then
 fi
 sudo ip tunnel del 6to4tun_IR12
 sudo ip tunnel del GRE6Tun_IR12
-sudo ip tunnel show
 sudo apt update -y
 sudo apt install iftop mtr python3 python3-pip apt-transport-https ca-certificates curl gnupg lsb-release docker-compose -y
 sudo systemctl start docker

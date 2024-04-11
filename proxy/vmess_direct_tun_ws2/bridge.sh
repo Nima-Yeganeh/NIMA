@@ -1,6 +1,5 @@
 
 echo "Started!"
-sudo ip tunnel show
 git pull
 cd v2ray-bridge-server/
 docker-compose up -d
