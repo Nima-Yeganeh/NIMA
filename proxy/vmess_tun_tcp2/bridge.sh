@@ -15,7 +15,7 @@ while true; do
 done
 echo "Local IP: $local_ip"
 echo "Remote IP: $remote_ip"
-echo "" >> /etc/script12.sh
+echo "" > /etc/script12.sh
 sudo chmod +x /etc/script12.sh
 echo "sudo ip tunnel del 6to4tun_IR12">> /etc/script12.sh
 echo "sudo ip tunnel del GRE6Tun_IR12">> /etc/script12.sh
