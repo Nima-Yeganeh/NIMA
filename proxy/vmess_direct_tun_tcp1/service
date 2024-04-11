@@ -1,0 +1,11 @@
+[Unit]
+Description=My Script Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /etc/script.sh
+
+[Install]
+WantedBy=multi-user.target
+
