@@ -9,7 +9,6 @@ if [ ! -e "/swapfile" ]; then
     echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 fi
 sudo cp service /etc/systemd/system/myscript.service
-sudo touch /etc/script.sh 
 echo "" > /etc/script.sh
 sudo chmod +x /etc/script.sh
 sudo systemctl daemon-reload
@@ -40,7 +39,7 @@ else
 fi
 echo "Local IP: $local_ip"
 echo "Remote IP: $remote_ip"
-echo "" >> /etc/script11.sh
+echo "" > /etc/script11.sh
 sudo chmod +x /etc/script11.sh
 echo "sudo ip tunnel del 6to4tun_IR11">> /etc/script11.sh
 echo "sudo ip tunnel del IPIP6Tun_IR11">> /etc/script11.sh
