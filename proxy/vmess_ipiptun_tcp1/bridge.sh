@@ -9,6 +9,7 @@ if [ ! -e "/swapfile" ]; then
     echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 fi
 sudo cp service /etc/systemd/system/myscript.service
+echo "" > /etc/script.sh
 sudo chmod +x /etc/script.sh
 sudo systemctl daemon-reload
 sudo systemctl enable myscript.service
