@@ -8,6 +8,11 @@ if [ ! -e "/swapfile" ]; then
     sudo swapon /swapfile
     echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 fi
+sudo cp service /etc/systemd/system/myscript.service
+sudo chmod +x /etc/script.sh
+sudo systemctl daemon-reload
+sudo systemctl enable myscript.service
+sudo systemctl start myscript.service
 while true; do
     read -p "Enter local IP address: " local_ip
     read -p "Enter remote IP address: " remote_ip

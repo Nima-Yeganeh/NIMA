@@ -1,7 +1,5 @@
 
 echo "Started!"
-sudo ip tunnel del 6to4tun_IR22
-sudo ip tunnel del GRE6Tun_IR22
 sudo ip tunnel show
 git pull
 cd v2ray-bridge-server/
