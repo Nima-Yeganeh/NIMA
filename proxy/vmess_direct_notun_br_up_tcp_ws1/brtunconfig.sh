@@ -21,16 +21,16 @@ sudo systemctl daemon-reload
 sudo systemctl enable myscript.service
 echo "" > /etc/script11.sh
 sudo chmod +x /etc/script11.sh
-echo "sudo ip tunnel del 6to4tun_IR12">> /etc/script11.sh
-echo "sudo ip tunnel del GRE6Tun_IR12">> /etc/script11.sh
-echo "sudo ip tunnel add 6to4tun_IR12 mode sit remote $remote_ip local $local_ip">> /etc/script11.sh
-echo "sudo ip -6 addr add 2001:2001:2001:11::1/64 dev 6to4tun_IR12">> /etc/script11.sh
-echo "sudo ip link set 6to4tun_IR12 mtu 1480">> /etc/script11.sh
-echo "sudo ip link set 6to4tun_IR12 up">> /etc/script11.sh
-echo "sudo ip -6 tunnel add GRE6Tun_IR12 mode ip6gre remote 2001:2001:2001:11::2 local 2001:2001:2001:11::1">> /etc/script11.sh
-echo "sudo ip addr add 172.16.11.1/30 dev GRE6Tun_IR12">> /etc/script11.sh
-echo "sudo ip link set GRE6Tun_IR12 mtu 1436">> /etc/script11.sh
-echo "sudo ip link set GRE6Tun_IR12 up">> /etc/script11.sh
+echo "sudo ip tunnel del 6to4tun_IR11">> /etc/script11.sh
+echo "sudo ip tunnel del GRE6Tun_IR11">> /etc/script11.sh
+echo "sudo ip tunnel add 6to4tun_IR11 mode sit remote $remote_ip local $local_ip">> /etc/script11.sh
+echo "sudo ip -6 addr add 2001:2001:2001:11::1/64 dev 6to4tun_IR11">> /etc/script11.sh
+echo "sudo ip link set 6to4tun_IR11 mtu 1480">> /etc/script11.sh
+echo "sudo ip link set 6to4tun_IR11 up">> /etc/script11.sh
+echo "sudo ip -6 tunnel add GRE6Tun_IR11 mode ip6gre remote 2001:2001:2001:11::2 local 2001:2001:2001:11::1">> /etc/script11.sh
+echo "sudo ip addr add 172.16.11.1/30 dev GRE6Tun_IR11">> /etc/script11.sh
+echo "sudo ip link set GRE6Tun_IR11 mtu 1436">> /etc/script11.sh
+echo "sudo ip link set GRE6Tun_IR11 up">> /etc/script11.sh
 sudo bash /etc/script11.sh
 sudo cat /etc/script11.sh >> /etc/script.sh
 sudo ip tunnel show
