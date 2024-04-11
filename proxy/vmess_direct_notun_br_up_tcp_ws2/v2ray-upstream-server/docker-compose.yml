@@ -7,7 +7,7 @@ services:
     environment:
       - v2ray.vmess.aead.forced=false
     ports:
-      - "161.35.133.222:35012:35012"
-      - "161.35.133.222:35022:35022"     
+      - "172.16.12.2:35012:35012"
+      - "172.16.12.2:35022:35022"     
     volumes:
       - ./v2ray/config/:/etc/v2ray/
