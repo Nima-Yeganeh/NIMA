@@ -1,6 +1,5 @@
 
 echo "Started!"
-sudo ip addr add 172.16.255.255/32 dev lo
 if [ ! -e "/swapfile" ]; then
     sudo fallocate -l 4G /swapfile
     ls -anp /swapfile
@@ -21,12 +20,6 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo bash bbr.sh
 cd v2ray-upstream-server/
-docker-compose up -d
-cd ..
-cd v2ray-bridge-server/
-docker-compose up -d
-cd ..
-cd v2ray-bridge-server/
 docker-compose up -d
 cd ..
 docker ps -a

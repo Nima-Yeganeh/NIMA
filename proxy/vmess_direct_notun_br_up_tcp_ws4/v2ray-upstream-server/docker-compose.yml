@@ -1,12 +1,13 @@
 version: "3"
 
 services:
-  v2ray21:
+  v2ray:
     image: nimaxnimax/v2ray-core:v4.45.2
     restart: always
     environment:
       - v2ray.vmess.aead.forced=false
     ports:
-      - "35021:35021"
+      - "172.16.14.2:35014:35014"
+      - "172.16.14.2:35024:35024"     
     volumes:
       - ./v2ray/config/:/etc/v2ray/
