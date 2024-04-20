@@ -19,7 +19,7 @@ def remove_mp3_files(folder):
 def main():
     en_path = 'zen.txt'
     output_folder = "./mp3/"
-    languages = ["fr", "de", "it", "es"]
+    languages = ["sv", "no", "fi", "hu", "da"]
     for lang in languages:
         lang_path=f"z{lang}.txt"
         lang_folder = os.path.join(output_folder, lang)
