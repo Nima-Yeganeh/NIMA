@@ -1,5 +1,4 @@
-Hi
-Hello
+Hi - Hello
 Me
 You
 I
@@ -25,7 +24,8 @@ Your are Adrian
 How are you?
 I am
 I'm fine.
-Thanks
+And you?
+Thanks - Thank you.
 I'm fine, thanks.
 You
 You are
@@ -33,9 +33,7 @@ We
 We are
 Here
 We are here.
-Thank you.
-Thanks
-Bye
+Thank you - Thanks
 Goodbye
 Hello. I'm Adrian.
 Hello. How are you?
@@ -50,6 +48,7 @@ Hello Adrian.
 Welcome
 Nice
 Nice to meet you.
+Nice to see you.
 Hi everyone.
 Hi everyone. How are you?
 I'm fine, thanks.
@@ -57,7 +56,7 @@ Where
 Where are you?
 Here
 I'm here.
-Hi
+Hello - Hi
 Where are you from?
 England
 I'm from England.
@@ -71,4 +70,3 @@ Spain
 I'm from Spain.
 Thank you.
 Goodbye
-Bye
