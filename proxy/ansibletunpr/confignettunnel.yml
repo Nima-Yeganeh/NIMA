@@ -1,0 +1,88 @@
+---
+- name: Configure Network Tunnels
+  hosts: all
+  become: yes
+
+  vars:
+    local_ip: "94.182.223.249"
+    remote_ip: "46.101.75.251"
+    magicnumber: "101"
+
+  tasks:
+    - name: Delete existing 6to4 tunnel if exists
+      shell: |
+        sudo ip tunnel del 6to4tun_IR{{ magicnumber }}
+      ignore_errors: yes
+
+    - name: Delete existing GRE tunnel if exists
+      shell: |
+        sudo ip tunnel del GRE6Tun_IR{{ magicnumber }}
+      ignore_errors: yes
+
+    - name: Create 6to4 tunnel
+      shell: |
+        sudo ip tunnel add 6to4tun_IR{{ magicnumber }} mode sit remote {{ remote_ip }} local {{ local_ip }}
+
+    - name: Assign IPv6 address to 6to4 tunnel interface
+      shell: |
+        sudo ip -6 addr add 2001:2001:2001:{{ magicnumber }}::1/64 dev 6to4tun_IR{{ magicnumber }}
+
+    - name: Set MTU for 6to4 tunnel interface
+      shell: |
+        sudo ip link set 6to4tun_IR{{ magicnumber }} mtu 1480
+
+    - name: Enable 6to4 tunnel interface
+      shell: |
+        sudo ip link set 6to4tun_IR{{ magicnumber }} up
+
+    - name: Create GRE tunnel
+      shell: |
+        sudo ip -6 tunnel add GRE6Tun_IR{{ magicnumber }} mode ip6gre remote 2001:2001:2001:{{ magicnumber }}::2 local 2001:2001:2001:{{ magicnumber }}::1
+
+    - name: Assign IPv4 address to GRE tunnel interface
+      shell: |
+        sudo ip addr add 172.16.{{ magicnumber }}.1/30 dev GRE6Tun_IR{{ magicnumber }}
+
+    - name: Set MTU for GRE tunnel interface
+      shell: |
+        sudo ip link set GRE6Tun_IR{{ magicnumber }} mtu 1436
+
+    - name: Enable GRE tunnel interface
+      shell: |
+        sudo ip link set GRE6Tun_IR{{ magicnumber }} up
+    
+    - name: Copy tunnel configuration script to remote host
+      template:
+        src: tunnelscript.sh.j2
+        dest: /etc/tunnelscript{{ magicnumber }}.sh
+
+    - name: Ensure tunnel configuration script is executable
+      file:
+        path: /etc/tunnelscript{{ magicnumber }}.sh
+        mode: '0755'
+
+    - name: Add command to tunnelscriptconfig.sh
+      lineinfile:
+        path: /etc/tunnelscriptconfig.sh
+        line: "sudo bash /etc/tunnelscript{{ magicnumber }}.sh"
+        create: yes
+
+    - name: Ensure tunnel configuration script is executable
+      file:
+        path: /etc/tunnelscriptconfig.sh
+        mode: '0755'
+
+    - name: Copy tunnel service file to remote host
+      template:
+        src: tunnelscript.service.j2
+        dest: /etc/systemd/system/tunnelscript.service
+
+    - name: Reload systemd
+      systemd:
+        daemon_reload: yes
+
+    - name: Enable the tunnel service
+      service:
+        name: tunnelscript
+        enabled: yes
+        state: stopped

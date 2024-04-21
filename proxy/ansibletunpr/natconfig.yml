@@ -1,0 +1,25 @@
+---
+- name: Configure iptables rules
+  hosts: all
+  become: yes
+
+  vars:
+    ports: [8901, 8902]
+    tunnel_ids: [101]
+
+  tasks:
+    - name: Configure POSTROUTING rules
+      iptables:
+        table: nat
+        chain: POSTROUTING
+        destination: "172.16.{{ item.1 }}.2"
+        protocol: tcp
+        destination_port: "{{ item.0 }}"
+        jump: SNAT
+        to_source: "172.16.{{ item.1 }}.1"
+      loop: "{{ ports | product(tunnel_ids) | list }}"
+      loop_control:
+        label: "{{ item.0 }}_{{ item.1 }}"
+
+    - name: Execute fwsave.sh script
+      command: sudo bash /root/fwsave.sh

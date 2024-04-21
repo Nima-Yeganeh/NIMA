@@ -1,0 +1,23 @@
+---
+- name: Configure iptables rules
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Copy zcurrentnatconfig.txt to remote host
+      copy:
+        src: zcurrentnatconfig.txt
+        dest: /root/zcurrentnatconfig.sh
+
+    - name: Make zcurrentnatconfig.sh executable
+      file:
+        path: /root/zcurrentnatconfig.sh
+        mode: '0755'
+
+    - name: Execute zcurrentnatconfig.sh script
+      command: sudo bash /root/zcurrentnatconfig.sh
+
+    - name: Remove zcurrentnatconfig.sh file
+      file:
+        path: /root/zcurrentnatconfig.sh
+        state: absent

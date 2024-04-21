@@ -1,0 +1,80 @@
+---
+- name: Update and Configure Ubuntu Servers
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Update APT package cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade all packages
+      apt:
+        upgrade: yes
+        autoremove: yes
+
+    - name: Install additional packages
+      apt:
+        name:
+          - iftop
+          - iotop
+          - mtr
+          - traceroute
+          - iptables-persistent
+          - net-tools
+        state: present
+
+    - name: Enable IP forwarding
+      sysctl:
+        name: net.ipv4.ip_forward
+        value: 1
+        state: present
+
+    - name: Set TCP keepalive time
+      sysctl:
+        name: net.ipv4.tcp_keepalive_time
+        value: 120
+        state: present
+
+    - name: Stop and disable unnecessary services
+      systemd:
+        name: "{{ item }}"
+        state: stopped
+        enabled: no
+      loop:
+        - rsyslog
+        - rsync
+        - snapd
+        - ModemManager
+        - fwupd
+        - udisks2
+        - unattended-upgrades
+
+    - name: Disable history for all users
+      lineinfile:
+        path: /etc/profile
+        line: "unset HISTFILE"
+        state: present
+
+    - name: Disable history for bash sessions
+      lineinfile:
+        path: /etc/bash.bashrc
+        line: "export HISTSIZE=0"
+        state: present
+
+    - name: Set hostname
+      hostname:
+        name: ubuntu
+
+    - name: Set timezone to Tehran
+      timezone:
+        name: Asia/Tehran
+
+    - name: Create fwsave.sh script
+      template:
+        src: fwsave.sh.j2
+        dest: /root/fwsave.sh
+        mode: '0755'
+
+    - name: Execute fwsave.sh script
+      command: sudo bash /root/fwsave.sh

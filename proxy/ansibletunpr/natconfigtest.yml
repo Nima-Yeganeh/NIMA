@@ -1,0 +1,58 @@
+---
+- name: Configure iptables rules
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: PREROUTING rule for port 35001
+      iptables:
+        table: nat
+        chain: PREROUTING
+        protocol: tcp
+        destination_port: 35001
+        destination: 94.182.223.249
+        jump: DNAT
+        to_destination: 172.16.101.2:8901
+        state: absent
+
+    - name: PREROUTING rule for port 35002
+      iptables:
+        table: nat
+        chain: PREROUTING
+        protocol: tcp
+        destination_port: 35002
+        destination: 94.182.223.249
+        jump: DNAT
+        to_destination: 172.16.101.2:8902
+        state: absent
+
+    - name: POSTROUTING rule for port 8901
+      iptables:
+        table: nat
+        chain: POSTROUTING
+        destination: 172.16.101.2
+        protocol: tcp
+        destination_port: 8901
+        jump: SNAT
+        to_source: 172.16.101.1
+        state: absent
+
+    - name: POSTROUTING rule for port 8902
+      iptables:
+        table: nat
+        chain: POSTROUTING
+        destination: 172.16.101.2
+        protocol: tcp
+        destination_port: 8902
+        jump: SNAT
+        to_source: 172.16.101.1
+        state: absent
+
+    - name: Create fwsave.sh script
+      template:
+        src: fwsave.sh.j2
+        dest: /root/fwsave.sh
+        mode: '0755'
+
+    - name: Execute fwsave.sh script
+      command: sudo bash /root/fwsave.sh

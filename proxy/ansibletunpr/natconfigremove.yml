@@ -1,0 +1,19 @@
+---
+- name: Copy and execute cleanup script
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Copy cleanup script to remote host
+      copy:
+        src: zcleanupnat.txt
+        dest: /root/zcleanupnat.sh
+        mode: '0755'  # Ensure script is executable
+
+    - name: Execute cleanup script
+      command: sudo bash /root/zcleanupnat.sh
+
+    - name: Remove cleanup script from remote host
+      file:
+        path: /root/zcleanupnat.sh
+        state: absent
