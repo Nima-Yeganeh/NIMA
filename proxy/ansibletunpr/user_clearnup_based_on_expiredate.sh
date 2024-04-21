@@ -21,6 +21,7 @@ cat "$cleanupnatfile" >> $expirenatconfighistory
 rm -f $expirenattempfile
 cat $cleanupnatfile | cut -d ' ' -f 2- | grep nat > $expirenattempfile
 cat $expirenattempfile > $cleanupnatfile
+echo "" > $expirenattempfile
 
 # Ansible
 # Check if the cleanupnatfile exists and has more than 0 lines
