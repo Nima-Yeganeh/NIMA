@@ -79,5 +79,15 @@ cat zcurrentnatconfig.txt >> zallnatconfig.txt
 # Write data to userdb.txt
 echo "$username,$protocol,$days,$tunnel_id,$port,$current_date,$future_date" >> userdb.txt
 echo "Data appended to userdb.txt."
-ansible-playbook -i hosts.ini -u root newusernatconfig.yml
+#### ansible-playbook -i hosts.ini -u root newusernatconfig.yml
 echo "" > zcurrentnatconfig.txt
+
+dnsdate=$(date +"%m%d")
+
+dns="cosmicwondersandbeyondcosmicwondersandbeyond${dnsdate}01srv.cosmicwondersandbeyondcosmicwondersandbeyond.ir"
+
+if [ "$protocol" == "tcp" ]; then
+    python3 vmessconfig1.py "$username" "$dns" "$port"
+elif [ "$protocol" == "ws" ]; then
+    python3 vmessconfig2.py "$username" "$dns" "$port"
+fi
