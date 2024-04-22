@@ -1,0 +1,23 @@
+---
+- name: NAT Update on Host - Configure iptables rules
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Copy zallnatconfig.txt to remote host
+      copy:
+        src: zallnatconfig.txt
+        dest: /root/zallnatconfig.sh
+
+    - name: Make zallnatconfig.sh executable
+      file:
+        path: /root/zallnatconfig.sh
+        mode: '0755'
+
+    - name: Execute zallnatconfig.sh script
+      command: sudo bash /root/zallnatconfig.sh
+
+    - name: Remove zallnatconfig.sh file
+      file:
+        path: /root/zallnatconfig.sh
+        state: absent

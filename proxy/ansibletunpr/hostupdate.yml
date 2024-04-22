@@ -4,6 +4,34 @@
   become: yes
 
   tasks:
+    - name: Check if swapfile exists
+      stat:
+        path: /swapfile
+      register: swapfile_stat
+
+    - name: Create swapfile if it doesn't exist
+      command: fallocate -l 4G /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Set permissions for swapfile
+      command: chmod 600 /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Make swap space on swapfile
+      command: mkswap /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Activate swap space
+      command: swapon /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Add swapfile entry to /etc/fstab
+      lineinfile:
+        path: /etc/fstab
+        line: "/swapfile none swap sw 0 0"
+        create: yes
+      when: not swapfile_stat.stat.exists
+
     - name: Update APT package cache
       apt:
         update_cache: yes
@@ -62,10 +90,6 @@
         line: "export HISTSIZE=0"
         state: present
 
-    - name: Set hostname
-      hostname:
-        name: ubuntu
-
     - name: Set timezone to Tehran
       timezone:
         name: Asia/Tehran
@@ -78,3 +102,21 @@
 
     - name: Execute fwsave.sh script
       command: sudo bash /root/fwsave.sh
+
+    - name: Set hostname
+      hostname:
+        name: ubuntu
+
+    - name: Copy etchost hostname update script to remote host
+      copy:
+        src: hostnameupdate.sh.j2
+        dest: /root/hostnameupdate.sh
+        mode: '0755'
+
+    - name: Execute etchost hostname update script
+      command: sudo bash /root/hostnameupdate.sh
+
+    - name: Remove etchost hostname update script from remote host
+      file:
+        path: /root/hostnameupdate.sh
+        state: absent

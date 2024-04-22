@@ -79,7 +79,7 @@ cat zcurrentnatconfig.txt >> zallnatconfig.txt
 # Write data to userdb.txt
 echo "$username,$protocol,$days,$tunnel_id,$port,$current_date,$future_date" >> userdb.txt
 echo "Data appended to userdb.txt."
-ansible-playbook -i hosts.ini -u root newusernatconfig.yml
+ansible-playbook -i 10_hosts.ini -u root newusernatconfig.yml
 echo "" > zcurrentnatconfig.txt
 
 dnsdate=$(date +"%m%d")

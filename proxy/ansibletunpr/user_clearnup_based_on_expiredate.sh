@@ -27,7 +27,7 @@ echo "" > $expirenattempfile
 # Check if the cleanupnatfile exists and has more than 0 lines
 if [ -s "$cleanupnatfile" ]; then
     echo "NAT Config Found >> Wait for ansible to remove..."
-    ansible-playbook -i hosts.ini -u root natconfigremove.yml
+    ansible-playbook -i 10_hosts.ini -u root natconfigremove.yml
     echo "Done!"
 else
     echo "No NAT Config to Remove"

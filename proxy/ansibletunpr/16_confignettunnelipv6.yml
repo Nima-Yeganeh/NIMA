@@ -1,0 +1,72 @@
+---
+- name: Configure Network Tunnels
+  hosts: all
+  become: yes
+
+  vars:
+    local_ip: "2a10:ed40:0:101:3789:de08:57c8:1"
+    remote_ip: "2a03:b0c0:1:d0::c55:7001"
+    magicnumber: "101"
+
+  tasks:
+    - name: Delete existing 6to4 tunnel if exists
+      shell: |
+        sudo ip tunnel del 6to4tun_IR{{ magicnumber }}
+      ignore_errors: yes
+
+    - name: Delete existing GRE tunnel if exists
+      shell: |
+        sudo ip tunnel del GRE6Tun_IR{{ magicnumber }}
+      ignore_errors: yes
+
+    - name: Create GRE tunnel
+      shell: |
+        sudo ip -6 tunnel add GRE6Tun_IR{{ magicnumber }} mode ip6gre remote {{ remote_ip }} local {{ local_ip }}
+
+    - name: Assign IPv4 address to GRE tunnel interface
+      shell: |
+        sudo ip addr add 172.16.{{ magicnumber }}.1/30 dev GRE6Tun_IR{{ magicnumber }}
+
+    - name: Set MTU for GRE tunnel interface
+      shell: |
+        sudo ip link set GRE6Tun_IR{{ magicnumber }} mtu 1436
+
+    - name: Enable GRE tunnel interface
+      shell: |
+        sudo ip link set GRE6Tun_IR{{ magicnumber }} up
+    
+    - name: Copy tunnel configuration script to remote host
+      template:
+        src: tunnelscriptipv6.sh.j2
+        dest: /etc/tunnelscript{{ magicnumber }}.sh
+
+    - name: Ensure tunnel configuration script is executable
+      file:
+        path: /etc/tunnelscript{{ magicnumber }}.sh
+        mode: '0755'
+
+    - name: Add command to tunnelscriptconfig.sh
+      lineinfile:
+        path: /etc/tunnelscriptconfig.sh
+        line: "sudo bash /etc/tunnelscript{{ magicnumber }}.sh"
+        create: yes
+
+    - name: Ensure tunnel configuration script is executable
+      file:
+        path: /etc/tunnelscriptconfig.sh
+        mode: '0755'
+
+    - name: Copy tunnel service file to remote host
+      template:
+        src: tunnelscript.service.j2
+        dest: /etc/systemd/system/tunnelscript.service
+
+    - name: Reload systemd
+      systemd:
+        daemon_reload: yes
+
+    - name: Enable the tunnel service
+      service:
+        name: tunnelscript
+        enabled: yes
+        state: stopped

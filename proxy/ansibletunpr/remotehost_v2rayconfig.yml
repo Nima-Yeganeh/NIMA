@@ -4,31 +4,6 @@
   become: yes
 
   tasks:
-    - name: Check if swapfile exists
-      stat:
-        path: /swapfile
-      register: swapfile_stat
-
-    - name: Create swapfile if it doesn't exist
-      command: fallocate -l 4G /swapfile
-      when: not swapfile_stat.stat.exists
-
-    - name: Set permissions for swapfile
-      command: chmod 600 /swapfile
-      when: not swapfile_stat.stat.exists
-
-    - name: Make swap space on swapfile
-      command: mkswap /swapfile
-      when: not swapfile_stat.stat.exists
-
-    - name: Activate swap space
-      command: swapon /swapfile
-      when: not swapfile_stat.stat.exists
-
-    - name: Add swapfile entry to /etc/fstab
-      command: echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
-      when: not swapfile_stat.stat.exists
-
     - name: Update apt package cache
       apt:
         update_cache: yes
