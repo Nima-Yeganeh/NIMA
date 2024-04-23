@@ -1,72 +1,72 @@
-- Hi >>> Hola >>> Pronunciation: oh-lah
-- Me >>> Yo >>> Pronunciation: yoh
-- You >>> Tú >>> Pronunciation: too
-- I >>> Yo >>> Pronunciation: yoh
-- I am >>> Yo soy >>> Pronunciation: yoh soy
-- You >>> Tú >>> Pronunciation: too
-- You are >>> Tú eres >>> Pronunciation: too eh-rehs
-- How >>> Cómo >>> Pronunciation: koh-moh
-- How are you? >>> ¿Cómo estás? >>> Pronunciation: koh-moh ehs-tahs
-- Name >>> Nombre >>> Pronunciation: nohm-breh
-- My >>> Mi >>> Pronunciation: mee
-- My name >>> Mi nombre >>> Pronunciation: mee nohm-breh
-- My name is >>> Me llamo >>> Pronunciation: meh yah-moh
-- My name is Adrian. >>> Me llamo Adrian. >>> Pronunciation: meh yah-moh ah-dree-ahn
-- Your >>> Tu >>> Pronunciation: too
-- Your name >>> Tu nombre >>> Pronunciation: too nohm-breh
-- Your name is >>> Tu nombre es >>> Pronunciation: too nohm-breh es
-- Your name is Adrian. >>> Tu nombre es Adrian. >>> Pronunciation: too nohm-breh es ah-dree-ahn
-- What >>> Qué >>> Pronunciation: keh
-- Your name >>> Tu nombre >>> Pronunciation: too nohm-breh
-- What is your name? >>> ¿Cómo te llamas? >>> Pronunciation: koh-moh teh yah-mahs
-- Your name is Adrian? >>> ¿Tu nombre es Adrian? >>> Pronunciation: too nohm-breh es ah-dree-ahn
-- You are Adrian >>> Tú eres Adrian >>> Pronunciation: too eh-rehs ah-dree-ahn
-- How are you? >>> ¿Cómo estás? >>> Pronunciation: koh-moh ehs-tahs
-- I am >>> Yo soy >>> Pronunciation: yoh soy
-- I'm fine. >>> Estoy bien. >>> Pronunciation: ehs-toy byehn
-- And you? >>> ¿Y tú? >>> Pronunciation: ee too
-- Thanks - Thank you. >>> Gracias >>> Pronunciation: grah-syahs
-- I'm fine, thanks. >>> Estoy bien, gracias. >>> Pronunciation: ehs-toy byehn, grah-syahs
-- You >>> Tú >>> Pronunciation: too
-- You are >>> Tú eres >>> Pronunciation: too eh-rehs
-- We >>> Nosotros >>> Pronunciation: noh-soh-trohs
-- We are >>> Nosotros somos >>> Pronunciation: noh-soh-trohs soh-mohs
-- Here >>> Aquí >>> Pronunciation: ah-kee
-- We are here. >>> Estamos aquí. >>> Pronunciation: ehs-tah-mohs ah-kee
-- Thank you - Thanks >>> Gracias >>> Pronunciation: grah-syahs
-- Goodbye >>> Adiós >>> Pronunciation: ah-dyohs
-- Hello. I'm Adrian. >>> Hola. Me llamo Adrian. >>> Pronunciation: oh-lah. meh yah-moh ah-dree-ahn
-- Hello. How are you? >>> Hola. ¿Cómo estás? >>> Pronunciation: oh-lah. koh-moh ehs-tahs
-- Everyone >>> Todos >>> Pronunciation: toh-dohs
-- Hi everyone. >>> Hola a todos. >>> Pronunciation: oh-lah ah toh-dohs
-- My name is Adrian. >>> Me llamo Adrian. >>> Pronunciation: meh yah-moh ah-dree-ahn
-- What >>> Qué >>> Pronunciation: keh
-- Your name >>> Tu nombre >>> Pronunciation: too nohm-breh
-- What is your name? >>> ¿Cómo te llamas? >>> Pronunciation: koh-moh teh yah-mahs
-- Are you Adrian? >>> ¿Eres Adrian? >>> Pronunciation: eh-rehs ah-dree-ahn
-- Hello Adrian. >>> Hola Adrian. >>> Pronunciation: oh-lah ah-dree-ahn
-- Welcome >>> Bienvenido/a >>> Pronunciation: byehn-veh-nee-doh/ah
-- Nice >>> Bueno/a >>> Pronunciation: bweh-noh/ah
-- Nice to meet you. >>> Encantado/a de conocerte. >>> Pronunciation: ehn-kahn-tah-doh/ah deh koh-noh-sehr-teh
-- Nice to see you. >>> Gusto/a verte. >>> Pronunciation: goos-toh/ah ver-teh
-- Hi everyone. >>> Hola a todos. >>> Pronunciation: oh-lah ah toh-dohs
-- Hi everyone. How are you? >>> Hola a todos. ¿Cómo están? >>> Pronunciation: oh-lah ah toh-dohs. koh-moh ehs-tahn
-- I'm fine, thanks. >>> Estoy bien, gracias. >>> Pronunciation: ehs-toy byehn, grah-syahs
-- Where >>> Dónde >>> Pronunciation: dohn-deh
-- Where are you? >>> ¿Dónde estás? >>> Pronunciation: dohn-deh ehs-tahs
-- Here >>> Aquí >>> Pronunciation: ah-kee
-- I'm here. >>> Estoy aquí. >>> Pronunciation: ehs-toy ah-kee
-- Hello - Hi >>> Hola - Hola >>> Pronunciation: oh-lah - oh-lah
-- Where are you from? >>> ¿De dónde eres? >>> Pronunciation: deh dohn-deh eh-rehs
-- England >>> Inglaterra >>> Pronunciation: een-glah-teh-rrah
-- I'm from England. >>> Soy de Inglaterra. >>> Pronunciation: soy deh een-glah-teh-rrah
-- France >>> Francia >>> Pronunciation: frahn-see-ah
-- I'm from France. >>> Soy de Francia. >>> Pronunciation: soy deh frahn-see-ah
-- Germany >>> Alemania >>> Pronunciation: ah-leh-mah-nee-ah
-- I'm from Germany. >>> Soy de Alemania. >>> Pronunciation: soy deh ah-leh-mah-nee-ah
-- Italy >>> Italia >>> Pronunciation: ee-tah-lee-ah
-- I'm from Italy. >>> Soy de Italia. >>> Pronunciation: soy deh ee-tah-lee-ah
-- Spain >>> España >>> Pronunciation: eh-spa-nyah
-- I'm from Spain. >>> Soy de España. >>> Pronunciation: soy deh eh-spa-nyah
-- Thank you. >>> Gracias. >>> Pronunciation: grah-syahs
-- Goodbye >>> Adiós >>> Pronunciation: ah-dyohs
+- Hi - Hello >>> Hej - Hej >>> Pronunciation: hey - hey
+- Me >>> Mig >>> Pronunciation: mee
+- You >>> Dig >>> Pronunciation: dee
+- I >>> Jeg >>> Pronunciation: yai
+- I am >>> Jeg er >>> Pronunciation: yai air
+- You >>> Dig >>> Pronunciation: dee
+- You are >>> Du er >>> Pronunciation: doo air
+- How >>> Hvordan >>> Pronunciation: vohr-dahn
+- How are you? >>> Hvordan har du det? >>> Pronunciation: vohr-dahn har doo deh
+- Name >>> Navn >>> Pronunciation: nahvn
+- My >>> Min >>> Pronunciation: meen
+- My name >>> Mit navn >>> Pronunciation: meet nahvn
+- My name is >>> Mit navn er >>> Pronunciation: meet nahvn air
+- My name is Adrian. >>> Mit navn er Adrian. >>> Pronunciation: meet nahvn air Adrian
+- Your >>> Din >>> Pronunciation: deen
+- Your name >>> Dit navn >>> Pronunciation: deet nahvn
+- Your name is >>> Dit navn er >>> Pronunciation: deet nahvn air
+- Your name is Adrian. >>> Dit navn er Adrian. >>> Pronunciation: deet nahvn air Adrian
+- What >>> Hvad >>> Pronunciation: vahd
+- Your name >>> Dit navn >>> Pronunciation: deet nahvn
+- What is your name? >>> Hvad hedder du? >>> Pronunciation: vahd hed-deh doo
+- Your name is Adrian? >>> Er dit navn Adrian? >>> Pronunciation: air deet nahvn Adrian
+- You are Adrian >>> Du er Adrian >>> Pronunciation: doo air Adrian
+- How are you? >>> Hvordan har du det? >>> Pronunciation: vohr-dahn har doo deh
+- I am >>> Jeg er >>> Pronunciation: yai air
+- I'm fine. >>> Jeg har det godt. >>> Pronunciation: yai har deh goht
+- And you? >>> Og du? >>> Pronunciation: oh doo
+- Thanks - Thank you. >>> Tak >>> Pronunciation: tahk
+- I'm fine, thanks. >>> Jeg har det godt, tak. >>> Pronunciation: yai har deh goht, tahk
+- You >>> Dig >>> Pronunciation: dee
+- You are >>> Du er >>> Pronunciation: doo air
+- We >>> Vi >>> Pronunciation: vee
+- We are >>> Vi er >>> Pronunciation: vee air
+- Here >>> Her >>> Pronunciation: hehr
+- We are here. >>> Vi er her. >>> Pronunciation: vee air hehr
+- Thank you - Thanks >>> Tak >>> Pronunciation: tahk
+- Goodbye >>> Farvel >>> Pronunciation: fah-vel
+- Hello. I'm Adrian. >>> Hej. Jeg hedder Adrian. >>> Pronunciation: hey yai hed-deh Adrian
+- Hello. How are you? >>> Hej. Hvordan har du det? >>> Pronunciation: hey vohr-dahn har doo deh
+- Everyone >>> Alle >>> Pronunciation: ah-leh
+- Hi everyone. >>> Hej alle sammen. >>> Pronunciation: hey ah-leh sahm-men
+- My name is Adrian. >>> Jeg hedder Adrian. >>> Pronunciation: yai hed-deh Adrian
+- What >>> Hvad >>> Pronunciation: vahd
+- Your name >>> Dit navn >>> Pronunciation: deet nahvn
+- What is your name? >>> Hvad hedder du? >>> Pronunciation: vahd hed-deh doo
+- Are you Adrian? >>> Er du Adrian? >>> Pronunciation: air doo Adrian
+- Hello Adrian. >>> Hej Adrian. >>> Pronunciation: hey Adrian
+- Welcome >>> Velkommen >>> Pronunciation: vel-koh-men
+- Nice >>> Dejligt >>> Pronunciation: dey-lyeht
+- Nice to meet you. >>> Dejligt at møde dig. >>> Pronunciation: dey-lyeht at merh-deh dee
+- Nice to see you. >>> Dejligt at se dig. >>> Pronunciation: dey-lyeht at seh dee
+- Hi everyone. >>> Hej alle sammen. >>> Pronunciation: hey ah-leh sahm-men
+- Hi everyone. How are you? >>> Hej alle sammen. Hvordan har I det? >>> Pronunciation: hey ah-leh sahm-men vohr-dahn har ee deh
+- I'm fine, thanks. >>> Jeg har det godt, tak. >>> Pronunciation: yai har deh goht, tahk
+- Where >>> Hvor >>> Pronunciation: vohr
+- Where are you? >>> Hvor er du? >>> Pronunciation: vohr air doo
+- Here >>> Her >>> Pronunciation: hehr
+- I'm here. >>> Jeg er her. >>> Pronunciation: yai air hehr
+- Hello - Hi >>> Hej - Hej >>> Pronunciation: hey - hey
+- Where are you from? >>> Hvor kommer du fra? >>> Pronunciation: vohr kom-ehr doo fra
+- England >>> England >>> Pronunciation: eng-lahnd
+- I'm from England. >>> Jeg kommer fra England. >>> Pronunciation: yai kom-ehrfra eng-lahnd
+- France >>> Frankrig >>> Pronunciation: frahnk-ree
+- I'm from France. >>> Jeg kommer fra Frankrig. >>> Pronunciation: yai kom-ehr fra frahnk-ree
+- Germany >>> Tyskland >>> Pronunciation: tuhsk-lahnd
+- I'm from Germany. >>> Jeg kommer fra Tyskland. >>> Pronunciation: yai kom-ehr fra tuhsk-lahnd
+- Italy >>> Italien >>> Pronunciation: ee-tah-lee-en
+- I'm from Italy. >>> Jeg kommer fra Italien. >>> Pronunciation: yai kom-ehr fra ee-tah-lee-en
+- Spain >>> Spanien >>> Pronunciation: spah-nee-en
+- I'm from Spain. >>> Jeg kommer fra Spanien. >>> Pronunciation: yai kom-ehr fra spah-nee-en
+- Thank you. >>> Tak. >>> Pronunciation: tahk
+- Goodbye >>> Farvel >>> Pronunciation: fah-vel

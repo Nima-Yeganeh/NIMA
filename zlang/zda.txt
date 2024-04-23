@@ -1,0 +1,72 @@
+Hej - Hej
+Mig
+Dig
+Jeg
+Jeg er
+Dig
+Du er
+Hvordan
+Hvordan har du det?
+Navn
+Min
+Mit navn
+Mit navn er
+Mit navn er Adrian.
+Din
+Dit navn
+Dit navn er
+Dit navn er Adrian.
+Hvad
+Dit navn
+Hvad hedder du?
+Er dit navn Adrian?
+Du er Adrian
+Hvordan har du det?
+Jeg er
+Jeg har det godt.
+Og du?
+Tak
+Jeg har det godt, tak.
+Dig
+Du er
+Vi
+Vi er
+Her
+Vi er her.
+Tak
+Farvel
+Hej. Jeg hedder Adrian.
+Hej. Hvordan har du det?
+Alle
+Hej alle sammen.
+Jeg hedder Adrian.
+Hvad
+Dit navn
+Hvad hedder du?
+Er du Adrian?
+Hej Adrian.
+Velkommen
+Dejligt
+Dejligt at møde dig.
+Dejligt at se dig.
+Hej alle sammen.
+Hej alle sammen. Hvordan har I det?
+Jeg har det godt, tak.
+Hvor
+Hvor er du?
+Her
+Jeg er her.
+Hej - Hej
+Hvor kommer du fra?
+England
+Jeg kommer fra England.
+Frankrig
+Jeg kommer fra Frankrig.
+Tyskland
+Jeg kommer fra Tyskland.
+Italien
+Jeg kommer fra Italien.
+Spanien
+Jeg kommer fra Spanien.
+Tak.
+Farvel

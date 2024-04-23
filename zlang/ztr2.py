@@ -38,7 +38,7 @@ def main():
     en_path = 'zen.txt'
     output_folder = "./xyz/"
     # languages = ["fr", "de", "it", "es", "sv", "no", "fi", "hu", "da"]
-    languages = ["es"]
+    languages = ["da"]
     for lang in languages:
         lang_path=f"z{lang}.txt"
         convert(en_path, lang_path)
@@ -53,3 +53,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -1,0 +1,72 @@
+Hei - Hei
+Minä
+Sinä
+Minä
+Olen
+Sinä
+Olet
+Miten
+Miten menee?
+Nimi
+Minun
+Nimeni
+Minun nimeni on
+Nimeni on Adrian.
+Sinun
+Sinun nimesi
+Nimesi on
+Nimesi on Adrian.
+Mikä
+Sinun nimesi
+Mikä sinun nimesi on?
+Onko nimesi Adrian?
+Olet Adrian
+Miten menee?
+Olen
+Hyvää kuuluu.
+Entä sinä?
+Kiitos
+Hyvää kuuluu, kiitos.
+Sinä
+Olet
+Me
+Olemme
+Täällä
+Olemme täällä.
+Kiitos
+Näkemiin
+Hei. Olen Adrian.
+Hei. Miten menee?
+Kaikki
+Hei kaikki.
+Minun nimeni on Adrian.
+Mikä
+Sinun nimesi
+Mikä on sinun nimesi?
+Oletko sinä Adrian?
+Hei Adrian.
+Tervetuloa
+Mukava
+Hauska tutustua.
+Kiva nähdä sinut.
+Hei kaikki.
+Hei kaikki. Miten menee?
+Hyvää kuuluu, kiitos.
+Missä
+Missä olet?
+Täällä
+Olen täällä.
+Hei - Hei
+Mistä olet kotoisin?
+Englanti
+Olen Englannista.
+Ranska
+Olen Ranskasta.
+Saksa
+Olen Saksasta.
+Italia
+Olen Italiasta.
+Espanja
+Olen Espanjasta.
+Kiitos.
+Näkemiin
