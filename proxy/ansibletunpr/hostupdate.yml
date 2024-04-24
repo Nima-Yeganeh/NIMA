@@ -77,6 +77,7 @@
         - fwupd
         - udisks2
         - unattended-upgrades
+      ignore_errors: yes
 
     - name: Disable history for all users
       lineinfile:
