@@ -7,7 +7,7 @@ services:
     environment:
       - v2ray.vmess.aead.forced=false
     ports:
-      - "8900:8901"
+      - "8900:8902"
     volumes:
       - ./zv2rayupconfig.json:/etc/v2ray/config.json
 
@@ -21,3 +21,4 @@ services:
       - "8902:8902"     
     volumes:
       - ./zv2raybrconfig.json:/etc/v2ray/config.json
+
