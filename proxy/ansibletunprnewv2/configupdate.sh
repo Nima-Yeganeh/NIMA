@@ -14,23 +14,27 @@ echo_server_combinations() {
     local srvir_name="$2"
     local srvir_num="$3"
     local srvir_xnum=$((srvir_num - 9000))
+    local srvir_snum=$(printf "%03d" $(( (srvir_num - 9000) % 1000 )))
     local srvdigi_ip="$4"
     local srvdigi_name="$5"
     local srvdigi_num="$6"
     local srvdigi_xnum=$((srvdigi_num - 9000))
-    local irtun="6to4tunir$srvir_num$srvdigi_num"
-    local irtungre="gre6tunir$srvir_num$srvdigi_num"
-    local digitun="6to4tundigi$srvdigi_num$srvir_num"
-    local digitungre="gre6tundigi$srvdigi_num$srvir_num"
+    local srvdigi_snum=$(printf "%03d" $(( (srvdigi_num - 9000) % 1000 )))
+    local irtun="6to4tunir$srvir_snum$srvdigi_snum"
+    local irtungre="gre6tunir$srvir_snum$srvdigi_snum"
+    local digitun="6to4tundg$srvdigi_snum$srvir_snum"
+    local digitungre="gre6tundg$srvdigi_snum$srvir_snum"
     local irtcpportnum=$((srvdigi_num - 9000 + 8000))
     local irwsportnum=$((srvdigi_num - 9000 + 7000))
     
-    local srvirtunconfigfilename="$srvir_name.tunconfig.sh"    
+    local srvirtunconfigfilename="$srvir_name.tunconfig.sh"
     local srvdigitunconfigfilename="$srvdigi_name.tunconfig.sh"
-    local srvirhttpconfigfilename="$srvir_name.httpconfig.sh"    
+    local srvirhttpconfigfilename="$srvir_name.httpconfig.sh"
     local srvdigihttpconfigfilename="$srvdigi_name.httpconfig.sh"
     local srvirv2rayconfigfilename="$srvir_name$srvdigi_name.v2rayconfig.conf"
     local srvdigiv2rayconfigfilename="$srvdigi_name.v2rayconfig.conf"
+    local srvirdockerfilename="$srvir_name.dockerconfig.yml"
+    local srvdigidockerfilename="$srvdigi_name.dockerconfig.yml"
 
     # echo "$srvir_ip $srvir_name $srvir_num $srvdigi_ip $srvdigi_name $srvdigi_num"
     # echo $srvirtunconfigfilename
@@ -64,11 +68,15 @@ echo_server_combinations() {
     cat ztempirv2rayconfig.conf | sed "s/10\.255\.255\.255/10.$srvir_xnum.$srvdigi_xnum.254/g; s/7999/$irwsportnum/g; s/8999/$irtcpportnum/g" >> $srvirv2rayconfigfilename
     cat ztempdigiv2rayconfig.conf >> $srvdigiv2rayconfigfilename
 
+    echo "" >> $srvirdockerfilename
+    echo "" >> $srvdigidockerfilename
+
 }
 
 rm -rf *.tunconfig.sh
 rm -rf *.httpconfig.sh
 rm -rf *.v2rayconfig.conf
+rm -rf *.dockerconfig.yml
 
 # Read from hosts.ini file
 while IFS=' ' read -r name zip; do

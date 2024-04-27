@@ -32,16 +32,16 @@
         create: yes
       when: not swapfile_stat.stat.exists
 
-    - name: Update APT package cache
+    - name: Update APT Package Cache
       apt:
         update_cache: yes
 
-    - name: Upgrade all packages
+    - name: Upgrade All Packages
       apt:
         upgrade: yes
         autoremove: yes
 
-    - name: Install additional packages
+    - name: Install Additional Packages
       apt:
         name:
           - iftop
@@ -51,7 +51,18 @@
           - iptables-persistent
           - net-tools
           - socat
+          - iftop
+          - mtr
+          - python3
+          - python3-pip
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
+          - docker-compose
         state: present
+        update_cache: yes
 
     - name: Enable IP Forwarding
       sysctl:
@@ -100,11 +111,11 @@
     - name: Create fwsave.sh Script
       template:
         src: fwsave.sh
-        dest: /root/fwsave.sh
+        dest: /fwsave.sh
         mode: '0755'
 
     - name: Execute fwsave.sh Script
-      command: sudo bash /root/fwsave.sh
+      command: sudo bash /fwsave.sh
 
     - name: Set Hostname
       hostname:
@@ -123,3 +134,94 @@
       file:
         path: /root/hostnameupdate.sh
         state: absent
+
+    - name: Copy Tunnel Configuration Script to Remote Host
+      copy:
+        src: "{{ inventory_hostname }}.tunconfig.sh"
+        dest: "/etc/{{ inventory_hostname }}.tunconfig.sh"
+
+    - name: Ensure Tunnel Configuration Script is Executable
+      file:
+        path: "/etc/{{ inventory_hostname }}.tunconfig.sh"
+        mode: '0755'
+
+    - name: Execute Tunnel Script
+      command: "sudo bash /etc/{{ inventory_hostname }}.tunconfig.sh"
+
+    - name: Add Command to Tunnelscriptconfig.sh
+      lineinfile:
+        path: /etc/tunnelscriptconfig.sh
+        line: "sudo bash /etc/{{ inventory_hostname }}.tunconfig.sh"
+        create: yes
+
+    - name: Ensure Tunnel Configuration Script is Executable
+      file:
+        path: /etc/tunnelscriptconfig.sh
+        mode: '0755'
+
+    - name: Copy Tunnel Service File to Remote Host
+      template:
+        src: tunnelscript.service
+        dest: /etc/systemd/system/tunnelscript.service
+
+    - name: Reload Systemd
+      systemd:
+        daemon_reload: yes
+
+    - name: Enable Tunnel Service
+      service:
+        name: tunnelscript
+        enabled: yes
+        state: stopped
+
+    - name: Enable Docker Service
+      systemd:
+        name: docker
+        enabled: yes
+
+    - name: Copy BBR Script to Remote Host
+      copy:
+        src: bbr.sh
+        dest: /bbr.sh
+
+    - name: Make BBR Script Executable
+      file:
+        path: /bbr.sh
+        mode: '0755'
+
+    - name: Execute BBR Script
+      command: sudo bash /bbr.sh
+
+    - name: Copy docker-compose.yml to remote host
+      copy:
+        src: docker-compose.yml
+        dest: /root/docker-compose.yml
+
+    - name: Copy zv2rayconfig.json to remote host
+      copy:
+        src: zv2rayconfig.json
+        dest: /root/zv2rayconfig.json
+
+    - name: Check if v2ray container is running
+      command: docker ps --filter "name=v2ray" --format "{{ '{{' }}.Names{{ '}}' }}"
+      register: container_name
+      ignore_errors: yes
+
+    - name: Remove v2ray container if it's running
+      docker_container:
+        name: "{{ container_name.stdout }}"
+        state: absent
+      when: container_name.rc == 0
+
+    - name: Docker Compose Up
+      command: docker-compose up -d
+      args:
+        chdir: /root
+      register: docker_compose_result
+
+    - name: Show Docker containers
+      command: docker ps -a
+      register: docker_ps_result
+
+    - debug:
+        msg: "{{ docker_ps_result.stdout }}"

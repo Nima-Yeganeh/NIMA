@@ -1,0 +1,10 @@
+[Unit]
+Description=Tunnel Script Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /etc/tunnelscriptconfig.sh
+
+[Install]
+WantedBy=multi-user.target
