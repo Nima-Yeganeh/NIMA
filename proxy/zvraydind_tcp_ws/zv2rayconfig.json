@@ -41,6 +41,9 @@
         ],
         "streamSettings": {
           "network": "ws",
+          "wsSettings": {
+            "path": "/"
+          },
           "mux": {
             "enabled": true,
             "concurrency": 32
