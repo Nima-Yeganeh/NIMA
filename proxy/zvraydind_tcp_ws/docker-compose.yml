@@ -9,7 +9,7 @@ services:
     ports:
       - "8900:8900"
     volumes:
-      - ./zv2rayup.json:/etc/v2ray/config.json
+      - ./zv2rayupconfig.json:/etc/v2ray/config.json
   v2raybr:
     image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
@@ -19,4 +19,4 @@ services:
       - "8901:8901"
       - "8902:8902"
     volumes:
-      - ./zv2rayconfig.json:/etc/v2ray/config.json
+      - ./zv2raybrconfig.json:/etc/v2ray/config.json
