@@ -1,7 +1,16 @@
 version: "3"
 
 services:
-  v2ray:
+  v2rayup:
+    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
+    restart: always
+    environment:
+      - v2ray.vmess.aead.forced=false
+    ports:
+      - "8900:8900"
+    volumes:
+      - ./zv2rayup.json:/etc/v2ray/config.json
+  v2raybr:
     image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
     environment:
@@ -10,4 +19,3 @@ services:
       - "8901:8901"
     volumes:
       - ./zv2rayconfig.json:/etc/v2ray/config.json
-

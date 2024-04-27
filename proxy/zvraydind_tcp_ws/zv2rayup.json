@@ -7,7 +7,7 @@
   "inbounds": [
     {
       "listen": "0.0.0.0",
-      "port": 8901,
+      "port": 8900,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -20,24 +20,6 @@
     }
   ],
   "outbounds": [
-    {
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "10.255.255.255",
-            "port": 8900,
-            "users": [
-              {
-                "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
-                "alterId": 0
-              }
-            ]
-          }
-        ]
-      },
-      "tag": "vmess_outbound"
-    },
     {
       "protocol": "freedom",
       "settings": {},
