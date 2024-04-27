@@ -1,0 +1,125 @@
+---
+- name: Update and Configure Ubuntu Servers
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Check if swapfile exists
+      stat:
+        path: /swapfile
+      register: swapfile_stat
+
+    - name: Create swapfile if it doesn't exist
+      command: fallocate -l 4G /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Set permissions for swapfile
+      command: chmod 600 /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Make swap space on swapfile
+      command: mkswap /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Activate swap space
+      command: swapon /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Add swapfile entry to /etc/fstab
+      lineinfile:
+        path: /etc/fstab
+        line: "/swapfile none swap sw 0 0"
+        create: yes
+      when: not swapfile_stat.stat.exists
+
+    - name: Update APT package cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade all packages
+      apt:
+        upgrade: yes
+        autoremove: yes
+
+    - name: Install additional packages
+      apt:
+        name:
+          - iftop
+          - iotop
+          - mtr
+          - traceroute
+          - iptables-persistent
+          - net-tools
+          - socat
+        state: present
+
+    - name: Enable IP Forwarding
+      sysctl:
+        name: net.ipv4.ip_forward
+        value: 1
+        state: present
+
+    - name: Set TCP Keepalive Time
+      sysctl:
+        name: net.ipv4.tcp_keepalive_time
+        value: 120
+        state: present
+
+    - name: Stop and Disable Unnecessary Services
+      systemd:
+        name: "{{ item }}"
+        state: stopped
+        enabled: no
+      loop:
+        - rsyslog
+        - rsync
+        - snapd
+        - ModemManager
+        - fwupd
+        - udisks2
+        - unattended-upgrades
+        - ufw
+      ignore_errors: yes
+
+    - name: Disable History
+      lineinfile:
+        path: /etc/profile
+        line: "unset HISTFILE"
+        state: present
+
+    - name: Disable History - Bash Sessions
+      lineinfile:
+        path: /etc/bash.bashrc
+        line: "export HISTSIZE=0"
+        state: present
+
+    - name: Set Timezone to Tehran
+      timezone:
+        name: Asia/Tehran
+
+    - name: Create fwsave.sh Script
+      template:
+        src: fwsave.sh
+        dest: /root/fwsave.sh
+        mode: '0755'
+
+    - name: Execute fwsave.sh Script
+      command: sudo bash /root/fwsave.sh
+
+    - name: Set Hostname
+      hostname:
+        name: "{{ inventory_hostname }}"
+
+    - name: Copy Hostname Update Script to Remote Host
+      copy:
+        src: hostnameupdate.sh
+        dest: /root/hostnameupdate.sh
+        mode: '0755'
+
+    - name: Execute Hostname Update Script
+      command: sudo bash /root/hostnameupdate.sh
+
+    - name: Remove Hostname Update Script from Remote Host
+      file:
+        path: /root/hostnameupdate.sh
+        state: absent

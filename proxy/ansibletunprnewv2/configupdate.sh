@@ -22,47 +22,67 @@ echo_server_combinations() {
     local irtungre="gre6tunir$srvir_num$srvdigi_num"
     local digitun="6to4tundigi$srvdigi_num$srvir_num"
     local digitungre="gre6tundigi$srvdigi_num$srvir_num"
+    local irtcpportnum=$((srvdigi_num - 9000 + 8000))
+    local irwsportnum=$((srvdigi_num - 9000 + 7000))
+    
+    local srvirtunconfigfilename="$srvir_name.tunconfig.sh"    
+    local srvdigitunconfigfilename="$srvdigi_name.tunconfig.sh"
+    local srvirhttpconfigfilename="$srvir_name.httpconfig.sh"    
+    local srvdigihttpconfigfilename="$srvdigi_name.httpconfig.sh"
+    local srvirv2rayconfigfilename="$srvir_name$srvdigi_name.v2rayconfig.conf"
+    local srvdigiv2rayconfigfilename="$srvdigi_name.v2rayconfig.conf"
 
     # echo "$srvir_ip $srvir_name $srvir_num $srvdigi_ip $srvdigi_name $srvdigi_num"
-    srvirtunconfigfilename="$srvir_name.tunconfig.sh"    
-    srvdigitunconfigfilename="$srvdigi_name.tunconfig.sh"
-
     # echo $srvirtunconfigfilename
     # echo $srvdigitunconfigfilename
     # echo "$srvir_ip $srvir_name $srvir_num $srvdigi_ip $srvdigi_name $srvdigi_num" >> $srvirtunconfigfilename
     # echo "$srvir_ip $srvir_name $srvir_num $srvdigi_ip $srvdigi_name $srvdigi_num" >> $srvdigitunconfigfilename
 
     echo "sudo ip tunnel add $irtun mode sit remote $srvdigi_ip local $srvir_ip" >> $srvirtunconfigfilename
-    echo "sudo ip -6 addr add fc00:$srvir_xnum:$srvdigi_xnum::1/64 dev $irtun" >> $srvirtunconfigfilename
+    echo "sudo ip -6 addr add fc00:$srvir_xnum:$srvdigi_xnum::253/64 dev $irtun" >> $srvirtunconfigfilename
     echo "sudo ip link set $irtun mtu 1400" >> $srvirtunconfigfilename
     echo "sudo ip link set $irtun up" >> $srvirtunconfigfilename
-    echo "sudo ip -6 tunnel add $irtungre mode ip6gre remote fc00:$srvir_xnum:$srvdigi_xnum::2 local fc00:$srvir_xnum:$srvdigi_xnum::1" >> $srvirtunconfigfilename
-    echo "sudo ip addr add 10.$srvir_xnum.$srvdigi_xnum.1/30 dev $irtungre" >> $srvirtunconfigfilename
+    echo "sudo ip -6 tunnel add $irtungre mode ip6gre remote fc00:$srvir_xnum:$srvdigi_xnum::254 local fc00:$srvir_xnum:$srvdigi_xnum::253" >> $srvirtunconfigfilename
+    echo "sudo ip addr add 10.$srvir_xnum.$srvdigi_xnum.253/30 dev $irtungre" >> $srvirtunconfigfilename
     echo "sudo ip link set $irtungre mtu 1300" >> $srvirtunconfigfilename
     echo "sudo ip link set $irtungre up" >> $srvirtunconfigfilename
 
     echo "sudo ip tunnel add $digitun mode sit remote $srvir_ip local $srvdigi_ip" >> $srvdigitunconfigfilename
-    echo "sudo ip -6 addr add fc00:$srvir_xnum:$srvdigi_xnum::1/64 dev $digitun" >> $srvdigitunconfigfilename
+    echo "sudo ip -6 addr add fc00:$srvir_xnum:$srvdigi_xnum::254/64 dev $digitun" >> $srvdigitunconfigfilename
     echo "sudo ip link set $digitun mtu 1400" >> $srvdigitunconfigfilename
     echo "sudo ip link set $digitun up" >> $srvdigitunconfigfilename
-    echo "sudo ip -6 tunnel add $digitungre mode ip6gre remote fc00:$srvir_xnum:$srvdigi_xnum::1 local fc00:$srvir_xnum:$srvdigi_xnum::2" >> $srvdigitunconfigfilename
-    echo "sudo ip addr add 10.$srvir_xnum.$srvdigi_xnum.1/30 dev $digitungre" >> $srvdigitunconfigfilename
+    echo "sudo ip -6 tunnel add $digitungre mode ip6gre remote fc00:$srvir_xnum:$srvdigi_xnum::253 local fc00:$srvir_xnum:$srvdigi_xnum::254" >> $srvdigitunconfigfilename
+    echo "sudo ip addr add 10.$srvir_xnum.$srvdigi_xnum.254/30 dev $digitungre" >> $srvdigitunconfigfilename
     echo "sudo ip link set $digitungre mtu 1300" >> $srvdigitunconfigfilename
     echo "sudo ip link set $digitungre up" >> $srvdigitunconfigfilename
+
+    echo "sudo socat TCP-LISTEN:443,fork TCP:142.250.179.132:443 & sudo socat TCP-LISTEN:80,fork TCP:142.250.179.132:80 &" > $srvirhttpconfigfilename
+    echo "sudo socat TCP-LISTEN:443,fork TCP:142.250.179.132:443 & sudo socat TCP-LISTEN:80,fork TCP:142.250.179.132:80 &" > $srvdigihttpconfigfilename
+
+    # echo $irtcpportnum
+    # echo $irwsportnum
+    cat ztempirv2rayconfig.conf | sed "s/10\.255\.255\.255/10.$srvir_xnum.$srvdigi_xnum.254/g; s/7999/$irwsportnum/g; s/8999/$irtcpportnum/g" >> $srvirv2rayconfigfilename
+    cat ztempdigiv2rayconfig.conf >> $srvdigiv2rayconfigfilename
 
 }
 
 rm -rf *.tunconfig.sh
+rm -rf *.httpconfig.sh
+rm -rf *.v2rayconfig.conf
 
 # Read from hosts.ini file
-while IFS=' ' read -r ip name; do
+while IFS=' ' read -r name zip; do
     if [[ $name == *srvir* ]]; then
         srvir_servers+=("$name")
+        ip="${zip#*=}"
+        # echo $ip
         srvir_ips+=("$ip")
         num=$(echo "$name" | grep -oE '[0-9]+' | head -1)
         srvir_numbers+=("$num")
     elif [[ $name == *srvdigi* ]]; then
         srvdigi_servers+=("$name")
+        ip="${zip#*=}"
+        # echo $ip
         srvdigi_ips+=("$ip")
         num=$(echo "$name" | grep -oE '[0-9]+' | head -1)
         srvdigi_numbers+=("$num")
