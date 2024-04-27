@@ -27,7 +27,7 @@
     }
   ],
   "routing": {
-    "domainStrategy": "AsIs",
+    "domainStrategy": "IPIfNonMatch",
     "rules": [
       {
         "type": "field",
@@ -37,6 +37,14 @@
           "172.16.0.0/12",
           "10.0.0.0/8",
           "217.218.0.0/16"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "google.com",
+          "speedtest.net"
         ]
       }
     ]
