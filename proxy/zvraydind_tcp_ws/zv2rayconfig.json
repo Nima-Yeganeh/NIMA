@@ -15,7 +15,11 @@
             "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
             "alterId": 0
           }
-        ]
+        ],
+        "mux": {
+          "enabled": true,
+          "concurrency": 32
+        }
       }
     }
   ],
@@ -34,7 +38,11 @@
               }
             ]
           }
-        ]
+        ],
+        "mux": {
+          "enabled": true,
+          "concurrency": 32
+        }
       },
       "tag": "vmess_outbound"
     },
