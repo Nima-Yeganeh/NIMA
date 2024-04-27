@@ -47,8 +47,14 @@
         "type": "field",
         "outboundTag": "blocked",
         "domain": [
-          "speedtest.net",
-          "www.speedtest.net"
+          "speedtest.net"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "whatismyipaddress.com"
         ]
       }
     ]
