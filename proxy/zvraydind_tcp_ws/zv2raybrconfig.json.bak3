@@ -37,22 +37,6 @@
         "enabled": true,
         "concurrency": 32
       }
-    },
-    {
-      "listen": "0.0.0.0",
-      "port": 8903,
-      "protocol": "vmess",
-      "settings": {
-        "clients": [
-          {
-            "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
-            "alterId": 0
-          }
-        ],
-        "streamSettings": {
-          "network": "grpc"
-        }
-      }
     }
   ],
   "outbounds": [
