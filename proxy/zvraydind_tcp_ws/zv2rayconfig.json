@@ -25,28 +25,5 @@
       "settings": {},
       "tag": "direct"
     }
-  ],
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "rules": [
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "ip": [
-          "192.168.0.0/16",
-          "172.16.0.0/12",
-          "10.0.0.0/8",
-          "217.218.0.0/16"
-        ]
-      },
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "domain": [
-          "google.com",
-          "speedtest.net"
-        ]
-      }
-    ]
-  }
+  ]
 }
