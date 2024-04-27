@@ -51,66 +51,24 @@
             "users": [
               {
                 "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
-                "alterId": 0,
-                "security": "none",
-                "encryption": "none",
-                "flow": ""
+                "alterId": 0
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/"
-        },
-        "sockopt": {
-          "dialerProxy": "fragment",
-          "tcpKeepAliveIdle": 500,
-          "mark": 255,
-          "tcpNoDelay": true
-        }
+        "network": "ws"
       },
       "mux": {
         "enabled": true,
-        "concurrency": 32,
-        "xudpConcurrency": 32,
-        "xudpProxyUDP443": "reject"
-      }
-    },
-    {
-      "tag": "fragment",
-      "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "AsIs",
-        "fragment": {
-          "packets": "4",
-          "length": "200",
-          "interval": "1"
-        }
-      },
-      "streamSettings": {
-        "sockopt": {
-          "tcpNoDelay": true,
-          "tcpKeepAliveIdle": 100
-        }
+        "concurrency": 32
       }
     },
     {
       "tag": "direct",
       "protocol": "freedom",
       "settings": {}
-    },
-    {
-      "tag": "block",
-      "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      }
     }
   ]
 }  
-
