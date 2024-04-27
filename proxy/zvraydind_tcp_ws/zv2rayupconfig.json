@@ -13,10 +13,7 @@
         "clients": [
           {
             "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
-            "alterId": 0,
-            "security": "none",
-            "encryption": "none",
-            "flow": ""
+            "alterId": 0
           }
         ]
       },
@@ -24,35 +21,11 @@
         "network": "ws",
         "wsSettings": {
           "path": "/"
-        },
-        "sockopt": {
-          "dialerProxy": "fragment",
-          "tcpKeepAliveIdle": 100,
-          "mark": 255,
-          "tcpNoDelay": true
         }
       },
       "mux": {
         "enabled": true,
-        "concurrency": 32,
-        "xudpConcurrency": 32,
-        "xudpProxyUDP443": "reject"
-      }
-    },
-    {
-      "listen": "0.0.0.0",
-      "port": 8901,
-      "protocol": "vmess",
-      "settings": {
-        "clients": [
-          {
-            "id": "a04be4ef-1797-4ca9-a549-4385ce42494c",
-            "alterId": 0,
-            "security": "none",
-            "encryption": "none",
-            "flow": ""
-          }
-        ]
+        "concurrency": 32
       }
     }
   ],
@@ -61,33 +34,5 @@
       "protocol": "freedom",
       "tag": "freedom"
     }
-  ],
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "rules": [
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "domain": [
-          "speedtest.net",
-          "testmy.net",
-          "www.google.com",
-          "google.com"
-        ]
-      }
-    ],
-    "settings": {
-      "rules": [
-        {
-          "type": "field",
-          "ip": [
-            "192.168.0.0/16",
-            "172.16.0.0/12",
-            "10.0.0.0/8"
-          ],
-          "outboundTag": "local"
-        }
-      ]
-    }
-  }
+  ]
 }  
