@@ -92,8 +92,8 @@
       },
       "mux": {
         "enabled": true,
-        "concurrency": 32,
-        "xudpConcurrency": 32,
+        "concurrency": 8,
+        "xudpConcurrency": 8,
         "xudpProxyUDP443": "reject"
       }
     },
@@ -135,34 +135,6 @@
       "8.8.8.8",
       "8.8.4.4"
     ]
-  },
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-    "rules": [
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "domain": [
-          "speedtest.net",
-          "testmy.net",
-          "www.google.com",
-          "google.com"
-        ]
-      }
-    ],
-    "settings": {
-      "rules": [
-        {
-          "type": "field",
-          "ip": [
-            "192.168.0.0/16",
-            "172.16.0.0/12",
-            "10.0.0.0/8"
-          ],
-          "outboundTag": "local"
-        }
-      ]
-    }
   }
-}  
+}
 
