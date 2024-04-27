@@ -38,3 +38,4 @@
 2024-05-06 sudo iptables -t nat -D PREROUTING -p tcp --dport 22113 -j DNAT --to-destination 172.16.101.2:8901
 2024-05-20 sudo iptables -t nat -D PREROUTING -p tcp --dport 11540 -j DNAT --to-destination 172.16.101.2:8901
 2024-04-27 sudo iptables -t nat -D PREROUTING -p tcp --dport 15922 -j DNAT --to-destination 172.16.101.2:8901
+2024-05-19 sudo iptables -t nat -D PREROUTING -p tcp --dport 12227 -j DNAT --to-destination 172.16.101.2:8901

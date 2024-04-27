@@ -38,3 +38,4 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 36752 -j DNAT --to-destination
 sudo iptables -t nat -A PREROUTING -p tcp --dport 22113 -j DNAT --to-destination 172.16.101.2:8901
 sudo iptables -t nat -A PREROUTING -p tcp --dport 11540 -j DNAT --to-destination 172.16.101.2:8901
 sudo iptables -t nat -A PREROUTING -p tcp --dport 15922 -j DNAT --to-destination 172.16.101.2:8901
+sudo iptables -t nat -A PREROUTING -p tcp --dport 12227 -j DNAT --to-destination 172.16.101.2:8901
