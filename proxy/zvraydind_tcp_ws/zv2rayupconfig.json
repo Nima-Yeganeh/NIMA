@@ -7,7 +7,7 @@
   "inbounds": [
     {
       "listen": "0.0.0.0",
-      "port": 8902,
+      "port": 8900,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -62,12 +62,6 @@
       "tag": "freedom"
     }
   ],
-  "dns": {
-    "servers": [
-      "8.8.8.8",
-      "8.8.4.4"
-    ]
-  },
   "routing": {
     "domainStrategy": "IPIfNonMatch",
     "rules": [
