@@ -29,7 +29,60 @@
   "outbounds": [
     {
       "protocol": "freedom",
-      "tag": "freedom"
+      "settings": {},
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
     }
-  ]
-}  
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "blocked",
+        "domain": [
+          "speedtest.net",
+          "speedtest.com",
+          "fast.com",
+          "www.fast.com",
+          "fiber.google.com",
+          "supportal-test.co.uk",
+          "www.supportal-test.co.uk",
+          "web1.cachefly.net",
+          "www.cachefly.net",
+          "cachefly.net",
+          "www.broadbandspeedchecker.co.uk",
+          "broadbandtest.which.co.uk",
+          "www.uswitch.com",
+          "www.thinkbroadband.com",
+          "www.virginmedia.com",
+          "www.gocompare.com",
+          "www.talktalk.co.uk",
+          "speedtest.btwholesale.com",
+          "puspfc.speedtestcustom.com",
+          "www.nperf.com",
+          "www.comparethemarket.com",
+          "www.netmeter.co.uk",
+          "www.speedcheck.ir",
+          "speed-interior.shatel.ir",
+          "www.testspeed.ir",
+          "pishgaman.net",
+          "speedtest.mci.ir",
+          "speedtest.ir",
+          "asiatech.ir",
+          "www.sabanet.ir",
+          "www.hiweb.ir",
+          "www.wakav.ir",
+          "sp.msp-ict.com",
+          "suninternet.ir",
+          "speedtest.playpod.ir",
+          "speedcheck.ir"
+        ]
+      }
+    ]
+  }
+}
