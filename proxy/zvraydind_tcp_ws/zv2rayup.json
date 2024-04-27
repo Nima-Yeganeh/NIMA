@@ -48,7 +48,10 @@
           "www.fast.com",
           "fiber.google.com",
           "supportal-test.co.uk",
-          "www.supportal-test.co.uk"
+          "www.supportal-test.co.uk",
+          "web1.cachefly.net",
+          "www.cachefly.net",
+          "cachefly.net"
         ]
       }
     ]
