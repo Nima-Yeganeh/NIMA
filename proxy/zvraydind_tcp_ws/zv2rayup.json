@@ -43,7 +43,12 @@
         "outboundTag": "blocked",
         "domain": [
           "speedtest.net",
-          "speedtest.com"
+          "speedtest.com",
+          "fast.com",
+          "www.fast.com",
+          "fiber.google.com",
+          "supportal-test.co.uk",
+          "www.supportal-test.co.uk"
         ]
       }
     ]
