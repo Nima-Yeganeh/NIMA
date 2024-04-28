@@ -6,6 +6,8 @@ if [ ! -f "hosts.ini" ]; then
     exit 1
 fi
 
+bash configupdate.sh
+
 # Read each line of hosts.ini and execute ssh-copy-id for each IP
 while IFS= read -r line; do
     # Extract IP address from the line
@@ -20,3 +22,4 @@ done < "hosts.ini"
 
 ansible -i hosts.ini -u root -m ping all
 ansible-playbook -i hosts.ini -u root hostupdate.yml
+

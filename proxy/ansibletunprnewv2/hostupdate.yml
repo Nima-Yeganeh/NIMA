@@ -121,7 +121,7 @@
       hostname:
         name: "{{ inventory_hostname }}"
 
-    - name: Copy Hostname Update Script to Remote Host
+    - name: Copy Hostname Update Script to Host
       copy:
         src: hostnameupdate.sh
         dest: /root/hostnameupdate.sh
@@ -130,12 +130,12 @@
     - name: Execute Hostname Update Script
       command: sudo bash /root/hostnameupdate.sh
 
-    - name: Remove Hostname Update Script from Remote Host
+    - name: Remove Hostname Update Script from Host
       file:
         path: /root/hostnameupdate.sh
         state: absent
 
-    - name: Copy Tunnel Configuration Script to Remote Host
+    - name: Copy Tunnel Configuration Script to Host
       copy:
         src: "{{ inventory_hostname }}.tunconfig.sh"
         dest: "/etc/{{ inventory_hostname }}.tunconfig.sh"
@@ -159,7 +159,7 @@
         path: /etc/tunnelscriptconfig.sh
         mode: '0755'
 
-    - name: Copy Tunnel Service File to Remote Host
+    - name: Copy Tunnel Service File to Host
       template:
         src: tunnelscript.service
         dest: /etc/systemd/system/tunnelscript.service
@@ -179,7 +179,7 @@
         name: docker
         enabled: yes
 
-    - name: Copy BBR Script to Remote Host
+    - name: Copy BBR Script to Host
       copy:
         src: bbr.sh
         dest: /bbr.sh
@@ -192,36 +192,74 @@
     - name: Execute BBR Script
       command: sudo bash /bbr.sh
 
-    - name: Copy docker-compose.yml to remote host
+    - name: Remove BBR Script from Host
+      file:
+        path: /bbr.sh
+        state: absent
+
+    - name: Copy zv2rayconfig.json to IR Host
+      copy:
+        src: "{{ inventory_hostname }}{{ item }}.v2rayconfig.conf"
+        dest: "/{{ inventory_hostname }}{{ item }}.v2rayconfig.conf"
+      loop: "{{ groups['remote_servers'] }}"
+      when: inventory_hostname in groups['local_servers']
+
+    - name: Copy zv2rayconfig.json to Digi Host
+      copy:
+        src: "{{ inventory_hostname }}.v2rayconfig.conf"
+        dest: "/{{ inventory_hostname }}.v2rayconfig.conf"
+      when: inventory_hostname in groups['remote_servers']
+
+    - name: Copy docker-compose.yml to Host
       copy:
         src: docker-compose.yml
-        dest: /root/docker-compose.yml
+        dest: /docker-compose.yml
 
-    - name: Copy zv2rayconfig.json to remote host
+    - name: Copy Docker Config to Host
       copy:
-        src: zv2rayconfig.json
-        dest: /root/zv2rayconfig.json
+        src: "{{ inventory_hostname }}.dockerconfig.yml"
+        dest: "/{{ inventory_hostname }}.dockerconfig.yml"
+
+    - name: Copy Docker Make Script to Host
+      copy:
+        src: "{{ inventory_hostname }}.dockermake.sh"
+        dest: "/{{ inventory_hostname }}.dockermake.sh"
+        mode: '0755' 
+
+    - name: Execute Docker Make Script
+      command: "sudo bash /{{ inventory_hostname }}.dockermake.sh"
+
+    - name: Remove Docker Make Script from Host
+      file:
+        path: "/{{ inventory_hostname }}.dockermake.sh"
+        state: absent
+
+    - name: Remove Docker Config from Host
+      file:
+        path: "/{{ inventory_hostname }}.dockerconfig.yml"
+        state: absent
 
     - name: Check if v2ray container is running
       command: docker ps --filter "name=v2ray" --format "{{ '{{' }}.Names{{ '}}' }}"
       register: container_name
       ignore_errors: yes
 
-    - name: Remove v2ray container if it's running
-      docker_container:
-        name: "{{ container_name.stdout }}"
-        state: absent
-      when: container_name.rc == 0
+    # - name: Remove v2ray container if it's running
+    #   docker_container:
+    #     name: "{{ container_name.stdout }}"
+    #     state: absent
+    #   when: container_name.rc == 0
 
     - name: Docker Compose Up
       command: docker-compose up -d
       args:
-        chdir: /root
+        chdir: /
       register: docker_compose_result
 
-    - name: Show Docker containers
+    - name: Show Docker Containers
       command: docker ps -a
       register: docker_ps_result
 
     - debug:
         msg: "{{ docker_ps_result.stdout }}"
+

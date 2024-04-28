@@ -35,6 +35,8 @@ echo_server_combinations() {
     local srvdigiv2rayconfigfilename="$srvdigi_name.v2rayconfig.conf"
     local srvirdockerfilename="$srvir_name.dockerconfig.yml"
     local srvdigidockerfilename="$srvdigi_name.dockerconfig.yml"
+    local srvirdockermakefilename="$srvir_name.dockermake.sh"
+    local srvdigidockermakefilename="$srvdigi_name.dockermake.sh"
 
     # echo "$srvir_ip $srvir_name $srvir_num $srvdigi_ip $srvdigi_name $srvdigi_num"
     # echo $srvirtunconfigfilename
@@ -68,8 +70,32 @@ echo_server_combinations() {
     cat ztempirv2rayconfig.conf | sed "s/10\.255\.255\.255/10.$srvir_xnum.$srvdigi_xnum.254/g; s/7999/$irwsportnum/g; s/8999/$irtcpportnum/g" >> $srvirv2rayconfigfilename
     cat ztempdigiv2rayconfig.conf >> $srvdigiv2rayconfigfilename
 
-    echo "" >> $srvirdockerfilename
-    echo "" >> $srvdigidockerfilename
+    # echo "" >> $srvirdockerfilename
+    # echo "" >> $srvdigidockerfilename
+
+    echo "  v2ray_ir_$srvir_snum$srvdigi_snum:" >> $srvirdockerfilename
+    echo "    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std" >> $srvirdockerfilename
+    echo "    restart: always" >> $srvirdockerfilename
+    echo "    environment:" >> $srvirdockerfilename
+    echo "      - v2ray.vmess.aead.forced=false" >> $srvirdockerfilename
+    echo "    ports:" >> $srvirdockerfilename
+    echo "      - '$irwsportnum:$irwsportnum'" >> $srvirdockerfilename
+    echo "      - '$irtcpportnum:$irtcpportnum'" >> $srvirdockerfilename
+    echo "    volumes:" >> $srvirdockerfilename
+    echo "      - /$srvirv2rayconfigfilename:/etc/v2ray/config.json" >> $srvirdockerfilename
+
+    echo "  v2ray_digi_$srvdigi_snum:" > $srvdigidockerfilename
+    echo "    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std" >> $srvdigidockerfilename
+    echo "    restart: always" >> $srvdigidockerfilename
+    echo "    environment:" >> $srvdigidockerfilename
+    echo "      - v2ray.vmess.aead.forced=false" >> $srvdigidockerfilename
+    echo "    ports:" >> $srvdigidockerfilename
+    echo "      - '9000:9000'" >> $srvdigidockerfilename
+    echo "    volumes:" >> $srvdigidockerfilename
+    echo "      - /$srvdigiv2rayconfigfilename:/etc/v2ray/config.json" >> $srvdigidockerfilename
+
+    echo "cat /$srvirdockerfilename >> /docker-compose.yml" > $srvirdockermakefilename
+    echo "cat /$srvdigidockerfilename >> /docker-compose.yml" > $srvdigidockermakefilename
 
 }
 
