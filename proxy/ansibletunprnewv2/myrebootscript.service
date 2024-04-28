@@ -1,0 +1,11 @@
+[Unit]
+Description=My Reboot Script Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /etc/rebootnow.sh
+
+[Install]
+WantedBy=multi-user.target
+
