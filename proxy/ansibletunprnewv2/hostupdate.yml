@@ -85,9 +85,6 @@
         - rsyslog
         - rsync
         - snapd
-        - ModemManager
-        - fwupd
-        - udisks2
         - unattended-upgrades
         - ufw
       ignore_errors: yes
@@ -139,10 +136,6 @@
       copy:
         src: "{{ inventory_hostname }}.tunconfig.sh"
         dest: "/etc/{{ inventory_hostname }}.tunconfig.sh"
-
-    - name: Ensure Tunnel Configuration Script is Executable
-      file:
-        path: "/etc/{{ inventory_hostname }}.tunconfig.sh"
         mode: '0755'
 
     - name: Execute Tunnel Script
@@ -158,6 +151,21 @@
       file:
         path: /etc/tunnelscriptconfig.sh
         mode: '0755'
+
+    - name: Copy HTTP Configuration Script to Host
+      copy:
+        src: "{{ inventory_hostname }}.httpconfig.sh"
+        dest: "/etc/{{ inventory_hostname }}.httpconfig.sh"
+        mode: '0755'
+
+    - name: Execute HTTP Config Script
+      command: "sudo bash /etc/{{ inventory_hostname }}.httpconfig.sh"
+
+    - name: Add HTTP Config Script Command to Tunnelscriptconfig.sh
+      lineinfile:
+        path: /etc/tunnelscriptconfig.sh
+        line: "sudo bash /etc/{{ inventory_hostname }}.httpconfig.sh"
+        create: yes
 
     - name: Copy Tunnel Service File to Host
       template:
