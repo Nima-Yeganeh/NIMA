@@ -46,18 +46,8 @@
         path: "/{{ inventory_hostname }}.dockerconfig.yml"
         state: absent
 
-    - name: Get List of Docker Containers
-      docker_container_info:
-        filters:
-          status: running
-      register: docker_containers
-
     - name: Stop and Remove Docker Containers
-      docker_container:
-        name: "{{ item.Name }}"
-        state: absent
-        force_kill: yes
-      loop: "{{ docker_containers.containers }}"
+      command: sudo docker rm -f $(sudo docker ps -q)
 
     - name: Docker Compose Up
       command: docker-compose up -d
