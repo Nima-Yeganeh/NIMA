@@ -1,4 +1,4 @@
-  v2ray_ir_001001:
+  v2ray_ir_002001:
     image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
     environment:
@@ -7,8 +7,8 @@
       - '7001:7001'
       - '8001:8001'
     volumes:
-      - /ubuntu9001srvirubuntu9001srvdiginl.v2rayconfig.conf:/etc/v2ray/config.json
-  v2ray_ir_001002:
+      - /ubuntu9002srvirubuntu9001srvdiginl.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_002002:
     image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
     environment:
@@ -17,8 +17,8 @@
       - '7002:7002'
       - '8002:8002'
     volumes:
-      - /ubuntu9001srvirubuntu9002srvdigiuk.v2rayconfig.conf:/etc/v2ray/config.json
-  v2ray_ir_001003:
+      - /ubuntu9002srvirubuntu9002srvdigiuk.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_002003:
     image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
     environment:
@@ -27,8 +27,8 @@
       - '7003:7003'
       - '8003:8003'
     volumes:
-      - /ubuntu9001srvirubuntu9003srvdigide.v2rayconfig.conf:/etc/v2ray/config.json
-  v2ray_ir_001004:
+      - /ubuntu9002srvirubuntu9003srvdigide.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_002004:
     image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
     environment:
@@ -37,8 +37,8 @@
       - '7004:7004'
       - '8004:8004'
     volumes:
-      - /ubuntu9001srvirubuntu9004srvdigius.v2rayconfig.conf:/etc/v2ray/config.json
-  v2ray_ir_001005:
+      - /ubuntu9002srvirubuntu9004srvdigius.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_002005:
     image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
     environment:
@@ -47,8 +47,8 @@
       - '7005:7005'
       - '8005:8005'
     volumes:
-      - /ubuntu9001srvirubuntu9005srvdigica.v2rayconfig.conf:/etc/v2ray/config.json
-  v2ray_ir_001006:
+      - /ubuntu9002srvirubuntu9005srvdigica.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_002006:
     image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
     environment:
@@ -57,8 +57,8 @@
       - '7006:7006'
       - '8006:8006'
     volumes:
-      - /ubuntu9001srvirubuntu9006srvdiginl.v2rayconfig.conf:/etc/v2ray/config.json
-  v2ray_ir_001007:
+      - /ubuntu9002srvirubuntu9006srvdiginl.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_002007:
     image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
     environment:
@@ -67,8 +67,8 @@
       - '7007:7007'
       - '8007:8007'
     volumes:
-      - /ubuntu9001srvirubuntu9007srvdigiuk.v2rayconfig.conf:/etc/v2ray/config.json
-  v2ray_ir_001008:
+      - /ubuntu9002srvirubuntu9007srvdigiuk.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_002008:
     image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
     environment:
@@ -77,8 +77,8 @@
       - '7008:7008'
       - '8008:8008'
     volumes:
-      - /ubuntu9001srvirubuntu9008srvdigide.v2rayconfig.conf:/etc/v2ray/config.json
-  v2ray_ir_001009:
+      - /ubuntu9002srvirubuntu9008srvdigide.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_002009:
     image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
     environment:
@@ -87,4 +87,4 @@
       - '7009:7009'
       - '8009:8009'
     volumes:
-      - /ubuntu9001srvirubuntu9009srvdigius.v2rayconfig.conf:/etc/v2ray/config.json
+      - /ubuntu9002srvirubuntu9009srvdigius.v2rayconfig.conf:/etc/v2ray/config.json
