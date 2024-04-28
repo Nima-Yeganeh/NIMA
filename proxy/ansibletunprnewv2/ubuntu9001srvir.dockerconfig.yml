@@ -8,3 +8,43 @@
       - '8001:8001'
     volumes:
       - /ubuntu9001srvirubuntu9001srvdiginl.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_001002:
+    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
+    restart: always
+    environment:
+      - v2ray.vmess.aead.forced=false
+    ports:
+      - '7002:7002'
+      - '8002:8002'
+    volumes:
+      - /ubuntu9001srvirubuntu9002srvdigiuk.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_001003:
+    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
+    restart: always
+    environment:
+      - v2ray.vmess.aead.forced=false
+    ports:
+      - '7003:7003'
+      - '8003:8003'
+    volumes:
+      - /ubuntu9001srvirubuntu9003srvdigide.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_001004:
+    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
+    restart: always
+    environment:
+      - v2ray.vmess.aead.forced=false
+    ports:
+      - '7004:7004'
+      - '8004:8004'
+    volumes:
+      - /ubuntu9001srvirubuntu9004srvdigius.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_001005:
+    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
+    restart: always
+    environment:
+      - v2ray.vmess.aead.forced=false
+    ports:
+      - '7005:7005'
+      - '8005:8005'
+    volumes:
+      - /ubuntu9001srvirubuntu9005srvdigica.v2rayconfig.conf:/etc/v2ray/config.json
