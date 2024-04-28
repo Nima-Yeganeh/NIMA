@@ -5,10 +5,12 @@ display_options() {
     echo "Options:"
     echo "1. Install and Update"
     echo "2. Docker Update and Restart"
-    echo "3. DNAT Update"
-    echo "4. User NAT Update (Expire and Cleanup)"
-    echo "5. Create V2RAY User"
-    echo "6. Exit"
+    echo "3. Tunnel Reconfigure and Update on All Hosts"
+    echo "4. DNAT Update"
+    echo "5. User NAT Update (Expire and Cleanup)"
+    echo "6. Create V2RAY User"
+    echo "7. Uptime Check on All Hosts"
+    echo "8. Exit"
 }
 
 # Function to get user input and echo the chosen option
@@ -17,11 +19,13 @@ get_user_input() {
     case $choice in
         1) install_update;;
         2) docker_update_restart;;
-        3) echo "3 DNAT Update";;
-        4) echo "4 User NAT Update (Expire and Cleanup)";;
-        5) echo "5 Create V2RAY User";;
-        6) echo "Exiting..."; exit;;
-        *) echo "Invalid option. Please enter a number between 1 and 6.";;
+        3) tunnel_reconfig;;
+        4) echo "4 DNAT Update";;
+        5) echo "5 User NAT Update (Expire and Cleanup)";;
+        6) echo "6 Create V2RAY User";;
+        7) uptime_check;;
+        8) echo "Exiting..."; exit;;
+        *) echo "Invalid option!!";;
     esac
 }
 
@@ -52,10 +56,21 @@ install_update() {
 }
 
 docker_update_restart() {
-    check_host_ssh_copy
+    # check_host_ssh_copy
     bash configupdate.sh
     # ansible -i hosts.ini -u root -m ping all
     ansible-playbook -i hosts.ini -u root dockerupdate.yml
+}
+
+tunnel_reconfig() {
+    # check_host_ssh_copy
+    bash configupdate.sh
+    # ansible -i hosts.ini -u root -m ping all
+    ansible-playbook -i hosts.ini -u root tunnelupdate.yml
+}
+
+uptime_check() {
+    ansible-playbook -i hosts.ini -u root uptime_check.yml
 }
 
 # Main script

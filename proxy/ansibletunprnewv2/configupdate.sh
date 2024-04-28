@@ -26,7 +26,8 @@ echo_server_combinations() {
     local digitungre="gre6tundg$srvdigi_snum$srvir_snum"
     local irtcpportnum=$((srvdigi_num - 9000 + 8000))
     local irwsportnum=$((srvdigi_num - 9000 + 7000))
-    
+    local srvirtundelconfigfilename="$srvir_name.tundelconfig.sh"
+    local srvdigitundelconfigfilename="$srvdigi_name.tundelconfig.sh"
     local srvirtunconfigfilename="$srvir_name.tunconfig.sh"
     local srvdigitunconfigfilename="$srvdigi_name.tunconfig.sh"
     local srvirhttpconfigfilename="$srvir_name.httpconfig.sh"
@@ -43,6 +44,12 @@ echo_server_combinations() {
     # echo $srvdigitunconfigfilename
     # echo "$srvir_ip $srvir_name $srvir_num $srvdigi_ip $srvdigi_name $srvdigi_num" >> $srvirtunconfigfilename
     # echo "$srvir_ip $srvir_name $srvir_num $srvdigi_ip $srvdigi_name $srvdigi_num" >> $srvdigitunconfigfilename
+
+    echo "sudo ip tunnel del $irtun" >> $srvirtundelconfigfilename
+    echo "sudo ip -6 tunnel del $irtungre" >> $srvirtundelconfigfilename
+
+    echo "sudo ip tunnel del $digitun" >> $srvdigitundelconfigfilename
+    echo "sudo ip -6 tunnel del $digitungre" >> $srvdigitundelconfigfilename
 
     echo "sudo ip tunnel add $irtun mode sit remote $srvdigi_ip local $srvir_ip" >> $srvirtunconfigfilename
     echo "sudo ip -6 addr add fc00:$srvir_xnum:$srvdigi_xnum::253/64 dev $irtun" >> $srvirtunconfigfilename
@@ -99,6 +106,7 @@ echo_server_combinations() {
 
 }
 
+rm -rf *.tundelconfig.sh
 rm -rf *.tunconfig.sh
 rm -rf *.httpconfig.sh
 rm -rf *.v2rayconfig.conf

@@ -46,8 +46,14 @@
         path: "/{{ inventory_hostname }}.dockerconfig.yml"
         state: absent
 
-    - name: Stop and Remove Docker Containers
-      command: "sudo docker rm -f $(sudo docker ps -aq)"
+    - name: Copy Docker Cleanup Script to Host
+      copy:
+        src: docker_cleanup.sh
+        dest: /docker_cleanup.sh
+        mode: '0755' 
+
+    - name: Execute Docker Cleanup Script
+      command: "sudo bash /docker_cleanup.sh"
       ignore_errors: yes
 
     - name: Docker Compose Up

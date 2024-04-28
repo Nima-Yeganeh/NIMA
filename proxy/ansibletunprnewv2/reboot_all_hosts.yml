@@ -1,0 +1,9 @@
+---
+- name: Update and Configure Ubuntu Servers
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Reboot All Hosts
+      command: "sudo reboot now"
+      ignore_errors: yes

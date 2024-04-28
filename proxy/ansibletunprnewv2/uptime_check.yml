@@ -1,0 +1,13 @@
+---
+- name: Update and Configure Ubuntu Servers
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Get System Uptime
+      command: uptime
+      register: uptime_output
+
+    - name: Display System Uptime
+      debug:
+        msg: "System uptime on {{ inventory_hostname }}: {{ uptime_output.stdout }}"
