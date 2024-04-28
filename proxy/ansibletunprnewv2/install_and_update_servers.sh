@@ -1,25 +1,63 @@
 #!/bin/bash
 
-# Check if hosts.ini exists
-if [ ! -f "hosts.ini" ]; then
-    echo "hosts.ini file not found!"
-    exit 1
-fi
+# Function to display options
+display_options() {
+    echo "Options:"
+    echo "1. Install and Update"
+    echo "2. Docker Update and Restart"
+    echo "3. DNAT Update"
+    echo "4. User NAT Update (Expire and Cleanup)"
+    echo "5. Create V2RAY User"
+    echo "6. Exit"
+}
 
-bash configupdate.sh
+# Function to get user input and echo the chosen option
+get_user_input() {
+    read -p "Enter the number corresponding to your choice: " choice
+    case $choice in
+        1) install_update;;
+        2) docker_update_restart;;
+        3) echo "3 DNAT Update";;
+        4) echo "4 User NAT Update (Expire and Cleanup)";;
+        5) echo "5 Create V2RAY User";;
+        6) echo "Exiting..."; exit;;
+        *) echo "Invalid option. Please enter a number between 1 and 6.";;
+    esac
+}
 
-# Read each line of hosts.ini and execute ssh-copy-id for each IP
-while IFS= read -r line; do
-    # Extract IP address from the line
-    ip=$(echo "$line" | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b")
-    # Check if IP is not empty
-    if [ -n "$ip" ]; then
-        echo "Copying SSH key to $ip"
-        ssh-copy-id root@"$ip" >/dev/null 2>&1
-        # ssh-copy-id root@"$ip"
+# Main script
+display_options
+get_user_input
+
+check_host_ssh_copy() {
+    # Check if hosts.ini exists
+    if [ ! -f "hosts.ini" ]; then
+        echo "hosts.ini file not found!"
+        exit 1
     fi
-done < "hosts.ini"
+    # Read each line of hosts.ini and execute ssh-copy-id for each IP
+    while IFS= read -r line; do
+        # Extract IP address from the line
+        ip=$(echo "$line" | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b")
+        # Check if IP is not empty
+        if [ -n "$ip" ]; then
+            echo "Copying SSH key to $ip"
+            ssh-copy-id root@"$ip" >/dev/null 2>&1
+            # ssh-copy-id root@"$ip"
+        fi
+    done < "hosts.ini"
+}
 
-ansible -i hosts.ini -u root -m ping all
-ansible-playbook -i hosts.ini -u root hostupdate.yml
+install_update() {
+    check_host_ssh_copy
+    bash configupdate.sh
+    ansible -i hosts.ini -u root -m ping all
+    ansible-playbook -i hosts.ini -u root hostupdate.yml
+}
 
+docker_update_restart() {
+    check_host_ssh_copy
+    bash configupdate.sh
+    # ansible -i hosts.ini -u root -m ping all
+    ansible-playbook -i hosts.ini -u root dockerupdate.yml
+}
