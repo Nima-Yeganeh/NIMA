@@ -46,16 +46,18 @@
         path: "/{{ inventory_hostname }}.dockerconfig.yml"
         state: absent
 
-    - name: Check if v2ray container is running
-      command: docker ps --filter "name=v2ray" --format "{{ '{{' }}.Names{{ '}}' }}"
-      register: container_name
-      ignore_errors: yes
+    - name: Get List of Docker Containers
+      docker_container_info:
+        filters:
+          status: running
+      register: docker_containers
 
-    - name: Remove v2ray container if it's running
+    - name: Stop and Remove Docker Containers
       docker_container:
-        name: "{{ container_name.stdout }}"
+        name: "{{ item.Name }}"
         state: absent
-      when: container_name.rc == 0
+        force_kill: yes
+      loop: "{{ docker_containers.containers }}"
 
     - name: Docker Compose Up
       command: docker-compose up -d

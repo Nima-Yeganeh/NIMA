@@ -25,10 +25,6 @@ get_user_input() {
     esac
 }
 
-# Main script
-display_options
-get_user_input
-
 check_host_ssh_copy() {
     # Check if hosts.ini exists
     if [ ! -f "hosts.ini" ]; then
@@ -61,3 +57,8 @@ docker_update_restart() {
     # ansible -i hosts.ini -u root -m ping all
     ansible-playbook -i hosts.ini -u root dockerupdate.yml
 }
+
+# Main script
+display_options
+get_user_input
+
