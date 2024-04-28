@@ -47,7 +47,8 @@
         state: absent
 
     - name: Stop and Remove Docker Containers
-      command: sudo docker rm -f $(sudo docker ps -q)
+      command: "sudo docker rm -f $(sudo docker ps -aq)"
+      ignore_errors: yes
 
     - name: Docker Compose Up
       command: docker-compose up -d
