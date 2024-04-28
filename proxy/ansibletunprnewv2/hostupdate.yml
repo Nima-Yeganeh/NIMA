@@ -142,9 +142,9 @@
         src: myrebootscript.service
         dest: /etc/systemd/system/myrebootscript.service
 
-    - name: Reload Systemd Daemon
+    - name: Reload Systemd
       systemd:
-        state: reloaded
+        daemon_reload: yes
 
     - name: Enable myrebootscript.service
       systemd:

@@ -4,3 +4,22 @@
   become: yes
 
   tasks:
+    - name: Reload Systemd
+      systemd:
+        daemon_reload: yes
+
+    - name: Enable myrebootscript.service
+      systemd:
+        name: myrebootscript.service
+        enabled: yes
+
+    - name: Start myrebootscript.service
+      service:
+        name: myrebootscript.service
+        state: started
+
+    - name: Restart myrebootscript.service
+      service:
+        name: myrebootscript.service
+        state: restarted
+
