@@ -12,7 +12,8 @@ display_options() {
     echo "7. Uptime Check on All Hosts"
     echo "8. Update SSH Key"
     echo "9. Change Root Password on All Hosts"
-    echo "10. Exit"
+    echo "10. Check Traffic"
+    echo "99. Exit"
 }
 
 # Function to get user input and echo the chosen option
@@ -28,7 +29,8 @@ get_user_input() {
         7) uptime_check;;
         8) check_host_ssh_copy;;
 	9) change_password;;
-        10) echo "Exiting..."; exit;;
+	10) check_traffic;;
+        99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
 }
@@ -86,6 +88,10 @@ change_password() {
     ansible-playbook -i hosts.ini -u root change_root_password_tempfile.yml
     sudo rm -f change_root_password_tempfile.yml    
     echo "Root password changed successfully."
+}
+
+check_traffic() {
+    ansible-playbook -i hosts.ini -u root check_traffic.yml
 }
 
 # Main script
