@@ -1,0 +1,16 @@
+---
+- name: Check Memory and CPU
+  hosts: all
+  gather_facts: true
+
+  tasks:
+    - name: Get Memory and CPU Information
+      ansible.builtin.shell: |
+        free -m
+        echo "---"
+        cat /proc/cpuinfo | grep "model name" | uniq
+      register: system_info
+
+    - name: Display Memory and CPU Information
+      ansible.builtin.debug:
+        msg: "{{ system_info.stdout }}"
