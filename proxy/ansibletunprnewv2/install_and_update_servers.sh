@@ -93,7 +93,7 @@ change_password() {
 }
 
 check_traffic() {
-    ansible-playbook -i hosts.ini -u root check_traffic.yml
+    ansible-playbook -i hosts.ini -u root check_traffic.yml | grep "packets"
 }
 
 traffic_rate() {

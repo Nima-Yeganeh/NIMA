@@ -1,7 +1,7 @@
 ---
 - name: Traffic Statistics
   hosts: all
-  gather_facts: true
+  gather_facts: false
   become: yes
 
   tasks:
@@ -10,7 +10,7 @@
         interface="eth0"; 
         send=$(ifconfig $interface | grep "TX packets" | awk '{print $6 " " $7}'); 
         receive=$(ifconfig $interface | grep "RX packets" | awk '{print $6 " " $7}'); 
-        echo "Send Traffic: $send packets and Receive Traffic: $receive packets"
+        echo "$(hostname) >> Send Traffic: $send packets and Receive Traffic: $receive packets"
       register: traffic_result
     - name: Display Traffic Statistics
       ansible.builtin.debug:
