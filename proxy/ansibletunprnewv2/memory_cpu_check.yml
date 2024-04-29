@@ -5,7 +5,7 @@
 
   tasks:
     - name: Get Memory and CPU Information
-      ansible.builtin.shell: |
+      shell: |
         free -m
         echo "---"
         cat /proc/cpuinfo | grep "model name" | uniq
