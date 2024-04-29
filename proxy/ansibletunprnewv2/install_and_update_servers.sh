@@ -13,6 +13,7 @@ display_options() {
     echo "8. Update SSH Key"
     echo "9. Change Root Password on All Hosts"
     echo "10. Check Traffic"
+    echo "11. Traffic Rate >> Mbps"
     echo "99. Exit"
 }
 
@@ -30,6 +31,7 @@ get_user_input() {
         8) check_host_ssh_copy;;
 	9) change_password;;
 	10) check_traffic;;
+	11) traffic_rate;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
@@ -92,6 +94,10 @@ change_password() {
 
 check_traffic() {
     ansible-playbook -i hosts.ini -u root check_traffic.yml
+}
+
+traffic_rate() {
+    ansible-playbook -i hosts.ini -u root traffic_rate.yml | grep "Mbps"
 }
 
 # Main script
