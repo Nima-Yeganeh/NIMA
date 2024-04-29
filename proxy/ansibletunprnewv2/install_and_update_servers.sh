@@ -11,7 +11,8 @@ display_options() {
     echo "6. Create V2RAY User"
     echo "7. Uptime Check on All Hosts"
     echo "8. Update SSH Key"
-    echo "9. Exit"
+    echo "9. Change Root Password on All Hosts"
+    echo "10. Exit"
 }
 
 # Function to get user input and echo the chosen option
@@ -26,7 +27,8 @@ get_user_input() {
         6) echo "6 Create V2RAY User";;
         7) uptime_check;;
         8) check_host_ssh_copy;;
-        9) echo "Exiting..."; exit;;
+	9) change_password;;
+        10) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
 }
@@ -73,6 +75,17 @@ tunnel_reconfig() {
 
 uptime_check() {
     ansible-playbook -i hosts.ini -u root uptime_check.yml
+}
+
+change_password() {
+    # Prompt user for new password
+    read -s -p "Enter new password for root user: " new_password
+    echo
+    # Change root password
+    cat change_root_password.yml | sed "s/9999999999/$new_password/g" > change_root_password_tempfile.yml
+    ansible-playbook -i hosts.ini -u root change_root_password_tempfile.yml
+    sudo rm -f change_root_password_tempfile.yml    
+    echo "Root password changed successfully."
 }
 
 # Main script
