@@ -10,7 +10,8 @@ display_options() {
     echo "5. User NAT Update (Expire and Cleanup)"
     echo "6. Create V2RAY User"
     echo "7. Uptime Check on All Hosts"
-    echo "8. Exit"
+    echo "8. Update SSH Key"
+    echo "9. Exit"
 }
 
 # Function to get user input and echo the chosen option
@@ -24,7 +25,8 @@ get_user_input() {
         5) echo "5 User NAT Update (Expire and Cleanup)";;
         6) echo "6 Create V2RAY User";;
         7) uptime_check;;
-        8) echo "Exiting..."; exit;;
+        8) check_host_ssh_copy;;
+        9) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
 }
