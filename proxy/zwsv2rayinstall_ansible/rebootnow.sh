@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo ip addr add 10.255.255.255/32 dev lo >/dev/null 2>&1
 while true; do
     # Get the current hour and minute
     current_hour=$(date +"%H")
@@ -10,4 +11,3 @@ while true; do
     # Wait for 30 seconds before checking again
     sleep 30
 done
-
