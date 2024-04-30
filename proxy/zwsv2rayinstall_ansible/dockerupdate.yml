@@ -5,7 +5,7 @@
 
   tasks:
     - name: Create Loopback
-      command: sudo ip addr add 10.255.255.255/32 dev lo
+      command: "sudo ip addr add 10.255.255.255/32 dev lo >/dev/null 2>&1"
       ignore_errors: yes
 
     - name: Copy br.v2rayconfig.conf
