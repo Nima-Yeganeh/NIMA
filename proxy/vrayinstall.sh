@@ -34,7 +34,7 @@ while true; do
     fi
 done
 
-zzzport="8900"
+zzzport="8443"
 zzzcustomPath="$domain_hostname$zizigooloovpn"
 zzzcustomEmail="$domain_hostname@zizigooloovpn"
 zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
