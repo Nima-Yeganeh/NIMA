@@ -8,16 +8,15 @@
       command: sudo ip addr add 10.255.255.255/32 dev lo
       ignore_errors: yes
 
-    - name: Ensure /caddy directory exists on the host
-      ansible.builtin.file:
-        path: /caddy
-        state: directory
+    - name: Copy Caddyfile
+      copy:
+        src: Caddyfile
+        dest: /Caddyfile
 
-    - name: Copy Caddy folder
-      ansible.builtin.copy:
-        src: ./caddy
-        dest: /caddy
-        remote_src: yes
+    - name: Copy caddy_web_index.html
+      copy:
+        src: caddy_web_index.html
+        dest: /caddy_web_index.html
 
     - name: Copy br.v2rayconfig.conf
       copy:
