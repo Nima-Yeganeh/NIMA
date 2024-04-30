@@ -209,10 +209,6 @@
         dest: /docker_cleanup.sh
         mode: '0755' 
 
-    - name: Execute Docker Cleanup Script
-      command: "sudo bash /docker_cleanup.sh"
-      ignore_errors: yes
-
     - name: Docker Compose Up
       command: docker-compose up -d
       args:
