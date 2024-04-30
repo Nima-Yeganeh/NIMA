@@ -1,0 +1,59 @@
+---
+- name: Update and Configure Ubuntu Servers
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Create Loopback
+      command: sudo ip addr add 10.255.255.255/32 dev lo
+      ignore_errors: yes
+
+    - name: Ensure /caddy directory exists on the host
+      ansible.builtin.file:
+        path: /caddy
+        state: directory
+
+    - name: Copy Caddy folder
+      ansible.builtin.copy:
+        src: /path/to/local/caddy
+        dest: /caddy
+        remote_src: yes
+
+    - name: Copy br.v2rayconfig.conf
+      copy:
+        src: br.v2rayconfig.conf
+        dest: /br.v2rayconfig.conf
+
+    - name: Copy up.v2rayconfig.conf
+      copy:
+        src: up.v2rayconfig.conf
+        dest: /up.v2rayconfig.conf
+      
+    - name: Copy docker-compose.yml to Host
+      copy:
+        src: docker-compose.yml
+        dest: /docker-compose.yml
+
+    - name: Copy Docker Cleanup Script to Host
+      copy:
+        src: docker_cleanup.sh
+        dest: /docker_cleanup.sh
+        mode: '0755' 
+
+    - name: Execute Docker Cleanup Script
+      command: "sudo bash /docker_cleanup.sh"
+      ignore_errors: yes
+
+    - name: Docker Compose Up
+      command: docker-compose up -d
+      args:
+        chdir: /
+      register: docker_compose_result
+
+    - name: Show Docker Containers
+      command: docker ps -a
+      register: docker_ps_result
+
+    - debug:
+        msg: "{{ docker_ps_result.stdout }}"
+
