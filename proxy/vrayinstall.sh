@@ -1,4 +1,6 @@
 
+# add >> server_names_hash_bucket_size 128; >> /etc/nginx/nginx.conf
+
 #!/usr/bin/env bash
 # 检测区
 # -------------------------------------------------------------
@@ -6,7 +8,7 @@
 export LANG=en_US.UTF-8
 # realdomainname=""
 
-zzzport="443"
+zzzport="8443"
 realdomainname="zizigooloovpnam.site"
 domain_hostname="vls1"
 zzzdomain="$domain_hostname.$realdomainname"
