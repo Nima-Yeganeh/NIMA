@@ -8,7 +8,7 @@ export LANG=en_US.UTF-8
 
 zzzport="443"
 realdomainname="uniquedomainnameswithcharacterandstylearecool.site"
-domain_hostname="zcdntestservervls1"
+domain_hostname="vls1"
 zzzdomain="$domain_hostname.$realdomainname"
 
 echo $domain_hostname
