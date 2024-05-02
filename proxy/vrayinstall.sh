@@ -7,7 +7,7 @@ export LANG=en_US.UTF-8
 # realdomainname=""
 
 zzzport="443"
-realdomainname="uniquedomainnameswithcharacterandstylearecool.site"
+realdomainname="zizigooloovpnam.site"
 domain_hostname="vls1"
 zzzdomain="$domain_hostname.$realdomainname"
 
