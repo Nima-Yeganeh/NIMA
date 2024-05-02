@@ -65,7 +65,7 @@ if [ ! -e "/swapfile" ]; then
     echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 fi
 sleep $sleeptime
-sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release -y
+sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release net-tools -y
 sudo apt-get update -y
 echo "Done!"
 
