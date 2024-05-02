@@ -4,7 +4,9 @@
 # -------------------------------------------------------------
 # 检查系统
 export LANG=en_US.UTF-8
-realdomainname=""
+# realdomainname=""
+
+zzzport="443"
 realdomainname="zizigooloovpn.com"
 domain_hostname="zcdntestservervls1"
 zzzdomain="$domain_hostname.$realdomainname"
@@ -16,7 +18,7 @@ is_empty_or_space() {
     [[ -z "${1// }" ]]
 }
 
-zzzport="8443"
+
 zzzcustomPath="$domain_hostname$zizigooloovpn"
 zzzcustomEmail="$domain_hostname@zizigooloovpn"
 zzzcustomUUID="a04be4ef-1797-4ca9-a549-4385ce42494c"
