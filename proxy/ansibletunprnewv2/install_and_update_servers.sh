@@ -14,6 +14,7 @@ display_options() {
     echo "9. Change Root Password on All Hosts"
     echo "10. Check Traffic"
     echo "11. Traffic Rate >> Mbps"
+    echo "12. NAT Config - 35000"
     echo "99. Exit"
 }
 
@@ -29,9 +30,10 @@ get_user_input() {
         6) echo "6 Create V2RAY User";;
         7) uptime_check;;
         8) check_host_ssh_copy;;
-	9) change_password;;
-	10) check_traffic;;
-	11) traffic_rate;;
+        9) change_password;;
+        10) check_traffic;;
+        11) traffic_rate;;
+        12) natconfig35000;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
@@ -98,6 +100,10 @@ check_traffic() {
 
 traffic_rate() {
     ansible-playbook -i hosts.ini -u root traffic_rate.yml | grep "Mbps"
+}
+
+natconfig35000() {
+    ansible-playbook -i hosts.ini -u root natconfig.yml
 }
 
 # Main script

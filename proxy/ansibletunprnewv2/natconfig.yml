@@ -1,0 +1,14 @@
+---
+- name: Update and Configure Ubuntu Servers
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: NAT Update on Host - Configure IPTables Rules - Copy zallnatconfig.txt to Host
+      copy:
+        src: zallnatconfig.txt
+        dest: /zallnatconfig.sh
+        mode: '0755'
+
+    - name: NAT Update on Host - Configure IPTables Rules - Execute zallnatconfig.sh Script
+      command: sudo bash /zallnatconfig.sh
