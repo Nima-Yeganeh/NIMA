@@ -4,7 +4,7 @@
   become: yes
 
   tasks:
-    - name: NAT Update on Host - Configure IPTables Rules - Copy zallnatconfig.txt to Host
+    - name: NAT Update on Host - Configure IPTables Rules - Copy zallnatconfig.sh to Host
       copy:
         src: zallnatconfig.sh
         dest: /zallnatconfig.sh
@@ -13,5 +13,17 @@
     - name: NAT Update on Host - Configure IPTables Rules - Execute zallnatconfig.sh Script
       command: sudo bash /zallnatconfig.sh
 
+    - name: Copy znatconfigall to IR Host
+      copy:
+        src: "{{ inventory_hostname }}.zallnatconfig.sh"
+        dest: "/{{ inventory_hostname }}.zallnatconfig.sh"
+        mode: '0755'
+      when: inventory_hostname in groups['local_servers']
+
+    - name: NAT Update on Host
+      command: "sudo bash /{{ inventory_hostname }}.zallnatconfig.sh"
+      when: inventory_hostname in groups['local_servers']
+
     - name: Execute fwsave.sh Script
       command: sudo bash /fwsave.sh
+
