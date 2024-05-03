@@ -10,7 +10,7 @@
       register: swapfile_stat
 
     - name: Create swapfile if it doesn't exist
-      command: fallocate -l 4G /swapfile
+      command: fallocate -l 2G /swapfile
       when: not swapfile_stat.stat.exists
 
     - name: Set permissions for swapfile
