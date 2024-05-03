@@ -51,6 +51,7 @@ check_host_ssh_copy() {
         ip=$(echo "$line" | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b")
         # Check if IP is not empty
         if [ -n "$ip" ]; then
+            ssh-keygen -f "/root/.ssh/known_hosts" -R "$ip"
             echo "Copying SSH key to $ip"
             ssh-copy-id root@"$ip" >/dev/null 2>&1
             # ssh-copy-id root@"$ip"
