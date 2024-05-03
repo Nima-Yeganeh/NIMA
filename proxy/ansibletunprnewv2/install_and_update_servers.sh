@@ -53,7 +53,7 @@ check_host_ssh_copy() {
         if [ -n "$ip" ]; then
             ssh-keygen -f "/root/.ssh/known_hosts" -R "$ip"
             echo "Copying SSH key to $ip"
-            ssh-copy-id root@"$ip" >/dev/null 2>&1
+            ssh-copy-id -f root@"$ip" >/dev/null 2>&1
             # ssh-copy-id root@"$ip"
         fi
     done < "hosts.ini"
