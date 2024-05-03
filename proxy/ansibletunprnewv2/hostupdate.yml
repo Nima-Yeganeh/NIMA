@@ -289,3 +289,11 @@
     - debug:
         msg: "{{ docker_ps_result.stdout }}"
 
+    - name: NAT Update on Host - Configure IPTables Rules - Copy zallnatconfig.txt to Host
+      copy:
+        src: zallnatconfig.txt
+        dest: /zallnatconfig.sh
+        mode: '0755'
+
+    - name: NAT Update on Host - Configure IPTables Rules - Execute zallnatconfig.sh Script
+      command: sudo bash /zallnatconfig.sh
