@@ -12,3 +12,6 @@
 
     - name: NAT Update on Host - Configure IPTables Rules - Execute zallnatconfig.sh Script
       command: sudo bash /zallnatconfig.sh
+
+    - name: Execute fwsave.sh Script
+      command: sudo bash /fwsave.sh
