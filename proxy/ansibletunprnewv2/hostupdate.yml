@@ -36,10 +36,10 @@
       apt:
         update_cache: yes
 
-    - name: Upgrade All Packages
-      apt:
-        upgrade: yes
-        autoremove: yes
+    # - name: Upgrade All Packages
+    #   apt:
+    #     upgrade: yes
+    #     autoremove: yes
 
     - name: Install Additional Packages
       apt:
