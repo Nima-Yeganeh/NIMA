@@ -6,7 +6,7 @@
   tasks:
     - name: NAT Update on Host - Configure IPTables Rules - Copy zallnatconfig.txt to Host
       copy:
-        src: zallnatconfig.txt
+        src: zallnatconfig.sh
         dest: /zallnatconfig.sh
         mode: '0755'
 
