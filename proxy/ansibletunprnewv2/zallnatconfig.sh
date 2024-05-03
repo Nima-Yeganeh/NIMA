@@ -8,3 +8,5 @@ sudo iptables -t nat -D PREROUTING -p tcp --dport 35022 -j DNAT --to-destination
 sudo iptables -t nat -D PREROUTING -p tcp --dport 35023 -j DNAT --to-destination 127.0.0.1:7001
 sudo iptables -t nat -D PREROUTING -p tcp --dport 35024 -j DNAT --to-destination 127.0.0.1:7001
 sudo iptables -t nat -D PREROUTING -p tcp --dport 35025 -j DNAT --to-destination 127.0.0.1:7001
+
+
