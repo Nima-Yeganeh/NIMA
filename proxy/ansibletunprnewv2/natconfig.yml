@@ -29,4 +29,46 @@
 
     - name: Execute fwsave.sh Script
       command: sudo bash /fwsave.sh
+      when: inventory_hostname in groups['local_servers']
 
+    - name: Copy ServerIP to IR Host
+      copy:
+        src: "{{ inventory_hostname }}.serverip.txt"
+        dest: "/serverip.txt"
+      when: inventory_hostname in groups['local_servers']
+
+    - name: Copy update_user_nat_config.sh to Host
+      copy:
+        src: update_user_nat_config.sh
+        dest: /update_user_nat_config.sh
+        mode: '0755'
+      when: inventory_hostname in groups['local_servers']
+
+    - name: Copy userdb.txt to Host
+      copy:
+        src: userdb.txt
+        dest: /userdb.txt
+      when: inventory_hostname in groups['local_servers']
+
+    - name: Copy myuserupdatescript.service to Host
+      copy:
+        src: myuserupdatescript.service
+        dest: /etc/systemd/system/myuserupdatescript.service
+      when: inventory_hostname in groups['local_servers']
+
+    - name: Reload Systemd
+      systemd:
+        daemon_reload: yes
+      when: inventory_hostname in groups['local_servers']
+
+    - name: Enable myuserupdatescript.service
+      systemd:
+        name: myuserupdatescript.service
+        enabled: yes
+      when: inventory_hostname in groups['local_servers']
+
+    - name: Start myuserupdatescript.service
+      service:
+        name: myuserupdatescript.service
+        state: started
+      when: inventory_hostname in groups['local_servers']    

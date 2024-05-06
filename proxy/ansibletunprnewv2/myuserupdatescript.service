@@ -1,0 +1,11 @@
+[Unit]
+Description=My User Update Script Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /update_user_nat_config.sh
+
+[Install]
+WantedBy=multi-user.target
+

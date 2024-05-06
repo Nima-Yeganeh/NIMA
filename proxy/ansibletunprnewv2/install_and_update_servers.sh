@@ -15,6 +15,8 @@ display_options() {
     echo "10. Check Traffic"
     echo "11. Traffic Rate >> Mbps"
     echo "12. NAT Config - 35000"
+    echo "21. Generate New User"
+    echo "22. Update Users on IR Servers"
     echo "99. Exit"
 }
 
@@ -34,6 +36,8 @@ get_user_input() {
         10) check_traffic;;
         11) traffic_rate;;
         12) natconfig35000;;
+        21) generate_new_user;;
+        22) update_users_on_ir_servers;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
@@ -107,6 +111,15 @@ traffic_rate() {
 natconfig35000() {
     bash configupdate.sh
     ansible-playbook -i hosts.ini -u root natconfig.yml
+}
+
+update_users_on_ir_servers() {
+    ansible-playbook -i hosts.ini -u root nat_user_update.yml
+}
+
+generate_new_user() {
+    bash user_generate.sh
+    update_users_on_ir_servers
 }
 
 # Main script

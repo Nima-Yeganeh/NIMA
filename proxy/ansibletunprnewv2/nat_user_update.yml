@@ -1,0 +1,13 @@
+---
+- name: Update and Configure Ubuntu Servers
+  hosts: all
+  become: yes
+  gather_facts: false
+
+  tasks:
+    - name: Copy userdb.txt to Host
+      copy:
+        src: userdb.txt
+        dest: /userdb.txt
+      when: inventory_hostname in groups['local_servers']
+

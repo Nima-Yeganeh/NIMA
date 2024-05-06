@@ -40,6 +40,9 @@ echo_server_combinations() {
     local srvirdockermakefilename="$srvir_name.dockermake.sh"
     local srvdigidockermakefilename="$srvdigi_name.dockermake.sh"
     local srvirzallnatconfigfilename="$srvir_name.zallnatconfig.sh"
+    local srvirserverip="$srvir_name.serverip.txt"
+
+    echo $srvir_ip > $srvirserverip
 
     # echo "$srvir_ip $srvir_name $srvir_num $srvdigi_ip $srvdigi_name $srvdigi_num"
     # echo $srvirtunconfigfilename
