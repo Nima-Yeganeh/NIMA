@@ -51,7 +51,8 @@ check_host_ssh_copy() {
         ip=$(echo "$line" | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b")
         # Check if IP is not empty
         if [ -n "$ip" ]; then
-            ssh-keygen -f "/root/.ssh/known_hosts" -R "$ip"
+            # ssh-keygen -f "/root/.ssh/known_hosts" -R "$ip"
+            ssh-keygen -f "$HOME/.ssh/known_hosts" -R "$ip"
             echo "Copying SSH key to $ip"
             ssh-copy-id -o StrictHostKeyChecking=no -f root@"$ip" >/dev/null 2>&1
             # ssh-copy-id root@"$ip"
@@ -104,6 +105,7 @@ traffic_rate() {
 }
 
 natconfig35000() {
+    bash configupdate.sh
     ansible-playbook -i hosts.ini -u root natconfig.yml
 }
 
