@@ -6,9 +6,6 @@ display_options() {
     echo "1. Install and Update"
     echo "2. Docker Update and Restart"
     echo "3. Tunnel Reconfigure and Update on All Hosts"
-    echo "4. DNAT Update"
-    echo "5. User NAT Update (Expire and Cleanup)"
-    echo "6. Create V2RAY User"
     echo "7. Uptime Check on All Hosts"
     echo "8. Update SSH Key"
     echo "9. Change Root Password on All Hosts"
@@ -27,9 +24,6 @@ get_user_input() {
         1) install_update;;
         2) docker_update_restart;;
         3) tunnel_reconfig;;
-        4) echo "4 DNAT Update";;
-        5) echo "5 User NAT Update (Expire and Cleanup)";;
-        6) echo "6 Create V2RAY User";;
         7) uptime_check;;
         8) check_host_ssh_copy;;
         9) change_password;;
