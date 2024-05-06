@@ -7,6 +7,7 @@ srvir_numbers=()
 srvdigi_servers=()
 srvdigi_ips=()
 srvdigi_numbers=()
+natconfigtunneloptions="natconfigtunneloptions.txt"
 
 # Function to echo server details
 echo_server_combinations() {
@@ -117,6 +118,12 @@ echo_server_combinations() {
     echo "cat /$srvirdockerfilename >> /docker-compose.yml" > $srvirdockermakefilename
     echo "cat /$srvdigidockerfilename >> /docker-compose.yml" > $srvdigidockermakefilename
 
+    natconfigtunnel="$srvdigi_name,$srvdigi_xnum"
+    # Check if the number of lines returned by grep is zero
+    if [ $(cat "$natconfigtunneloptions" | grep "$natconfigtunnel" | wc -l) -eq 0 ]; then
+        echo "$natconfigtunnel" >> "$natconfigtunneloptions"
+    fi
+
 }
 
 rm -rf *.tundelconfig.sh
@@ -124,6 +131,8 @@ rm -rf *.tunconfig.sh
 rm -rf *.httpconfig.sh
 rm -rf *.v2rayconfig.conf
 rm -rf *.dockerconfig.yml
+rm -rf $natconfigtunneloptions
+touch $natconfigtunneloptions
 
 # Read from hosts.ini file
 while IFS=' ' read -r name zip; do
