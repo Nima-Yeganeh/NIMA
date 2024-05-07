@@ -1,4 +1,5 @@
 #!/bin/bash
+ztimersleep=120
 userdb="/userdb.txt"
 serveripfile="/serverip.txt"
 users_nat_deleted="/users_nat_deleted.txt"
@@ -54,5 +55,5 @@ while true; do
     done < $tempfile2
     rm -f $tempfile1
     rm -f $tempfile2
-    sleep 30
+    sleep $ztimersleep
 done

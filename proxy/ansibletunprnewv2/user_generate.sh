@@ -38,15 +38,15 @@ fi
 echo "You selected server: $choice"
 
 # Ask user to select TCP or WebSocket
-read -p "Select TCP (t) or WebSocket (w) [default: TCP]: " protocol
+read -p "Select TCP (t) or WebSocket (w) [default: WS]: " protocol
 
 # Set default protocol to TCP if user didn't choose
-protocol="${protocol:-t}"
+protocol="${protocol:-w}"
 
 # Check if the protocol choice is valid
 if [ "$protocol" != "t" ] && [ "$protocol" != "w" ]; then
     echo "Invalid protocol selection. Defaulting to TCP."
-    protocol="t"
+    protocol="w"
 fi
 
 # Determine port number based on protocol choice
