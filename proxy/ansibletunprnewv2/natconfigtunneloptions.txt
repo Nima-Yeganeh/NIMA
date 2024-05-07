@@ -1,1 +1,2 @@
 ubuntu9001srvdigide,1
+ubuntu9002srvdigiuk,2
