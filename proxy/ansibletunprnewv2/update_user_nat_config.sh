@@ -55,5 +55,7 @@ while true; do
     done < $tempfile2
     rm -f $tempfile1
     rm -f $tempfile2
+    sudo bash /fwsave.sh
     sleep $ztimersleep
 done
+
