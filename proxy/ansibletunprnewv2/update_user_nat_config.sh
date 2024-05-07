@@ -49,8 +49,10 @@ while true; do
                 # echo "Action >> Create"
                 sudo iptables -t nat -A PREROUTING -p tcp --dport $natport -j DNAT --to-destination $serverip:$dnatport > /dev/null 2>&1
                 # Join the fields array with commas and echo the line
-                echo "$(IFS=','; echo "${fields[*]}")" >> $users_nat_created
-            fi       
+                # echo "$(IFS=','; echo "${fields[*]}")" >> $users_nat_created
+            fi
+     	    # Join the fields array with commas and echo the line
+            echo "$(IFS=','; echo "${fields[*]}")" >> $users_nat_created
         fi
     done < $tempfile2
     rm -f $tempfile1

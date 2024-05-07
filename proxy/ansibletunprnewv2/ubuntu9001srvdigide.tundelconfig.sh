@@ -6,3 +6,5 @@ sudo ip tunnel del 6to4tundg001003
 sudo ip -6 tunnel del gre6tundg001003
 sudo ip tunnel del 6to4tundg001004
 sudo ip -6 tunnel del gre6tundg001004
+sudo ip tunnel del 6to4tundg001005
+sudo ip -6 tunnel del gre6tundg001005
