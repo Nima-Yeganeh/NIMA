@@ -3,7 +3,7 @@
 # Function to display options
 display_options() {
     echo "Options:"
-    echo "1. Install and Update"
+    echo "1. Install and Update - NAT Update"
     echo "2. Docker Update and Restart"
     echo "3. Tunnel Reconfigure and Update on All Hosts"
     echo "7. Uptime Check on All Hosts"
@@ -63,6 +63,7 @@ install_update() {
     bash configupdate.sh
     ansible -i hosts.ini -u root -m ping all
     ansible-playbook -i hosts.ini -u root hostupdate.yml
+    ansible-playbook -i hosts.ini -u root natconfig.yml
 }
 
 docker_update_restart() {
@@ -119,4 +120,5 @@ generate_new_user() {
 # Main script
 display_options
 get_user_input
+
 
