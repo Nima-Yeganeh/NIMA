@@ -18,3 +18,13 @@
       - '8002:8002'
     volumes:
       - /ubuntu9003srvirubuntu9002srvdigiuk.v2rayconfig.conf:/etc/v2ray/config.json
+  v2ray_ir_003003:
+    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
+    restart: always
+    environment:
+      - v2ray.vmess.aead.forced=false
+    ports:
+      - '7003:7003'
+      - '8003:8003'
+    volumes:
+      - /ubuntu9003srvirubuntu9003srvdigide.v2rayconfig.conf:/etc/v2ray/config.json

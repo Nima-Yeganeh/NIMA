@@ -2,3 +2,5 @@ sudo ip tunnel del 6to4tunir003001
 sudo ip -6 tunnel del gre6tunir003001
 sudo ip tunnel del 6to4tunir003002
 sudo ip -6 tunnel del gre6tunir003002
+sudo ip tunnel del 6to4tunir003003
+sudo ip -6 tunnel del gre6tunir003003
