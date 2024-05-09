@@ -21,6 +21,7 @@ display_options() {
     echo "35. Delete Users NAT Files"
     echo "36. Check UserDB File"
     echo "37. Check NAT Uniq Count"
+    echo "38. Check PS NAT Update - Process"
     echo "99. Exit"
 }
 
@@ -46,6 +47,7 @@ get_user_input() {
         35) delete_users_nat_files;;
         36) check_userdb_file;;
         37) check_nat_uniq_count;;
+        38) check_ps_nat_update;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
@@ -157,6 +159,10 @@ check_userdb_file() {
 
 check_nat_uniq_count() {
     ansible-playbook -i hosts.ini -u root check_nat_uniq_count.yml
+}
+
+check_ps_nat_update() {
+    ansible-playbook -i hosts.ini -u root check_ps_nat_update.yml | grep update_user_nat_config
 }
 
 # Main script

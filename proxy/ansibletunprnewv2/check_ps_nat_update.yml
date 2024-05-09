@@ -1,0 +1,14 @@
+---
+- name: Check Status
+  hosts: local_servers
+  gather_facts: false
+
+  tasks:
+    - name: Get Info
+      shell: |
+        ps aux | grep update_user_nat | head -n1
+      register: system_info
+
+    - name: Display Info
+      ansible.builtin.debug:
+        msg: "{{ system_info.stdout }}"
