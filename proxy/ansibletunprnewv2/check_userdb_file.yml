@@ -6,9 +6,8 @@
   tasks:
     - name: Get Info
       shell: |
-        iptables -t nat -L | grep DNAT | wc -l
+        ls -anp / | grep userdb
       register: system_info
-
     - name: Display Info
       ansible.builtin.debug:
         msg: "{{ system_info.stdout }}"

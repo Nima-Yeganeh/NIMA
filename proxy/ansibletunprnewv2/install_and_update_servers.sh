@@ -17,6 +17,10 @@ display_options() {
     echo "31. Check >> Storage"
     echo "32. Check >> NAT >> Count"
     echo "33. Restart User NAT Service"
+    echo "34. Check NAT Files"
+    echo "35. Delete Users NAT Files"
+    echo "36. Check UserDB File"
+    echo "37. Check NAT Uniq Count"
     echo "99. Exit"
 }
 
@@ -38,6 +42,10 @@ get_user_input() {
         31) check_storage;;
         32) check_nat_table;;
         33) restart_user_nat_service;;
+        34) check_nat_files;;
+        35) delete_users_nat_files;;
+        36) check_userdb_file;;
+        37) check_nat_uniq_count;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
@@ -133,6 +141,22 @@ check_nat_table() {
 
 restart_user_nat_service() {
     ansible-playbook -i hosts.ini -u root restart_user_nat_service.yml
+}
+
+check_nat_files() {
+    ansible-playbook -i hosts.ini -u root check_nat_files.yml
+}
+
+delete_users_nat_files() {
+    ansible-playbook -i hosts.ini -u root delete_users_nat_files.yml
+}
+
+check_userdb_file() {
+    ansible-playbook -i hosts.ini -u root check_userdb_file.yml
+}
+
+check_nat_uniq_count() {
+    ansible-playbook -i hosts.ini -u root check_nat_uniq_count.yml
 }
 
 # Main script

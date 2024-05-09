@@ -1,0 +1,10 @@
+---
+- name: Change Config
+  hosts: local_servers
+  gather_facts: false
+
+  tasks:
+    - name: Change Config
+      shell: "rm -f /users_nat_deleted.txt"
+    - name: Change Config
+      shell: "rm -f /users_nat_created.txt"

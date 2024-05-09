@@ -1,0 +1,20 @@
+---
+- name: Check Status
+  hosts: local_servers
+  gather_facts: false
+
+  tasks:
+    - name: Get Info
+      shell: |
+        ls -anp / | grep users_nat_created
+      register: system_info
+    - name: Display Info
+      ansible.builtin.debug:
+        msg: "{{ system_info.stdout }}"
+    - name: Get Info
+      shell: |
+        ls -anp / | grep users_nat_deleted
+      register: system_info
+    - name: Display Info
+      ansible.builtin.debug:
+        msg: "{{ system_info.stdout }}"
