@@ -70,3 +70,19 @@ sudo ip -6 tunnel add gre6tundg003009 mode ip6gre remote fc00:9:3::253 local fc0
 sudo ip addr add 10.9.3.254/30 dev gre6tundg003009
 sudo ip link set gre6tundg003009 mtu 1300
 sudo ip link set gre6tundg003009 up
+sudo ip tunnel add 6to4tundg003010 mode sit remote 94.182.134.195 local 138.68.74.97
+sudo ip -6 addr add fc00:10:3::254/64 dev 6to4tundg003010
+sudo ip link set 6to4tundg003010 mtu 1400
+sudo ip link set 6to4tundg003010 up
+sudo ip -6 tunnel add gre6tundg003010 mode ip6gre remote fc00:10:3::253 local fc00:10:3::254
+sudo ip addr add 10.10.3.254/30 dev gre6tundg003010
+sudo ip link set gre6tundg003010 mtu 1300
+sudo ip link set gre6tundg003010 up
+sudo ip tunnel add 6to4tundg003011 mode sit remote 185.73.3.82 local 138.68.74.97
+sudo ip -6 addr add fc00:11:3::254/64 dev 6to4tundg003011
+sudo ip link set 6to4tundg003011 mtu 1400
+sudo ip link set 6to4tundg003011 up
+sudo ip -6 tunnel add gre6tundg003011 mode ip6gre remote fc00:11:3::253 local fc00:11:3::254
+sudo ip addr add 10.11.3.254/30 dev gre6tundg003011
+sudo ip link set gre6tundg003011 mtu 1300
+sudo ip link set gre6tundg003011 up
