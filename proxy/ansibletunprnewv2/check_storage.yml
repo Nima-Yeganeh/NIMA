@@ -1,0 +1,14 @@
+---
+- name: Check Status
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Get Info
+      shell: |
+        df -h | grep -E 'vda|sda'
+      register: system_info
+
+    - name: Display Info
+      ansible.builtin.debug:
+        msg: "{{ system_info.stdout }}"

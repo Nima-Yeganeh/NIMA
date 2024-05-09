@@ -1,0 +1,13 @@
+---
+- name: Update and Configure Ubuntu Servers
+  hosts: local_servers
+  become: yes
+  gather_facts: false
+
+  tasks:
+    - name: Restart myuserupdatescript.service
+      service:
+        name: myuserupdatescript.service
+        state: restarted
+      when: inventory_hostname in groups['local_servers']    
+

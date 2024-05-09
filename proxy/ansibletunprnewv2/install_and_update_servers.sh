@@ -14,6 +14,9 @@ display_options() {
     echo "12. NAT Config - 35000"
     echo "21. Generate New User"
     echo "22. Update Users on IR Servers"
+    echo "31. Check >> Storage"
+    echo "32. Check >> NAT >> Count"
+    echo "33. Restart User NAT Service"
     echo "99. Exit"
 }
 
@@ -32,6 +35,9 @@ get_user_input() {
         12) natconfig35000;;
         21) generate_new_user;;
         22) update_users_on_ir_servers;;
+        31) check_storage;;
+        32) check_nat_table;;
+        33) restart_user_nat_service;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
@@ -117,8 +123,19 @@ generate_new_user() {
     update_users_on_ir_servers
 }
 
+check_storage() {
+    ansible-playbook -i hosts.ini -u root check_storage.yml
+}
+
+check_nat_table() {
+    ansible-playbook -i hosts.ini -u root check_nat_table.yml
+}
+
+restart_user_nat_service() {
+    ansible-playbook -i hosts.ini -u root restart_user_nat_service.yml
+}
+
 # Main script
 display_options
 get_user_input
-
 
