@@ -138,7 +138,7 @@ check_storage() {
 }
 
 check_nat_table() {
-    ansible-playbook -i hosts.ini -u root check_nat_table.yml
+    ansible-playbook -i hosts.ini -u root check_nat_table.yml | grep msg
 }
 
 restart_user_nat_service() {
