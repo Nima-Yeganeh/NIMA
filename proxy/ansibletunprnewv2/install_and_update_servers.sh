@@ -158,7 +158,7 @@ check_userdb_file() {
 }
 
 check_nat_uniq_count() {
-    ansible-playbook -i hosts.ini -u root check_nat_uniq_count.yml
+    ansible-playbook -i hosts.ini -u root check_nat_uniq_count.yml | grep -E 'ubuntu|msg'
 }
 
 check_ps_nat_update() {
