@@ -1,0 +1,26 @@
+[local_servers]
+ubuntu9001srvir ansible_host=31.216.62.115
+ubuntu9002srvir ansible_host=5.57.33.8
+ubuntu9003srvir ansible_host=94.182.223.249
+ubuntu9004srvir ansible_host=94.182.150.22
+ubuntu9005srvir ansible_host=31.216.62.66
+ubuntu9006srvir ansible_host=185.73.0.205
+ubuntu9007srvir ansible_host=31.216.62.162
+ubuntu9008srvir ansible_host=193.111.234.222
+ubuntu9009srvir ansible_host=94.182.152.106
+ubuntu9010srvir ansible_host=94.182.134.195
+ubuntu9011srvir ansible_host=185.73.3.82
+ubuntu9012srvir ansible_host=193.111.234.56
+ubuntu9013srvir ansible_host=193.111.234.213
+ubuntu9014srvir ansible_host=193.111.234.118
+ubuntu9015srvir ansible_host=94.182.138.86
+ubuntu9016srvir ansible_host=94.182.138.87
+ubuntu9017srvir ansible_host=94.182.138.88
+
+[remote_servers]
+ubuntu9001srvdigide ansible_host=164.92.246.10
+ubuntu9002srvdigiuk ansible_host=157.245.41.172
+ubuntu9003srvdigide ansible_host=138.68.74.97
+ubuntu9004srvdiginl ansible_host=174.138.5.192
+ubuntu9005srvdigide ansible_host=165.232.76.77
+

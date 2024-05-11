@@ -20,3 +20,15 @@ sudo ip tunnel del 6to4tundg002010
 sudo ip -6 tunnel del gre6tundg002010
 sudo ip tunnel del 6to4tundg002011
 sudo ip -6 tunnel del gre6tundg002011
+sudo ip tunnel del 6to4tundg002012
+sudo ip -6 tunnel del gre6tundg002012
+sudo ip tunnel del 6to4tundg002013
+sudo ip -6 tunnel del gre6tundg002013
+sudo ip tunnel del 6to4tundg002014
+sudo ip -6 tunnel del gre6tundg002014
+sudo ip tunnel del 6to4tundg002015
+sudo ip -6 tunnel del gre6tundg002015
+sudo ip tunnel del 6to4tundg002016
+sudo ip -6 tunnel del gre6tundg002016
+sudo ip tunnel del 6to4tundg002017
+sudo ip -6 tunnel del gre6tundg002017
