@@ -1,5 +1,7 @@
 sudo ip tunnel del 6to4tundg002001
 sudo ip -6 tunnel del gre6tundg002001
+sudo ip tunnel del 6to4tundg002002
+sudo ip -6 tunnel del gre6tundg002002
 sudo ip tunnel del 6to4tundg002003
 sudo ip -6 tunnel del gre6tundg002003
 sudo ip tunnel del 6to4tundg002004
@@ -30,3 +32,13 @@ sudo ip tunnel del 6to4tundg002016
 sudo ip -6 tunnel del gre6tundg002016
 sudo ip tunnel del 6to4tundg002017
 sudo ip -6 tunnel del gre6tundg002017
+sudo ip tunnel del 6to4tundg002018
+sudo ip -6 tunnel del gre6tundg002018
+sudo ip tunnel del 6to4tundg002019
+sudo ip -6 tunnel del gre6tundg002019
+sudo ip tunnel del 6to4tundg002020
+sudo ip -6 tunnel del gre6tundg002020
+sudo ip tunnel del 6to4tundg002021
+sudo ip -6 tunnel del gre6tundg002021
+sudo ip tunnel del 6to4tundg002022
+sudo ip -6 tunnel del gre6tundg002022
