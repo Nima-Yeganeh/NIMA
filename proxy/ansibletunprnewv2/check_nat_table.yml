@@ -6,7 +6,7 @@
   tasks:
     - name: Get Info
       shell: |
-        iptables -t nat -L | grep DNAT | wc -l
+        echo "$(hostname) >> $(iptables -t nat -L | grep DNAT | wc -l)"
       register: system_info
 
     - name: Display Info
