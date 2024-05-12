@@ -20,13 +20,6 @@ ubuntu9018srvir ansible_host=85.133.194.228
 ubuntu9019srvir ansible_host=185.26.32.160
 ubuntu9020srvir ansible_host=185.26.32.137
 ubuntu9021srvir ansible_host=185.26.32.175
-ubuntu9023srvir ansible_host=159.223.208.119
-ubuntu9024srvir ansible_host=159.223.220.182
-ubuntu9025srvir ansible_host=146.190.235.0
-ubuntu9026srvir ansible_host=159.223.212.119
-ubuntu9027srvir ansible_host=146.190.227.145
-ubuntu9028srvir ansible_host=142.93.133.38
-ubuntu9029srvir ansible_host=142.93.133.247
 
 
 [remote_servers]
