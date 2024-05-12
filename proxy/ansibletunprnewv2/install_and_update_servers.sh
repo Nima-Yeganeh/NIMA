@@ -80,6 +80,7 @@ install_update() {
     ansible -i hosts.ini -u root -m ping all
     ansible-playbook -i hosts.ini -u root hostupdate.yml
     ansible-playbook -i hosts.ini -u root natconfig.yml
+    ansible-playbook -i hosts.ini -u root restart_user_nat_service.yml
 }
 
 docker_update_restart() {
@@ -122,6 +123,7 @@ traffic_rate() {
 natconfig35000() {
     bash configupdate.sh
     ansible-playbook -i hosts.ini -u root natconfig.yml
+    ansible-playbook -i hosts.ini -u root restart_user_nat_service.yml
 }
 
 update_users_on_ir_servers() {

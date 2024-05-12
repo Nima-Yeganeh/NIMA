@@ -67,10 +67,4 @@
         enabled: yes
       when: inventory_hostname in groups['local_servers']
 
-    - name: Start myuserupdatescript.service
-      service:
-        name: myuserupdatescript.service
-        state: restarted
-      when: inventory_hostname in groups['local_servers']    
-
 

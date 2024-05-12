@@ -10,9 +10,6 @@
         name: myuserupdatescript.service
         state: stopped
       when: inventory_hostname in groups['local_servers']
-    - name: Pause for 2 seconds
-      pause:
-        seconds: 2
     - name: Start myuserupdatescript.service
       service:
         name: myuserupdatescript.service
