@@ -5,9 +5,17 @@
   gather_facts: false
 
   tasks:
-    - name: Restart myuserupdatescript.service
+    - name: Stop myuserupdatescript.service
       service:
         name: myuserupdatescript.service
-        state: restarted
-      when: inventory_hostname in groups['local_servers']    
+        state: stopped
+      when: inventory_hostname in groups['local_servers']
+    - name: Pause for 2 seconds
+      pause:
+        seconds: 2
+    - name: Start myuserupdatescript.service
+      service:
+        name: myuserupdatescript.service
+        state: started
+      when: inventory_hostname in groups['local_servers']
 

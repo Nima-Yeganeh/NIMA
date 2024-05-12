@@ -125,7 +125,7 @@ echo "user$random_port,$protocoltype,$days,$choice,$random_port,$current_date,$e
 
 dnsdate=$(date +"%m%d")
 
-dns="cosmicwondersandbeyondcosmicwondersandbeyond${dnsdate}01srv.xyz.cosmicwondersandbeyondcosmicwondersandbeyond.ir"
+dns="cosmicwondersandbeyondcosmicwondersandbeyond${dnsdate}01srv.xya.cosmicwondersandbeyondcosmicwondersandbeyond.ir"
 
 if [ "$protocoltype" == "tcp" ]; then
     python3 vmessconfig1.py "user$random_port" "$dns" "$random_port"
