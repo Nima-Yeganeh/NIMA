@@ -75,7 +75,7 @@ check_host_ssh_copy() {
 }
 
 install_update() {
-    check_host_ssh_copy
+    # check_host_ssh_copy
     bash configupdate.sh
     ansible -i hosts.ini -u root -m ping all
     ansible-playbook -i hosts.ini -u root hostupdate.yml

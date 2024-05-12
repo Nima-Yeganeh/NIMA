@@ -40,5 +40,3 @@ sudo ip tunnel del 6to4tundg005020
 sudo ip -6 tunnel del gre6tundg005020
 sudo ip tunnel del 6to4tundg005021
 sudo ip -6 tunnel del gre6tundg005021
-sudo ip tunnel del 6to4tundg005022
-sudo ip -6 tunnel del gre6tundg005022
