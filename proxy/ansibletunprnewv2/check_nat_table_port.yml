@@ -6,7 +6,7 @@
   tasks:
     - name: Get Info
       shell: |
-        echo "$(hostname) >> $(iptables -t nat -L | grep 64248)"
+        echo "$(hostname) >> $(iptables -t nat -L | grep 48088)"
       register: system_info
 
     - name: Display Info
