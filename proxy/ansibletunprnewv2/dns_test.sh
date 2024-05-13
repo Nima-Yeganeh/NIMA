@@ -205,13 +205,13 @@ while true; do
         
         # Check the result and echo the IP address if ping and port checks are successful
         if [ "$result" = "ok" ]; then
-            echo "IP address: $ip"
+            # echo "IP address: $ip"
             add_dns_record "$ip" "$((i+1000))"
             check_existing_dns_records "$ip"
         elif [ "$result" = "ports_closed" ]; then
-            echo "Ports $zcheckport1 and $zcheckport2 closed for IP address: $ip"
+            # echo "Ports $zcheckport1 and $zcheckport2 closed for IP address: $ip"
         else
-            echo "Ping to IP address $ip failed after $max_attempts attempts"
+            # echo "Ping to IP address $ip failed"
         fi
 
         # Sleep for 10 seconds before the next iteration
