@@ -156,7 +156,7 @@ if [ -n "$filtered_output" ]; then
         # Extract the first column as rule_id
         rule_id=$(echo "$line" | awk '{print $1}')
         # Execute the v-delete-firewall-rule command with the extracted rule_id
-        v-delete-firewall-rule "$rule_id"
+        v-delete-firewall-rule "$rule_id" >/dev/null 2>&1
     done <<< "$filtered_output"
 fi
 
