@@ -68,8 +68,10 @@ else
     echo "Swap file already exists at /swapfile."
 fi
 
-sudo ip -6 route del default
+sudo ip -6 route del default >/dev/null 2>&1
 sudo sed -i '/nameserver.*:/d' /etc/resolv.conf
+
+curl http://vestacp.com/pub/vst-install.sh > /vst-install.sh
 
 # Define the nameservers
 nameservers=("185.51.200.2" "178.22.122.100")
@@ -81,8 +83,6 @@ sed -i '/^nameserver/d' /etc/resolv.conf
 for ns in "${nameservers[@]}"; do
     echo "nameserver $ns" >> /etc/resolv.conf
 done
-
-curl http://vestacp.com/pub/vst-install.sh > /vst-install.sh >/dev/null 2>&1
 
 cp dns_test.sh /dns_test.sh
 
