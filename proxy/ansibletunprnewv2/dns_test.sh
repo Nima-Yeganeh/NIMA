@@ -53,7 +53,7 @@ add_dns_record() {
     local ip_number=$2
     echo "Adding DNS record for IP address $ip_number: $ip"
     if ! v-list-dns-records admin test.zmodinso.ir | grep "$ip" &>/dev/null; then
-        v-add-dns-record admin test.zmodinso.ir srv1 a "$ip"
+        v-add-dns-record admin test.zmodinso.ir srv1 a "$ip" 1 $ip_number
     fi
 }
 
@@ -91,16 +91,19 @@ while true; do
         # Check the result and echo the IP address if ping and port checks are successful
         if [ "$result" = "ok" ]; then
             echo "IP address: $ip"
-            add_dns_record "$ip" "$((i+1))"
+            add_dns_record "$ip" "$((i+1000))"
             check_existing_dns_records "$ip"
         elif [ "$result" = "ports_closed" ]; then
             echo "Ports 35011 and 35021 closed for IP address: $ip"
         else
             echo "Ping to IP address $ip failed after $max_attempts attempts"
         fi
+
+        # Sleep for 1 seconds before the next iteration
+        sleep 1
     done
     
-    # Sleep for 30 seconds before the next iteration
-    sleep 30
+    # Sleep for 1 seconds before the next iteration
+    sleep 1
 done
 
