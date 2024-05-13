@@ -71,6 +71,11 @@ fi
 sudo ip -6 route del default >/dev/null 2>&1
 sudo sed -i '/nameserver.*:/d' /etc/resolv.conf
 
+cp -f dns_test.sh /dns_test.sh
+
+# Copy dns_updatescript.service to services directory
+sudo cp -f dns_updatescript.service /etc/systemd/system/
+
 cd /
 pwd
 
@@ -86,11 +91,6 @@ sed -i '/^nameserver/d' /etc/resolv.conf
 for ns in "${nameservers[@]}"; do
     echo "nameserver $ns" >> /etc/resolv.conf
 done
-
-cp dns_test.sh /dns_test.sh
-
-# Copy dns_updatescript.service to services directory
-sudo cp dns_updatescript.service /etc/systemd/system/
 
 # Execute vst-install.sh script with provided options
 sudo bash /vst-install.sh --email info@domain.local \
