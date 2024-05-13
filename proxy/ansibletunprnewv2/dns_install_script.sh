@@ -74,12 +74,8 @@ else
     echo "Swap file already exists at /swapfile."
 fi
 
-sleep 30
-
 sudo yum update -y
 sudo yum install nc curl -y
-
-sleep 30
 
 curl -O /vst-install.sh http://vestacp.com/pub/vst-install.sh
 
@@ -93,6 +89,8 @@ sudo systemctl daemon-reload
 
 # Enable the service
 sudo systemctl enable dns_updatescript.service
+
+sleep 30
 
 # Execute vst-install.sh script with provided options
 bash /vst-install.sh --email info@domain.local \
