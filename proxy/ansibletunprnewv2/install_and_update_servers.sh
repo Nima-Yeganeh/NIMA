@@ -22,6 +22,7 @@ display_options() {
     echo "36. Check UserDB File"
     echo "37. Check NAT Uniq Count"
     echo "38. Check PS NAT Update - Process"
+    echo "41. Ping All Servers - Hosts"
     echo "99. Exit"
 }
 
@@ -48,6 +49,7 @@ get_user_input() {
         36) check_userdb_file;;
         37) check_nat_uniq_count;;
         38) check_ps_nat_update;;
+        41) ping_all_hosts;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
@@ -165,6 +167,10 @@ check_nat_uniq_count() {
 
 check_ps_nat_update() {
     ansible-playbook -i hosts.ini -u root check_ps_nat_update.yml | grep update_user_nat_config
+}
+
+ping_all_hosts() {
+    ansible -i hosts.ini -u root -m ping all | grep ubuntu
 }
 
 # Main script
