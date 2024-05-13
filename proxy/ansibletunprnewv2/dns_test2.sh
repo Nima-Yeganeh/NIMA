@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Array of services
-services=("www" "ftp" "imap" "mail" "smtp" "pop")
+services=("www" "ftp" "imap" "mail" "smtp" "pop" "spf")
 
 # Function to delete DNS record
-delete_dns_record() {
+zdelete_dns_record() {
     local id="$1"
     v-delete-dns-record admin test.zmodinso.ir "$id"
 }
@@ -22,7 +22,7 @@ for service in "${services[@]}"; do
             id=$(echo "$line" | awk '{print $1}')
 
             # Delete DNS record
-            delete_dns_record "$id"
+            zdelete_dns_record "$id"
         done <<< "$dns_records"
     fi
 done
