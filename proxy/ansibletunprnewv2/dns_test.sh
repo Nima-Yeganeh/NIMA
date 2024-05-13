@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Log file path
-log_file="dns_logs.txt"
+log_file="/dns_logs.txt"
 
 # Configs
 zuser="admin"
