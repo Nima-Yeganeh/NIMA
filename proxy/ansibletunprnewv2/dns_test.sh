@@ -29,8 +29,8 @@ check_ip_ports() {
     
     # Retry up to max_attempts
     while [ $attempt -le $max_attempts ]; do
-        if ping -c 1 -W 2 "$ip" &>/dev/null; then
-            if nc -z -w 2 "$ip" 35011 &>/dev/null && nc -z -w 2 "$ip" 35021 &>/dev/null; then
+        if ping -c 1 -W 4 "$ip" &>/dev/null; then
+            if nc -z -w 4 "$ip" 35011 &>/dev/null && nc -z -w 4 "$ip" 35021 &>/dev/null; then
                 echo "ok"
                 return
             else
@@ -58,4 +58,3 @@ for ip in "${ip_addresses[@]}"; do
         echo "Ping to IP address $ip failed after $max_attempts attempts"
     fi
 done
-
