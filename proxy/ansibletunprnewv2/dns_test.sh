@@ -146,7 +146,8 @@ for service in "${services[@]}"; do
 done
 
 # Run the v-list-firewall command and filter out unwanted lines
-filtered_output=$(v-list-firewall | grep -v 'ACCEPT.*ICMP.*0' | grep -v 'ACCEPT.*TCP.*22' | grep -v 'ACCEPT.*UDP.*53' | grep -v 'ACCEPT.*TCP.*8083' | grep ACCEPT)
+# filtered_output=$(v-list-firewall | grep -v 'ACCEPT.*ICMP.*0' | grep -v 'ACCEPT.*TCP.*22' | grep -v 'ACCEPT.*UDP.*53' | grep -v 'ACCEPT.*TCP.*8083' | grep ACCEPT)
+filtered_output=$(v-list-firewall | grep -v 'ACCEPT.*ICMP.*0' | grep -v 'ACCEPT.*TCP.*22' | grep -v 'ACCEPT.*UDP.*53' | grep ACCEPT)
 
 # Check if the filtered output is not empty
 if [ -n "$filtered_output" ]; then
