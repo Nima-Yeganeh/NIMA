@@ -12,6 +12,7 @@ zcheckport2=35021
 zchecktimeout=4
 zns1="ns1.modinso.ir"
 zns2="ns2.modinso.ir"
+zdnsttl=60
 
 # Function to log messages
 log_message() {
@@ -114,9 +115,8 @@ done
 
 v-delete-dns-domain $zuser $zdomain >/dev/null 2>&1
 v-add-dns-domain $zuser $zdomain "$public_ip" $zns1 $zns2
+v-change-dns-domain-ttl $zuser $zdomain $zdnsttl
 v-list-dns-domains $zuser
-
-sleep 30
 
 # Main loop to run the script forever
 while true; do
