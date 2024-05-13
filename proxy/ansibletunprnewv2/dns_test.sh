@@ -208,9 +208,9 @@ while true; do
             # echo "IP address: $ip"
             add_dns_record "$ip" "$((i+1000))"
             check_existing_dns_records "$ip"
-        elif [ "$result" = "ports_closed" ]; then
+        # elif [ "$result" = "ports_closed" ]; then
             # echo "Ports $zcheckport1 and $zcheckport2 closed for IP address: $ip"
-        else
+        # else
             # echo "Ping to IP address $ip failed"
         fi
 
