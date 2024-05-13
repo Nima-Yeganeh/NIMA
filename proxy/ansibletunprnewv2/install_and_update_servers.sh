@@ -103,7 +103,7 @@ uptime_check() {
 
 change_password() {
     # Prompt user for new password
-    read -s -p "Enter new password for root user: " new_password
+    read -p "Enter new password for root user: " new_password
     echo
     # Change root password
     cat change_root_password.yml | sed "s/9999999999/$new_password/g" > change_root_password_tempfile.yml
