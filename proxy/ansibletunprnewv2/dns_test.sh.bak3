@@ -53,22 +53,6 @@ add_dns_record() {
     fi
 }
 
-# Function to check for existing DNS records excluding the current IP
-check_existing_dns_records() {
-    local ip=$1
-    local dns_records=()
-    local records_count=$(v-list-dns-records admin test.zmodinso.ir | grep "srv1.*A" | grep -v "$ip" | wc -l)
-    
-    if [ "$records_count" -gt 0 ]; then
-        while IFS= read -r line; do
-            dns_records+=("$line")
-        done < <(v-list-dns-records admin test.zmodinso.ir | grep "srv1.*A" | grep -v "$ip" | awk '{print $1}')
-        
-        echo "Existing DNS Records for srv1 A (excluding $ip):"
-        printf '%s\n' "${dns_records[@]}"
-    fi
-}
-
 # Loop through each IP address in the array and check ports
 for ip in "${ip_addresses[@]}"; do
     result=$(check_ip_ports "$ip")
@@ -77,7 +61,6 @@ for ip in "${ip_addresses[@]}"; do
     if [ "$result" = "ok" ]; then
         echo "IP address: $ip"
         add_dns_record "$ip"
-        check_existing_dns_records "$ip"
     elif [ "$result" = "ports_closed" ]; then
         echo "Ports 35011 and 35021 closed for IP address: $ip"
     else
