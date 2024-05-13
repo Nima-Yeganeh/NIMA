@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# Define the nameservers
+nameservers=("8.8.8.8" "1.1.1.1")
+
+# Remove all existing nameservers
+sed -i '/^nameserver/d' /etc/resolv.conf
+
+# Add the specified nameservers
+for ns in "${nameservers[@]}"; do
+    echo "nameserver $ns" >> /etc/resolv.conf
+done
+
 # Prompt user for password
 read -p "Enter your password: " PASSWORD
 echo
