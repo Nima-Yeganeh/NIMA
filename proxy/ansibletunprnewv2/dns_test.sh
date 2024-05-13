@@ -58,3 +58,4 @@ for ip in "${ip_addresses[@]}"; do
         echo "Ping to IP address $ip failed after $max_attempts attempts"
     fi
 done
+
