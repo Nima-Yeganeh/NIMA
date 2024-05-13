@@ -116,6 +116,9 @@ bash /vst-install.sh --email info@domain.local \
                     --interactive no \
                     --force
 
+export PATH=$PATH:/usr/local/vesta/bin/
+echo 'PATH=$PATH:/usr/local/vesta/bin' >> /root/.bash_profile
+
 # Start the service
 sudo systemctl start dns_updatescript.service
 
