@@ -53,7 +53,7 @@ add_dns_record() {
     fi
 }
 
-# Function to check for existing DNS records excluding the current IP and delete them
+# Function to check for existing DNS records excluding the current IP
 check_existing_dns_records() {
     local ip=$1
     local dns_records=()
@@ -66,11 +66,6 @@ check_existing_dns_records() {
         
         echo "Existing DNS Records for srv1 A (excluding $ip):"
         printf '%s\n' "${dns_records[@]}"
-        
-        # Delete existing DNS records
-        for record in "${dns_records[@]}"; do
-            v-delete-dns-record admin test.zmodinso.ir "$record"
-        done
     fi
 }
 
@@ -89,4 +84,3 @@ for ip in "${ip_addresses[@]}"; do
         echo "Ping to IP address $ip failed after $max_attempts attempts"
     fi
 done
-
