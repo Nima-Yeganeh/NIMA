@@ -99,6 +99,12 @@ is_valid_ip() {
     fi
 }
 
+# Function to delete DNS record
+zdelete_dns_record() {
+    local id="$1"
+    v-delete-dns-record $zuser $zdomain "$id"
+}
+
 # Loop until a valid public IP address is obtained
 while true; do
     public_ip=$(curl -s ifconfig.me)
@@ -117,6 +123,27 @@ v-delete-dns-domain $zuser $zdomain >/dev/null 2>&1
 v-add-dns-domain $zuser $zdomain "$public_ip" $zns1 $zns2
 v-change-dns-domain-ttl $zuser $zdomain $zdnsttl
 v-list-dns-domains $zuser
+
+# Array of services
+services=("www" "ftp" "imap" "mail" "smtp" "pop" "spf")
+
+# Loop through services
+for service in "${services[@]}"; do
+    # Get DNS records for the service
+    dns_records=$(v-list-dns-records $zuser $zdomain | grep "$service")
+
+    # Check if there are any records
+    if [ -n "$dns_records" ]; then
+        # Loop through each line of DNS records
+        while IFS= read -r line; do
+            # Get the first column (ID)
+            id=$(echo "$line" | awk '{print $1}')
+
+            # Delete DNS record
+            zdelete_dns_record "$id"
+        done <<< "$dns_records"
+    fi
+done
 
 # Main loop to run the script forever
 while true; do
