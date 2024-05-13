@@ -1,0 +1,11 @@
+[Unit]
+Description=My DNS Update Script Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /dns_test.sh
+
+[Install]
+WantedBy=multi-user.target
+
