@@ -71,7 +71,10 @@ fi
 sudo ip -6 route del default >/dev/null 2>&1
 sudo sed -i '/nameserver.*:/d' /etc/resolv.conf
 
-curl http://vestacp.com/pub/vst-install.sh > /vst-install.sh
+cd /
+pwd
+
+curl -O http://vestacp.com/pub/vst-install.sh
 
 # Define the nameservers
 nameservers=("185.51.200.2" "178.22.122.100")
