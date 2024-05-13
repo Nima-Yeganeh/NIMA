@@ -91,7 +91,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable dns_updatescript.service
 
 # Execute vst-install.sh script with provided options
-bash /vst-install.sh --email info@domain.local \
+sudo bash /vst-install.sh --email info@domain.local \
                     --password "$PASSWORD" \
                     --apache no \
                     --phpfpm no \
