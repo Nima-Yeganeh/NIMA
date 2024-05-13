@@ -45,14 +45,6 @@ check_ip_ports() {
     echo "ping_failed"
 }
 
-# Function to add DNS record if not exists
-add_dns_record() {
-    local ip=$1
-    if ! v-list-dns-records admin test.zmodinso.ir | grep "$ip" &>/dev/null; then
-        v-add-dns-record admin test.zmodinso.ir srv1 a "$ip"
-    fi
-}
-
 # Loop through each IP address in the array and check ports
 for ip in "${ip_addresses[@]}"; do
     result=$(check_ip_ports "$ip")
@@ -60,7 +52,6 @@ for ip in "${ip_addresses[@]}"; do
     # Check the result and echo the IP address if ping and port checks are successful
     if [ "$result" = "ok" ]; then
         echo "IP address: $ip"
-        add_dns_record "$ip"
     elif [ "$result" = "ports_closed" ]; then
         echo "Ports 35011 and 35021 closed for IP address: $ip"
     else
