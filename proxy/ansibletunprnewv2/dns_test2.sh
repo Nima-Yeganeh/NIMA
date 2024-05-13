@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Array of services
-services=("www" "ftp" "imap")
+services=("www" "ftp" "imap" "mail" "smtp" "pop")
 
 # Function to delete DNS record
 delete_dns_record() {
@@ -26,3 +26,4 @@ for service in "${services[@]}"; do
         done <<< "$dns_records"
     fi
 done
+
