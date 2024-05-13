@@ -160,8 +160,8 @@ if [ -n "$filtered_output" ]; then
     done <<< "$filtered_output"
 fi
 
-# Execute the command to list cron jobs for user admin and filter for backup
-jobs=$(v-list-cron-jobs admin | grep backup)
+# Execute the command to list cron jobs for user $zuser and filter for backup
+jobs=$(v-list-cron-jobs $zuser | grep backup)
 
 # Check if there are any jobs found
 if [ -n "$jobs" ]; then
@@ -170,13 +170,13 @@ if [ -n "$jobs" ]; then
         # Extract the first column as job_id
         job_id=$(echo "$line" | awk '{print $1}')
         # Execute the command to delete the cron job
-        v-delete-cron-job admin "$job_id" >/dev/null 2>&1
+        v-delete-cron-job $zuser "$job_id" >/dev/null 2>&1
         # echo "Deleted cron job with ID: $job_id"
     done <<< "$jobs"
 fi
 
 # Execute the command and store the result in a variable
-result=$(v-list-user-backups admin | grep tar)
+result=$(v-list-user-backups $zuser | grep tar)
 
 # Check if the result is not empty
 if [ -n "$result" ]; then
@@ -186,7 +186,7 @@ if [ -n "$result" ]; then
         backup_file_name=$(echo "$line" | awk '{print $1}')
         
         # Execute the delete command
-        v-delete-user-backup admin "$backup_file_name"
+        v-delete-user-backup $zuser "$backup_file_name"
         
         # echo "Backup $backup_file_name deleted."
     done <<< "$result"
