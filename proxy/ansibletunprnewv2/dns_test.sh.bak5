@@ -12,16 +12,14 @@ log_message() {
 # Initialize an empty array to store IP addresses
 ip_addresses=()
 
-# Function to read IP addresses from dns_host_ip_addr.txt and store them in the array
-read_ip_addresses() {
-    while IFS= read -r line; do
-        # Check if the line contains an IP address
-        if [[ $line =~ ^([0-9]{1,3}\.){3}[0-9]{1,3}$ ]]; then
-            # Add the IP address to the array
-            ip_addresses+=("$line")
-        fi
-    done < dns_host_ip_addr.txt
-}
+# Read each line from dns_host_ip_addr.txt
+while IFS= read -r line; do
+    # Check if the line contains an IP address
+    if [[ $line =~ ^([0-9]{1,3}\.){3}[0-9]{1,3}$ ]]; then
+        # Add the IP address to the array
+        ip_addresses+=("$line")
+    fi
+done < dns_host_ip_addr.txt
 
 # Function to check if IP address can be pinged and ports 35011 and 35021 are open
 check_ip_ports() {
@@ -76,28 +74,19 @@ check_existing_dns_records() {
     fi
 }
 
-# Main loop to run the script forever
-while true; do
-    # Read IP addresses from file
-    read_ip_addresses
+# Loop through each IP address in the array and check ports
+for ip in "${ip_addresses[@]}"; do
+    result=$(check_ip_ports "$ip")
     
-    # Loop through each IP address in the array and check ports
-    for ip in "${ip_addresses[@]}"; do
-        result=$(check_ip_ports "$ip")
-        
-        # Check the result and echo the IP address if ping and port checks are successful
-        if [ "$result" = "ok" ]; then
-            echo "IP address: $ip"
-            add_dns_record "$ip"
-            check_existing_dns_records "$ip"
-        elif [ "$result" = "ports_closed" ]; then
-            echo "Ports 35011 and 35021 closed for IP address: $ip"
-        else
-            echo "Ping to IP address $ip failed after $max_attempts attempts"
-        fi
-    done
-    
-    # Sleep for 30 seconds before the next iteration
-    sleep 30
+    # Check the result and echo the IP address if ping and port checks are successful
+    if [ "$result" = "ok" ]; then
+        echo "IP address: $ip"
+        add_dns_record "$ip"
+        check_existing_dns_records "$ip"
+    elif [ "$result" = "ports_closed" ]; then
+        echo "Ports 35011 and 35021 closed for IP address: $ip"
+    else
+        echo "Ping to IP address $ip failed after $max_attempts attempts"
+    fi
 done
 
