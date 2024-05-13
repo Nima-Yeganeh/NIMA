@@ -79,7 +79,7 @@ check_existing_dns_records() {
             dns_records+=("$line")
         done < <(v-list-dns-records $zuser $zdomain | grep "$zhostname.*A" | grep -v "$ip" | awk '{print $1}')
         
-        echo "Existing DNS Records for $zhostname A (excluding $ip):"
+        # echo "Existing DNS Records for $zhostname A (excluding $ip):"
         printf '%s\n' "${dns_records[@]}"
         
         # Delete existing DNS records
