@@ -10,6 +10,8 @@ zhostname="srv1"
 zcheckport1=35011
 zcheckport2=35021
 zchecktimeout=4
+zns1="ns1.modinso.ir"
+zns2="ns2.modinso.ir"
 
 # Function to log messages
 log_message() {
@@ -110,8 +112,8 @@ while true; do
     sleep 1
 done
 
-v-delete-dns-domain $zuser $zdomain
-v-add-dns-domain admin test2.zmodinso.ir "$public_ip" ns1.modinso.ir ns2.modinso.ir
+v-delete-dns-domain $zuser $zdomain >/dev/null 2>&1
+v-add-dns-domain $zuser $zdomain "$public_ip" $zns1 $zns2
 v-list-dns-domains $zuser
 
 sleep 30
