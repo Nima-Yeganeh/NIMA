@@ -122,7 +122,7 @@ done
 v-delete-dns-domain $zuser $zdomain >/dev/null 2>&1
 v-add-dns-domain $zuser $zdomain "$public_ip" $zns1 $zns2
 v-change-dns-domain-ttl $zuser $zdomain $zdnsttl
-v-list-dns-domains $zuser
+# v-list-dns-domains $zuser
 
 # Array of services
 services=("www" "ftp" "imap" "mail" "smtp" "pop" "spf")
