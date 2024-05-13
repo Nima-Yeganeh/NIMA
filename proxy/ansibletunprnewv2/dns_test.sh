@@ -83,8 +83,7 @@ while true; do
     
     # Loop through each IP address in the array and check ports
     for ip in "${ip_addresses[@]}"; do
-        result=$(check_ip_ports "$ip")
-        
+        result=$(check_ip_ports "$ip")       
         # Check the result and echo the IP address if ping and port checks are successful
         if [ "$result" = "ok" ]; then
             echo "IP address: $ip"
@@ -95,9 +94,10 @@ while true; do
         else
             echo "Ping to IP address $ip failed after $max_attempts attempts"
         fi
+        # Sleep for 10 seconds before the next iteration
+        sleep 10
     done
-    
-    # Sleep for 30 seconds before the next iteration
-    sleep 30
+    # Sleep for 1 seconds before the next iteration
+    sleep 1
 done
 
