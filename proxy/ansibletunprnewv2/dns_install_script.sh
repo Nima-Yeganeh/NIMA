@@ -1,5 +1,11 @@
 #!/bin/bash
 
+sudo ip -6 route del default
+sudo sed -i '/nameserver.*:/d' /etc/resolv.conf
+
+# sudo yum update -y
+sudo yum install git mtr screen iftop iotop htop -y
+
 # Prompt user for password
 read -p "Enter your password: " PASSWORD
 echo
@@ -18,6 +24,26 @@ if [[ "$CONTINUE" != "y" && "$CONTINUE" != "yes" ]]; then
     echo "Exiting."
     exit 0
 fi
+
+# Disable history in the current session
+unset HISTFILE
+history -c
+
+# Disable history in future shell sessions
+echo "unset HISTFILE" >> ~/.bashrc
+echo "export HISTSIZE=0" >> ~/.bashrc
+echo "export HISTFILESIZE=0" >> ~/.bashrc
+
+# Remove existing history files
+rm -f ~/.bash_history
+rm -f /var/log/secure
+rm -f /var/log/audit/audit.log
+
+# Disable history in systemd
+sudo sed -i 's/\(^.*TTYPath=pts\/[0-9]*$\)/#\1/' /etc/systemd/system.conf
+sudo systemctl daemon-reload
+
+echo "History disabled successfully."
 
 # Specify the size of the swap file in megabytes
 SWAP_SIZE_MB=2048
