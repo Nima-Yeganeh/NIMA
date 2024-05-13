@@ -1,11 +1,5 @@
 #!/bin/bash
 
-sudo ip -6 route del default
-sudo sed -i '/nameserver.*:/d' /etc/resolv.conf
-
-# sudo yum update -y
-sudo yum install git mtr screen iftop iotop htop -y
-
 # Prompt user for password
 read -p "Enter your password: " PASSWORD
 echo
@@ -74,21 +68,26 @@ else
     echo "Swap file already exists at /swapfile."
 fi
 
-sudo yum update -y
-sudo yum install nc curl -y
+sudo ip -6 route del default
+sudo sed -i '/nameserver.*:/d' /etc/resolv.conf
 
-curl http://vestacp.com/pub/vst-install.sh > /vst-install.sh
+# Define the nameservers
+nameservers=("185.51.200.2" "178.22.122.100")
+
+# Remove all existing nameservers
+sed -i '/^nameserver/d' /etc/resolv.conf
+
+# Add the specified nameservers
+for ns in "${nameservers[@]}"; do
+    echo "nameserver $ns" >> /etc/resolv.conf
+done
+
+curl http://vestacp.com/pub/vst-install.sh > /vst-install.sh >/dev/null 2>&1
 
 cp dns_test.sh /dns_test.sh
 
 # Copy dns_updatescript.service to services directory
 sudo cp dns_updatescript.service /etc/systemd/system/
-
-# Reload systemd daemon to read the new service file
-sudo systemctl daemon-reload
-
-# Enable the service
-sudo systemctl enable dns_updatescript.service
 
 # Execute vst-install.sh script with provided options
 sudo bash /vst-install.sh --email info@domain.local \
@@ -116,6 +115,15 @@ sudo bash /vst-install.sh --email info@domain.local \
 
 export PATH=$PATH:/usr/local/vesta/bin/
 echo 'PATH=$PATH:/usr/local/vesta/bin' >> /root/.bash_profile
+
+# sudo yum update -y
+sudo yum install git mtr screen nc curl -y
+
+# Reload systemd daemon to read the new service file
+sudo systemctl daemon-reload
+
+# Enable the service
+sudo systemctl enable dns_updatescript.service
 
 # Start the service
 sudo systemctl start dns_updatescript.service
