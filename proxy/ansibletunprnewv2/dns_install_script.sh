@@ -87,10 +87,8 @@ cp -f dns_test.sh /dns_test.sh
 # Copy dns_updatescript.service to services directory
 sudo cp -f dns_updatescript.service /etc/systemd/system/
 
-cd /
-pwd
-
-curl -O http://vestacp.com/pub/vst-install.sh
+curl http://vestacp.com/pub/vst-install.sh > vst-install.sh
+curl http://vestacp.com/pub/vst-install-rhel.sh > vst-install-rhel.sh
 
 # Define the nameservers
 nameservers=("185.51.200.2" "178.22.122.100")
@@ -104,7 +102,7 @@ for ns in "${nameservers[@]}"; do
 done
 
 # Execute vst-install.sh script with provided options
-sudo bash /vst-install.sh --email info@domain.local \
+sudo bash /vst-install-rhel.sh --email info@domain.local \
                     --password "$PASSWORD" \
                     --apache no \
                     --phpfpm no \
