@@ -87,8 +87,8 @@ cp -f dns_test.sh /dns_test.sh
 # Copy dns_updatescript.service to services directory
 sudo cp -f dns_updatescript.service /etc/systemd/system/
 
-curl http://vestacp.com/pub/vst-install.sh > vst-install.sh
-curl http://vestacp.com/pub/vst-install-rhel.sh > vst-install-rhel.sh
+curl http://vestacp.com/pub/vst-install.sh > /vst-install.sh
+curl http://vestacp.com/pub/vst-install-rhel.sh > /vst-install-rhel.sh
 
 # Define the nameservers
 nameservers=("185.51.200.2" "178.22.122.100")
