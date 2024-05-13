@@ -3,6 +3,14 @@
 # Log file path
 log_file="dns_logs.txt"
 
+# Configs
+zuser="admin"
+zdomain="test.zmodinso.ir"
+zhostname="srv1"
+zcheckport1=35011
+zcheckport2=35021
+zchecktimeout=4
+
 # Function to log messages
 log_message() {
     local message="$1"
@@ -23,7 +31,7 @@ read_ip_addresses() {
     done < dns_host_ip_addr.txt
 }
 
-# Function to check if IP address can be pinged and ports 35011 and 35021 are open
+# Function to check if IP address can be pinged and ports $zcheckport1 and $zcheckport2 are open
 check_ip_ports() {
     local ip=$1
     local max_attempts=4
@@ -31,8 +39,8 @@ check_ip_ports() {
     
     # Retry up to max_attempts
     while [ $attempt -le $max_attempts ]; do
-        if ping -c 1 -W 4 "$ip" &>/dev/null; then
-            if nc -z -w 4 "$ip" 35011 &>/dev/null && nc -z -w 4 "$ip" 35021 &>/dev/null; then
+        if ping -c 1 -W $zchecktimeout "$ip" &>/dev/null; then
+            if nc -z -w $zchecktimeout "$ip" $zcheckport1 &>/dev/null && nc -z -w $zchecktimeout "$ip" $zcheckport2 &>/dev/null; then
                 echo "ok"
                 return
             else
@@ -52,8 +60,8 @@ add_dns_record() {
     local ip=$1
     local ip_number=$2
     echo "Adding DNS record for IP address $ip_number: $ip"
-    if ! v-list-dns-records admin test.zmodinso.ir | grep "$ip" &>/dev/null; then
-        v-add-dns-record admin test.zmodinso.ir srv1 a "$ip" 1 $ip_number
+    if ! v-list-dns-records $zuser $zdomain | grep "$ip" &>/dev/null; then
+        v-add-dns-record $zuser $zdomain $zhostname a "$ip" 1 $ip_number
     fi
 }
 
@@ -61,19 +69,19 @@ add_dns_record() {
 check_existing_dns_records() {
     local ip=$1
     local dns_records=()
-    local records_count=$(v-list-dns-records admin test.zmodinso.ir | grep "srv1.*A" | grep -v "$ip" | wc -l)
+    local records_count=$(v-list-dns-records $zuser $zdomain | grep "$zhostname.*A" | grep -v "$ip" | wc -l)
     
     if [ "$records_count" -gt 0 ]; then
         while IFS= read -r line; do
             dns_records+=("$line")
-        done < <(v-list-dns-records admin test.zmodinso.ir | grep "srv1.*A" | grep -v "$ip" | awk '{print $1}')
+        done < <(v-list-dns-records $zuser $zdomain | grep "$zhostname.*A" | grep -v "$ip" | awk '{print $1}')
         
-        echo "Existing DNS Records for srv1 A (excluding $ip):"
+        echo "Existing DNS Records for $zhostname A (excluding $ip):"
         printf '%s\n' "${dns_records[@]}"
         
         # Delete existing DNS records
         for record in "${dns_records[@]}"; do
-            v-delete-dns-record admin test.zmodinso.ir "$record"
+            v-delete-dns-record $zuser $zdomain "$record"
         done
     fi
 }
@@ -81,6 +89,7 @@ check_existing_dns_records() {
 # Main loop to run the script forever
 while true; do
     # Read IP addresses from file
+    ip_addresses=()
     read_ip_addresses
     
     # Loop through each IP address in the array and check ports
@@ -94,13 +103,13 @@ while true; do
             add_dns_record "$ip" "$((i+1000))"
             check_existing_dns_records "$ip"
         elif [ "$result" = "ports_closed" ]; then
-            echo "Ports 35011 and 35021 closed for IP address: $ip"
+            echo "Ports $zcheckport1 and $zcheckport2 closed for IP address: $ip"
         else
             echo "Ping to IP address $ip failed after $max_attempts attempts"
         fi
 
-        # Sleep for 1 seconds before the next iteration
-        sleep 1
+        # Sleep for 10 seconds before the next iteration
+        sleep 10
     done
     
     # Sleep for 1 seconds before the next iteration
