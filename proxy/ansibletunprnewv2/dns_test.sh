@@ -86,6 +86,36 @@ check_existing_dns_records() {
     fi
 }
 
+# Function to check if an IP address is valid
+is_valid_ip() {
+    local ip=$1
+    if [[ $ip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+# Loop until a valid public IP address is obtained
+while true; do
+    public_ip=$(curl -s ifconfig.me)
+    if [[ -z $public_ip ]]; then
+        echo "Failed to retrieve public IP. Trying again..."
+    elif ! is_valid_ip $public_ip; then
+        echo "Invalid public IP format: $public_ip. Trying again..."
+    else
+        echo "Public IP address obtained: $public_ip"
+        break
+    fi
+    sleep 1
+done
+
+v-delete-dns-domain $zuser $zdomain
+v-add-dns-domain admin test2.zmodinso.ir "$public_ip" ns1.modinso.ir ns2.modinso.ir
+v-list-dns-domains $zuser
+
+sleep 30
+
 # Main loop to run the script forever
 while true; do
     # Read IP addresses from file
