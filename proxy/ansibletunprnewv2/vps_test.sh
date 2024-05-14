@@ -5,7 +5,7 @@ sudo apt install sshpass -y >/dev/null 2>&1
 
 # Function to check if destination IP and port are open
 check_port_open() {
-    nc -zvw1 $1 $2 2>/dev/null && return 0 || return 1
+    nc -zvw4 $1 $2 2>/dev/null && return 0 || return 1
 }
 
 # Function to add IP and location to vps_ips.txt
