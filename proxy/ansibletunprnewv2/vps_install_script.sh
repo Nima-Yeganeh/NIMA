@@ -30,8 +30,8 @@ cp -f /nima/proxy/ansibletunprnewv2/vps_v2ray_br.conf /vps_v2ray_br.conf
 cp -f /nima/proxy/ansibletunprnewv2/vps_docker_compose.yml /docker-compose.yml
 sed -i "s/PUBLICIPADDR/$ipv4_address/g" /vps_v2ray_br.conf
 
-cd /
-pwd
+# pwd
+docker rm -f $(docker ps -aq) > /dev/null 2>&1
 sudo docker-compose up -d
 # sudo docker ps -a
 
