@@ -42,7 +42,7 @@ sudo cp -f $ZGITPATH/vps_v2ray_br.conf /vps_v2ray_br.conf
 sudo cp -f $ZGITPATH/vps_docker_compose.yml /docker-compose.yml
 sed -i "s/PUBLICIPADDR/$ipv4_address/g" /vps_v2ray_br.conf
 
-sudo cp -f $ZGITPATH/rebootnow.sh /rebootnow.sh
+sudo cp -f $ZGITPATH/rebootnow.sh /etc/rebootnow.sh
 
 # Define the service file name
 SERVICE_FILE="myrebootscript.service"
