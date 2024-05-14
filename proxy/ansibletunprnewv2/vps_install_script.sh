@@ -1,4 +1,5 @@
-sudo apt update -y
+# sudo apt update -y
+sudo apt update -y > /dev/null 2>&1
 sudo apt install docker-compose iftop iotop mtr htop mtr screen traceroute iptables-persistent net-tools socat python3 python3-pip apt-transport-https ca-certificates curl gnupg lsb-release -y
 echo "1" > /proc/sys/net/ipv4/ip_forward
 echo "120" > /proc/sys/net/ipv4/tcp_keepalive_time
