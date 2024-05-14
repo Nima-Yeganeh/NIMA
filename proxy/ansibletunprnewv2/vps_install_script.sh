@@ -117,6 +117,9 @@ sudo systemctl daemon-reload > /dev/null 2>&1
 # Enable the service to start on boot
 sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
 
+# Stop the service
+sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
+
 # Start the service
 sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 

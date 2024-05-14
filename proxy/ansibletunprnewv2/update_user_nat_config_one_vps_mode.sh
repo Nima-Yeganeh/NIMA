@@ -66,7 +66,7 @@ while true; do
     done < $tempfile2
     rm -f $tempfile1
     rm -f $tempfile2
-    # sudo bash /fwsave.sh > /dev/null 2>&1
+    sudo bash /fwsave.sh > /dev/null 2>&1
     sleep $ztimersleep
 done
 
