@@ -45,6 +45,12 @@ USER=${USER:-$DEFAULT_USER}
 read -p "Enter password: " PASSWORD
 echo
 
+# Check if IP address is already in vps_ips.txt
+if ! grep -q "^$IP," vps_ips.txt; then
+    # Add IP and location to vps_ips.txt
+    add_ip_location "$IP" "$LOCATION"
+fi
+
 # Check if destination IP and port are open
 if check_port_open $IP $PORT; then
     echo "Destination IP and port are open."
@@ -54,6 +60,7 @@ if check_port_open $IP $PORT; then
     echo "SSH public key copied to $IP successfully."
 
     # Prompt user for new server password
+    read -p "Enter new password for server: " NEW_PASSWORD
     read -p "Enter new password for server: " NEW_PASSWORD
     echo
 
@@ -74,17 +81,9 @@ else
     echo "Destination IP and port are not open."
 fi
 
-# Check if IP address is already in vps_ips.txt
-if ! grep -q "^$IP," vps_ips.txt; then
-    # Add IP and location to vps_ips.txt
-    add_ip_location "$IP" "$LOCATION"
-fi
-
 # Output collected information
 echo "IP: $IP"
 echo "Port: $PORT"
 echo "Location: $LOCATION"
 echo "User: $USER"
 echo "Done!"
-
-
