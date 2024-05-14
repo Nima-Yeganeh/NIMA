@@ -9,8 +9,8 @@ cp -f fwsave.sh /fwsave.sh
 sudo bash /fwsave.sh
 public_ip=$(curl -s ifconfig.me)
 echo "Public IP address: $public_ip"
-ipv4_address=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' | head -n1)
+ipv4_address=$(ifconfig enp1s0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*')
 if [ -z "$ipv4_address" ]; then
-    ipv4_address=$(ip -o -4 addr show | awk '{print $4}' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' | head -n1)
+    ipv4_address=$(ip -o -4 addr show enp1s0 | awk '{print $4}' | cut -d'/' -f1)
 fi
-echo "IPv4 address: $ipv4_address"
+echo "IPv4 address of enp1s0: $ipv4_address"
