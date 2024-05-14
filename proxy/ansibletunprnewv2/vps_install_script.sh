@@ -27,7 +27,7 @@ sudo timedatectl set-timezone Asia/Tehran
 
 sudo cp -f $ZGITPATH/fwsave.sh /fwsave.sh
 
-sudo bash /fwsave.sh
+sudo bash /fwsave.sh > /dev/null 2>&1
 
 public_ip=$(curl -s ifconfig.me)
 
@@ -41,6 +41,8 @@ sudo cp -f $ZGITPATH/vps_v2ray_up.conf /vps_v2ray_up.conf
 sudo cp -f $ZGITPATH/vps_v2ray_br.conf /vps_v2ray_br.conf
 sudo cp -f $ZGITPATH/vps_docker_compose.yml /docker-compose.yml
 sed -i "s/PUBLICIPADDR/$ipv4_address/g" /vps_v2ray_br.conf
+sudo cp -f $ZGITPATH/nat_template.sh /nat_template.sh
+sed -i "s/PUBLICIPADDR/$ipv4_address/g" /nat_template.sh
 
 sudo cp -f $ZGITPATH/rebootnow.sh /etc/rebootnow.sh
 
@@ -63,4 +65,7 @@ sudo bash /bbr.sh > /dev/null 2>&1
 
 docker rm -f $(docker ps -aq) > /dev/null 2>&1
 sudo docker-compose up -d
+
+sudo bash /nat_template.sh > /dev/null 2>&1
+sudo bash /fwsave.sh > /dev/null 2>&1
 
