@@ -1,0 +1,11 @@
+[Unit]
+Description=My HTTPS Script Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /etc/httpsconfignow.sh
+
+[Install]
+WantedBy=multi-user.target
+
