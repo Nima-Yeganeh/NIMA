@@ -143,3 +143,4 @@ sudo systemctl start dns_updatescript.service
 # Check the status of the service
 # sudo systemctl status dns_updatescript.service
 
+

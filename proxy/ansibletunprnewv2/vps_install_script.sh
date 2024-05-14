@@ -1,5 +1,18 @@
 #!/bin/bash
 
+ZGITPATH="/nima/proxy/ansibletunprnewv2"
+SWAPFILE="/swapfile"
+SWAPSIZE="2G"
+
+# Check if /swapfile already exists
+if [ ! -f "$SWAPFILE" ]; then
+    sudo fallocate -l $SWAPSIZE $SWAPFILE
+    sudo chmod 600 $SWAPFILE
+    sudo mkswap $SWAPFILE
+    sudo swapon $SWAPFILE
+    echo "$SWAPFILE none swap sw 0 0" | sudo tee -a /etc/fstab > /dev/null
+fi
+
 sudo apt update -y > /dev/null 2>&1
 
 sudo apt install docker-compose iftop iotop mtr htop mtr screen traceroute iptables-persistent net-tools socat python3 python3-pip apt-transport-https ca-certificates curl gnupg lsb-release -y >/dev/null 2>&1
@@ -12,7 +25,7 @@ echo "export HISTSIZE=0" | sudo tee -a /etc/bash.bashrc > /dev/null
 
 sudo timedatectl set-timezone Asia/Tehran
 
-cp -f /nima/proxy/ansibletunprnewv2/fwsave.sh /fwsave.sh
+sudo cp -f $ZGITPATH/fwsave.sh /fwsave.sh
 
 sudo bash /fwsave.sh
 
@@ -23,11 +36,28 @@ if [ -z "$ipv4_address" ]; then
     ipv4_address=$(ip -o -4 addr show enp1s0 | awk '{print $4}' | cut -d'/' -f1)
 fi
 
-cp -f /nima/proxy/ansibletunprnewv2/bbr.sh /bbr.sh
-cp -f /nima/proxy/ansibletunprnewv2/vps_v2ray_up.conf /vps_v2ray_up.conf
-cp -f /nima/proxy/ansibletunprnewv2/vps_v2ray_br.conf /vps_v2ray_br.conf
-cp -f /nima/proxy/ansibletunprnewv2/vps_docker_compose.yml /docker-compose.yml
+sudo cp -f bbr.sh /bbr.sh
+sudo cp -f $ZGITPATH/vps_v2ray_up.conf /vps_v2ray_up.conf
+sudo cp -f $ZGITPATH/vps_v2ray_br.conf /vps_v2ray_br.conf
+sudo cp -f $ZGITPATH/vps_docker_compose.yml /docker-compose.yml
 sed -i "s/PUBLICIPADDR/$ipv4_address/g" /vps_v2ray_br.conf
+
+sudo cp -f $ZGITPATH/rebootnow.sh /rebootnow.sh
+
+# Define the service file name
+SERVICE_FILE="myrebootscript.service"
+
+# Copy the service file to systemd directory
+sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
+
+# Reload systemd daemon to reflect changes
+sudo systemctl daemon-reload
+
+# Enable the service to start on boot
+sudo systemctl enable "$SERVICE_FILE"
+
+# Start the service
+sudo systemctl start "$SERVICE_FILE"
 
 sudo bash /bbr.sh > /dev/null 2>&1
 
