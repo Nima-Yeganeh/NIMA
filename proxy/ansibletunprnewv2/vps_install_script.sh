@@ -45,9 +45,25 @@ sudo cp -f $ZGITPATH/nat_template.sh /nat_template.sh
 sed -i "s/PUBLICIPADDR/$ipv4_address/g" /nat_template.sh
 
 sudo cp -f $ZGITPATH/rebootnow.sh /etc/rebootnow.sh
+sudo cp -f $ZGITPATH/httpconfignow.sh /etc/httpconfignow.sh
 
 # Define the service file name
 SERVICE_FILE="myrebootscript.service"
+
+# Copy the service file to systemd directory
+sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
+
+# Reload systemd daemon to reflect changes
+sudo systemctl daemon-reload > /dev/null 2>&1
+
+# Enable the service to start on boot
+sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
+
+# Start the service
+sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
+
+# Define the service file name
+SERVICE_FILE="myhttpscript.service"
 
 # Copy the service file to systemd directory
 sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
