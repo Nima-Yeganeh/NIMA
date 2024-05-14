@@ -14,3 +14,11 @@ if [ -z "$ipv4_address" ]; then
     ipv4_address=$(ip -o -4 addr show enp1s0 | awk '{print $4}' | cut -d'/' -f1)
 fi
 echo "IPv4 address of enp1s0: $ipv4_address"
+cp -f vps_v2ray_up.conf /vps_v2ray_up.conf
+cp -f vps_v2ray_br.conf /vps_v2ray_br.conf
+cp -f vps_docker_compose.yml /docker_compose.yml
+sed -i "s/PUBLICIPADDR/$ipv4_address/g" /vps_v2ray_br.conf
+cd /
+pwd
+sudo docker-compose up -d
+sudo docker ps -a

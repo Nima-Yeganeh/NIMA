@@ -1,0 +1,21 @@
+version: "3"
+services:
+  v2ray_up:
+    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
+    restart: always
+    environment:
+      - v2ray.vmess.aead.forced=false
+    ports:
+      - '9000:9000'
+    volumes:
+      - /vps_v2ray_up.conf:/etc/v2ray/config.json
+  v2ray_br:
+    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
+    restart: always
+    environment:
+      - v2ray.vmess.aead.forced=false
+    ports:
+      - '7001:7001'
+      - '8001:8001'
+    volumes:
+      - /vps_v2ray_br.conf:/etc/v2ray/config.json
