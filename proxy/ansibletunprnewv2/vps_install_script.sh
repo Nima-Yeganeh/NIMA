@@ -48,6 +48,10 @@ sudo cp -f $ZGITPATH/rebootnow.sh /etc/rebootnow.sh
 sudo cp -f $ZGITPATH/httpconfignow.sh /etc/httpconfignow.sh
 sudo cp -f $ZGITPATH/httpsconfignow.sh /etc/httpsconfignow.sh
 
+echo $ipv4_address > /serverip.txt
+sudo cp -f $ZGITPATH/update_user_nat_config_one_vps_mode.sh /update_user_nat_config.sh
+sudo cp -f $ZGITPATH/myuserupdatescript.service /etc/myuserupdatescript.service
+
 # Define the service file name
 SERVICE_FILE="myrebootscript.service"
 
@@ -79,7 +83,7 @@ sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
 sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
 # Define the service file name
-SERVICE_FILE="myhttpsscript.service"
+SERVICE_FILE="myhttpscript.service"
 
 # Copy the service file to systemd directory
 sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
@@ -100,4 +104,19 @@ sudo docker-compose up -d
 
 sudo bash /nat_template.sh > /dev/null 2>&1
 sudo bash /fwsave.sh > /dev/null 2>&1
+
+# Define the service file name
+SERVICE_FILE="myuserupdatescript.service"
+
+# Copy the service file to systemd directory
+sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
+
+# Reload systemd daemon to reflect changes
+sudo systemctl daemon-reload > /dev/null 2>&1
+
+# Enable the service to start on boot
+sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
+
+# Start the service
+sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
