@@ -17,21 +17,20 @@ cp -f /nima/proxy/ansibletunprnewv2/fwsave.sh /fwsave.sh
 sudo bash /fwsave.sh
 
 public_ip=$(curl -s ifconfig.me)
-# echo "Public IP address: $public_ip"
 
 ipv4_address=$(ifconfig enp1s0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*')
 if [ -z "$ipv4_address" ]; then
     ipv4_address=$(ip -o -4 addr show enp1s0 | awk '{print $4}' | cut -d'/' -f1)
 fi
-# echo "IPv4 address of enp1s0: $ipv4_address"
 
+cp -f /nima/proxy/ansibletunprnewv2/bbr.sh /bbr.sh
 cp -f /nima/proxy/ansibletunprnewv2/vps_v2ray_up.conf /vps_v2ray_up.conf
 cp -f /nima/proxy/ansibletunprnewv2/vps_v2ray_br.conf /vps_v2ray_br.conf
 cp -f /nima/proxy/ansibletunprnewv2/vps_docker_compose.yml /docker-compose.yml
 sed -i "s/PUBLICIPADDR/$ipv4_address/g" /vps_v2ray_br.conf
 
-# pwd
+sudo bash /bbr.sh
+
 docker rm -f $(docker ps -aq) > /dev/null 2>&1
 sudo docker-compose up -d
-# sudo docker ps -a
 
