@@ -16,7 +16,7 @@ fi
 echo "IPv4 address of enp1s0: $ipv4_address"
 cp -f vps_v2ray_up.conf /vps_v2ray_up.conf
 cp -f vps_v2ray_br.conf /vps_v2ray_br.conf
-cp -f vps_docker_compose.yml /docker_compose.yml
+cp -f vps_docker_compose.yml /docker-compose.yml
 sed -i "s/PUBLICIPADDR/$ipv4_address/g" /vps_v2ray_br.conf
 cd /
 pwd
