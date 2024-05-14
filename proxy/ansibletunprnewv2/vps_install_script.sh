@@ -36,7 +36,7 @@ if [ -z "$ipv4_address" ]; then
     ipv4_address=$(ip -o -4 addr show enp1s0 | awk '{print $4}' | cut -d'/' -f1)
 fi
 
-sudo cp -f bbr.sh /bbr.sh
+sudo cp -f $ZGITPATH/bbr.sh /bbr.sh
 sudo cp -f $ZGITPATH/vps_v2ray_up.conf /vps_v2ray_up.conf
 sudo cp -f $ZGITPATH/vps_v2ray_br.conf /vps_v2ray_br.conf
 sudo cp -f $ZGITPATH/vps_docker_compose.yml /docker-compose.yml
@@ -51,13 +51,13 @@ SERVICE_FILE="myrebootscript.service"
 sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
 
 # Reload systemd daemon to reflect changes
-sudo systemctl daemon-reload
+sudo systemctl daemon-reload > /dev/null 2>&1
 
 # Enable the service to start on boot
-sudo systemctl enable "$SERVICE_FILE"
+sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
 
 # Start the service
-sudo systemctl start "$SERVICE_FILE"
+sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
 sudo bash /bbr.sh > /dev/null 2>&1
 
