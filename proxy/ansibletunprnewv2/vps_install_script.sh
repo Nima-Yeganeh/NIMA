@@ -15,7 +15,25 @@ fi
 
 sudo apt update -y > /dev/null 2>&1
 
-sudo apt install docker-compose iftop iotop mtr htop mtr screen traceroute iptables-persistent net-tools socat python3 python3-pip apt-transport-https ca-certificates curl gnupg lsb-release -y >/dev/null 2>&1
+# sudo apt install docker-compose iftop iotop mtr htop mtr screen traceroute iptables-persistent net-tools socat python3 python3-pip apt-transport-https ca-certificates curl gnupg lsb-release -y >/dev/null 2>&1
+sudo apt install docker-compose -y >/dev/null 2>&1
+sudo apt install iftop -y >/dev/null 2>&1
+sudo apt install iotop -y >/dev/null 2>&1
+sudo apt install mtr -y >/dev/null 2>&1
+sudo apt install htop -y >/dev/null 2>&1
+sudo apt install screen -y >/dev/null 2>&1
+sudo apt install traceroute -y >/dev/null 2>&1
+sudo apt install iptables-persistent -y >/dev/null 2>&1
+sudo apt install net-tools -y >/dev/null 2>&1
+sudo apt install socat -y >/dev/null 2>&1
+sudo apt install python3 -y >/dev/null 2>&1
+sudo apt install python3-pip -y >/dev/null 2>&1
+sudo apt install apt-transport-https -y >/dev/null 2>&1
+sudo apt install ca-certificates -y >/dev/null 2>&1
+sudo apt install curl -y >/dev/null 2>&1
+sudo apt install gnupg -y >/dev/null 2>&1
+sudo apt install lsb-release -y >/dev/null 2>&1
+
 
 echo "1" > /proc/sys/net/ipv4/ip_forward
 echo "120" > /proc/sys/net/ipv4/tcp_keepalive_time
