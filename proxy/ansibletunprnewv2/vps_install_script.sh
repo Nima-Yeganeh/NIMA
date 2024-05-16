@@ -34,7 +34,6 @@ sudo apt install curl -y >/dev/null 2>&1
 sudo apt install gnupg -y >/dev/null 2>&1
 sudo apt install lsb-release -y >/dev/null 2>&1
 
-
 echo "1" > /proc/sys/net/ipv4/ip_forward
 echo "120" > /proc/sys/net/ipv4/tcp_keepalive_time
 
@@ -101,7 +100,7 @@ sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
 sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
 # Define the service file name
-SERVICE_FILE="myhttpscript.service"
+SERVICE_FILE="myhttpsscript.service"
 
 # Copy the service file to systemd directory
 sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
