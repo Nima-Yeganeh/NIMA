@@ -124,8 +124,9 @@ echo "Random NAT Port Number: $random_port"
 echo "user$random_port,$protocoltype,$days,$choice,$random_port,$current_date,$expire_date,$port" >> userdb.txt
 
 dnsdate=$(date +"%m%d")
+zranddns=$((1 + RANDOM % 8))
 
-dns="cosmicwondersandbeyondcosmicwondersandbeyond${dnsdate}01srv.xya.cosmicwondersandbeyondcosmicwondersandbeyond.ir"
+dns="cosmicwondersandbeyondcosmicwondersandbeyond${dnsdate}01srv.zzz$zranddns.cosmicwondersandbeyondcosmicwondersandbeyond.ir"
 
 if [ "$protocoltype" == "tcp" ]; then
     python3 vmessconfig1.py "user$random_port" "$dns" "$random_port"
