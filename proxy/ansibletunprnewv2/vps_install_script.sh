@@ -13,7 +13,7 @@ if [ ! -f "$SWAPFILE" ]; then
     echo "$SWAPFILE none swap sw 0 0" | sudo tee -a /etc/fstab > /dev/null
 fi
 
-ps aux | grep apt | grep -v grep | awk '{print $2}' | xargs -r kill -9
+sudo ps aux | grep apt | grep -v grep | awk '{print $2}' | xargs -r kill -9
 
 sudo apt update -y > /dev/null 2>&1
 
@@ -26,7 +26,7 @@ sudo apt install htop -y >/dev/null 2>&1
 sudo apt install screen -y >/dev/null 2>&1
 sudo apt install traceroute -y >/dev/null 2>&1
 sudo timeout 20 apt install iptables-persistent -y >/dev/null 2>&1
-ps aux | grep apt | grep -v grep | awk '{print $2}' | xargs -r kill -9
+sudo ps aux | grep apt | grep -v grep | awk '{print $2}' | xargs -r kill -9
 sudo apt install iptables-persistent -y >/dev/null 2>&1
 sudo apt install net-tools -y >/dev/null 2>&1
 sudo apt install socat -y >/dev/null 2>&1
