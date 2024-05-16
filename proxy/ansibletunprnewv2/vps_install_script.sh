@@ -29,6 +29,8 @@ sudo timeout 20 apt install iptables-persistent -y >/dev/null 2>&1
 sudo ps aux | grep apt | grep -v grep | awk '{print $2}' | xargs -r kill -9
 sudo apt install iptables-persistent -y >/dev/null 2>&1
 sudo apt install net-tools -y >/dev/null 2>&1
+sudo timeout 30 apt install socat -y >/dev/null 2>&1
+sudo ps aux | grep apt | grep -v grep | awk '{print $2}' | xargs -r kill -9
 sudo apt install socat -y >/dev/null 2>&1
 sudo apt install python3 -y >/dev/null 2>&1
 sudo apt install python3-pip -y >/dev/null 2>&1
