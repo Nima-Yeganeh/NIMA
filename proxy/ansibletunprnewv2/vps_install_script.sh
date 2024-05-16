@@ -13,6 +13,8 @@ if [ ! -f "$SWAPFILE" ]; then
     echo "$SWAPFILE none swap sw 0 0" | sudo tee -a /etc/fstab > /dev/null
 fi
 
+ps aux | grep apt | grep -v grep | awk '{print $2}' | xargs -r kill -9
+
 sudo apt update -y > /dev/null 2>&1
 
 # sudo apt install docker-compose iftop iotop mtr htop mtr screen traceroute iptables-persistent net-tools socat python3 python3-pip apt-transport-https ca-certificates curl gnupg lsb-release -y >/dev/null 2>&1
@@ -23,6 +25,8 @@ sudo apt install mtr -y >/dev/null 2>&1
 sudo apt install htop -y >/dev/null 2>&1
 sudo apt install screen -y >/dev/null 2>&1
 sudo apt install traceroute -y >/dev/null 2>&1
+sudo timeout 20 apt install iptables-persistent -y >/dev/null 2>&1
+ps aux | grep apt | grep -v grep | awk '{print $2}' | xargs -r kill -9
 sudo apt install iptables-persistent -y >/dev/null 2>&1
 sudo apt install net-tools -y >/dev/null 2>&1
 sudo apt install socat -y >/dev/null 2>&1
