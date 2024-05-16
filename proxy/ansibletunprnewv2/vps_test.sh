@@ -63,6 +63,8 @@ if check_port_open $IP $PORT; then
     read -p "Enter new password for server: " NEW_PASSWORD
     read -p "Enter new password for server: " NEW_PASSWORD
     echo
+    
+    # PORT=22
 
     # Execute commands to update passwords on remote server
     execute_commands "echo 'linuxuser:$NEW_PASSWORD' | sudo chpasswd"
