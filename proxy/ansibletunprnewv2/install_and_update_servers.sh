@@ -23,6 +23,7 @@ display_options() {
     echo "37. Check NAT Uniq Count"
     echo "38. Check PS NAT Update - Process"
     echo "41. Ping All Servers - Hosts"
+    echo "51. Reinstall and Update - Digi Servers (Update YAML First)"
     echo "99. Exit"
 }
 
@@ -50,6 +51,7 @@ get_user_input() {
         37) check_nat_uniq_count;;
         38) check_ps_nat_update;;
         41) ping_all_hosts;;
+	51) reinstall_update_digi;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
@@ -83,6 +85,12 @@ install_update() {
     ansible-playbook -i hosts.ini -u root hostupdate.yml
     ansible-playbook -i hosts.ini -u root natconfig.yml
     ansible-playbook -i hosts.ini -u root restart_user_nat_service.yml
+}
+
+reinstall_update_digi() {
+    bash configupdate.sh
+    ansible -i hosts.ini -u root -m ping all
+    ansible-playbook -i hosts.ini -u root hostupdate.yml
 }
 
 docker_update_restart() {
