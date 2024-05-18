@@ -1,6 +1,6 @@
 ---
 - name: Update and Configure Ubuntu Servers
-  hosts: ubuntu9004srvdiginl,local_servers
+  hosts: ubuntu9002srvdigiuk,local_servers
   become: yes
 
   tasks:
