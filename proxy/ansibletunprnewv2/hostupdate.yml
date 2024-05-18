@@ -1,6 +1,6 @@
 ---
 - name: Update and Configure Ubuntu Servers
-  hosts: ubuntu9005srvdigide
+  hosts: all
   become: yes
 
   tasks:
