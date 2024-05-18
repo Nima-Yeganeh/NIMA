@@ -24,6 +24,7 @@ display_options() {
     echo "38. Check PS NAT Update - Process"
     echo "41. Ping All Servers - Hosts"
     echo "51. Reinstall and Update - Digi Servers (Update YAML First)"
+    echo "52. Tunnel Reconfig for Digi Servers and IR (Update YAML First)"
     echo "99. Exit"
 }
 
@@ -52,6 +53,7 @@ get_user_input() {
         38) check_ps_nat_update;;
         41) ping_all_hosts;;
 	51) reinstall_update_digi;;
+	52) tunnel_reconfig;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
