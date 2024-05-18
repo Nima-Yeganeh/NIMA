@@ -1,11 +1,12 @@
 ---
 - name: Check Ubuntu Servers
-  hosts: ubuntu9031srvir
+  hosts: local_servers
   become: yes
   gather_facts: false
   tasks:
     - name: CMD
-      shell: "ip addr | grep inet.*253/30 | awk '{print $2}' | cut -d'/' -f1 | while read ip; do (ping -c 1 -W 1 $ip > /dev/null 2>&1 && echo \"ok with $ip\") || echo \"not ok with $ip\"; done | tr '\\n' ' '"
+      shell: |
+        ip addr | grep inet.*253/30 | awk '{print $2}' | cut -d'/' -f1 | while read ip; do new_ip=$(echo $ip | sed 's/\.253$/.254/'); if ping -c 4 -W 4 $new_ip > /dev/null 2>&1; then echo "ok with $new_ip"; else echo "not ok with $new_ip"; fi; done | grep not; echo "completed"
       register: zresult
     - name: Results
       debug:

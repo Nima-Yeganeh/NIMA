@@ -25,6 +25,7 @@ display_options() {
     echo "41. Ping All Servers - Hosts"
     echo "51. Reinstall and Update - Digi Servers (Update YAML First)"
     echo "52. Tunnel Reconfig for Digi Servers and IR (Update YAML First)"
+    echo "61. Check Tunnel IR Servers - Ping Remote Tunnel IP"
     echo "99. Exit"
 }
 
@@ -54,6 +55,7 @@ get_user_input() {
         41) ping_all_hosts;;
 	51) reinstall_update_digi;;
 	52) tunnel_reconfig;;
+	61) check_tunnel_ir_servers;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
@@ -181,6 +183,10 @@ check_ps_nat_update() {
 
 ping_all_hosts() {
     ansible -i hosts.ini -u root -m ping all | grep ubuntu
+}
+
+check_tunnel_ir_servers() {
+    ansible-playbook -i hosts.ini -u root check_tunnel_ir_servers.yml | grep not
 }
 
 # Main script
