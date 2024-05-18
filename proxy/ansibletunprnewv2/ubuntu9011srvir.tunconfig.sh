@@ -22,7 +22,7 @@ sudo ip -6 tunnel add gre6tunir011003 mode ip6gre remote fc00:11:3::254 local fc
 sudo ip addr add 10.11.3.253/30 dev gre6tunir011003
 sudo ip link set gre6tunir011003 mtu 1300
 sudo ip link set gre6tunir011003 up
-sudo ip tunnel add 6to4tunir011004 mode sit remote 174.138.5.192 local 185.73.3.82
+sudo ip tunnel add 6to4tunir011004 mode sit remote 185.223.235.100 local 185.73.3.82
 sudo ip -6 addr add fc00:11:4::253/64 dev 6to4tunir011004
 sudo ip link set 6to4tunir011004 mtu 1400
 sudo ip link set 6to4tunir011004 up
