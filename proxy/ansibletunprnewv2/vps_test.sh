@@ -77,7 +77,8 @@ if check_port_open $IP $PORT; then
     execute_commands "sudo rm -rf /nima >/dev/null 2>&1"
     execute_commands "git clone https://github.com/nima-yeganeh/nima /nima > /dev/null 2>&1"
     execute_commands "sudo bash /nima/proxy/ansibletunprnewv2/vps_install_script.sh"
-
+    sleep 4
+    echo "y" | salt-key -A > /dev/null 2>&1
     echo "Passwords updated on $IP."
 else
     echo "Destination IP and port are not open."
