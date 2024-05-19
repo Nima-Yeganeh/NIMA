@@ -67,9 +67,9 @@ if check_port_open $IP $PORT; then
     # PORT=22
 
     # Execute commands to update passwords on remote server
-    execute_commands "echo 'linuxuser:$NEW_PASSWORD' | sudo chpasswd"
-    execute_commands "echo 'root:$NEW_PASSWORD' | sudo chpasswd"
-    execute_commands "echo 'ubuntu:$NEW_PASSWORD' | sudo chpasswd"
+    execute_commands "echo 'linuxuser:$NEW_PASSWORD' | sudo chpasswd > /dev/null 2>&1"
+    execute_commands "echo 'root:$NEW_PASSWORD' | sudo chpasswd > /dev/null 2>&1"
+    execute_commands "echo 'ubuntu:$NEW_PASSWORD' | sudo chpasswd > /dev/null 2>&1"
     execute_commands "sed -i 's/^Port $PORT$/Port 22/' /etc/ssh/sshd_config"
     execute_commands "sudo systemctl restart sshd"
     execute_commands "sudo systemctl restart ssh"
