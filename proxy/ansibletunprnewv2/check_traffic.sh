@@ -7,8 +7,10 @@ interface=$({ ip link show eth0 &>/dev/null && echo "eth0"; } || { ip link show 
 send=$(ifconfig $interface | grep "TX packets" | awk '{print $6 " " $7}')
 receive=$(ifconfig $interface | grep "RX packets" | awk '{print $6 " " $7}')
 
-# Display statistics
-echo "$(hostname) >> IP:$(head -n1 /serverip.txt 2>/dev/null) >> Send Traffic: $send packets and Receive Traffic: $receive packets"
+echo $send
+echo $receive
 
-# interface="eth0"; send=$(ifconfig $interface | grep "TX packets" | awk '{print $6 " " $7}'); receive=$(ifconfig $interface | grep "RX packets" | awk '{print $6 " " $7}'); echo "Send Traffic: $send packets and Receive Traffic: $receive packets"
+# Display statistics
+# echo "$(hostname) >> IP:$(head -n1 /serverip.txt 2>/dev/null) >> Send Traffic: $send packets and Receive Traffic: $receive packets"
+
 
