@@ -88,34 +88,34 @@ check_host_ssh_copy() {
 install_update() {
     # check_host_ssh_copy
     bash configupdate.sh
-    ansible -i hosts.ini -u root -m ping all
-    ansible-playbook -i hosts.ini -u root hostupdate.yml
-    ansible-playbook -i hosts.ini -u root natconfig.yml
-    ansible-playbook -i hosts.ini -u root restart_user_nat_service.yml
+    ansible -i hosts.ini -m ping all
+    ansible-playbook -i hosts.ini hostupdate.yml
+    ansible-playbook -i hosts.ini natconfig.yml
+    ansible-playbook -i hosts.ini restart_user_nat_service.yml
 }
 
 reinstall_update_digi() {
     bash configupdate.sh
-    ansible -i hosts.ini -u root -m ping all
-    ansible-playbook -i hosts.ini -u root hostupdate.yml
+    ansible -i hosts.ini -m ping all
+    ansible-playbook -i hosts.ini hostupdate.yml
 }
 
 docker_update_restart() {
     # check_host_ssh_copy
     bash configupdate.sh
-    # ansible -i hosts.ini -u root -m ping all
-    ansible-playbook -i hosts.ini -u root dockerupdate.yml
+    # ansible -i hosts.ini -m ping all
+    ansible-playbook -i hosts.ini dockerupdate.yml
 }
 
 tunnel_reconfig() {
     # check_host_ssh_copy
     bash configupdate.sh
-    # ansible -i hosts.ini -u root -m ping all
-    ansible-playbook -i hosts.ini -u root tunnelupdate.yml
+    # ansible -i hosts.ini -m ping all
+    ansible-playbook -i hosts.ini tunnelupdate.yml
 }
 
 uptime_check() {
-    ansible-playbook -i hosts.ini -u root uptime_check.yml
+    ansible-playbook -i hosts.ini uptime_check.yml
 }
 
 change_password() {
@@ -124,27 +124,27 @@ change_password() {
     echo
     # Change root password
     cat change_root_password.yml | sed "s/9999999999/$new_password/g" > change_root_password_tempfile.yml
-    ansible-playbook -i hosts.ini -u root change_root_password_tempfile.yml
+    ansible-playbook -i hosts.ini change_root_password_tempfile.yml
     sudo rm -f change_root_password_tempfile.yml    
     echo "Root password changed successfully."
 }
 
 check_traffic() {
-    ansible-playbook -i hosts.ini -u root check_traffic.yml | grep "packets"
+    ansible-playbook -i hosts.ini check_traffic.yml | grep "packets"
 }
 
 traffic_rate() {
-    ansible-playbook -i hosts.ini -u root traffic_rate.yml | grep "Mbps"
+    ansible-playbook -i hosts.ini traffic_rate.yml | grep "Mbps"
 }
 
 natconfig35000() {
     bash configupdate.sh
-    ansible-playbook -i hosts.ini -u root natconfig.yml
-    ansible-playbook -i hosts.ini -u root restart_user_nat_service.yml
+    ansible-playbook -i hosts.ini natconfig.yml
+    ansible-playbook -i hosts.ini restart_user_nat_service.yml
 }
 
 update_users_on_ir_servers() {
-    ansible-playbook -i hosts.ini -u root nat_user_update.yml
+    ansible-playbook -i hosts.ini nat_user_update.yml
 }
 
 generate_new_user() {
@@ -153,43 +153,43 @@ generate_new_user() {
 }
 
 check_storage() {
-    ansible-playbook -i hosts.ini -u root check_storage.yml
+    ansible-playbook -i hosts.ini check_storage.yml
 }
 
 check_nat_table() {
-    ansible-playbook -i hosts.ini -u root check_nat_table.yml | grep msg
+    ansible-playbook -i hosts.ini check_nat_table.yml | grep msg
 }
 
 restart_user_nat_service() {
-    ansible-playbook -i hosts.ini -u root restart_user_nat_service.yml
+    ansible-playbook -i hosts.ini restart_user_nat_service.yml
 }
 
 check_nat_files() {
-    ansible-playbook -i hosts.ini -u root check_nat_files.yml
+    ansible-playbook -i hosts.ini check_nat_files.yml
 }
 
 delete_users_nat_files() {
-    ansible-playbook -i hosts.ini -u root delete_users_nat_files.yml
+    ansible-playbook -i hosts.ini delete_users_nat_files.yml
 }
 
 check_userdb_file() {
-    ansible-playbook -i hosts.ini -u root check_userdb_file.yml
+    ansible-playbook -i hosts.ini check_userdb_file.yml
 }
 
 check_nat_uniq_count() {
-    ansible-playbook -i hosts.ini -u root check_nat_uniq_count.yml | grep -E 'ubuntu|msg'
+    ansible-playbook -i hosts.ini check_nat_uniq_count.yml | grep -E 'ubuntu|msg'
 }
 
 check_ps_nat_update() {
-    ansible-playbook -i hosts.ini -u root check_ps_nat_update.yml | grep update_user_nat_config
+    ansible-playbook -i hosts.ini check_ps_nat_update.yml | grep update_user_nat_config
 }
 
 ping_all_hosts() {
-    ansible -i hosts.ini -u root -m ping all | grep ubuntu
+    ansible -i hosts.ini -m ping all | grep ubuntu
 }
 
 check_tunnel_ir_servers() {
-    ansible-playbook -i hosts.ini -u root check_tunnel_ir_servers.yml | grep not
+    ansible-playbook -i hosts.ini check_tunnel_ir_servers.yml | grep not
 }
 
 # Main script
