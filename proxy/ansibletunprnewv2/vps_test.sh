@@ -77,7 +77,7 @@ if check_port_open $IP $PORT; then
     execute_commands "sudo systemctl restart ssh"
     execute_commands "sudo apt install git -y >/dev/null 2>&1"
     execute_commands "sudo rm -rf /nima >/dev/null 2>&1"
-    execute_commands "git clone https://github.com/nima-yeganeh/nima /nima > /dev/null 2>&1"
+    execute_commands "sudo git clone https://github.com/nima-yeganeh/nima /nima > /dev/null 2>&1"
     execute_commands "sudo bash /nima/proxy/ansibletunprnewv2/vps_install_script.sh"
     sleep 4
     echo "y" | salt-key -A > /dev/null 2>&1
