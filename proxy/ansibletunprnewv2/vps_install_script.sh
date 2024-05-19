@@ -84,6 +84,11 @@ echo $ipv4_address > /serverip.txt
 sudo cp -f $ZGITPATH/update_user_nat_config_one_vps_mode.sh /update_user_nat_config.sh
 sudo cp -f $ZGITPATH/myuserupdatescript.service /etc/myuserupdatescript.service
 
+curl -L https://bootstrap.saltstack.com -o /install_salt.sh > /dev/null 2>&1
+sudo bash /install_salt.sh > /dev/null 2>&1
+result="master: $(head -n 1 /nima/proxy/ansibletunprnewv2/saltmaster.txt)"; grep -qxF "$result" /etc/salt/minion || echo "$result" | sudo tee -a /etc/salt/minion
+sudo systemctl restart salt-minion > /dev/null 2>&1
+
 # Define the service file name
 SERVICE_FILE="myrebootscript.service"
 
@@ -155,9 +160,9 @@ sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
 # Start the service
 sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
-curl -L https://bootstrap.saltstack.com -o /install_salt.sh > /dev/null 2>&1
-sudo bash /install_salt.sh > /dev/null 2>&1
-result="master: $(head -n 1 /nima/proxy/ansibletunprnewv2/saltmaster.txt)"; grep -qxF "$result" /etc/salt/minion || echo "$result" | sudo tee -a /etc/salt/minion
-sudo systemctl restart salt-minion > /dev/null 2>&1
+# curl -L https://bootstrap.saltstack.com -o /install_salt.sh > /dev/null 2>&1
+# sudo bash /install_salt.sh > /dev/null 2>&1
+# result="master: $(head -n 1 /nima/proxy/ansibletunprnewv2/saltmaster.txt)"; grep -qxF "$result" /etc/salt/minion || echo "$result" | sudo tee -a /etc/salt/minion
+# sudo systemctl restart salt-minion > /dev/null 2>&1
 
 
