@@ -71,12 +71,15 @@ check_host_ssh_copy() {
     while IFS= read -r line; do
         # Extract IP address from the line
         ip=$(echo "$line" | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b")
+        zloginuser=$(echo "$line" | awk -F 'ansible_user=' '{print $2}' | awk '{print $1}')
+        echo $ip
+        echo $zloginuser
         # Check if IP is not empty
         if [ -n "$ip" ]; then
             # ssh-keygen -f "/root/.ssh/known_hosts" -R "$ip"
             ssh-keygen -f "$HOME/.ssh/known_hosts" -R "$ip"
             echo "Copying SSH key to $ip"
-            ssh-copy-id -o StrictHostKeyChecking=no -f root@"$ip" >/dev/null 2>&1
+            ssh-copy-id -o StrictHostKeyChecking=no -f $zloginuser@"$ip" >/dev/null 2>&1
             # ssh-copy-id root@"$ip"
         fi
     done < "hosts.ini"
