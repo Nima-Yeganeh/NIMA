@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Interface name
-interface="eth0"
+interface=$({ ip link show eth0 &>/dev/null && echo "eth0"; } || { ip link show enp1s0 &>/dev/null && echo "enp1s0"; })
 
 # Get current time in nanoseconds
 current_time=$(date +%s%N)
@@ -25,6 +25,6 @@ tx_rate=$(echo "scale=2; ($tx_bytes_after - $tx_bytes_before) / $elapsed_time / 
 rx_rate=$(echo "scale=2; ($rx_bytes_after - $rx_bytes_before) / $elapsed_time / 125000" | bc)
 
 # Display traffic rate
-echo "Send Traffic Rate: $tx_rate Mbps and Receive Traffic Rate: $rx_rate Mbps" | sed 's/-//g' | sed 's/Rate: \./Rate: 0\./g'
+echo "$(hostname) >> IP:$(head -n1 /serverip.txt 2>/dev/null) >> Send Traffic Rate: $tx_rate Mbps and Receive Traffic Rate: $rx_rate Mbps" | sed 's/-//g' | sed 's/Rate: \./Rate: 0\./g'
 
 

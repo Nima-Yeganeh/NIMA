@@ -54,6 +54,8 @@ fi
 # Check if destination IP and port are open
 if check_port_open $IP $PORT; then
     echo "Destination IP and port are open."
+    
+    ssh-keygen -f "$HOME/.ssh/known_hosts" -R "$IP"
 
     # Copy SSH public key to remote server
     copy_ssh_key
