@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Interface name
-interface=$({ ip link show eth0 &>/dev/null && echo "eth0"; } || { ip link show enp1s0 &>/dev/null && echo "enp1s0"; } || { ip link show enp1s0 &>/dev/null && echo "enp1s0"; })
+interface=$({ ip link show eth0 &>/dev/null && echo "eth0"; } || { ip link show enp1s0 &>/dev/null && echo "enp1s0"; } || { ip link show ens3 &>/dev/null && echo "ens3"; })
 
 # Get current time in nanoseconds
 current_time=$(date +%s%N)
