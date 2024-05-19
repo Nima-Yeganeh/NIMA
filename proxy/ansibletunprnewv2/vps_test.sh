@@ -25,7 +25,7 @@ execute_commands() {
 
 # Default values
 DEFAULT_PORT="22"
-DEFAULT_LOCATION="nl"
+DEFAULT_LOCATION="de"
 DEFAULT_USER="root"
 
 # Prompt user for input
