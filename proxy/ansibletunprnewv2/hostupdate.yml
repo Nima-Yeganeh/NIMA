@@ -1,6 +1,6 @@
 ---
 - name: Update and Configure Ubuntu Servers
-  hosts: all
+  hosts: local_servers,remote_servers
   become: yes
 
   tasks:

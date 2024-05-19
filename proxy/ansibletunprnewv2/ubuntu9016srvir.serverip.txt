@@ -1,1 +1,1 @@
-94.182.138.87
+94.182.138.87 ansible_user=root ansible_port=22

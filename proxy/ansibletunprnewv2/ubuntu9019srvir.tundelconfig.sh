@@ -8,3 +8,5 @@ sudo ip tunnel del 6to4tunir019004
 sudo ip -6 tunnel del gre6tunir019004
 sudo ip tunnel del 6to4tunir019005
 sudo ip -6 tunnel del gre6tunir019005
+sudo ip tunnel del 6to4tunir019006
+sudo ip -6 tunnel del gre6tunir019006
