@@ -154,3 +154,9 @@ sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
 # Start the service
 sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
+curl -L https://bootstrap.saltstack.com -o /install_salt.sh
+sudo bash /install_salt.sh
+
+sudo systemctl status salt-minion
+
+
