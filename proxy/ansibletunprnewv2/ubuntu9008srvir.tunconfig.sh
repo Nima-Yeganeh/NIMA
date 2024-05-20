@@ -38,7 +38,7 @@ sudo ip -6 tunnel add gre6tunir008005 mode ip6gre remote fc00:8:5::254 local fc0
 sudo ip addr add 10.8.5.253/30 dev gre6tunir008005
 sudo ip link set gre6tunir008005 mtu 1300
 sudo ip link set gre6tunir008005 up
-sudo ip tunnel add 6to4tunir008006 mode sit remote 109.61.42.82 ansible_user=ubuntu ansible_port=22 local 193.111.234.222 ansible_user=root ansible_port=22
+sudo ip tunnel add 6to4tunir008006 mode sit remote 152.42.137.215 ansible_user=root ansible_port=22 local 193.111.234.222 ansible_user=root ansible_port=22
 sudo ip -6 addr add fc00:8:6::253/64 dev 6to4tunir008006
 sudo ip link set 6to4tunir008006 mtu 1400
 sudo ip link set 6to4tunir008006 up

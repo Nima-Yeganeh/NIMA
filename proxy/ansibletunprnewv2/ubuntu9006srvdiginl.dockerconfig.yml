@@ -6,4 +6,4 @@
     ports:
       - '9000:9000'
     volumes:
-      - /ubuntu9006srvdigiua.v2rayconfig.conf:/etc/v2ray/config.json
+      - /ubuntu9006srvdiginl.v2rayconfig.conf:/etc/v2ray/config.json
