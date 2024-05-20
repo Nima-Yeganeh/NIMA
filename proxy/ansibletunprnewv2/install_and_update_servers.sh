@@ -25,6 +25,7 @@ display_options() {
     echo "41. Ping All Servers - Hosts"
     echo "51. Reinstall and Update - Digi Servers (Update YAML First)"
     echo "52. Tunnel Reconfig for Digi Servers and IR (Update YAML First)"
+    echo "53. Add Digi Servers - Remote Server Add - Not IR Add"
     echo "61. Check Tunnel IR Servers - Ping Remote Tunnel IP"
     echo "99. Exit"
 }
@@ -55,6 +56,7 @@ get_user_input() {
         41) ping_all_hosts;;
 	51) reinstall_update_digi;;
 	52) tunnel_reconfig;;
+	53) digi_server_add;;
 	61) check_tunnel_ir_servers;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
@@ -92,6 +94,12 @@ install_update() {
     ansible-playbook -i hosts.ini hostupdate.yml
     ansible-playbook -i hosts.ini natconfig.yml
     ansible-playbook -i hosts.ini restart_user_nat_service.yml
+}
+
+digi_server_add() {
+    bash configupdate.sh
+    ansible -i hosts.ini -m ping all
+    ansible-playbook -i hosts.ini hostupdate.yml
 }
 
 reinstall_update_digi() {
