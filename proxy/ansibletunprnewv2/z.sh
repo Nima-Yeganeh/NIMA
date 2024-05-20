@@ -1,4 +1,18 @@
-ipv4_address=$(ifconfig enp1s0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*')
-[ -z "$ipv4_address" ] && ipv4_address=$(ifconfig eth0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*')
-echo $ipv4_address
 
+while IFS=' ' read -r name zip zzuser zzport; do
+    if [[ $name == *srvir* ]]; then
+        srvir_servers+=("$name")
+        ip="${zip#*=}"
+        echo $ip
+        srvir_ips+=("$ip")
+        num=$(echo "$name" | grep -oE '[0-9]+' | head -1)
+        srvir_numbers+=("$num")
+    elif [[ $name == *srvdigi* ]]; then
+        srvdigi_servers+=("$name")
+        ip="${zip#*=}"
+        echo $ip
+        srvdigi_ips+=("$ip")
+        num=$(echo "$name" | grep -oE '[0-9]+' | head -1)
+        srvdigi_numbers+=("$num")
+    fi
+done < hosts.ini
