@@ -1,0 +1,15 @@
+---
+- name: Update and Configure Ubuntu Servers
+  hosts: all
+  gather_facts: false
+  become: yes
+
+  tasks:
+    - name: Get System Date Time
+      command: date
+      register: zoutput
+
+    - name: Display
+      debug:
+        msg: "Result >> {{ inventory_hostname }}: {{ zoutput.stdout }}"
+
