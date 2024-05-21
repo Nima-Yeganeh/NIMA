@@ -1,0 +1,291 @@
+---
+- name: Update and Configure Ubuntu Servers
+  hosts: local_servers,remote_servers
+  become: yes
+
+  tasks:
+    - name: Check if swapfile exists
+      stat:
+        path: /swapfile
+      register: swapfile_stat
+
+    - name: Create swapfile if it doesn't exist
+      command: fallocate -l 2G /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Set permissions for swapfile
+      command: chmod 600 /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Make swap space on swapfile
+      command: mkswap /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Activate swap space
+      command: swapon /swapfile
+      when: not swapfile_stat.stat.exists
+
+    - name: Add swapfile entry to /etc/fstab
+      lineinfile:
+        path: /etc/fstab
+        line: "/swapfile none swap sw 0 0"
+        create: yes
+      when: not swapfile_stat.stat.exists
+
+    - name: Update APT Package Cache
+      apt:
+        update_cache: yes
+
+    # - name: Upgrade All Packages
+    #   apt:
+    #     upgrade: yes
+    #     autoremove: yes
+
+    - name: Install Additional Packages
+      apt:
+        name:
+          - iftop
+          - iotop
+          - mtr
+          - traceroute
+          - iptables-persistent
+          - net-tools
+          - socat
+          - iftop
+          - mtr
+          - python3
+          - python3-pip
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
+          - docker-compose
+        state: present
+        update_cache: yes
+
+    - name: Enable IP Forwarding
+      sysctl:
+        name: net.ipv4.ip_forward
+        value: 1
+        state: present
+
+    - name: Set TCP Keepalive Time
+      sysctl:
+        name: net.ipv4.tcp_keepalive_time
+        value: 120
+        state: present
+
+    - name: Stop and Disable Unnecessary Services
+      systemd:
+        name: "{{ item }}"
+        state: stopped
+        enabled: no
+      loop:
+        - rsyslog
+        - rsync
+        - snapd
+        - unattended-upgrades
+        - ufw
+      ignore_errors: yes
+
+    - name: Disable History
+      lineinfile:
+        path: /etc/profile
+        line: "unset HISTFILE"
+        state: present
+
+    - name: Disable History - Bash Sessions
+      lineinfile:
+        path: /etc/bash.bashrc
+        line: "export HISTSIZE=0"
+        state: present
+
+    - name: Set Timezone to Tehran
+      timezone:
+        name: Asia/Tehran
+
+    - name: Create fwsave.sh Script
+      template:
+        src: fwsave.sh
+        dest: /fwsave.sh
+        mode: '0755'
+
+    - name: Execute fwsave.sh Script
+      command: sudo bash /fwsave.sh
+
+    - name: Set Hostname
+      hostname:
+        name: "{{ inventory_hostname }}"
+
+    - name: Copy Hostname Update Script to Host
+      copy:
+        src: hostnameupdate.sh
+        dest: /root/hostnameupdate.sh
+        mode: '0755'
+
+    - name: Execute Hostname Update Script
+      command: sudo bash /root/hostnameupdate.sh
+
+    - name: Remove Hostname Update Script from Host
+      file:
+        path: /root/hostnameupdate.sh
+        state: absent
+
+    - name: Copy rebootnow.sh to Remote Host
+      copy:
+        src: rebootnow.sh
+        dest: /etc/rebootnow.sh
+
+    - name: Copy myrebootscript.service to Host
+      copy:
+        src: myrebootscript.service
+        dest: /etc/systemd/system/myrebootscript.service
+
+    - name: Reload Systemd
+      systemd:
+        daemon_reload: yes
+
+    - name: Enable myrebootscript.service
+      systemd:
+        name: myrebootscript.service
+        enabled: yes
+
+    - name: Start myrebootscript.service
+      service:
+        name: myrebootscript.service
+        state: started
+
+    - name: Restart myrebootscript.service
+      service:
+        name: myrebootscript.service
+        state: restarted
+
+    - name: Copy Tunnel Configuration Script to Host
+      copy:
+        src: "{{ inventory_hostname }}.tunconfig.sh"
+        dest: "/etc/{{ inventory_hostname }}.tunconfig.sh"
+        mode: '0755'
+
+    - name: Execute Tunnel Script
+      command: "sudo bash /etc/{{ inventory_hostname }}.tunconfig.sh"
+
+    - name: Add Command to Tunnelscriptconfig.sh
+      lineinfile:
+        path: /etc/tunnelscriptconfig.sh
+        line: "sudo bash /etc/{{ inventory_hostname }}.tunconfig.sh"
+        create: yes
+
+    - name: Ensure Tunnel Configuration Script is Executable
+      file:
+        path: /etc/tunnelscriptconfig.sh
+        mode: '0755'
+
+    - name: Copy HTTP Configuration Script to Host
+      copy:
+        src: "{{ inventory_hostname }}.httpconfig.sh"
+        dest: "/etc/{{ inventory_hostname }}.httpconfig.sh"
+        mode: '0755'
+
+    - name: Execute HTTP Config Script
+      command: "sudo bash /etc/{{ inventory_hostname }}.httpconfig.sh"
+
+    - name: Add HTTP Config Script Command to Tunnelscriptconfig.sh
+      lineinfile:
+        path: /etc/tunnelscriptconfig.sh
+        line: "sudo bash /etc/{{ inventory_hostname }}.httpconfig.sh"
+        create: yes
+
+    - name: Copy Tunnel Service File to Host
+      template:
+        src: tunnelscript.service
+        dest: /etc/systemd/system/tunnelscript.service
+
+    - name: Reload Systemd
+      systemd:
+        daemon_reload: yes
+
+    - name: Enable Tunnel Service
+      service:
+        name: tunnelscript
+        enabled: yes
+        state: stopped
+
+    - name: Enable Docker Service
+      systemd:
+        name: docker
+        enabled: yes
+
+    - name: Copy BBR Script to Host
+      copy:
+        src: bbr.sh
+        dest: /bbr.sh
+
+    - name: Make BBR Script Executable
+      file:
+        path: /bbr.sh
+        mode: '0755'
+
+    - name: Execute BBR Script
+      command: sudo bash /bbr.sh
+
+    - name: Remove BBR Script from Host
+      file:
+        path: /bbr.sh
+        state: absent
+
+    - name: Copy zv2rayconfig.json to IR Host
+      copy:
+        src: "{{ inventory_hostname }}{{ item }}.v2rayconfig.conf"
+        dest: "/{{ inventory_hostname }}{{ item }}.v2rayconfig.conf"
+      loop: "{{ groups['remote_servers'] }}"
+      when: inventory_hostname in groups['local_servers']
+
+    - name: Copy zv2rayconfig.json to Digi Host
+      copy:
+        src: "{{ inventory_hostname }}.v2rayconfig.conf"
+        dest: "/{{ inventory_hostname }}.v2rayconfig.conf"
+      when: inventory_hostname in groups['remote_servers']
+
+    - name: Copy docker-compose.yml to Host
+      copy:
+        src: docker-compose.yml
+        dest: /docker-compose.yml
+
+    - name: Copy Docker Config to Host
+      copy:
+        src: "{{ inventory_hostname }}.dockerconfig.yml"
+        dest: "/{{ inventory_hostname }}.dockerconfig.yml"
+
+    - name: Copy Docker Make Script to Host
+      copy:
+        src: "{{ inventory_hostname }}.dockermake.sh"
+        dest: "/{{ inventory_hostname }}.dockermake.sh"
+        mode: '0755' 
+
+    - name: Execute Docker Make Script
+      command: "sudo bash /{{ inventory_hostname }}.dockermake.sh"
+
+    - name: Remove Docker Make Script from Host
+      file:
+        path: "/{{ inventory_hostname }}.dockermake.sh"
+        state: absent
+
+    - name: Remove Docker Config from Host
+      file:
+        path: "/{{ inventory_hostname }}.dockerconfig.yml"
+        state: absent
+
+    - name: Docker Compose Up
+      command: docker-compose up -d
+      args:
+        chdir: /
+      register: docker_compose_result
+
+    - name: Show Docker Containers
+      command: docker ps -a
+      register: docker_ps_result
+
+    - debug:
+        msg: "{{ docker_ps_result.stdout }}"
+

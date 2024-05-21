@@ -54,10 +54,10 @@ get_user_input() {
         37) check_nat_uniq_count;;
         38) check_ps_nat_update;;
         41) ping_all_hosts;;
-	51) reinstall_update_digi;;
-	52) tunnel_reconfig;;
-	53) digi_server_add;;
-	61) check_tunnel_ir_servers;;
+	    51) reinstall_update_digi;;
+	    52) tunnel_reconfig;;
+	    53) digi_server_add;;
+	    61) check_tunnel_ir_servers;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
@@ -94,7 +94,6 @@ install_update() {
     ansible -i hosts.ini -m ping all
     ansible-playbook -i hosts.ini hostupdate.yml
     ansible-playbook -i hosts.ini natconfig.yml
-    ansible-playbook -i hosts.ini restart_user_nat_service.yml
 }
 
 digi_server_add() {
@@ -149,7 +148,6 @@ traffic_rate() {
 natconfig35000() {
     bash configupdate.sh
     ansible-playbook -i hosts.ini natconfig.yml
-    ansible-playbook -i hosts.ini restart_user_nat_service.yml
 }
 
 update_users_on_ir_servers() {
@@ -158,7 +156,8 @@ update_users_on_ir_servers() {
 
 generate_new_user() {
     bash user_generate.sh
-    update_users_on_ir_servers
+    bash gitupdate.sh
+    # update_users_on_ir_servers
 }
 
 check_storage() {
