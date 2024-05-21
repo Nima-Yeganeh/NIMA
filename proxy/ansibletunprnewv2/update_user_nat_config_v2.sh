@@ -14,7 +14,7 @@ echo "Started..."
 sudo bash /fwsave.sh
 [ ! -d $zgitfolder ] && sudo git clone $zgithub $zgitfolder > /dev/null 2>&1
 cd $zgitfolder
-git pull
+git pull > /dev/null 2>&1
 cd /
 sudo cp -f $zgitpath/$userdbfile $userdb
 while true; do
