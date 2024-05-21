@@ -4,6 +4,29 @@
   become: yes
 
   tasks:
+    - name: NAT Update on Host - Configure IPTables Rules - Copy zallnatconfig.sh to Host
+      copy:
+        src: zallnatconfig.sh
+        dest: /zallnatconfig.sh
+        mode: '0755'
+      when: inventory_hostname in groups['local_servers']
+
+    - name: NAT Update on Host - Configure IPTables Rules - Execute zallnatconfig.sh Script
+      command: sudo bash /zallnatconfig.sh
+      when: inventory_hostname in groups['local_servers']
+
+    - name: Copy znatconfigall to IR Host
+      copy:
+        src: "{{ inventory_hostname }}.zallnatconfig.sh"
+        dest: "/{{ inventory_hostname }}.zallnatconfig.sh"
+        mode: '0755'
+      when: inventory_hostname in groups['local_servers']
+
+    - name: NAT Update on Host
+      command: "sudo bash /{{ inventory_hostname }}.zallnatconfig.sh > /dev/null 2>&1"
+      when: inventory_hostname in groups['local_servers']
+      ignore_errors: yes
+
     - name: Execute fwsave.sh Script
       command: sudo bash /fwsave.sh
       when: inventory_hostname in groups['local_servers']
