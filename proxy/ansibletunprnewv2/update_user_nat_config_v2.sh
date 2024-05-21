@@ -1,13 +1,22 @@
 #!/bin/bash
 ztimersleep=120
-userdb="/userdb.txt"
+zgitfolder="/nima"
+zgitpath="/nima/proxy/ansibletunprnewv2"
+zgithub="https://github.com/nima-yeganeh/nima"
+userdbfile="userdb.txt"
+userdb="/$userdbfile"
 serveripfile="/serverip.txt"
 users_nat_deleted="/users_nat_deleted.txt"
 users_nat_created="/users_nat_created.txt"
 tempfile1="/tempfile1.txt"
 tempfile2="/tempfile2.txt"
-sudo bash /fwsave.sh
 echo "Started..."
+sudo bash /fwsave.sh
+[ ! -d $zgitfolder ] && sudo git clone $zgithub $zgitfolder > /dev/null 2>&1
+cd $zgitfolder
+git pull
+cd /
+sudo cp -f $zgitpath/$userdbfile $userdb
 while true; do
     [ ! -f "$users_nat_deleted" ] && touch "$users_nat_deleted"
     [ ! -f "$users_nat_created" ] && touch "$users_nat_created"
@@ -46,5 +55,6 @@ while true; do
     rm -f $tempfile1
     rm -f $tempfile2
     sudo bash /fwsave.sh
+    echo "Done... Waiting..."
     sleep $ztimersleep
 done
