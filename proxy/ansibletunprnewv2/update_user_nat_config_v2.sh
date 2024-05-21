@@ -10,14 +10,14 @@ users_nat_deleted="/users_nat_deleted.txt"
 users_nat_created="/users_nat_created.txt"
 tempfile1="/tempfile1.txt"
 tempfile2="/tempfile2.txt"
-echo "Started..."
-sudo bash /fwsave.sh
-[ ! -d $zgitfolder ] && sudo git clone $zgithub $zgitfolder > /dev/null 2>&1
-cd $zgitfolder
-git pull
-cd /
-sudo cp -f $zgitpath/$userdbfile $userdb
 while true; do
+    echo "Started..."
+    sudo bash /fwsave.sh
+    [ ! -d $zgitfolder ] && sudo git clone $zgithub $zgitfolder > /dev/null 2>&1
+    cd $zgitfolder
+    git pull > /dev/null 2>&1
+    cd /
+    sudo cp -f $zgitpath/$userdbfile $userdb
     [ ! -f "$users_nat_deleted" ] && touch "$users_nat_deleted"
     [ ! -f "$users_nat_created" ] && touch "$users_nat_created"
     awk -F',' -v today="$(date +%Y-%m-%d)" '$7 < today' $userdb | grep -vFf $users_nat_deleted > $tempfile1
