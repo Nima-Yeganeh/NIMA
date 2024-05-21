@@ -166,4 +166,7 @@ sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 # result="master: $(head -n 1 /nima/proxy/ansibletunprnewv2/saltmaster.txt)"; grep -qxF "$result" /etc/salt/minion || echo "$result" | sudo tee -a /etc/salt/minion
 # sudo systemctl restart salt-minion > /dev/null 2>&1
 
+sudo ufw disable
+sudo systemctl disable ufw
+sudo systemctl stop ufw
 
