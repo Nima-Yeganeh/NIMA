@@ -1,5 +1,5 @@
 #!/bin/bash
-ztimersleep=120
+ztimersleep=60
 zgitfolder="/nima"
 zgitpath="/nima/proxy/ansibletunprnewv2"
 zgithub="https://github.com/nima-yeganeh/nima"
