@@ -156,7 +156,7 @@ update_users_on_ir_servers() {
 
 generate_new_user() {
     bash user_generate.sh
-    bash gitupdate.sh
+    bash gitupdate.sh > /dev/null 2>&1
     # update_users_on_ir_servers
 }
 
