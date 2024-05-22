@@ -190,3 +190,35 @@ sudo ip -6 tunnel add gre6tundg004031 mode ip6gre remote fc00:31:4::253 local fc
 sudo ip addr add 10.31.4.254/30 dev gre6tundg004031
 sudo ip link set gre6tundg004031 mtu 1300
 sudo ip link set gre6tundg004031 up
+sudo ip tunnel add 6to4tundg004032 mode sit remote 185.26.32.226 local 185.223.235.100
+sudo ip -6 addr add fc00:32:4::254/64 dev 6to4tundg004032
+sudo ip link set 6to4tundg004032 mtu 1400
+sudo ip link set 6to4tundg004032 up
+sudo ip -6 tunnel add gre6tundg004032 mode ip6gre remote fc00:32:4::253 local fc00:32:4::254
+sudo ip addr add 10.32.4.254/30 dev gre6tundg004032
+sudo ip link set gre6tundg004032 mtu 1300
+sudo ip link set gre6tundg004032 up
+sudo ip tunnel add 6to4tundg004033 mode sit remote 185.26.32.231 local 185.223.235.100
+sudo ip -6 addr add fc00:33:4::254/64 dev 6to4tundg004033
+sudo ip link set 6to4tundg004033 mtu 1400
+sudo ip link set 6to4tundg004033 up
+sudo ip -6 tunnel add gre6tundg004033 mode ip6gre remote fc00:33:4::253 local fc00:33:4::254
+sudo ip addr add 10.33.4.254/30 dev gre6tundg004033
+sudo ip link set gre6tundg004033 mtu 1300
+sudo ip link set gre6tundg004033 up
+sudo ip tunnel add 6to4tundg004034 mode sit remote 185.26.32.238 local 185.223.235.100
+sudo ip -6 addr add fc00:34:4::254/64 dev 6to4tundg004034
+sudo ip link set 6to4tundg004034 mtu 1400
+sudo ip link set 6to4tundg004034 up
+sudo ip -6 tunnel add gre6tundg004034 mode ip6gre remote fc00:34:4::253 local fc00:34:4::254
+sudo ip addr add 10.34.4.254/30 dev gre6tundg004034
+sudo ip link set gre6tundg004034 mtu 1300
+sudo ip link set gre6tundg004034 up
+sudo ip tunnel add 6to4tundg004035 mode sit remote 185.26.32.252 local 185.223.235.100
+sudo ip -6 addr add fc00:35:4::254/64 dev 6to4tundg004035
+sudo ip link set 6to4tundg004035 mtu 1400
+sudo ip link set 6to4tundg004035 up
+sudo ip -6 tunnel add gre6tundg004035 mode ip6gre remote fc00:35:4::253 local fc00:35:4::254
+sudo ip addr add 10.35.4.254/30 dev gre6tundg004035
+sudo ip link set gre6tundg004035 mtu 1300
+sudo ip link set gre6tundg004035 up
