@@ -30,6 +30,7 @@ while true; do
         expire_date="${fields[6]}"
         natport="${fields[4]}"
         dnatport="${fields[7]}"
+        dnatport="${fields[7]:0:1}001"
         # count=$(sudo iptables -t nat -L | grep $natport | wc -l)
         count=$(sudo cat /etc/iptables/rules.v4 | grep $natport | wc -l)
         if [ "$count" -gt 0 ]; then
@@ -43,6 +44,7 @@ while true; do
         expire_date="${fields[6]}"
         natport="${fields[4]}"
         dnatport="${fields[7]}"
+        dnatport="${fields[7]:0:1}001"
         # count=$(sudo iptables -t nat -L | grep $natport | wc -l)
         count=$(sudo cat /etc/iptables/rules.v4 | grep $natport | wc -l)
         if [ "$count" -eq 0 ]; then
