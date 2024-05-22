@@ -153,7 +153,10 @@ natconfig35000() {
 }
 
 check_total_traffic_mbps() {
+    echo "DIGI>>>"
     ansible-playbook -i hosts.ini traffic_rate.yml | grep "msg.*digi.*Mbps" | awk -F '[: ]+' '{send+=$8; recv+=$14} END {print "Total Send Traffic Rate: " send " Mbps"; print "Total Receive Traffic Rate: " recv " Mbps"}'
+    echo "IR>>"
+    ansible-playbook -i hosts.ini traffic_rate.yml | grep "msg.*srvir.*Mbps" | awk -F '[: ]+' '{send+=$8; recv+=$14} END {print "Total Send Traffic Rate: " send " Mbps"; print "Total Receive Traffic Rate: " recv " Mbps"}'
 }
 
 update_users_on_ir_servers() {
