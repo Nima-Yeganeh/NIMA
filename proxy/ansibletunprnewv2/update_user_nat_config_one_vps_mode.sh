@@ -2,6 +2,7 @@
 ztimersleep=60
 zgitfolder="/nima"
 zgitpath="/nima/proxy/ansibletunprnewv2"
+zgithub="https://github.com/nima-yeganeh/nima"
 userdbfile="userdb.txt"
 userdb="/$userdbfile"
 serveripfile="/serverip.txt"
@@ -10,63 +11,50 @@ users_nat_created="/users_nat_created.txt"
 tempfile1="/tempfile1.txt"
 tempfile2="/tempfile2.txt"
 while true; do
+    echo "Started..."
+    sudo bash /fwsave.sh
+    [ ! -d $zgitfolder ] && sudo git clone $zgithub $zgitfolder > /dev/null 2>&1
     cd $zgitfolder
-    git pull
+    git pull > /dev/null 2>&1
     cd /
     sudo cp -f $zgitpath/$userdbfile $userdb
-    # echo "test"
-    # rm -f $users_nat_deleted
     [ ! -f "$users_nat_deleted" ] && touch "$users_nat_deleted"
     [ ! -f "$users_nat_created" ] && touch "$users_nat_created"
-    grep -vFf $users_nat_deleted $userdb > $tempfile1
-    grep -vFf $users_nat_created $tempfile1 > $tempfile2
-    # Get today's date in YYYY-MM-DD format
+    awk -F',' -v today="$(date +%Y-%m-%d)" '$7 < today' $userdb | grep -vFf $users_nat_deleted > $tempfile1
+    wc -l $tempfile1
+    awk -F',' -v today="$(date +%Y-%m-%d)" '$7 >= today' $userdb | grep -vFf $users_nat_created > $tempfile2
+    wc -l $tempfile2
     today=$(date +%Y-%m-%d)
     serverip=$(cat $serveripfile | head -n 1)
-    # Read the userdb.txt file line by line
     while IFS=',' read -r -a fields; do
-        # Extract the 7th column (expire date)
         expire_date="${fields[6]}"
-        # Compare the expire date with today's date
-        if [[ "$expire_date" < "$today" ]]; then
-            # echo "Less than today"
-            natport="${fields[4]}"
-            dnatport="${fields[7]}"
-            dnatport="${fields[7]:0:1}001"
-            # echo $natport    
-            # Run the iptables command and count occurrences of natport
-            count=$(sudo iptables -t nat -L | grep $natport | wc -l)
-            # Check if the count is greater than 0
-            # count=1
-            if [ "$count" -gt 0 ]; then
-                # echo "Action >> Delete"
-                sudo iptables -t nat -D PREROUTING -p tcp --dport $natport -j DNAT --to-destination $serverip:$dnatport > /dev/null 2>&1
-            fi
-            # Join the fields array with commas and echo the line
-            echo "$(IFS=','; echo "${fields[*]}")" >> $users_nat_deleted
-        else
-            # echo "Greater than or equal to today"
-            natport="${fields[4]}"
-            dnatport="${fields[7]}"
-            dnatport="${fields[7]:0:1}001"
-            # echo $natport
-            # Run the iptables command and count occurrences of natport
-            count=$(sudo iptables -t nat -L | grep $natport | wc -l)
-            # echo $count
-            # count=0
-            if [ "$count" -eq 0 ]; then
-                # echo "Action >> Create"
-                sudo iptables -t nat -A PREROUTING -p tcp --dport $natport -j DNAT --to-destination $serverip:$dnatport > /dev/null 2>&1
-                # Join the fields array with commas and echo the line
-                # echo "$(IFS=','; echo "${fields[*]}")" >> $users_nat_created
-            fi
-     	    # Join the fields array with commas and echo the line
-            echo "$(IFS=','; echo "${fields[*]}")" >> $users_nat_created
+        natport="${fields[4]}"
+        dnatport="${fields[7]}"
+        # count=$(sudo iptables -t nat -L | grep $natport | wc -l)
+        count=$(sudo cat /etc/iptables/rules.v4 | grep $natport | wc -l)
+        if [ "$count" -gt 0 ]; then
+            echo "Action >> Delete" > /dev/null 2>&1
+            sudo iptables -t nat -D PREROUTING -p tcp --dport $natport -j DNAT --to-destination $serverip:$dnatport > /dev/null 2>&1
         fi
+        sudo bash /fwsave.sh
+        echo "$(IFS=','; echo "${fields[*]}")" >> $users_nat_deleted
+    done < $tempfile1
+    while IFS=',' read -r -a fields; do
+        expire_date="${fields[6]}"
+        natport="${fields[4]}"
+        dnatport="${fields[7]}"
+        # count=$(sudo iptables -t nat -L | grep $natport | wc -l)
+        count=$(sudo cat /etc/iptables/rules.v4 | grep $natport | wc -l)
+        if [ "$count" -eq 0 ]; then
+            echo "Action >> Create" > /dev/null 2>&1
+            sudo iptables -t nat -A PREROUTING -p tcp --dport $natport -j DNAT --to-destination $serverip:$dnatport > /dev/null 2>&1
+        fi
+        sudo bash /fwsave.sh
+        echo "$(IFS=','; echo "${fields[*]}")" >> $users_nat_created
     done < $tempfile2
     rm -f $tempfile1
     rm -f $tempfile2
-    sudo bash /fwsave.sh > /dev/null 2>&1
+    sudo bash /fwsave.sh
+    echo "Done... Waiting..."
     sleep $ztimersleep
 done
-
