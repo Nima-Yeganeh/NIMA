@@ -12,6 +12,7 @@ display_options() {
     echo "10. Check Traffic"
     echo "11. Traffic Rate >> Mbps"
     echo "12. NAT Config - 35000"
+    echo "13. Check Total Traffic Mbps"
     echo "21. Generate New User"
     echo "22. Update Users on IR Servers"
     echo "31. Check >> Storage"
@@ -43,6 +44,7 @@ get_user_input() {
         10) check_traffic;;
         11) traffic_rate;;
         12) natconfig35000;;
+	13) check_total_traffic_mbps;;
         21) generate_new_user;;
         22) update_users_on_ir_servers;;
         31) check_storage;;
@@ -148,6 +150,10 @@ traffic_rate() {
 natconfig35000() {
     bash configupdate.sh
     ansible-playbook -i hosts.ini natconfig.yml
+}
+
+check_total_traffic_mbps() {
+    ansible-playbook -i hosts.ini traffic_rate.yml | grep "msg.*digi.*Mbps" | awk -F '[: ]+' '{send+=$8; recv+=$14} END {print "Total Send Traffic Rate: " send " Mbps"; print "Total Receive Traffic Rate: " recv " Mbps"}'
 }
 
 update_users_on_ir_servers() {
