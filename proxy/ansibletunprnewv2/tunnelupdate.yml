@@ -1,6 +1,6 @@
 ---
 - name: Update and Configure Ubuntu Servers
-  hosts: remote_servers,local_servers
+  hosts: remote_servers,ubuntu9018srvir
   become: yes
 
   tasks:
