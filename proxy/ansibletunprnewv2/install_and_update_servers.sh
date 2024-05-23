@@ -164,7 +164,7 @@ check_total_traffic_mbps() {
 }
 
 check_total_giga_tera() {
-    ansible-playbook -i hosts.ini check_traffic.yml | grep "msg.*srvir.*GB" | awk -F '[()]' '{send+=$2; receive+=$4} END {print "Total Send Traffic: " send " GB Total Receive Traffic: " receive " GB" "Total Traffic: " send+receive " GB"}'
+    ansible-playbook -i hosts.ini check_traffic.yml | grep "msg.*srvir.*GB" | awk -F '[()]' '{send+=$2; receive+=$4} END {print "Total Send Traffic: " send " GB Total Receive Traffic: " receive " GB " "Total Traffic: " send+receive " GB"}'
 }
 
 update_users_on_ir_servers() {
