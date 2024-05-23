@@ -13,6 +13,7 @@ display_options() {
     echo "11. Traffic Rate >> Mbps"
     echo "12. NAT Config - 35000"
     echo "13. Check Total Traffic Mbps"
+    echo "14. Check Total Giga Tera Traffic"
     echo "21. Generate New User"
     echo "22. Update Users on IR Servers"
     echo "31. Check >> Storage"
@@ -45,7 +46,8 @@ get_user_input() {
         10) check_traffic;;
         11) traffic_rate;;
         12) natconfig35000;;
-	    13) check_total_traffic_mbps;;
+        13) check_total_traffic_mbps;;
+	14) check_total_giga_tera;;
         21) generate_new_user;;
         22) update_users_on_ir_servers;;
         31) check_storage;;
@@ -57,11 +59,11 @@ get_user_input() {
         37) check_nat_uniq_count;;
         38) check_ps_nat_update;;
         41) ping_all_hosts;;
-	    51) reinstall_update_digi;;
-	    52) tunnel_reconfig;;
-	    53) digi_server_add;;
+        51) reinstall_update_digi;;
+        52) tunnel_reconfig;;
+        53) digi_server_add;;
         54) service_update_on_all_servers;;
-	    61) check_tunnel_ir_servers;;
+        61) check_tunnel_ir_servers;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
@@ -159,6 +161,10 @@ check_total_traffic_mbps() {
     ansible-playbook -i hosts.ini traffic_rate.yml | grep "msg.*digi.*Mbps" | awk -F '[: ]+' '{send+=$8; recv+=$14} END {print "Total Send Traffic Rate: " send " Mbps"; print "Total Receive Traffic Rate: " recv " Mbps"}'
     echo "IR>>"
     ansible-playbook -i hosts.ini traffic_rate.yml | grep "msg.*srvir.*Mbps" | awk -F '[: ]+' '{send+=$8; recv+=$14} END {print "Total Send Traffic Rate: " send " Mbps"; print "Total Receive Traffic Rate: " recv " Mbps"}'
+}
+
+check_total_giga_tera() {
+    ansible-playbook -i hosts.ini check_traffic.yml | grep "msg.*srvir.*GB" | awk -F '[()]' '{send+=$2; receive+=$4} END {print "Total Send Traffic: " send " GB Total Receive Traffic: " receive " GB" "Total Traffic: " send+receive " GB"}'
 }
 
 update_users_on_ir_servers() {
