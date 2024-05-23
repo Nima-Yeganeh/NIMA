@@ -1,5 +1,5 @@
 #!/bin/bash
-ztimersleep=60
+ztimersleep=120
 zgitfolder="/nima"
 zgitpath="/nima/proxy/ansibletunprnewv2"
 zgithub="https://github.com/nima-yeganeh/nima"
@@ -12,6 +12,7 @@ tempfile1="/tempfile1.txt"
 tempfile2="/tempfile2.txt"
 while true; do
     echo "Started..."
+    sleep $ztimersleep
     sudo bash /fwsave.sh
     [ ! -d $zgitfolder ] && sudo git clone $zgithub $zgitfolder > /dev/null 2>&1
     cd $zgitfolder
@@ -56,7 +57,8 @@ while true; do
     done < $tempfile2
     rm -f $tempfile1
     rm -f $tempfile2
-    sudo bash /fwsave.sh
+    # sudo bash /fwsave.sh
     echo "Done... Waiting..."
-    sleep $ztimersleep
+    # sleep $ztimersleep
 done
+
