@@ -1,0 +1,35 @@
+---
+- name: Update and Configure Ubuntu Servers
+  hosts: remote_servers,local_servers
+  become: yes
+
+  tasks:
+    - name: Copy rebootnow.sh to Remote Host
+      copy:
+        src: rebootnow.sh
+        dest: /etc/rebootnow.sh
+
+    - name: Copy myrebootscript.service to Host
+      copy:
+        src: myrebootscript.service
+        dest: /etc/systemd/system/myrebootscript.service
+
+    - name: Reload Systemd
+      systemd:
+        daemon_reload: yes
+
+    - name: Enable myrebootscript.service
+      systemd:
+        name: myrebootscript.service
+        enabled: yes
+
+    - name: Start myrebootscript.service
+      service:
+        name: myrebootscript.service
+        state: started
+
+    - name: Restart myrebootscript.service
+      service:
+        name: myrebootscript.service
+        state: restarted
+

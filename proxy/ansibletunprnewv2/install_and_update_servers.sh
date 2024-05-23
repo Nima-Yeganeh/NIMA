@@ -27,6 +27,7 @@ display_options() {
     echo "51. Reinstall and Update - Digi Servers (Update YAML First)"
     echo "52. Tunnel Reconfig for Digi Servers and IR (Update YAML First)"
     echo "53. Add Digi Servers - Remote Server Add - Not IR Add"
+    echo "54. Reconfig Services on All Servers (Remote + Local)"
     echo "61. Check Tunnel IR Servers - Ping Remote Tunnel IP"
     echo "99. Exit"
 }
@@ -44,7 +45,7 @@ get_user_input() {
         10) check_traffic;;
         11) traffic_rate;;
         12) natconfig35000;;
-	13) check_total_traffic_mbps;;
+	    13) check_total_traffic_mbps;;
         21) generate_new_user;;
         22) update_users_on_ir_servers;;
         31) check_storage;;
@@ -59,6 +60,7 @@ get_user_input() {
 	    51) reinstall_update_digi;;
 	    52) tunnel_reconfig;;
 	    53) digi_server_add;;
+        54) service_update_on_all_servers;;
 	    61) check_tunnel_ir_servers;;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
@@ -208,6 +210,10 @@ ping_all_hosts() {
 
 check_tunnel_ir_servers() {
     ansible-playbook -i hosts.ini check_tunnel_ir_servers.yml | grep not
+}
+
+service_update_on_all_servers() {
+    ansible-playbook -i hosts.ini service_update.yml
 }
 
 # Main script
