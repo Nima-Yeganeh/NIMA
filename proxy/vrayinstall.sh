@@ -9,7 +9,7 @@ export LANG=en_US.UTF-8
 # realdomainname=""
 
 zzzport="8443"
-realdomainname="nimayeganeh.ir"
+realdomainname="discoversustainablelivingsolutionsfortomorrow.ir"
 domain_hostname="vls1"
 zzzdomain="$domain_hostname.$realdomainname"
 
