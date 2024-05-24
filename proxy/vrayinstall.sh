@@ -8,7 +8,7 @@
 export LANG=en_US.UTF-8
 # realdomainname=""
 
-zzzport="8443"
+zzzport="443"
 realdomainname="nimaxmusic.ir"
 domain_hostname="vls2"
 zzzdomain="$domain_hostname.$realdomainname"
