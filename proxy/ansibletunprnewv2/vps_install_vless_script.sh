@@ -41,6 +41,7 @@ sudo apt install gnupg -y >/dev/null 2>&1
 sudo apt install lsb-release -y >/dev/null 2>&1
 sudo ps aux | grep apt | grep -v grep | awk '{print $2}' | xargs -r kill -9
 sudo dpkg --configure -a >/dev/null 2>&1
+sudo apt install iftop iotop mtr htop mtr screen traceroute iptables-persistent net-tools socat python3 python3-pip apt-transport-https ca-certificates curl gnupg lsb-release -y >/dev/null 2>&1
 
 echo "1" > /proc/sys/net/ipv4/ip_forward
 echo "120" > /proc/sys/net/ipv4/tcp_keepalive_time
