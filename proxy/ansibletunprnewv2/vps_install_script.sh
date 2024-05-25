@@ -85,22 +85,11 @@ sudo bash /install_salt.sh > /dev/null 2>&1
 result="master: $(head -n 1 /nima/proxy/ansibletunprnewv2/saltmaster.txt)"; grep -qxF "$result" /etc/salt/minion || echo "$result" | sudo tee -a /etc/salt/minion
 sudo systemctl restart salt-minion > /dev/null 2>&1
 
-# Define the service file name
 SERVICE_FILE="myrebootscript.service"
-
-# Copy the service file to systemd directory
 sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
-
-# Reload systemd daemon to reflect changes
 sudo systemctl daemon-reload > /dev/null 2>&1
-
-# Enable the service to start on boot
 sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
-
-# Stop the service
 sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
-
-# Start the service
 sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
 sudo bash /bbr.sh > /dev/null 2>&1
@@ -111,23 +100,12 @@ sudo docker-compose up -d
 sudo bash /nat_template.sh > /dev/null 2>&1
 sudo bash /fwsave.sh > /dev/null 2>&1
 
-# Define the service file name
-SERVICE_FILE="myuserupdatescript.service"
-
-# Copy the service file to systemd directory
-sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
-
-# Reload systemd daemon to reflect changes
-sudo systemctl daemon-reload > /dev/null 2>&1
-
-# Enable the service to start on boot
-sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
-
-# Stop the service
-sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
-
-# Start the service
-sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
+# SERVICE_FILE="myuserupdatescript.service"
+# sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
+# sudo systemctl daemon-reload > /dev/null 2>&1
+# sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
+# sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
+# sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
 sudo ufw disable
 sudo systemctl disable ufw
