@@ -104,18 +104,12 @@ sudo bash /bbr.sh > /dev/null 2>&1
 docker rm -f $(docker ps -aq) > /dev/null 2>&1
 sudo docker-compose up -d
 
-# sudo bash /nat_template.sh > /dev/null 2>&1
-# sudo bash /fwsave.sh > /dev/null 2>&1
+SERVICE_FILE="myuserupdatescript.service"
+sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
+sudo systemctl daemon-reload > /dev/null 2>&1
+sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
+sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
+sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
-# SERVICE_FILE="myuserupdatescript.service"
-# sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
-# sudo systemctl daemon-reload > /dev/null 2>&1
-# sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
-# sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
-# sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
-
-# sudo ufw disable
-# sudo systemctl disable ufw
-# sudo systemctl stop ufw
-
+echo "Done!"
 
