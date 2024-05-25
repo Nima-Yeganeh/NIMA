@@ -72,13 +72,17 @@ if check_port_open $IP $PORT; then
     execute_commands "echo 'linuxuser:$NEW_PASSWORD' | sudo chpasswd > /dev/null 2>&1"
     execute_commands "echo 'root:$NEW_PASSWORD' | sudo chpasswd > /dev/null 2>&1"
     execute_commands "echo 'ubuntu:$NEW_PASSWORD' | sudo chpasswd > /dev/null 2>&1"
-    execute_commands "sed -i 's/^Port $PORT$/Port 22/' /etc/ssh/sshd_config"
-    execute_commands "sudo systemctl restart sshd"
-    execute_commands "sudo systemctl restart ssh"
+    # execute_commands "sed -i 's/^Port $PORT$/Port 22/' /etc/ssh/sshd_config"
+    # execute_commands "sudo systemctl restart sshd"
+    # execute_commands "sudo systemctl restart ssh"
     execute_commands "sudo apt install git -y >/dev/null 2>&1"
     execute_commands "sudo rm -rf /nima >/dev/null 2>&1"
     execute_commands "sudo git clone https://github.com/nima-yeganeh/nima /nima > /dev/null 2>&1"
     execute_commands "sudo bash /nima/proxy/ansibletunprnewv2/vps_install_script.sh"
+    execute_commands "sed -i 's/^Port $PORT$/Port 22/' /etc/ssh/sshd_config"
+    execute_commands "sudo systemctl restart sshd"
+    execute_commands "sudo systemctl restart ssh"
+    
     sleep 4
     echo "y" | salt-key -A > /dev/null 2>&1
     echo "Passwords updated on $IP."
