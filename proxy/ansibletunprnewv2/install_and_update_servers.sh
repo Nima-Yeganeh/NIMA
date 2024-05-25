@@ -30,6 +30,8 @@ display_options() {
     echo "53. Add Digi Servers - Remote Server Add - Not IR Add"
     echo "54. Reconfig Services on All Servers (Remote + Local)"
     echo "61. Check Tunnel IR Servers - Ping Remote Tunnel IP"
+    echo "62. Check Unreachable!!!"
+    echo "63. Check Timeout!!!"
     echo "99. Exit"
 }
 
@@ -64,6 +66,8 @@ get_user_input() {
         53) digi_server_add;;
         54) service_update_on_all_servers;;
         61) check_tunnel_ir_servers;;
+	62) ansible -i hosts.ini -m ping all | grep UNREACHABLE;;
+	63) ansible -i hosts.ini -m ping all | grep "timed out";;
         99) echo "Exiting..."; exit;;
         *) echo "Invalid option!!";;
     esac
