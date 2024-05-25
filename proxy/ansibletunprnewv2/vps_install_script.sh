@@ -4,6 +4,10 @@ ZGITPATH="/nima/proxy/ansibletunprnewv2"
 SWAPFILE="/swapfile"
 SWAPSIZE="2G"
 
+sudo ufw disable
+sudo systemctl disable ufw
+sudo systemctl stop ufw
+
 # Check if /swapfile already exists
 if [ ! -f "$SWAPFILE" ]; then
     sudo fallocate -l $SWAPSIZE $SWAPFILE
@@ -85,6 +89,9 @@ sudo bash /install_salt.sh > /dev/null 2>&1
 result="master: $(head -n 1 /nima/proxy/ansibletunprnewv2/saltmaster.txt)"; grep -qxF "$result" /etc/salt/minion || echo "$result" | sudo tee -a /etc/salt/minion
 sudo systemctl restart salt-minion > /dev/null 2>&1
 
+sudo bash /nat_template.sh > /dev/null 2>&1
+sudo bash /fwsave.sh > /dev/null 2>&1
+
 SERVICE_FILE="myrebootscript.service"
 sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
 sudo systemctl daemon-reload > /dev/null 2>&1
@@ -97,8 +104,8 @@ sudo bash /bbr.sh > /dev/null 2>&1
 docker rm -f $(docker ps -aq) > /dev/null 2>&1
 sudo docker-compose up -d
 
-sudo bash /nat_template.sh > /dev/null 2>&1
-sudo bash /fwsave.sh > /dev/null 2>&1
+# sudo bash /nat_template.sh > /dev/null 2>&1
+# sudo bash /fwsave.sh > /dev/null 2>&1
 
 # SERVICE_FILE="myuserupdatescript.service"
 # sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
@@ -107,8 +114,8 @@ sudo bash /fwsave.sh > /dev/null 2>&1
 # sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
 # sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
-sudo ufw disable
-sudo systemctl disable ufw
-sudo systemctl stop ufw
+# sudo ufw disable
+# sudo systemctl disable ufw
+# sudo systemctl stop ufw
 
 
