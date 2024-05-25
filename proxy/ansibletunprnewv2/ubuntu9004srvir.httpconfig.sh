@@ -1,1 +1,0 @@
-sudo socat TCP-LISTEN:443,fork TCP:142.250.179.132:443 & sudo socat TCP-LISTEN:80,fork TCP:142.250.179.132:80 &
