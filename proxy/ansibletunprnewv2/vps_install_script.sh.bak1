@@ -58,6 +58,11 @@ sudo bash /fwsave.sh > /dev/null 2>&1
 
 public_ip=$(curl -s ifconfig.me)
 
+# ipv4_address=$(ifconfig enp1s0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*')
+# if [ -z "$ipv4_address" ]; then
+#     ipv4_address=$(ip -o -4 addr show enp1s0 | awk '{print $4}' | cut -d'/' -f1)
+# fi
+
 ipv4_address=$(ifconfig enp1s0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*')
 [ -z "$ipv4_address" ] && ipv4_address=$(ifconfig eth0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*')
 [ -z "$ipv4_address" ] && ipv4_address=$(ifconfig ens3 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*')
@@ -103,6 +108,36 @@ sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
 # Start the service
 sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
+# Define the service file name
+SERVICE_FILE="myhttpscript.service"
+
+# Copy the service file to systemd directory
+sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
+
+# Reload systemd daemon to reflect changes
+sudo systemctl daemon-reload > /dev/null 2>&1
+
+# Enable the service to start on boot
+sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
+
+# Start the service
+sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
+
+# Define the service file name
+SERVICE_FILE="myhttpsscript.service"
+
+# Copy the service file to systemd directory
+sudo cp -f "$ZGITPATH/$SERVICE_FILE" /etc/systemd/system/
+
+# Reload systemd daemon to reflect changes
+sudo systemctl daemon-reload > /dev/null 2>&1
+
+# Enable the service to start on boot
+sudo systemctl enable "$SERVICE_FILE" > /dev/null 2>&1
+
+# Start the service
+sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
+
 sudo bash /bbr.sh > /dev/null 2>&1
 
 docker rm -f $(docker ps -aq) > /dev/null 2>&1
@@ -128,6 +163,11 @@ sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
 
 # Start the service
 sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
+
+# curl -L https://bootstrap.saltstack.com -o /install_salt.sh > /dev/null 2>&1
+# sudo bash /install_salt.sh > /dev/null 2>&1
+# result="master: $(head -n 1 /nima/proxy/ansibletunprnewv2/saltmaster.txt)"; grep -qxF "$result" /etc/salt/minion || echo "$result" | sudo tee -a /etc/salt/minion
+# sudo systemctl restart salt-minion > /dev/null 2>&1
 
 sudo ufw disable
 sudo systemctl disable ufw

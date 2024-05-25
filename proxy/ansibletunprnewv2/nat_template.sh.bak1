@@ -1,3 +1,4 @@
+
 [ $(sudo iptables -t nat -L | grep '35011' | wc -l) -eq 0 ] && sudo iptables -t nat -A PREROUTING -p tcp --dport 35011 -j DNAT --to-destination PUBLICIPADDR:8001
 [ $(sudo iptables -t nat -L | grep '35012' | wc -l) -eq 0 ] && sudo iptables -t nat -A PREROUTING -p tcp --dport 35012 -j DNAT --to-destination PUBLICIPADDR:8001
 [ $(sudo iptables -t nat -L | grep '35013' | wc -l) -eq 0 ] && sudo iptables -t nat -A PREROUTING -p tcp --dport 35013 -j DNAT --to-destination PUBLICIPADDR:8001
@@ -14,5 +15,3 @@
 [ $(sudo iptables -t nat -L | grep '2082' | wc -l) -eq 0 ] && sudo iptables -t nat -A PREROUTING -p tcp --dport 2082 -j DNAT --to-destination PUBLICIPADDR:7001
 [ $(sudo iptables -t nat -L | grep '2086' | wc -l) -eq 0 ] && sudo iptables -t nat -A PREROUTING -p tcp --dport 2086 -j DNAT --to-destination PUBLICIPADDR:7001
 [ $(sudo iptables -t nat -L | grep '2095' | wc -l) -eq 0 ] && sudo iptables -t nat -A PREROUTING -p tcp --dport 2095 -j DNAT --to-destination PUBLICIPADDR:7001
-[ $(sudo iptables -t nat -L | grep '80' | wc -l) -eq 0 ] && sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination PUBLICIPADDR:7001
-
