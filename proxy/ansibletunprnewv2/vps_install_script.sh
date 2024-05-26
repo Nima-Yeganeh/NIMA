@@ -54,7 +54,7 @@ echo "120" > /proc/sys/net/ipv4/tcp_keepalive_time
 echo "unset HISTFILE" | sudo tee -a /etc/profile > /dev/null
 echo "export HISTSIZE=0" | sudo tee -a /etc/bash.bashrc > /dev/null
 
-sudo timedatectl set-timezone Asia/Tehran
+# sudo timedatectl set-timezone Asia/Tehran
 
 sudo cp -f $ZGITPATH/fwsave.sh /fwsave.sh
 
@@ -112,4 +112,5 @@ sudo systemctl stop "$SERVICE_FILE" > /dev/null 2>&1
 sudo systemctl start "$SERVICE_FILE" > /dev/null 2>&1
 
 echo "Done!"
+
 
