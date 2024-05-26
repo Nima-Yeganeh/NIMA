@@ -10,7 +10,7 @@ export LANG=en_US.UTF-8
 
 zzzport="443"
 realdomainname="nimaxmusic.ir"
-domain_hostname="vls2"
+domain_hostname="vls3nl"
 zzzdomain="$domain_hostname.$realdomainname"
 
 echo $domain_hostname
