@@ -1,0 +1,10 @@
+  v2ray_ir_036010:
+    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
+    restart: always
+    environment:
+      - v2ray.vmess.aead.forced=false
+    ports:
+      - '7010:7010'
+      - '8010:8010'
+    volumes:
+      - /ubuntu9036srvirubuntu9010srvdigide.v2rayconfig.conf:/etc/v2ray/config.json

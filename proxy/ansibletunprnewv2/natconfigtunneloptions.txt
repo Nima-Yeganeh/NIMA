@@ -1,9 +1,1 @@
-ubuntu9001srvdigide,1
-ubuntu9002srvdigiuk,2
-ubuntu9003srvdigide,3
-ubuntu9004srvdiginl,4
-ubuntu9005srvdigide,5
-ubuntu9006srvdiginl,6
-ubuntu9007srvdigiuk,7
-ubuntu9008srvdigiuk,8
-ubuntu9009srvdiginl,9
+ubuntu9010srvdigide,10
