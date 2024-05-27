@@ -89,7 +89,7 @@ check_host_ssh_copy() {
         # Check if IP is not empty
         if [ -n "$ip" ]; then
             # ssh-keygen -f "/root/.ssh/known_hosts" -R "$ip"
-            ### ssh-keygen -f "$HOME/.ssh/known_hosts" -R "$ip"
+            ssh-keygen -f "$HOME/.ssh/known_hosts" -R "$ip"
             echo "Copying SSH key to $ip"
 	    ping -c 1 $ip >/dev/null 2>&1 && ssh-copy-id -o StrictHostKeyChecking=no -f $zloginuser@"$ip" >/dev/null 2>&1
             # ssh-copy-id -o StrictHostKeyChecking=no -f $zloginuser@"$ip" >/dev/null 2>&1
