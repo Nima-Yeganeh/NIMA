@@ -44,9 +44,22 @@
     - name: Install Additional Packages
       apt:
         name:
+          - iftop
+          - iotop
+          - mtr
+          - traceroute
           - iptables-persistent
           - net-tools
           - socat
+          - iftop
+          - mtr
+          - python3
+          - python3-pip
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
           - docker-compose
         state: present
         update_cache: yes
