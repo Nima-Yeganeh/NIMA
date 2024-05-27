@@ -1,1 +1,1 @@
-ubuntu9010srvdigide,10
+ubuntu9001srvdigide,1
