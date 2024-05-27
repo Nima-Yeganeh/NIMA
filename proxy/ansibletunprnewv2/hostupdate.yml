@@ -1,6 +1,6 @@
 ---
 - name: Update and Configure Ubuntu Servers
-  hosts: local_servers,ubuntu9008srvdigiuk
+  hosts: local_servers,remote_servers
   become: yes
 
   tasks:
