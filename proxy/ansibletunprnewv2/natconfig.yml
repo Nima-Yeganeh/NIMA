@@ -14,39 +14,3 @@
         dest: "/serverip.txt"
       when: inventory_hostname in groups['local_servers']
 
-    - name: Copy update_user_nat_config.sh to Host
-      copy:
-        src: update_user_nat_config_v2.sh
-        dest: /update_user_nat_config.sh
-        mode: '0755'
-      when: inventory_hostname in groups['local_servers']
-
-    - name: Copy myuserupdatescript.service to Host
-      copy:
-        src: myuserupdatescript.service
-        dest: /etc/systemd/system/myuserupdatescript.service
-      when: inventory_hostname in groups['local_servers']
-
-    - name: Reload Systemd
-      systemd:
-        daemon_reload: yes
-      when: inventory_hostname in groups['local_servers']
-
-    - name: Enable myuserupdatescript.service
-      systemd:
-        name: myuserupdatescript.service
-        enabled: yes
-      when: inventory_hostname in groups['local_servers']
-
-    - name: Stop myuserupdatescript.service
-      service:
-        name: myuserupdatescript.service
-        state: stopped
-      when: inventory_hostname in groups['local_servers']
-      
-    - name: Start myuserupdatescript.service
-      service:
-        name: myuserupdatescript.service
-        state: started
-      when: inventory_hostname in groups['local_servers']
-

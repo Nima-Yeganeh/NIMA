@@ -1,4 +1,4 @@
-sudo ip tunnel add 6to4tundg010036 mode sit remote 185.26.32.226 local 136.243.26.215
+sudo ip tunnel add 6to4tundg010036 mode sit remote 185.26.32.231 local 136.243.26.215
 sudo ip -6 addr add fc00:36:10::254/64 dev 6to4tundg010036
 sudo ip link set 6to4tundg010036 mtu 1400
 sudo ip link set 6to4tundg010036 up

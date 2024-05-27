@@ -36,18 +36,11 @@
       apt:
         update_cache: yes
 
-    # - name: Upgrade All Packages
-    #   apt:
-    #     upgrade: yes
-    #     autoremove: yes
-
     - name: Install Additional Packages
       apt:
         name:
           - iptables-persistent
           - net-tools
-          - socat
-          - docker-compose
         state: present
         update_cache: yes
 
@@ -62,19 +55,6 @@
         name: net.ipv4.tcp_keepalive_time
         value: 120
         state: present
-
-    - name: Stop and Disable Unnecessary Services
-      systemd:
-        name: "{{ item }}"
-        state: stopped
-        enabled: no
-      loop:
-        - rsyslog
-        - rsync
-        - snapd
-        - unattended-upgrades
-        - ufw
-      ignore_errors: yes
 
     - name: Disable History
       lineinfile:
@@ -113,11 +93,6 @@
 
     - name: Execute Hostname Update Script
       command: sudo bash /root/hostnameupdate.sh
-
-    - name: Remove Hostname Update Script from Host
-      file:
-        path: /root/hostnameupdate.sh
-        state: absent
 
     - name: Copy rebootnow.sh to Remote Host
       copy:
@@ -174,15 +149,6 @@
         dest: "/etc/{{ inventory_hostname }}.httpconfig.sh"
         mode: '0755'
 
-    - name: Execute HTTP Config Script
-      command: "sudo bash /etc/{{ inventory_hostname }}.httpconfig.sh"
-
-    - name: Add HTTP Config Script Command to Tunnelscriptconfig.sh
-      lineinfile:
-        path: /etc/tunnelscriptconfig.sh
-        line: "sudo bash /etc/{{ inventory_hostname }}.httpconfig.sh"
-        create: yes
-
     - name: Copy Tunnel Service File to Host
       template:
         src: tunnelscript.service
@@ -198,81 +164,4 @@
         enabled: yes
         state: stopped
 
-    - name: Enable Docker Service
-      systemd:
-        name: docker
-        enabled: yes
-
-    - name: Copy BBR Script to Host
-      copy:
-        src: bbr.sh
-        dest: /bbr.sh
-
-    - name: Make BBR Script Executable
-      file:
-        path: /bbr.sh
-        mode: '0755'
-
-    - name: Execute BBR Script
-      command: sudo bash /bbr.sh
-
-    - name: Remove BBR Script from Host
-      file:
-        path: /bbr.sh
-        state: absent
-
-    - name: Copy zv2rayconfig.json to IR Host
-      copy:
-        src: "{{ inventory_hostname }}{{ item }}.v2rayconfig.conf"
-        dest: "/{{ inventory_hostname }}{{ item }}.v2rayconfig.conf"
-      loop: "{{ groups['remote_servers'] }}"
-      when: inventory_hostname in groups['local_servers']
-
-    - name: Copy zv2rayconfig.json to Digi Host
-      copy:
-        src: "{{ inventory_hostname }}.v2rayconfig.conf"
-        dest: "/{{ inventory_hostname }}.v2rayconfig.conf"
-      when: inventory_hostname in groups['remote_servers']
-
-    - name: Copy docker-compose.yml to Host
-      copy:
-        src: docker-compose.yml
-        dest: /docker-compose.yml
-
-    - name: Copy Docker Config to Host
-      copy:
-        src: "{{ inventory_hostname }}.dockerconfig.yml"
-        dest: "/{{ inventory_hostname }}.dockerconfig.yml"
-
-    - name: Copy Docker Make Script to Host
-      copy:
-        src: "{{ inventory_hostname }}.dockermake.sh"
-        dest: "/{{ inventory_hostname }}.dockermake.sh"
-        mode: '0755' 
-
-    - name: Execute Docker Make Script
-      command: "sudo bash /{{ inventory_hostname }}.dockermake.sh"
-
-    - name: Remove Docker Make Script from Host
-      file:
-        path: "/{{ inventory_hostname }}.dockermake.sh"
-        state: absent
-
-    - name: Remove Docker Config from Host
-      file:
-        path: "/{{ inventory_hostname }}.dockerconfig.yml"
-        state: absent
-
-    - name: Docker Compose Up
-      command: docker-compose up -d
-      args:
-        chdir: /
-      register: docker_compose_result
-
-    - name: Show Docker Containers
-      command: docker ps -a
-      register: docker_ps_result
-
-    - debug:
-        msg: "{{ docker_ps_result.stdout }}"
 
