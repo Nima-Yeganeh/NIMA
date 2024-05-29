@@ -1,6 +1,8 @@
 
 echo "Started!"
 git pull
+sudo ip addr add 172.16.1.2/32 dev lo
+ip addr show lo
 if [ ! -e "/swapfile" ]; then
     sudo fallocate -l 4G /swapfile
     ls -anp /swapfile
@@ -22,5 +24,10 @@ cd v2new/v2ray-upstream-server/
 docker-compose up -d
 cd ..
 cd ..
+cd v2new/v2ray-bridge-server/
+docker-compose up -d
 docker ps -a
+cd ..
+cd ..
+python3 vmess_for_bridge.py
 
