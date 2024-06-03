@@ -6,7 +6,6 @@ import time
 import datetime
 import random
 import os
-import re
 
 def extract_text_between_markers(line):
     start_marker = ">>>"
@@ -39,15 +38,9 @@ def main():
     en_path = 'zen.txt'
     output_folder = "./xyz/"
     # languages = ["fr", "de", "it", "es", "sv", "no", "fi", "hu", "da"]
-    languages = ["fr"]
+    languages = ["da"]
     for lang in languages:
         lang_path=f"z{lang}.txt"
-        with open(en_path, 'r', encoding='utf-8') as file:
-            content = file.read()
-        matches = re.findall(r'>>> (.*?) >>>', content)
-        with open(lang_path, 'w', encoding='utf-8') as file:
-            for match in matches:
-                file.write(match + '\n')
         convert(en_path, lang_path)
         lang_folder = os.path.join(output_folder, lang)
         if not os.path.exists(lang_folder):
