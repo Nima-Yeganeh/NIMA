@@ -1,6 +1,289 @@
+- Hi >>> Salut >>> /sa.ly/
+- Hello >>> Bonjour >>> /bɔ̃.ʒuʁ/
+- Everyone >>> Tout le monde >>> /tu lə mɔ̃d/
+- Hello everyone >>> Bonjour tout le monde >>> /bɔ̃.ʒuʁ tu lə mɔ̃d/
+- Welcome >>> Bienvenue >>> /bjɛ̃.və.ny/
+- Course >>> Cours >>> /kuʁ/
+- Welcome to >>> Bienvenue à >>> /bjɛ̃.və.ny a/
+- This Course >>> Ce cours >>> /sə kuʁ/
+- Welcome to this course. >>> Bienvenue à ce cours. >>> /bjɛ̃.və.ny a sə kuʁ/
+- Learn >>> Apprendre >>> /a.pʁɑ̃dʁ/
+- To learn >>> Apprendre >>> /a.pʁɑ̃dʁ/
+- Speak >>> Parler >>> /paʁ.le/
+- To speak >>> Parler >>> /paʁ.le/
+- Practice >>> Pratiquer >>> /pʁa.ti.ke/
+- Just >>> Juste >>> /ʒyst/
+- Just practice. >>> Pratiquez juste. >>> /pʁa.ti.ke ʒyst/
+- Listen >>> Écouter >>> /e.ku.te/
+- Carefully >>> Attentivement >>> /a.tɑ̃.tiv.mɑ̃/
+- Listen carefully. >>> Écoutez attentivement. >>> /e.ku.te a.tɑ̃.tiv.mɑ̃/
+- And >>> Et >>> /e/
+- Repeat >>> Répétez >>> /ʁe.pe.te/
+- Practice >>> Pratiquer >>> /pʁa.ti.ke/
+- Repeat and practice. >>> Répétez et pratiquez. >>> /ʁe.pe.te e pʁa.ti.ke/
+- Me >>> Moi >>> /mwa/
+- After >>> Après >>> /a.pʁɛ/
+- After me >>> Après moi >>> /a.pʁɛ mwa/
+- Repeat after me. >>> Répétez après moi. >>> /ʁe.pe.te a.pʁɛ mwa/
+- Listen >>> Écouter >>> /e.ku.te/
+- And repeat after me. >>> Et répétez après moi. >>> /e ʁe.pe.te a.pʁɛ mwa/
+- How >>> Comment >>> /kɔ.mɑ̃/
+- How are >>> Comment êtes >>> /kɔ.mɑ̃ ɛt/
+- You >>> Vous >>> /vu/
+- How are you? >>> Comment allez-vous ? >>> /kɔ.mɑ̃ ta.le vu/
 - I >>> Je >>> /ʒə/
 - I am >>> Je suis >>> /ʒə sɥi/
-- You (singular informal) >>> Tu >>> /ty/
-- You are (singular informal) >>> Tu es >>> /ty ɛ/
-- You (singular formal or plural) >>> Vous >>> /vu/
-- You are (singular formal or plural) >>> Vous êtes >>> /vu zɛt/
+- I'm fine. >>> Je vais bien. >>> /ʒə vɛ bjɛ̃/
+- Your >>> Ton >>> /tɔ̃/
+- Your name >>> Ton nom >>> /tɔ̃ nɔ̃/
+- What >>> Quel >>> /kɛl/
+- What is your name? >>> Quel est ton nom ? >>> /kɛl ɛ tɔ̃ nɔ̃/
+- My >>> Mon >>> /mɔ̃/
+- My name >>> Mon nom >>> /mɔ̃ nɔ̃/
+- My name is Adrian. >>> Mon nom est Adrian. >>> /mɔ̃ nɔ̃ ɛ a.dʁi.ɑ̃/
+- And >>> Et >>> /e/
+- And you? >>> Et toi ? >>> /e twa/
+- Your name >>> Ton nom >>> /tɔ̃ nɔ̃/
+- Your name is Adrian? >>> Ton nom est Adrian ? >>> /tɔ̃ nɔ̃ ɛ a.dʁi.ɑ̃/
+- Yes >>> Oui >>> /wi/
+- My >>> Mon >>> /mɔ̃/
+- Yes, my name is Adrian. >>> Oui, mon nom est Adrian. >>> /wi, mɔ̃ nɔ̃ ɛ a.dʁi.ɑ̃/
+- No >>> Non >>> /nɔ̃/
+- Your name is Adrian. >>> Ton nom est Adrian. >>> /tɔ̃ nɔ̃ ɛ a.dʁi.ɑ̃/
+- Everyone >>> Tout le monde >>> /tu lə mɔ̃d/
+- Hi everyone. >>> Salut tout le monde. >>> /sa.ly tu lə mɔ̃d/
+- Nice >>> Enchanté >>> /ɑ̃.ʃɑ̃.te/
+- Nice to meet you. >>> Enchanté de vous rencontrer. >>> /ɑ̃.ʃɑ̃.te də vu ʁɑ̃.kɔ̃.tʁe/
+- Nice to see you. >>> Content de te voir. >>> /kɔ̃.tɑ̃ də tə vwaʁ/
+- Thanks >>> Merci >>> /mɛʁ.si/
+- Thanks you >>> Merci à toi >>> /mɛʁ.si a twa/
+- How are you? >>> Comment allez-vous ? >>> /kɔ.mɑ̃ ta.le vu/
+- I'm fine, thanks. >>> Je vais bien, merci. >>> /ʒə vɛ bjɛ̃, mɛʁ.si/
+- Here >>> Ici >>> /i.si/
+- I'm here. >>> Je suis ici. >>> /ʒə sɥi i.si/
+- Where >>> Où >>> /u/
+- Where are you? >>> Où êtes-vous ? >>> /u ɛt vu/
+- I'm here. >>> Je suis ici. >>> /ʒə sɥi i.si/
+- We >>> Nous >>> /nu/
+- We are >>> Nous sommes >>> /nu sɔm/
+- We are here. >>> Nous sommes ici. >>> /nu sɔm i.si/
+- A man >>> Un homme >>> /œ̃ nɔm/
+- A woman >>> Une femme >>> /yn fam/
+- A boy >>> Un garçon >>> /œ̃ ɡaʁ.sɔ̃/
+- A girl >>> Une fille >>> /yn fij/
+- I am >>> Je suis >>> /ʒə sɥi/
+- I am a man. >>> Je suis un homme. >>> /ʒə sɥi œ̃ nɔm/
+- You are >>> Tu es >>> /ty ɛ/
+- You are a woman. >>> Tu es une femme. >>> /ty ɛ yn fam/
+- He is >>> Il est >>> /il ɛ/
+- He is a boy. >>> Il est un garçon. >>> /il ɛ œ̃ ɡaʁ.sɔ̃/
+- She is >>> Elle est >>> /ɛl ɛ/
+- She is a girl. >>> Elle est une fille. >>> /ɛl ɛ yn fij/
+- Me >>> Moi >>> /mwa/
+- It is >>> C'est >>> /sɛ/
+- It's me. >>> C'est moi. >>> /sɛ mwa/
+- Where >>> Où >>> /u/
+- Where are you? >>> Où êtes-vous ? >>> /u ɛt vu/
+- Where are you from? >>> D'où venez-vous ? >>> /du və.ne vu/
+- England >>> Angleterre >>> /ɑ̃.ɡlə.tɛʁ/
+- I'm from >>> Je viens de >>> /ʒə vjɛ̃ də/
+- I'm from England. >>> Je viens d'Angleterre. >>> /ʒə vjɛ̃ dɑ̃.ɡlə.tɛʁ/
+- I speak >>> Je parle >>> /ʒə paʁl/
+- English >>> Anglais >>> /ɑ̃.ɡlɛ/
+- I speak English. >>> Je parle anglais. >>> /ʒə paʁl ɑ̃.ɡlɛ/
+- Nice to see you. >>> Content de te voir. >>> /kɔ̃.tɑ̃ də tə vwaʁ/
+- Where are you from? >>> D'où venez-vous ? >>> /du və.ne vu/
+- America >>> Amérique >>> /a.me.ʁik/
+- I'm from >>> Je viens de >>> /ʒə vjɛ̃ də/
+- I'm from America. >>> Je viens d'Amérique. >>> /ʒə vjɛ̃ da.me.ʁik/
+- I speak >>> Je parle >>> /ʒə paʁl/
+- English too >>> Anglais aussi >>> /ɑ̃.ɡlɛ o.si/
+- Nice to see you. >>> Content de te voir. >>> /kɔ̃.tɑ̃ də tə vwaʁ/
+- Where are you from? >>> D'où venez-vous ? >>> /du və.ne vu/
+- France >>> France >>> /fʁɑ̃s/
+- I am >>> Je suis >>> /ʒə sɥi/
+- I am from >>> Je viens de >>> /ʒə vjɛ̃ də/
+- I'm from France. >>> Je viens de France. >>> /ʒə vjɛ̃ də fʁɑ̃s/
+- I speak >>> Je parle >>> /ʒə paʁl/
+- French >>> Français >>> /fʁɑ̃.sɛ/
+- I speak French. >>> Je parle français. >>> /ʒə paʁl fʁɑ̃.sɛ/
+- Hi >>> Salut >>> /sa.ly/
+- How are you? >>> Comment allez-vous ? >>> /kɔ.mɑ̃ ta.le vu/
+- What is your name? >>> Quel est ton nom ? >>> /kɛl ɛ tɔ̃ nɔ̃/
+- Where are you from? >>> D'où venez-vous ? >>> /du və.ne vu/
+- Germany >>> Allemagne >>> /al.maɲ/
+- I'm from Germany. >>> Je viens d'Allemagne. >>> /ʒə vjɛ̃ dal.maɲ/
+- German >>> Allemand
+
+ >>> /al.mɑ̃/
+- I speak German. >>> Je parle allemand. >>> /ʒə paʁl al.mɑ̃/
+- Learn >>> Apprendre >>> /a.pʁɑ̃dʁ/
+- I am >>> Je suis >>> /ʒə sɥi/
+- I am learning >>> J'apprends >>> /ʒa.pʁɑ̃/
+- I am learning German. >>> J'apprends l'allemand. >>> /ʒa.pʁɑ̃ lɑl.mɑ̃/
+- Italy >>> Italie >>> /i.ta.li/
+- Everyone >>> Tout le monde >>> /tu lə mɔ̃d/
+- Hello everyone. >>> Bonjour tout le monde. >>> /bɔ̃.ʒuʁ tu lə mɔ̃d/
+- I'm from >>> Je viens de >>> /ʒə vjɛ̃ də/
+- I'm from Italy. >>> Je viens d'Italie. >>> /ʒə vjɛ̃ di.ta.li/
+- Italian >>> Italien >>> /i.ta.ljɛ̃/
+- And >>> Et >>> /e/
+- I speak >>> Je parle >>> /ʒə paʁl/
+- And, I speak Italian. >>> Et, je parle italien. >>> /e, ʒə paʁl i.ta.ljɛ̃/
+- I am learning English. >>> J'apprends l'anglais. >>> /ʒa.pʁɑ̃ lɑ̃.ɡlɛ/
+- I am learning English and French. >>> J'apprends l'anglais et le français. >>> /ʒa.pʁɑ̃ lɑ̃.ɡlɛ e lə fʁɑ̃.sɛ/
+- How are you? >>> Comment allez-vous ? >>> /kɔ.mɑ̃ ta.le vu/
+- Thanks >>> Merci >>> /mɛʁ.si/
+- I'm fine. >>> Je vais bien. >>> /ʒə vɛ bjɛ̃/
+- What is your name? >>> Quel est ton nom ? >>> /kɛl ɛ tɔ̃ nɔ̃/
+- Adrian. >>> Adrian. >>> /a.dʁi.ɑ̃/
+- Are you Adrian? >>> Es-tu Adrian ? >>> /ɛ ty a.dʁi.ɑ̃/
+- Nice to meet you. >>> Enchanté de vous rencontrer. >>> /ɑ̃.ʃɑ̃.te də vu ʁɑ̃.kɔ̃.tʁe/
+- Where are you from? >>> D'où venez-vous ? >>> /du və.ne vu/
+- Spain >>> Espagne >>> /ɛs.paɲ/
+- I'm from Spain. >>> Je viens d'Espagne. >>> /ʒə vjɛ̃ dɛs.paɲ/
+- Spanish >>> Espagnol >>> /ɛs.pa.ɲɔl/
+- Do you? >>> Est-ce que vous ? >>> /ɛs kə vu/
+- Do you speak? >>> Parlez-vous ? >>> /paʁ.le vu/
+- Do you speak Spanish? >>> Parlez-vous espagnol ? >>> /paʁ.le vu ɛs.pa.ɲɔl/
+- Yes. >>> Oui. >>> /wi/
+- I am learning Spanish. >>> J'apprends l'espagnol. >>> /ʒa.pʁɑ̃ lɛs.pa.ɲɔl/
+- Hello. >>> Bonjour. >>> /bɔ̃.ʒuʁ/
+- How are you? >>> Comment allez-vous ? >>> /kɔ.mɑ̃ ta.le vu/
+- I'm fine, thanks. >>> Je vais bien, merci. >>> /ʒə vɛ bjɛ̃, mɛʁ.si/
+- I'm from >>> Je viens de >>> /ʒə vjɛ̃ də/
+- I'm from Sweden. >>> Je viens de Suède. >>> /ʒə vjɛ̃ də sɥɛd/
+- Swedish >>> Suédois >>> /sɥe.dwa/
+- And >>> Et >>> /e/
+- I speak >>> Je parle >>> /ʒə paʁl/
+- And, I speak Swedish. >>> Et, je parle suédois. >>> /e ʒə paʁl sɥe.dwa/
+- I am learning >>> J'apprends >>> /ʒa.pʁɑ̃/
+- I am learning German and Spanish. >>> J'apprends l'allemand et l'espagnol. >>> /ʒa.pʁɑ̃ lɑl.mɑ̃ e lɛs.pa.ɲɔl/
+- How are you? >>> Comment allez-vous ? >>> /kɔ.mɑ̃ ta.le vu/
+- Thanks >>> Merci >>> /mɛʁ.si/
+- I'm fine. >>> Je vais bien. >>> /ʒə vɛ bjɛ̃/
+- Are you Adrian? >>> Es-tu Adrian ? >>> /ɛ ty a.dʁi.ɑ̃/
+- Nice to meet you. >>> Enchanté de vous rencontrer. >>> /ɑ̃.ʃɑ̃.te də vu ʁɑ̃.kɔ̃.tʁe/
+- Where are you from? >>> D'où venez-vous ? >>> /du və.ne vu/
+- Norway >>> Norvège >>> /nɔʁ.vɛʒ/
+- I'm from Norway. >>> Je viens de Norvège. >>> /ʒə vjɛ̃ də nɔʁ.vɛʒ/
+- Norwegian >>> Norvégien >>> /nɔʁ.ve.ʒjɛ̃/
+- Do you speak? >>> Parlez-vous ? >>> /paʁ.le vu/
+- Do you speak Norwegian? >>> Parlez-vous norvégien ? >>> /paʁ.le vu nɔʁ.ve.ʒjɛ̃/
+- Yes. >>> Oui. >>> /wi/
+- I speak >>> Je parle >>> /ʒə paʁl/
+- I cannot >>> Je ne peux pas >>> /ʒə nə pø pa/
+- I cannot speak >>> Je ne peux pas parler >>> /ʒə nə pø pa paʁ.le/
+- I cannot Norwegian. >>> Je ne parle pas norvégien. >>> /ʒə nə paʁl pa nɔʁ.ve.ʒjɛ̃/
+- I am learning Norwegian. >>> J'apprends le norvégien. >>> /ʒa.pʁɑ̃ lə nɔʁ.ve.ʒjɛ̃/
+- Friend >>> Ami >>> /a.mi/
+- My >>> Mon >>> /mɔ̃/
+- My friend >>> Mon ami >>> /mɔ̃ na.mi/
+- My friend is >>> Mon ami est >>> /mɔ̃ na.mi ɛ/
+- My friend is from >>> Mon ami est de >>> /mɔ̃ na.mi ɛ də/
+- Finland >>> Finlande >>> /fɛ̃.lɑ̃d/
+- My friend is from Finland >>> Mon ami est de Finlande >>> /mɔ̃ na.mi ɛ də fɛ̃.lɑ̃d/
+- He speaks >>> Il parle >>> /il paʁl/
+- Finnish >>> Finnois >>> /fin.wa/
+- He speaks Finnish. >>> Il parle finnois. >>> /il paʁl fin.wa/
+- Mother >>> Mère >>> /mɛʁ/
+- Father >>> Père >>> /pɛʁ/
+- His >>> Son >>> /sɔ̃/
+- His mother >>> Sa mère >>> /sa mɛʁ/
+- Hungarian >>> Hongrois >>> /ɔ̃.gʁwa/
+- His mother is Hungarian. >>> Sa mère est hongroise. >>> /sa mɛʁ ɛ ɔ̃.gʁwaz/
+- She is from >>> Elle est de >>> /ɛl ɛ də/
+- She is from Hungary. >>> Elle est de Hongrie. >>> /ɛl ɛ də ɔ̃.gʁi/
+- But >>> Mais >>> /mɛ/
+- Father >>> Père >>> /pɛʁ/
+- His father >>> Son père >>> /sɔ̃ pɛʁ/
+- Danish >>> Danois >>> /da.nwa/
+- His father is Danish. >>> Son père est danois. >>> /sɔ̃ pɛʁ ɛ da.nwa/
+- He is from >>> Il est de >>> /il ɛ də/
+- He is from Denmark. >>> Il est du Danemark. >>> /il ɛ dy da.nə.maʁk/
+- Language >>> Langue >>> /lɑ̃ɡ/
+- What >>> Quelles >>> /kɛl/
+- What languages >>> Quelles langues >>> /kɛl lɑ̃ɡ/
+- What languages do you speak? >>> Quelles langues parlez-vous ? >>> /kɛl lɑ̃ɡ paʁ.le vu/
+- Do you speak? >>> Parlez-vous ? >>> /paʁ.le vu/
+- Do you speak English? >>> Parlez-vous anglais ? >>> /paʁ.le vu ɑ̃.ɡlɛ/
+- My friend >>> Mon ami >>> /mɔ̃ na.mi/
+- Nice >>> Sympa >>> /sɛ̃.pa/
+- My friend is nice. >>> Mon ami est sympa. >>> /mɔ̃ na.mi ɛ sɛ̃.pa/
+- You >>> Vous >>> /vu/
+- You are >>> Vous êtes >>> /vu zɛt/
+- Tall >>> Grand >>> /ɡʁɑ̃/
+- You are tall. >>> Vous êtes grand. >>> /vu zɛt ɡʁɑ̃/
+- I >>> Je >>> /ʒə/
+- I am >>> Je suis >>> /ʒə sɥi/
+- A man >>> Un homme >>> /œ̃ nɔm/
+-
+
+ I am a man. >>> Je suis un homme. >>> /ʒə sɥi œ̃ nɔm/
+- You are >>> Vous êtes >>> /vu zɛt/
+- A woman >>> Une femme >>> /yn fam/
+- You are a woman. >>> Vous êtes une femme. >>> /vu zɛt yn fam/
+- Single >>> Célibataire >>> /se.li.ba.tɛʁ/
+- Are you single? >>> Êtes-vous célibataire ? >>> /ɛt vu se.li.ba.tɛʁ/
+- Or >>> Ou >>> /u/
+- Married >>> Marié >>> /ma.ʁje/
+- Or married? >>> Ou marié ? >>> /u ma.ʁje/
+- Are you married? >>> Êtes-vous marié ? >>> /ɛt vu ma.ʁje/
+- No >>> Non >>> /nɔ̃/
+- No, I am >>> Non, je suis >>> /nɔ̃, ʒə sɥi/
+- No, I am single. >>> Non, je suis célibataire. >>> /nɔ̃, ʒə sɥi se.li.ba.tɛʁ/
+- Yes >>> Oui >>> /wi/
+- Yes, I am >>> Oui, je suis >>> /wi, ʒə sɥi/
+- Yes, I am married. >>> Oui, je suis marié. >>> /wi, ʒə sɥi ma.ʁje/
+- A Boy >>> Un garçon >>> /œ̃ ɡaʁ.sɔ̃/
+- A Girl >>> Une fille >>> /yn fij/
+- I have >>> J'ai >>> /ʒɛ/
+- I have a boy. >>> J'ai un garçon. >>> /ʒɛ œ̃ ɡaʁ.sɔ̃/
+- I have a girl. >>> J'ai une fille. >>> /ʒɛ yn fij/
+- You >>> Vous >>> /vu/
+- You are >>> Vous êtes >>> /vu zɛt/
+- You are married. >>> Vous êtes marié. >>> /vu zɛt ma.ʁje/
+- But >>> Mais >>> /mɛ/
+- But I am >>> Mais je suis >>> /mɛ ʒə sɥi/
+- But I am single. >>> Mais je suis célibataire. >>> /mɛ ʒə sɥi se.li.ba.tɛʁ/
+- Name >>> Nom >>> /nɔ̃/
+- My name is >>> Mon nom est >>> /mɔ̃ nɔ̃ ɛ/
+- My name is Adrian. >>> Mon nom est Adrian. >>> /mɔ̃ nɔ̃ ɛ a.dʁi.ɑ̃/
+- Your name is >>> Ton nom est >>> /tɔ̃ nɔ̃ ɛ/
+- Your name is Adrian. >>> Ton nom est Adrian. >>> /tɔ̃ nɔ̃ ɛ a.dʁi.ɑ̃/
+- I don't >>> Je ne >>> /ʒə nə/
+- I don't know. >>> Je ne sais pas. >>> /ʒə nə sɛ pa/
+- I know >>> Je sais >>> /ʒə sɛ/
+- I know your name. >>> Je connais ton nom. >>> /ʒə kɔ.nɛ tɔ̃ nɔ̃/
+- You are Adrian. >>> Tu es Adrian. >>> /ty ɛ a.dʁi.ɑ̃/
+- Again >>> Encore >>> /ɑ̃.kɔʁ/
+- What is your name? >>> Quel est ton nom ? >>> /kɛl ɛ tɔ̃ nɔ̃/
+- What is your name again? >>> Quel est ton nom déjà ? >>> /kɛl ɛ tɔ̃ nɔ̃ de.ʒa/
+- How are you? >>> Comment allez-vous ? >>> /kɔ.mɑ̃ ta.le vu/
+- Thanks >>> Merci >>> /mɛʁ.si/
+- Thank you >>> Merci >>> /mɛʁ.si/
+- I'm fine, thanks. >>> Je vais bien, merci. >>> /ʒə vɛ bjɛ̃, mɛʁ.si/
+- OK >>> D'accord >>> /da.kɔʁ/
+- We are >>> Nous sommes >>> /nu sɔm/
+- Here >>> Ici >>> /i.si/
+- We are here. >>> Nous sommes ici. >>> /nu sɔm i.si/
+- To learn >>> Apprendre >>> /a.pʁɑ̃dʁ/
+- New >>> Nouveau >>> /nu.vo/
+- Language >>> Langue >>> /lɑ̃ɡ/
+- A new language >>> Une nouvelle langue >>> /yn nu.vɛl lɑ̃ɡ/
+- We are here to learn >>> Nous sommes ici pour apprendre >>> /nu sɔm i.si puʁ a.pʁɑ̃dʁ/
+- We are here to learn a new language. >>> Nous sommes ici pour apprendre une nouvelle langue. >>> /nu sɔm i.si puʁ a.pʁɑ̃dʁ yn nu.vɛl lɑ̃ɡ/
+- Hi everyone. >>> Salut tout le monde. >>> /sa.ly tu lə mɔ̃d/
+- Hi everyone. How are you? >>> Salut tout le monde. Comment allez-vous ? >>> /sa.ly tu lə mɔ̃d kɔ.mɑ̃ ta.le vu/
+- Welcome >>> Bienvenue >>> /bjɛ̃.və.ny/
+- We are >>> Nous sommes >>> /nu sɔm/
+- We are learning >>> Nous apprenons >>> /nu za.pʁə.nɔ̃/
+- A new >>> Une nouvelle >>> /yn nu.vɛl/
+- A new language >>> Une nouvelle langue >>> /yn nu.vɛl lɑ̃ɡ/
+- We are here. >>> Nous sommes ici. >>> /nu sɔm i.si/
+- To learn >>> Apprendre >>> /a.pʁɑ̃dʁ/
+- To learn a new language. >>> Apprendre une nouvelle langue. >>> /a.pʁɑ̃dʁ yn nu.vɛl lɑ̃ɡ/
+- Thank you >>> Merci >>> /mɛʁ.si/
+- Goodbye >>> Au revoir >>> /o ʁə.vwaʁ/
+- Take care >>> Prends soin de toi >>> /pʁɑ̃ swɛ̃ də twa/
+- Bye >>> Salut >>> /sa.ly/
