@@ -1,4 +1,286 @@
+Hi
+Hello
+Everyone
+Hello everyone
+Welcome
+Course
+Welcome to
+This Course
+Welcome to this course.
+Learn
+To learn
+Speak
+To speak
+Practice
+Just
+Just practice.
+Listen
+Carefully
+Listen carefully.
+And
+Repeat
+Practice
+Repeat and practice.
+Me
+After
+After me
+Repeat after me.
+Listen
+And repeat after me.
+How
+How are
+You
+How are you?
 I
 I am
+I'm fine.
+Your
+Your name
+What
+What is your name?
+My
+My name
+My name is Adrian.
+And
+And you?
+Your name
+Your name is Adrian?
+Yes
+My
+Yes, my name is Adrian.
+No
+Your name is Adrian.
+Everyone
+Hi everyone.
+Nice
+Nice to meet you.
+Nice to see you.
+Thanks
+Thanks you
+How are you?
+I'm fine, thanks.
+Here
+I'm here.
+Where
+Where are you?
+I'm here.
+We
+We are
+We are here.
+A man
+A woman
+A boy
+A girl
+I am
+I am a man.
+You are
+You are a woman.
+He is
+He is a boy.
+She is
+She is a girl.
+Me
+It is
+It's me.
+Where
+Where are you?
+Where are you from?
+England
+I'm from
+I'm from England.
+I speak
+English
+I speak English.
+Nice to see you.
+Where are you from?
+America
+I'm from
+I'm from America.
+I speak
+English
+I speak English too.
+Nice to see you.
+Where are you from?
+France
+I am
+I am from
+I'm from France.
+I speak
+French
+I speak French.
+Hi
+How are you?
+What is your name?
+Where are you from?
+Germany
+I'm from Germany.
+German
+I speak German.
+Learn
+I am
+I am learning
+I am learning German.
+Italy
+Everyone
+Hello everyone.
+I'm from
+I'm from Italy.
+Italian
+And
+I speak
+And, I speak Italian.
+I am learning English.
+I am learning English and French.
+How are you?
+Thanks
+I'm fine.
+What is your name?
+Adrian.
+Are you Adrian?
+Nice to meet you.
+Where are you from?
+Spain
+I'm from Spain.
+Spanish
+Do you?
+Do you speak?
+Do you speak Spanish?
+Yes.
+I am learning Spanish.
+Hello.
+How are you?
+I'm fine, thanks.
+I'm from
+I'm from Sweden.
+Swedish
+And
+I speak
+And, I speak Swedish.
+I am learning
+I am learning German and Spanish.
+How are you?
+Thanks
+I'm fine.
+Are you Adrian?
+Nice to meet you.
+Where are you from?
+Norway
+I'm from Norway.
+Norwegian
+Do you speak?
+Do you speak Norwegian?
+Yes.
+I speak
+I cannot
+I cannot speak
+I cannot Norwegian.
+I am learning Norwegian.
+Friend
+My
+My friend
+My friend is
+My friend is from
+Finland
+My friend is from Finland
+He speaks
+Finnish
+He speaks Finnish.
+Mother
+Father
+His
+His mother
+Hungarian
+His mother is Hungarian.
+She is from
+She is from Hungary.
+But
+Father
+His father
+Danish
+His father is Danish.
+He is from
+He is from Denmark.
+Language
+What
+What languages
+What languages do you speak?
+Do you speak?
+Do you speak English?
+My friend
+Nice
+My friend is nice.
 You
 You are
+Tall
+You are tall.
+I
+I am 
+A man
+I am a man.
+You are
+A woman
+You are a woman.
+Single
+Are you single?
+Or
+Married
+Or married?
+Are you married?
+No
+No, I am
+No, I am single.
+Yes
+Yes, I am
+Yes, I am married.
+A Boy
+A Girl
+I have
+I have a boy.
+I have a girl.
+You
+You are
+You are married.
+But
+But I am
+But I am single.
+Name
+My name is
+My name is Adrian.
+Your name is
+Your name is Adrian.
+I don't
+I don't know.
+I know
+I know your name.
+You are Adrian.
+Again
+What is your name?
+What is your name again?
+How are you?
+Thanks
+Thank you
+I'm fine, thanks.
+OK
+We are
+Here
+We are here.
+To learn
+New
+Language
+A new language
+We are here to learn
+We are here to learn a new language.
+Hi everyone.
+Hi everyone. How are you?
+Welcome
+We are
+We are learning
+A new
+A new language
+We are here.
+To learn
+To learn a new language.
+Thank you
+Goodbye
+Take care
+Bye
