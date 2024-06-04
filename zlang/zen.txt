@@ -113,9 +113,7 @@
 - Where are you from? >>> D'où venez-vous ? >>> /du və.ne vu/
 - Germany >>> Allemagne >>> /al.maɲ/
 - I'm from Germany. >>> Je viens d'Allemagne. >>> /ʒə vjɛ̃ dal.maɲ/
-- German >>> Allemand
-
- >>> /al.mɑ̃/
+- German >>> Allemand >>> /al.mɑ̃/
 - I speak German. >>> Je parle allemand. >>> /ʒə paʁl al.mɑ̃/
 - Learn >>> Apprendre >>> /a.pʁɑ̃dʁ/
 - I am >>> Je suis >>> /ʒə sɥi/
@@ -217,9 +215,7 @@
 - I >>> Je >>> /ʒə/
 - I am >>> Je suis >>> /ʒə sɥi/
 - A man >>> Un homme >>> /œ̃ nɔm/
--
-
- I am a man. >>> Je suis un homme. >>> /ʒə sɥi œ̃ nɔm/
+- I am a man. >>> Je suis un homme. >>> /ʒə sɥi œ̃ nɔm/
 - You are >>> Vous êtes >>> /vu zɛt/
 - A woman >>> Une femme >>> /yn fam/
 - You are a woman. >>> Vous êtes une femme. >>> /vu zɛt yn fam/

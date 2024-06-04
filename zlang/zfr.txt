@@ -1,6 +1,115 @@
+Salut
+Bonjour
+Tout le monde
+Bonjour tout le monde
+Bienvenue
+Cours
+Bienvenue à
+Ce cours
+Bienvenue à ce cours.
+Apprendre
+Apprendre
+Parler
+Parler
+Pratiquer
+Juste
+Pratiquez juste.
+Écouter
+Attentivement
+Écoutez attentivement.
+Et
+Répétez
+Pratiquer
+Répétez et pratiquez.
+Moi
+Après
+Après moi
+Répétez après moi.
+Écouter
+Et répétez après moi.
+Comment
+Comment êtes
+Vous
+Comment allez-vous ?
 Je
 Je suis
-Tu
+Je vais bien.
+Ton
+Ton nom
+Quel
+Quel est ton nom ?
+Mon
+Mon nom
+Mon nom est Adrian.
+Et
+Et toi ?
+Ton nom
+Ton nom est Adrian ?
+Oui
+Mon
+Oui, mon nom est Adrian.
+Non
+Ton nom est Adrian.
+Tout le monde
+Salut tout le monde.
+Enchanté
+Enchanté de vous rencontrer.
+Content de te voir.
+Merci
+Merci à toi
+Comment allez-vous ?
+Je vais bien, merci.
+Ici
+Je suis ici.
+Où
+Où êtes-vous ?
+Je suis ici.
+Nous
+Nous sommes
+Nous sommes ici.
+Un homme
+Une femme
+Un garçon
+Une fille
+Je suis
+Je suis un homme.
 Tu es
-Vous
-Vous êtes
+Tu es une femme.
+Il est
+Il est un garçon.
+Elle est
+Elle est une fille.
+Moi
+C'est
+C'est moi.
+Où
+Où êtes-vous ?
+D'où venez-vous ?
+Angleterre
+Je viens de
+Je viens d'Angleterre.
+Je parle
+Anglais
+Je parle anglais.
+Content de te voir.
+D'où venez-vous ?
+Amérique
+Je viens de
+Je viens d'Amérique.
+Je parle
+Anglais aussi
+Content de te voir.
+D'où venez-vous ?
+France
+Je suis
+Je viens de
+Je viens de France.
+Je parle
+Français
+Je parle français.
+Salut
+Comment allez-vous ?
+Quel est ton nom ?
+D'où venez-vous ?
+Allemagne
+Je viens d'Allemagne.
