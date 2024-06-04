@@ -113,3 +113,173 @@ Quel est ton nom ?
 D'où venez-vous ?
 Allemagne
 Je viens d'Allemagne.
+Allemand
+Je parle allemand.
+Apprendre
+Je suis
+J'apprends
+J'apprends l'allemand.
+Italie
+Tout le monde
+Bonjour tout le monde.
+Je viens de
+Je viens d'Italie.
+Italien
+Et
+Je parle
+Et, je parle italien.
+J'apprends l'anglais.
+J'apprends l'anglais et le français.
+Comment allez-vous ?
+Merci
+Je vais bien.
+Quel est ton nom ?
+Adrian.
+Es-tu Adrian ?
+Enchanté de vous rencontrer.
+D'où venez-vous ?
+Espagne
+Je viens d'Espagne.
+Espagnol
+Est-ce que vous ?
+Parlez-vous ?
+Parlez-vous espagnol ?
+Oui.
+J'apprends l'espagnol.
+Bonjour.
+Comment allez-vous ?
+Je vais bien, merci.
+Je viens de
+Je viens de Suède.
+Suédois
+Et
+Je parle
+Et, je parle suédois.
+J'apprends
+J'apprends l'allemand et l'espagnol.
+Comment allez-vous ?
+Merci
+Je vais bien.
+Es-tu Adrian ?
+Enchanté de vous rencontrer.
+D'où venez-vous ?
+Norvège
+Je viens de Norvège.
+Norvégien
+Parlez-vous ?
+Parlez-vous norvégien ?
+Oui.
+Je parle
+Je ne peux pas
+Je ne peux pas parler
+Je ne parle pas norvégien.
+J'apprends le norvégien.
+Ami
+Mon
+Mon ami
+Mon ami est
+Mon ami est de
+Finlande
+Mon ami est de Finlande
+Il parle
+Finnois
+Il parle finnois.
+Mère
+Père
+Son
+Sa mère
+Hongrois
+Sa mère est hongroise.
+Elle est de
+Elle est de Hongrie.
+Mais
+Père
+Son père
+Danois
+Son père est danois.
+Il est de
+Il est du Danemark.
+Langue
+Quelles
+Quelles langues
+Quelles langues parlez-vous ?
+Parlez-vous ?
+Parlez-vous anglais ?
+Mon ami
+Sympa
+Mon ami est sympa.
+Vous
+Vous êtes
+Grand
+Vous êtes grand.
+Je
+Je suis
+Un homme
+Je suis un homme.
+Vous êtes
+Une femme
+Vous êtes une femme.
+Célibataire
+Êtes-vous célibataire ?
+Ou
+Marié
+Ou marié ?
+Êtes-vous marié ?
+Non
+Non, je suis
+Non, je suis célibataire.
+Oui
+Oui, je suis
+Oui, je suis marié.
+Un garçon
+Une fille
+J'ai
+J'ai un garçon.
+J'ai une fille.
+Vous
+Vous êtes
+Vous êtes marié.
+Mais
+Mais je suis
+Mais je suis célibataire.
+Nom
+Mon nom est
+Mon nom est Adrian.
+Ton nom est
+Ton nom est Adrian.
+Je ne
+Je ne sais pas.
+Je sais
+Je connais ton nom.
+Tu es Adrian.
+Encore
+Quel est ton nom ?
+Quel est ton nom déjà ?
+Comment allez-vous ?
+Merci
+Merci
+Je vais bien, merci.
+D'accord
+Nous sommes
+Ici
+Nous sommes ici.
+Apprendre
+Nouveau
+Langue
+Une nouvelle langue
+Nous sommes ici pour apprendre
+Nous sommes ici pour apprendre une nouvelle langue.
+Salut tout le monde.
+Salut tout le monde. Comment allez-vous ?
+Bienvenue
+Nous sommes
+Nous apprenons
+Une nouvelle
+Une nouvelle langue
+Nous sommes ici.
+Apprendre
+Apprendre une nouvelle langue.
+Merci
+Au revoir
+Prends soin de toi
+Salut

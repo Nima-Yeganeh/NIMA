@@ -173,7 +173,7 @@ Yes.
 I speak
 I cannot
 I cannot speak
-I cannot speak Norwegian.
+I cannot Norwegian.
 I am learning Norwegian.
 Friend
 My
