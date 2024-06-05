@@ -1,0 +1,286 @@
+Hallo
+Guten Tag
+Jeder
+Hallo zusammen
+Willkommen
+Kurs
+Willkommen zu
+Dieser Kurs
+Willkommen zu diesem Kurs.
+Lernen
+Lernen
+Sprechen
+Sprechen
+Üben
+Nur
+Nur üben.
+Hören
+Sorgfältig
+Hören Sie sorgfältig zu.
+Und
+Wiederholen
+Üben
+Wiederholen und üben.
+Mich
+Nach
+Nach mir
+Wiederholen Sie nach mir.
+Hören
+Und wiederholen Sie nach mir.
+Wie
+Wie sind
+Sie
+Wie geht es Ihnen?
+Ich
+Ich bin
+Mir geht es gut.
+Ihr
+Ihr Name
+Was
+Wie heißen Sie?
+Mein
+Mein Name
+Mein Name ist Adrian.
+Und
+Und Sie?
+Ihr Name
+Ihr Name ist Adrian?
+Ja
+Mein
+Ja, mein Name ist Adrian.
+Nein
+Ihr Name ist Adrian.
+Jeder
+Hallo zusammen.
+Schön
+Schön, Sie kennenzulernen.
+Schön, Sie zu sehen.
+Danke
+Danke Ihnen
+Wie geht es Ihnen?
+Mir geht es gut, danke.
+Hier
+Ich bin hier.
+Wo
+Wo sind Sie?
+Ich bin hier.
+Wir
+Wir sind
+Wir sind hier.
+Ein Mann
+Eine Frau
+Ein Junge
+Ein Mädchen
+Ich bin
+Ich bin ein Mann.
+Sie sind
+Sie sind eine Frau.
+Er ist
+Er ist ein Junge.
+Sie ist
+Sie ist ein Mädchen.
+Mich
+Es ist
+Ich bin es.
+Wo
+Wo sind Sie?
+Woher kommen Sie?
+England
+Ich komme aus
+Ich komme aus England.
+Ich spreche
+Englisch
+Ich spreche Englisch.
+Schön, Sie zu sehen.
+Woher kommen Sie?
+Amerika
+Ich komme aus
+Ich komme aus Amerika.
+Ich spreche
+Englisch
+Ich spreche auch Englisch.
+Schön, Sie zu sehen.
+Woher kommen Sie?
+Frankreich
+Ich bin
+Ich komme aus
+Ich komme aus Frankreich.
+Ich spreche
+Französisch
+Ich spreche Französisch.
+Hallo
+Wie geht es Ihnen?
+Wie heißen Sie?
+Woher kommen Sie?
+Deutschland
+Ich komme aus Deutschland.
+Deutsch
+Ich spreche Deutsch.
+Lernen
+Ich bin
+Ich lerne
+Ich lerne Deutsch.
+Italien
+Jeder
+Hallo zusammen.
+Ich komme aus
+Ich komme aus Italien.
+Italienisch
+Und
+Ich spreche
+Und ich spreche Italienisch.
+Ich lerne Englisch.
+Ich lerne Englisch und Französisch.
+Wie geht es Ihnen?
+Danke
+Mir geht es gut.
+Wie heißen Sie?
+Adrian.
+Sind Sie Adrian?
+Schön, Sie kennenzulernen.
+Woher kommen Sie?
+Spanien
+Ich komme aus Spanien.
+Spanisch
+Tun Sie?
+Sprechen Sie?
+Sprechen Sie Spanisch?
+Ja.
+Ich lerne Spanisch.
+Guten Tag.
+Wie geht es Ihnen?
+Mir geht es gut, danke.
+Ich komme aus
+Ich komme aus Schweden.
+Schwedisch
+Und
+Ich spreche
+Und ich spreche Schwedisch.
+Ich lerne
+Ich lerne Deutsch und Spanisch.
+Wie geht es Ihnen?
+Danke
+Mir geht es gut.
+Sind Sie Adrian?
+Schön, Sie kennenzulernen.
+Woher kommen Sie?
+Norwegen
+Ich komme aus Norwegen.
+Norwegisch
+Sprechen Sie?
+Sprechen Sie Norwegisch?
+Ja.
+Ich spreche
+Ich kann nicht
+Ich kann nicht sprechen
+Ich kann nicht Norwegisch sprechen.
+Ich lerne Norwegisch.
+Freund
+Mein
+Mein Freund
+Mein Freund ist
+Mein Freund kommt aus
+Finnland
+Mein Freund kommt aus Finnland
+Er spricht
+Finnisch
+Er spricht Finnisch.
+Mutter
+Vater
+Sein
+Seine Mutter
+Ungarisch
+Seine Mutter ist Ungarin.
+Sie kommt aus
+Sie kommt aus Ungarn.
+Aber
+Vater
+Sein Vater
+Dänisch
+Sein Vater ist Däne.
+Er kommt aus
+Er kommt aus Dänemark.
+Sprache
+Was
+Welche Sprachen
+Welche Sprachen sprechen Sie?
+Sprechen Sie?
+Sprechen Sie Englisch?
+Mein Freund
+Schön
+Mein Freund ist nett.
+Sie
+Sie sind
+Groß
+Sie sind groß.
+Ich
+Ich bin
+Ein Mann
+Ich bin ein Mann.
+Sie sind
+Eine Frau
+Sie sind eine Frau.
+Ledig
+Sind Sie ledig?
+Oder
+Verheiratet
+Oder verheiratet?
+Sind Sie verheiratet?
+Nein
+Nein, ich bin
+Nein, ich bin ledig.
+Ja
+Ja, ich bin
+Ja, ich bin verheiratet.
+Ein Junge
+Ein Mädchen
+Ich habe
+Ich habe einen Jungen.
+Ich habe ein Mädchen.
+Sie
+Sie sind
+Sie sind verheiratet.
+Aber
+Aber ich bin
+Aber ich bin ledig.
+Name
+Mein Name ist
+Mein Name ist Adrian.
+Ihr Name ist
+Ihr Name ist Adrian.
+Ich nicht
+Ich weiß nicht.
+Ich weiß
+Ich weiß Ihren Namen.
+Sie sind Adrian.
+Noch einmal
+Wie heißen Sie?
+Wie heißen Sie noch einmal?
+Wie geht es Ihnen?
+Danke
+Danke
+Mir geht es gut, danke.
+In Ordnung
+Wir sind
+Hier
+Wir sind hier.
+Lernen
+Neu
+Sprache
+Eine neue Sprache
+Wir sind hier zum Lernen
+Wir sind hier, um eine neue Sprache zu lernen.
+Hallo zusammen.
+Hallo zusammen. Wie geht es euch?
+Willkommen
+Wir sind
+Wir lernen
+Ein neues
+Eine neue Sprache
+Wir sind hier.
+Lernen
+Eine neue Sprache lernen.
+Danke
+Auf Wiedersehen
+Mach's gut
+Tschüss
