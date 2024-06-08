@@ -1,0 +1,286 @@
+Ciao
+Salve
+Tutti
+Salve a tutti
+Benvenuto
+Corso
+Benvenuto a
+Questo corso
+Benvenuto a questo corso.
+Imparare
+Imparare
+Parlare
+Parlare
+Pratica
+Solo
+Solo pratica.
+Ascoltare
+Attentamente
+Ascolta attentamente.
+E
+Ripetere
+Pratica
+Ripeti e pratica.
+Me
+Dopo
+Dopo di me
+Ripeti dopo di me.
+Ascoltare
+E ripeti dopo di me.
+Come
+Come stai
+Tu
+Come stai?
+Io
+Io sono
+Sto bene.
+Tuo
+Il tuo nome
+Che cosa
+Come ti chiami?
+Mio
+Il mio nome
+Il mio nome è Adrian.
+E
+E tu?
+Il tuo nome
+Il tuo nome è Adrian?
+Sì
+Mio
+Sì, il mio nome è Adrian.
+No
+Il tuo nome è Adrian.
+Tutti
+Ciao a tutti.
+Piacere
+Piacere di conoscerti.
+Piacere di vederti.
+Grazie
+Grazie a te
+Come stai?
+Sto bene, grazie.
+Qui
+Sono qui.
+Dove
+Dove sei?
+Sono qui.
+Noi
+Noi siamo
+Noi siamo qui.
+Un uomo
+Una donna
+Un ragazzo
+Una ragazza
+Io sono
+Io sono un uomo.
+Tu sei
+Tu sei una donna.
+Lui è
+Lui è un ragazzo.
+Lei è
+Lei è una ragazza.
+Me
+È
+Sono io.
+Dove
+Dove sei?
+Di dove sei?
+Inghilterra
+Sono di
+Sono di Inghilterra.
+Parlo
+Inglese
+Parlo inglese.
+Piacere di vederti.
+Di dove sei?
+America
+Sono di
+Sono di America.
+Parlo
+Inglese
+Parlo inglese anche io.
+Piacere di vederti.
+Di dove sei?
+Francia
+Io sono
+Io sono di
+Sono di Francia.
+Parlo
+Francese
+Parlo francese.
+Ciao
+Come stai?
+Come ti chiami?
+Di dove sei?
+Germania
+Sono di Germania.
+Tedesco
+Parlo tedesco.
+Imparare
+Io sono
+Sto imparando
+Sto imparando il tedesco.
+Italia
+Tutti
+Salve a tutti.
+Sono di
+Sono di Italia.
+Italiano
+E
+Parlo
+E parlo italiano.
+Sto imparando l'inglese.
+Sto imparando l'inglese e il francese.
+Come stai?
+Grazie
+Sto bene.
+Come ti chiami?
+Adrian.
+Sei Adrian?
+Piacere di conoscerti.
+Di dove sei?
+Spagna
+Sono di Spagna.
+Spagnolo
+Tu?
+Parli?
+Parli spagnolo?
+Sì.
+Sto imparando lo spagnolo.
+Salve.
+Come stai?
+Sto bene, grazie.
+Sono di
+Sono di Svezia.
+Svedese
+E
+Parlo
+E parlo svedese.
+Sto imparando
+Sto imparando il tedesco e lo spagnolo.
+Come stai?
+Grazie
+Sto bene.
+Sei Adrian?
+Piacere di conoscerti.
+Di dove sei?
+Norvegia
+Sono di Norvegia.
+Norvegese
+Parli?
+Parli norvegese?
+Sì.
+Parlo
+Non posso
+Non posso parlare
+Non posso parlare norvegese.
+Sto imparando il norvegese.
+Amico
+Mio
+Il mio amico
+Il mio amico è
+Il mio amico è di
+Finlandia
+Il mio amico è di Finlandia
+Lui parla
+Finlandese
+Lui parla finlandese.
+Madre
+Padre
+Suo
+Sua madre
+Ungherese
+Sua madre è ungherese.
+Lei è di
+Lei è di Ungheria.
+Ma
+Padre
+Suo padre
+Danese
+Suo padre è danese.
+Lui è di
+Lui è di Danimarca.
+Lingua
+Che cosa
+Che lingue
+Che lingue parli?
+Parli?
+Parli inglese?
+Il mio amico
+Simpatico
+Il mio amico è simpatico.
+Tu
+Tu sei
+Alto
+Sei alto.
+Io
+Io sono
+Un uomo
+Io sono un uomo.
+Tu sei
+Una donna
+Tu sei una donna.
+Single
+Sei single?
+O
+Sposato
+O sposato?
+Sei sposato?
+No
+No, io sono
+No, sono single.
+Sì
+Sì, io sono
+Sì, sono sposato.
+Un ragazzo
+Una ragazza
+Io ho
+Ho un ragazzo.
+Ho una ragazza.
+Tu
+Tu sei
+Sei sposato.
+Ma
+Ma io sono
+Ma sono single.
+Nome
+Il mio nome è
+Il mio nome è Adrian.
+Il tuo nome è
+Il tuo nome è Adrian.
+Non
+Non so.
+So
+So il tuo nome.
+Sei Adrian.
+Ancora
+Come ti chiami?
+Come ti chiami ancora?
+Come stai?
+Grazie
+Grazie
+Sto bene, grazie.
+OK
+Noi siamo
+Qui
+Noi siamo qui.
+Imparare
+Nuovo
+Lingua
+Una nuova lingua
+Siamo qui per imparare
+Siamo qui per imparare una nuova lingua.
+Ciao a tutti.
+Ciao a tutti. Come state?
+Benvenuto
+Noi siamo
+Stiamo imparando
+Un nuovo
+Una nuova lingua
+Noi siamo qui.
+Imparare
+Imparare una nuova lingua.
+Grazie
+Arrivederci
+Stammi bene
+Ciao

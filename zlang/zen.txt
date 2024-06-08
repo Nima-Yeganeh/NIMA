@@ -1,286 +1,286 @@
-- Hi >>> Hallo >>> /ˈha.lo/
-- Hello >>> Guten Tag >>> /ˈɡuː.tən taːk/
-- Everyone >>> Jeder >>> /ˈjeː.dɐ/
-- Hello everyone >>> Hallo zusammen >>> /ˈha.lo tsuˈza.mən/
-- Welcome >>> Willkommen >>> /ˈvɪl.kɔ.mən/
-- Course >>> Kurs >>> /kʊrs/
-- Welcome to >>> Willkommen zu >>> /ˈvɪl.kɔ.mən tsu/
-- This Course >>> Dieser Kurs >>> /ˈdiː.zɐ kʊrs/
-- Welcome to this course. >>> Willkommen zu diesem Kurs. >>> /ˈvɪl.kɔ.mən tsu ˈdiː.zəm kʊrs/
-- Learn >>> Lernen >>> /ˈlɛʁ.nən/
-- To learn >>> Lernen >>> /ˈlɛʁ.nən/
-- Speak >>> Sprechen >>> /ˈʃpʁɛçən/
-- To speak >>> Sprechen >>> /ˈʃpʁɛçən/
-- Practice >>> Üben >>> /ˈyː.bən/
-- Just >>> Nur >>> /nuːɐ/
-- Just practice. >>> Nur üben. >>> /nuːɐ ˈyː.bən/
-- Listen >>> Hören >>> /ˈhøː.ʁən/
-- Carefully >>> Sorgfältig >>> /ˈzɔʁk.fɛl.tɪç/
-- Listen carefully. >>> Hören Sie sorgfältig zu. >>> /ˈhøː.ʁən ziː ˈzɔʁk.fɛl.tɪç tsuː/
-- And >>> Und >>> /ʊnt/
-- Repeat >>> Wiederholen >>> /ˌviː.dɐˈhoː.lən/
-- Practice >>> Üben >>> /ˈyː.bən/
-- Repeat and practice. >>> Wiederholen und üben. >>> /ˌviː.dɐˈhoː.lən ʊnt ˈyː.bən/
-- Me >>> Mich >>> /mɪç/
-- After >>> Nach >>> /naːx/
-- After me >>> Nach mir >>> /naːx miːɐ/
-- Repeat after me. >>> Wiederholen Sie nach mir. >>> /ˌviː.dɐˈhoː.lən ziː naːx miːɐ/
-- Listen >>> Hören >>> /ˈhøː.ʁən/
-- And repeat after me. >>> Und wiederholen Sie nach mir. >>> /ʊnt ˌviː.dɐˈhoː.lən ziː naːx miːɐ/
-- How >>> Wie >>> /viː/
-- How are >>> Wie sind >>> /viː zɪnt/
-- You >>> Sie >>> /ziː/
-- How are you? >>> Wie geht es Ihnen? >>> /viː ɡeːt ɛs ˈiː.nən/
-- I >>> Ich >>> /ɪç/
-- I am >>> Ich bin >>> /ɪç bɪn/
-- I'm fine. >>> Mir geht es gut. >>> /miːɐ ɡeːt ɛs ɡuːt/
-- Your >>> Ihr >>> /iːɐ/
-- Your name >>> Ihr Name >>> /iːɐ ˈnaː.mə/
-- What >>> Was >>> /vas/
-- What is your name? >>> Wie heißen Sie? >>> /viː ˈhaɪ.sən ziː/
-- My >>> Mein >>> /maɪn/
-- My name >>> Mein Name >>> /maɪn ˈnaː.mə/
-- My name is Adrian. >>> Mein Name ist Adrian. >>> /maɪn ˈnaː.mə ɪst ˈa.dʁi.aːn/
-- And >>> Und >>> /ʊnt/
-- And you? >>> Und Sie? >>> /ʊnt ziː/
-- Your name >>> Ihr Name >>> /iːɐ ˈnaː.mə/
-- Your name is Adrian? >>> Ihr Name ist Adrian? >>> /iːɐ ˈnaː.mə ɪst ˈa.dʁi.aːn/
-- Yes >>> Ja >>> /jaː/
-- My >>> Mein >>> /maɪn/
-- Yes, my name is Adrian. >>> Ja, mein Name ist Adrian. >>> /jaː maɪn ˈnaː.mə ɪst ˈa.dʁi.aːn/
-- No >>> Nein >>> /naɪn/
-- Your name is Adrian. >>> Ihr Name ist Adrian. >>> /iːɐ ˈnaː.mə ɪst ˈa.dʁi.aːn/
-- Everyone >>> Jeder >>> /ˈjeː.dɐ/
-- Hi everyone. >>> Hallo zusammen. >>> /ˈha.lo tsuˈza.mən/
-- Nice >>> Schön >>> /ʃøːn/
-- Nice to meet you. >>> Schön, Sie kennenzulernen. >>> /ʃøːn ziː ˈkɛnənˌtsuːlɛʁnən/
-- Nice to see you. >>> Schön, Sie zu sehen. >>> /ʃøːn ziː tsuː ˈzeː.ən/
-- Thanks >>> Danke >>> /ˈdaŋ.kə/
-- Thanks you >>> Danke Ihnen >>> /ˈdaŋ.kə ˈiː.nən/
-- How are you? >>> Wie geht es Ihnen? >>> /viː ɡeːt ɛs ˈiː.nən/
-- I'm fine, thanks. >>> Mir geht es gut, danke. >>> /miːɐ ɡeːt ɛs ɡuːt ˈdaŋ.kə/
-- Here >>> Hier >>> /hiːɐ/
-- I'm here. >>> Ich bin hier. >>> /ɪç bɪn hiːɐ/
-- Where >>> Wo >>> /voː/
-- Where are you? >>> Wo sind Sie? >>> /voː zɪnt ziː/
-- I'm here. >>> Ich bin hier. >>> /ɪç bɪn hiːɐ/
-- We >>> Wir >>> /viːɐ/
-- We are >>> Wir sind >>> /viːɐ zɪnt/
-- We are here. >>> Wir sind hier. >>> /viːɐ zɪnt hiːɐ/
-- A man >>> Ein Mann >>> /aɪn man/
-- A woman >>> Eine Frau >>> /ˈaɪ.nə fʁaʊ/
-- A boy >>> Ein Junge >>> /aɪn ˈjʊŋ.ə/
-- A girl >>> Ein Mädchen >>> /aɪn ˈmɛːtçən/
-- I am >>> Ich bin >>> /ɪç bɪn/
-- I am a man. >>> Ich bin ein Mann. >>> /ɪç bɪn aɪn man/
-- You are >>> Sie sind >>> /ziː zɪnt/
-- You are a woman. >>> Sie sind eine Frau. >>> /ziː zɪnt ˈaɪ.nə fʁaʊ/
-- He is >>> Er ist >>> /ɛɐ̯ ɪst/
-- He is a boy. >>> Er ist ein Junge. >>> /ɛɐ̯ ɪst aɪn ˈjʊŋ.ə/
-- She is >>> Sie ist >>> /ziː ɪst/
-- She is a girl. >>> Sie ist ein Mädchen. >>> /ziː ɪst aɪn ˈmɛːtçən/
-- Me >>> Mich >>> /mɪç/
-- It is >>> Es ist >>> /ɛs ɪst/
-- It's me. >>> Ich bin es. >>> /ɪç bɪn ɛs/
-- Where >>> Wo >>> /voː/
-- Where are you? >>> Wo sind Sie? >>> /voː zɪnt ziː/
-- Where are you from? >>> Woher kommen Sie? >>> /voːˈheːɐ̯ ˈkɔmən ziː/
-- England >>> England >>> /ˈɛŋ.lant/
-- I'm from >>> Ich komme aus >>> /ɪç ˈkɔmə aʊs/
-- I'm from England. >>> Ich komme aus England. >>> /ɪç ˈkɔmə aʊs ˈɛŋ.lant/
-- I speak >>> Ich spreche >>> /ɪç ˈʃpʁɛçə/
-- English >>> Englisch >>> /ˈɛŋ.lɪʃ/
-- I speak English. >>> Ich spreche Englisch. >>> /ɪç ˈʃpʁɛçə ˈɛŋ.lɪʃ/
-- Nice to see you. >>> Schön, Sie zu sehen. >>> /ʃøːn ziː tsuː ˈzeː.ən/
-- Where are you from? >>> Woher kommen Sie? >>> /voːˈheːɐ̯ ˈkɔmən ziː/
-- America >>> Amerika >>> /aˈmeːʁɪka/
-- I'm from >>> Ich komme aus >>> /ɪç ˈkɔmə aʊs/
-- I'm from America. >>> Ich komme aus Amerika. >>> /ɪç ˈkɔmə aʊs aˈmeːʁɪka/
-- I speak >>> Ich spreche >>> /ɪç ˈʃpʁɛçə/
-- English >>> Englisch >>> /ˈɛŋ.lɪʃ/
-- I speak English too. >>> Ich spreche auch Englisch. >>> /ɪç ˈʃpʁɛçə aʊx ˈɛŋ.lɪʃ/
-- Nice to see you. >>> Schön, Sie zu sehen. >>> /ʃøːn ziː tsuː ˈzeː.ən/
-- Where are you from? >>> Woher kommen Sie? >>> /voːˈheːɐ̯ ˈkɔmən ziː/
-- France >>> Frankreich >>> /ˈfʁaŋkʁaɪç/
-- I am >>> Ich bin >>> /ɪç bɪn/
-- I am from >>> Ich komme aus >>> /ɪç ˈkɔmə aʊs/
-- I'm from France. >>> Ich komme aus Frankreich. >>> /ɪç ˈkɔmə aʊs ˈfʁaŋkʁaɪç/
-- I speak >>> Ich spreche >>> /ɪç ˈʃpʁɛçə/
-- French >>> Französisch >>> /fʁanˈtøːzɪʃ/
-- I speak French. >>> Ich spreche Französisch. >>> /ɪç ˈʃpʁɛçə fʁanˈtøːzɪʃ/
-- Hi >>> Hallo >>> /ˈha.lo/
-- How are you? >>> Wie geht es Ihnen? >>> /viː ɡeːt ɛs ˈiː.nən/
-- What is your name? >>> Wie heißen Sie? >>> /viː ˈhaɪ.sən ziː/
-- Where are you from? >>> Woher kommen Sie? >>> /voːˈheːɐ̯ ˈkɔmən ziː/
-- Germany >>> Deutschland >>> /ˈdɔʏtʃlant/
-- I'm from Germany. >>> Ich komme aus Deutschland. >>> /ɪç ˈkɔmə aʊs ˈdɔʏtʃlant/
-- German >>> Deutsch >>> /dɔʏtʃ/
-- I speak German. >>> Ich spreche Deutsch. >>> /ɪç ˈʃpʁɛçə dɔʏtʃ/
-- Learn >>> Lernen >>> /ˈlɛʁ.nən/
-- I am >>> Ich bin >>> /ɪç bɪn/
-- I am learning >>> Ich lerne >>> /ɪç ˈlɛʁnə/
-- I am learning German. >>> Ich lerne Deutsch. >>> /ɪç ˈlɛʁnə dɔʏtʃ/
-- Italy >>> Italien >>> /iˈtaː.liən/
-- Everyone >>> Jeder >>> /ˈjeː.dɐ/
-- Hello everyone. >>> Hallo zusammen. >>> /ˈha.lo tsuˈza.mən/
-- I'm from >>> Ich komme aus >>> /ɪç ˈkɔmə aʊs/
-- I'm from Italy. >>> Ich komme aus Italien. >>> /ɪç ˈkɔmə aʊs iˈtaː.liən/
-- Italian >>> Italienisch >>> /iˈtaː.liənɪʃ/
-- And >>> Und >>> /ʊnt/
-- I speak >>> Ich spreche >>> /ɪç ˈʃpʁɛçə/
-- And, I speak Italian. >>> Und ich spreche Italienisch. >>> /ʊnt ɪç ˈʃpʁɛçə iˈtaː.liənɪʃ/
-- I am learning English. >>> Ich lerne Englisch. >>> /ɪç ˈlɛʁnə ˈɛŋ.lɪʃ/
-- I am learning English and French. >>> Ich lerne Englisch und Französisch. >>> /ɪç ˈlɛʁnə ˈɛŋ.lɪʃ ʊnt fʁanˈtøːzɪʃ/
-- How are you? >>> Wie geht es Ihnen? >>> /viː ɡeːt ɛs ˈiː.nən/
-- Thanks >>> Danke >>> /ˈdaŋ.kə/
-- I'm fine. >>> Mir geht es gut. >>> /miːɐ ɡeːt ɛs ɡuːt/
-- What is your name? >>> Wie heißen Sie? >>> /viː ˈhaɪ.sən ziː/
-- Adrian. >>> Adrian. >>> /ˈa.dʁi.aːn/
-- Are you Adrian? >>> Sind Sie Adrian? >>> /zɪnt ziː ˈa.dʁi.aːn/
-- Nice to meet you. >>> Schön, Sie kennenzulernen. >>> /ʃøːn ziː ˈkɛnənˌtsuːlɛʁnən/
-- Where are you from? >>> Woher kommen Sie? >>> /voːˈheːɐ̯ ˈkɔmən ziː/
-- Spain >>> Spanien >>> /ˈʃpaːniən/
-- I'm from Spain. >>> Ich komme aus Spanien. >>> /ɪç ˈkɔmə aʊs ˈʃpaːniən/
-- Spanish >>> Spanisch >>> /ˈʃpaːnɪʃ/
-- Do you? >>> Tun Sie? >>> /tuːn ziː/
-- Do you speak? >>> Sprechen Sie? >>> /ˈʃpʁɛçən ziː/
-- Do you speak Spanish? >>> Sprechen Sie Spanisch? >>> /ˈʃpʁɛçən ziː ˈʃpaːnɪʃ/
-- Yes. >>> Ja. >>> /jaː/
-- I am learning Spanish. >>> Ich lerne Spanisch. >>> /ɪç ˈlɛʁnə ˈʃpaːnɪʃ/
-- Hello. >>> Guten Tag. >>> /ˈɡuː.tən taːk/
-- How are you? >>> Wie geht es Ihnen? >>> /viː ɡeːt ɛs ˈiː.nən/
-- I'm fine, thanks. >>> Mir geht es gut, danke. >>> /miːɐ ɡeːt ɛs ɡuːt ˈdaŋ.kə/
-- I'm from >>> Ich komme aus >>> /ɪç ˈkɔmə aʊs/
-- I'm from Sweden. >>> Ich komme aus Schweden. >>> /ɪç ˈkɔmə aʊs ˈʃveːdən/
-- Swedish >>> Schwedisch >>> /ˈʃveːdɪʃ/
-- And >>> Und >>> /ʊnt/
-- I speak >>> Ich spreche >>> /ɪç ˈʃpʁɛçə/
-- And, I speak Swedish. >>> Und ich spreche Schwedisch. >>> /ʊnt ɪç ˈʃpʁɛçə ˈʃveːdɪʃ/
-- I am learning >>> Ich lerne >>> /ɪç ˈlɛʁnə/
-- I am learning German and Spanish. >>> Ich lerne Deutsch und Spanisch. >>> /ɪç ˈlɛʁnə dɔʏtʃ ʊnt ˈʃpaːnɪʃ/
-- How are you? >>> Wie geht es Ihnen? >>> /viː ɡeːt ɛs ˈiː.nən/
-- Thanks >>> Danke >>> /ˈdaŋ.kə/
-- I'm fine. >>> Mir geht es gut. >>> /miːɐ ɡeːt ɛs ɡuːt/
-- Are you Adrian? >>> Sind Sie Adrian? >>> /zɪnt ziː ˈa.dʁi.aːn/
-- Nice to meet you. >>> Schön, Sie kennenzulernen. >>> /ʃøːn ziː ˈkɛnənˌtsuːlɛʁnən/
-- Where are you from? >>> Woher kommen Sie? >>> /voːˈheːɐ̯ ˈkɔmən ziː/
-- Norway >>> Norwegen >>> /ˈnɔʁ.veːɡən/
-- I'm from Norway. >>> Ich komme aus Norwegen. >>> /ɪç ˈkɔmə aʊs ˈnɔʁ.veːɡən/
-- Norwegian >>> Norwegisch >>> /ˈnɔʁveːɡɪʃ/
-- Do you speak? >>> Sprechen Sie? >>> /ˈʃpʁɛçən ziː/
-- Do you speak Norwegian? >>> Sprechen Sie Norwegisch? >>> /ˈʃpʁɛçən ziː ˈnɔʁveːɡɪʃ/
-- Yes. >>> Ja. >>> /jaː/
-- I speak >>> Ich spreche >>> /ɪç ˈʃpʁɛçə/
-- I cannot >>> Ich kann nicht >>> /ɪç kan nɪçt/
-- I cannot speak >>> Ich kann nicht sprechen >>> /ɪç kan nɪçt ˈʃpʁɛçən/
-- I cannot speak Norwegian. >>> Ich kann nicht Norwegisch sprechen. >>> /ɪç kan nɪçt ˈnɔʁveːɡɪʃ ˈʃpʁɛçən/
-- I am learning Norwegian. >>> Ich lerne Norwegisch. >>> /ɪç ˈlɛʁnə ˈnɔʁveːɡɪʃ/
-- Friend >>> Freund >>> /fʁɔʏnt/
-- My >>> Mein >>> /maɪn/
-- My friend >>> Mein Freund >>> /maɪn fʁɔʏnt/
-- My friend is >>> Mein Freund ist >>> /maɪn fʁɔʏnt ɪst/
-- My friend is from >>> Mein Freund kommt aus >>> /maɪn fʁɔʏnt kɔmt aʊs/
-- Finland >>> Finnland >>> /ˈfɪn.lant/
-- My friend is from Finland >>> Mein Freund kommt aus Finnland >>> /maɪn fʁɔʏnt kɔmt aʊs ˈfɪn.lant/
-- He speaks >>> Er spricht >>> /ɛɐ̯ ʃpʁɪçt/
-- Finnish >>> Finnisch >>> /ˈfɪnɪʃ/
-- He speaks Finnish. >>> Er spricht Finnisch. >>> /ɛɐ̯ ʃpʁɪçt ˈfɪnɪʃ/
-- Mother >>> Mutter >>> /ˈmʊtɐ/
-- Father >>> Vater >>> /ˈfaːtɐ/
-- His >>> Sein >>> /zaɪn/
-- His mother >>> Seine Mutter >>> /ˈzaɪnə ˈmʊtɐ/
-- Hungarian >>> Ungarisch >>> /ˈʊn.ɡaˌʁɪʃ/
-- His mother is Hungarian. >>> Seine Mutter ist Ungarin. >>> /ˈzaɪnə ˈmʊtɐ ɪst ˈʊn.ɡaʁɪn/
-- She is from >>> Sie kommt aus >>> /ziː kɔmt aʊs/
-- She is from Hungary. >>> Sie kommt aus Ungarn. >>> /ziː kɔmt aʊs ˈʊn.ɡaʁn/
-- But >>> Aber >>> /ˈaːbɐ/
-- Father >>> Vater >>> /ˈfaːtɐ/
-- His father >>> Sein Vater >>> /zaɪn ˈfaːtɐ/
-- Danish >>> Dänisch >>> /ˈdɛːnɪʃ/
-- His father is Danish. >>> Sein Vater ist Däne. >>> /zaɪn ˈfaːtɐ ɪst ˈdɛːnə/
-- He is from >>> Er kommt aus >>> /ɛɐ̯ kɔmt aʊs/
-- He is from Denmark. >>> Er kommt aus Dänemark. >>> /ɛɐ̯ kɔmt aʊs ˈdɛː.nəˌmaʁk/
-- Language >>> Sprache >>> /ˈʃpʁaːxə/
-- What >>> Was >>> /vas/
-- What languages >>> Welche Sprachen >>> /ˈvɛlçə ˈʃpʁaːxən/
-- What languages do you speak? >>> Welche Sprachen sprechen Sie? >>> /ˈvɛlçə ˈʃpʁaːxən ˈʃpʁɛçən ziː/
-- Do you speak? >>> Sprechen Sie? >>> /ˈʃpʁɛçən ziː/
-- Do you speak English? >>> Sprechen Sie Englisch? >>> /ˈʃpʁɛçən ziː ˈɛŋ.lɪʃ/
-- My friend >>> Mein Freund >>> /maɪn fʁɔʏnt/
-- Nice >>> Schön >>> /ʃøːn/
-- My friend is nice. >>> Mein Freund ist nett. >>> /maɪn fʁɔʏnt ɪst nɛt/
-- You >>> Sie >>> /ziː/
-- You are >>> Sie sind >>> /ziː zɪnt/
-- Tall >>> Groß >>> /ɡʁoːs/
-- You are tall. >>> Sie sind groß. >>> /ziː zɪnt ɡʁoːs/
-- I >>> Ich >>> /ɪç/
-- I am >>> Ich bin >>> /ɪç bɪn/
-- A man >>> Ein Mann >>> /aɪn man/
-- I am a man. >>> Ich bin ein Mann. >>> /ɪç bɪn aɪn man/
-- You are >>> Sie sind >>> /ziː zɪnt/
-- A woman >>> Eine Frau >>> /ˈaɪ.nə fʁaʊ/
-- You are a woman. >>> Sie sind eine Frau. >>> /ziː zɪnt ˈaɪ.nə fʁaʊ/
-- Single >>> Ledig >>> /ˈleːdɪç/
-- Are you single? >>> Sind Sie ledig? >>> /zɪnt ziː ˈleːdɪç/
-- Or >>> Oder >>> /ˈoːdɐ/
-- Married >>> Verheiratet >>> /fɛɐ̯ˈhaɪʁaːtət/
-- Or married? >>> Oder verheiratet? >>> /ˈoːdɐ fɛɐ̯ˈhaɪʁaːtət/
-- Are you married? >>> Sind Sie verheiratet? >>> /zɪnt ziː fɛɐ̯ˈhaɪʁaːtət/
-- No >>> Nein >>> /naɪn/
-- No, I am >>> Nein, ich bin >>> /naɪn ɪç bɪn/
-- No, I am single. >>> Nein, ich bin ledig. >>> /naɪn ɪç bɪn ˈleːdɪç/
-- Yes >>> Ja >>> /jaː/
-- Yes, I am >>> Ja, ich bin >>> /jaː ɪç bɪn/
-- Yes, I am married. >>> Ja, ich bin verheiratet. >>> /jaː ɪç bɪn fɛɐ̯ˈhaɪʁaːtət/
-- A Boy >>> Ein Junge >>> /aɪn ˈjʊŋ.ə/
-- A Girl >>> Ein Mädchen >>> /aɪn ˈmɛːtçən/
-- I have >>> Ich habe >>> /ɪç ˈhaːbə/
-- I have a boy. >>> Ich habe einen Jungen. >>> /ɪç ˈhaːbə ˈaɪ.nən ˈjʊŋən/
-- I have a girl. >>> Ich habe ein Mädchen. >>> /ɪç ˈhaːbə aɪn ˈmɛːtçən/
-- You >>> Sie >>> /ziː/
-- You are >>> Sie sind >>> /ziː zɪnt/
-- You are married. >>> Sie sind verheiratet. >>> /ziː zɪnt fɛɐ̯ˈhaɪʁaːtət/
-- But >>> Aber >>> /ˈaːbɐ/
-- But I am >>> Aber ich bin >>> /ˈaːbɐ ɪç bɪn/
-- But I am single. >>> Aber ich bin ledig. >>> /ˈaːbɐ ɪç bɪn ˈleːdɪç/
-- Name >>> Name >>> /ˈnaː.mə/
-- My name is >>> Mein Name ist >>> /maɪn ˈnaː.mə ɪst/
-- My name is Adrian. >>> Mein Name ist Adrian. >>> /maɪn ˈnaː.mə ɪst ˈa.dʁi.aːn/
-- Your name is >>> Ihr Name ist >>> /iːɐ̯ ˈnaː.mə ɪst/
-- Your name is Adrian. >>> Ihr Name ist Adrian. >>> /iːɐ̯ ˈnaː.mə ɪst ˈa.dʁi.aːn/
-- I don't >>> Ich nicht >>> /ɪç nɪçt/
-- I don't know. >>> Ich weiß nicht. >>> /ɪç vaɪs nɪçt/
-- I know >>> Ich weiß >>> /ɪç vaɪs/
-- I know your name. >>> Ich weiß Ihren Namen. >>> /ɪç vaɪs ˈiːʁən ˈnaːmən/
-- You are Adrian. >>> Sie sind Adrian. >>> /ziː zɪnt ˈa.dʁi.aːn/
-- Again >>> Noch einmal >>> /nɔx ˈaɪ̯nˌmaːl/
-- What is your name? >>> Wie heißen Sie? >>> /viː ˈhaɪ̯.sən ziː/
-- What is your name again? >>> Wie heißen Sie noch einmal? >>> /viː ˈhaɪ̯.sən ziː nɔx ˈaɪ̯nˌmaːl/
-- How are you? >>> Wie geht es Ihnen? >>> /viː ɡeːt ɛs ˈiː.nən/
-- Thanks >>> Danke >>> /ˈdaŋ.kə/
-- Thank you >>> Danke >>> /ˈdaŋ.kə/
-- I'm fine, thanks. >>> Mir geht es gut, danke. >>> /miːɐ ɡeːt ɛs ɡuːt ˈdaŋ.kə/
-- OK >>> In Ordnung >>> /ɪn ˈɔʁd.nʊŋ/
-- We are >>> Wir sind >>> /viːɐ̯ zɪnt/
-- Here >>> Hier >>> /hiːɐ̯/
-- We are here. >>> Wir sind hier. >>> /viːɐ̯ zɪnt hiːɐ̯/
-- To learn >>> Lernen >>> /ˈlɛʁnən/
-- New >>> Neu >>> /nɔɪ̯/
-- Language >>> Sprache >>> /ˈʃpʁaː.xə/
-- A new language >>> Eine neue Sprache >>> /ˈaɪ̯.nə ˈnɔɪ̯ə ˈʃpʁaː.xə/
-- We are here to learn >>> Wir sind hier zum Lernen >>> /viːɐ̯ zɪnt hiːɐ̯ tsʊm ˈlɛʁnən/
-- We are here to learn a new language. >>> Wir sind hier, um eine neue Sprache zu lernen. >>> /viːɐ̯ zɪnt hiːɐ̯ ʊm ˈaɪ̯nə ˈnɔɪ̯ə ˈʃpʁaː.xə tsuː ˈlɛʁnən/
-- Hi everyone. >>> Hallo zusammen. >>> /ˈha.loː tsuˈzaː.mən/
-- Hi everyone. How are you? >>> Hallo zusammen. Wie geht es euch? >>> /ˈha.loː tsuˈzaː.mən viː ɡeːt ɛs ɔɪ̯ç/
-- Welcome >>> Willkommen >>> /vɪlˈkɔmən/
-- We are >>> Wir sind >>> /viːɐ̯ zɪnt/
-- We are learning >>> Wir lernen >>> /viːɐ̯ ˈlɛʁnən/
-- A new >>> Ein neues >>> /aɪ̯n ˈnɔɪ̯əs/
-- A new language >>> Eine neue Sprache >>> /ˈaɪ̯.nə ˈnɔɪ̯ə ˈʃpʁaː.xə/
-- We are here. >>> Wir sind hier. >>> /viːɐ̯ zɪnt hiːɐ̯/
-- To learn >>> Lernen >>> /ˈlɛʁnən/
-- To learn a new language. >>> Eine neue Sprache lernen. >>> /ˈaɪ̯.nə ˈnɔɪ̯ə ˈʃpʁaː.xə ˈlɛʁnən/
-- Thank you >>> Danke >>> /ˈdaŋ.kə/
-- Goodbye >>> Auf Wiedersehen >>> /aʊ̯f ˈviː.dɐˌzeː.ən/
-- Take care >>> Mach's gut >>> /maxs ɡuːt/
-- Bye >>> Tschüss >>> /tʃʏs/
+- Hi >>> Ciao >>> /tʃa.o/
+- Hello >>> Salve >>> /ˈsal.ve/
+- Everyone >>> Tutti >>> /ˈtut.ti/
+- Hello everyone >>> Salve a tutti >>> /ˈsal.ve a ˈtut.ti/
+- Welcome >>> Benvenuto >>> /ben.veˈnu.to/
+- Course >>> Corso >>> /ˈkor.so/
+- Welcome to >>> Benvenuto a >>> /ben.veˈnu.to a/
+- This Course >>> Questo corso >>> /ˈkwes.to ˈkor.so/
+- Welcome to this course. >>> Benvenuto a questo corso. >>> /ben.veˈnu.to a ˈkwes.to ˈkor.so/
+- Learn >>> Imparare >>> /im.paˈra.re/
+- To learn >>> Imparare >>> /im.paˈra.re/
+- Speak >>> Parlare >>> /parˈla.re/
+- To speak >>> Parlare >>> /parˈla.re/
+- Practice >>> Pratica >>> /ˈpra.ti.ka/
+- Just >>> Solo >>> /ˈso.lo/
+- Just practice. >>> Solo pratica. >>> /ˈso.lo ˈpra.ti.ka/
+- Listen >>> Ascoltare >>> /a.skolˈta.re/
+- Carefully >>> Attentamente >>> /at.tenˈta.men.te/
+- Listen carefully. >>> Ascolta attentamente. >>> /aˈskol.ta at.tenˈta.men.te/
+- And >>> E >>> /e/
+- Repeat >>> Ripetere >>> /riˈpe.te.re/
+- Practice >>> Pratica >>> /ˈpra.ti.ka/
+- Repeat and practice. >>> Ripeti e pratica. >>> /riˈpe.ti e ˈpra.ti.ka/
+- Me >>> Me >>> /me/
+- After >>> Dopo >>> /ˈdo.po/
+- After me >>> Dopo di me >>> /ˈdo.po di me/
+- Repeat after me. >>> Ripeti dopo di me. >>> /riˈpe.ti ˈdo.po di me/
+- Listen >>> Ascoltare >>> /a.skolˈta.re/
+- And repeat after me. >>> E ripeti dopo di me. >>> /e riˈpe.ti ˈdo.po di me/
+- How >>> Come >>> /ˈko.me/
+- How are >>> Come stai >>> /ˈko.me stai/
+- You >>> Tu >>> /tu/
+- How are you? >>> Come stai? >>> /ˈko.me stai/
+- I >>> Io >>> /ˈi.o/
+- I am >>> Io sono >>> /ˈi.o ˈso.no/
+- I'm fine. >>> Sto bene. >>> /sto ˈbe.ne/
+- Your >>> Tuo >>> /tu.o/
+- Your name >>> Il tuo nome >>> /il tu.o ˈno.me/
+- What >>> Che cosa >>> /ke ˈko.za/
+- What is your name? >>> Come ti chiami? >>> /ˈko.me ti ˈkja.mi/
+- My >>> Mio >>> /ˈmi.o/
+- My name >>> Il mio nome >>> /il ˈmi.o ˈno.me/
+- My name is Adrian. >>> Il mio nome è Adrian. >>> /il ˈmi.o ˈno.me ɛ ˈa.dri.an/
+- And >>> E >>> /e/
+- And you? >>> E tu? >>> /e tu/
+- Your name >>> Il tuo nome >>> /il tu.o ˈno.me/
+- Your name is Adrian? >>> Il tuo nome è Adrian? >>> /il tu.o ˈno.me ɛ ˈa.dri.an/
+- Yes >>> Sì >>> /si/
+- My >>> Mio >>> /ˈmi.o/
+- Yes, my name is Adrian. >>> Sì, il mio nome è Adrian. >>> /si il ˈmi.o ˈno.me ɛ ˈa.dri.an/
+- No >>> No >>> /nɔ/
+- Your name is Adrian. >>> Il tuo nome è Adrian. >>> /il tu.o ˈno.me ɛ ˈa.dri.an/
+- Everyone >>> Tutti >>> /ˈtut.ti/
+- Hi everyone. >>> Ciao a tutti. >>> /ˈtʃa.o a ˈtut.ti/
+- Nice >>> Piacere >>> /pjaˈʧe.re/
+- Nice to meet you. >>> Piacere di conoscerti. >>> /pjaˈʧe.re di koˈno.ʃer.ti/
+- Nice to see you. >>> Piacere di vederti. >>> /pjaˈʧe.re di veˈder.ti/
+- Thanks >>> Grazie >>> /ˈɡrat.tsje/
+- Thanks you >>> Grazie a te >>> /ˈɡrat.tsje a te/
+- How are you? >>> Come stai? >>> /ˈko.me stai/
+- I'm fine, thanks. >>> Sto bene, grazie. >>> /sto ˈbe.ne ˈɡrat.tsje/
+- Here >>> Qui >>> /kwi/
+- I'm here. >>> Sono qui. >>> /ˈso.no kwi/
+- Where >>> Dove >>> /ˈdo.ve/
+- Where are you? >>> Dove sei? >>> /ˈdo.ve sɛi/
+- I'm here. >>> Sono qui. >>> /ˈso.no kwi/
+- We >>> Noi >>> /nɔi/
+- We are >>> Noi siamo >>> /nɔi ˈsja.mo/
+- We are here. >>> Noi siamo qui. >>> /nɔi ˈsja.mo kwi/
+- A man >>> Un uomo >>> /un ˈwɔ.mo/
+- A woman >>> Una donna >>> /ˈu.na ˈdɔn.na/
+- A boy >>> Un ragazzo >>> /un raˈɡat.tso/
+- A girl >>> Una ragazza >>> /ˈu.na raˈɡat.tsa/
+- I am >>> Io sono >>> /ˈi.o ˈso.no/
+- I am a man. >>> Io sono un uomo. >>> /ˈi.o ˈso.no un ˈwɔ.mo/
+- You are >>> Tu sei >>> /tu sɛi/
+- You are a woman. >>> Tu sei una donna. >>> /tu sɛi ˈu.na ˈdɔn.na/
+- He is >>> Lui è >>> /ˈlui ɛ/
+- He is a boy. >>> Lui è un ragazzo. >>> /ˈlui ɛ un raˈɡat.tso/
+- She is >>> Lei è >>> /lɛi ɛ/
+- She is a girl. >>> Lei è una ragazza. >>> /lɛi ɛ ˈu.na raˈɡat.tsa/
+- Me >>> Me >>> /me/
+- It is >>> È >>> /ɛ/
+- It's me. >>> Sono io. >>> /ˈso.no ˈi.o/
+- Where >>> Dove >>> /ˈdo.ve/
+- Where are you? >>> Dove sei? >>> /ˈdo.ve sɛi/
+- Where are you from? >>> Di dove sei? >>> /di ˈdo.ve sɛi/
+- England >>> Inghilterra >>> /iŋ.ɡilˈter.ra/
+- I'm from >>> Sono di >>> /ˈso.no di/
+- I'm from England. >>> Sono di Inghilterra. >>> /ˈso.no di iŋ.ɡilˈter.ra/
+- I speak >>> Parlo >>> /ˈpar.lo/
+- English >>> Inglese >>> /iŋˈɡle.ze/
+- I speak English. >>> Parlo inglese. >>> /ˈpar.lo iŋˈɡle.ze/
+- Nice to see you. >>> Piacere di vederti. >>> /pjaˈʧe.re di veˈder.ti/
+- Where are you from? >>> Di dove sei? >>> /di ˈdo.ve sɛi/
+- America >>> America >>> /aˈme.ri.ka/
+- I'm from >>> Sono di >>> /ˈso.no di/
+- I'm from America. >>> Sono di America. >>> /ˈso.no di aˈme.ri.ka/
+- I speak >>> Parlo >>> /ˈpar.lo/
+- English >>> Inglese >>> /iŋˈɡle.ze/
+- I speak English too. >>> Parlo inglese anche io. >>> /ˈpar.lo iŋˈɡle.ze ˈaŋ.ke ˈi.o/
+- Nice to see you. >>> Piacere di vederti. >>> /pjaˈʧe.re di veˈder.ti/
+- Where are you from? >>> Di dove sei? >>> /di ˈdo.ve sɛi/
+- France >>> Francia >>> /ˈfran.ʧa/
+- I am >>> Io sono >>> /ˈi.o ˈso.no/
+- I am from >>> Io sono di >>> /ˈi.o ˈso.no di/
+- I'm from France. >>> Sono di Francia. >>> /ˈso.no di ˈfran.ʧa/
+- I speak >>> Parlo >>> /ˈpar.lo/
+- French >>> Francese >>> /franˈʧe.ze/
+- I speak French. >>> Parlo francese. >>> /ˈpar.lo franˈʧe.ze/
+- Hi >>> Ciao >>> /tʃa.o/
+- How are you? >>> Come stai? >>> /ˈko.me stai/
+- What is your name? >>> Come ti chiami? >>> /ˈko.me ti ˈkja.mi/
+- Where are you from? >>> Di dove sei? >>> /di ˈdo.ve sɛi/
+- Germany >>> Germania >>> /dʒerˈma.nja/
+- I'm from Germany. >>> Sono di Germania. >>> /ˈso.no di dʒerˈma.nja/
+- German >>> Tedesco >>> /teˈdes.ko/
+- I speak German. >>> Parlo tedesco. >>> /ˈpar.lo teˈdes.ko/
+- Learn >>> Imparare >>> /im.paˈra.re/
+- I am >>> Io sono >>> /ˈi.o ˈso.no/
+- I am learning >>> Sto imparando >>> /sto im.paˈran.do/
+- I am learning German. >>> Sto imparando il tedesco. >>> /sto im.paˈran.do il teˈdes.ko/
+- Italy >>> Italia >>> /iˈta.lja/
+- Everyone >>> Tutti >>> /ˈtut.ti/
+- Hello everyone. >>> Salve a tutti. >>> /ˈsal.ve a ˈtut.ti/
+- I'm from >>> Sono di >>> /ˈso.no di/
+- I'm from Italy. >>> Sono di Italia. >>> /ˈso.no di iˈta.lja/
+- Italian >>> Italiano >>> /i.taˈlja.no/
+- And >>> E >>> /e/
+- I speak >>> Parlo >>> /ˈpar.lo/
+- And, I speak Italian. >>> E parlo italiano. >>> /e ˈpar.lo i.taˈlja.no/
+- I am learning English. >>> Sto imparando l'inglese. >>> /sto im.paˈran.do liŋˈɡle.ze/
+- I am learning English and French. >>> Sto imparando l'inglese e il francese. >>> /sto im.paˈran.do liŋˈɡle.ze e il franˈʧe.ze/
+- How are you? >>> Come stai? >>> /ˈko.me stai/
+- Thanks >>> Grazie >>> /ˈɡrat.tsje/
+- I'm fine. >>> Sto bene. >>> /sto ˈbe.ne/
+- What is your name? >>> Come ti chiami? >>> /ˈko.me ti ˈkja.mi/
+- Adrian. >>> Adrian. >>> /ˈa.dri.an/
+- Are you Adrian? >>> Sei Adrian? >>> /sɛi ˈa.dri.an/
+- Nice to meet you. >>> Piacere di conoscerti. >>> /pjaˈʧe.re di koˈno.ʃer.ti/
+- Where are you from? >>> Di dove sei? >>> /di ˈdo.ve sɛi/
+- Spain >>> Spagna >>> /ˈspaɲ.ɲa/
+- I'm from Spain. >>> Sono di Spagna. >>> /ˈso.no di ˈspaɲ.ɲa/
+- Spanish >>> Spagnolo >>> /spaɲˈɲo.lo/
+- Do you? >>> Tu? >>> /tu/
+- Do you speak? >>> Parli? >>> /ˈpar.li/
+- Do you speak Spanish? >>> Parli spagnolo? >>> /ˈpar.li spaɲˈɲo.lo/
+- Yes. >>> Sì. >>> /si/
+- I am learning Spanish. >>> Sto imparando lo spagnolo. >>> /sto im.paˈran.do lo spaɲˈɲo.lo/
+- Hello. >>> Salve. >>> /ˈsal.ve/
+- How are you? >>> Come stai? >>> /ˈko.me stai/
+- I'm fine, thanks. >>> Sto bene, grazie. >>> /sto ˈbe.ne ˈɡrat.tsje/
+- I'm from >>> Sono di >>> /ˈso.no di/
+- I'm from Sweden. >>> Sono di Svezia. >>> /ˈso.no di ˈsve.t͡sja/
+- Swedish >>> Svedese >>> /sveˈde.ze/
+- And >>> E >>> /e/
+- I speak >>> Parlo >>> /ˈpar.lo/
+- And, I speak Swedish. >>> E parlo svedese. >>> /e ˈpar.lo sveˈde.ze/
+- I am learning >>> Sto imparando >>> /sto im.paˈran.do/
+- I am learning German and Spanish. >>> Sto imparando il tedesco e lo spagnolo. >>> /sto im.paˈran.do il teˈdes.ko e lo spaɲˈɲo.lo/
+- How are you? >>> Come stai? >>> /ˈko.me stai/
+- Thanks >>> Grazie >>> /ˈɡrat.tsje/
+- I'm fine. >>> Sto bene. >>> /sto ˈbe.ne/
+- Are you Adrian? >>> Sei Adrian? >>> /sɛi ˈa.dri.an/
+- Nice to meet you. >>> Piacere di conoscerti. >>> /pjaˈʧe.re di koˈno.ʃer.ti/
+- Where are you from? >>> Di dove sei? >>> /di ˈdo.ve sɛi/
+- Norway >>> Norvegia >>> /norˈve.dʒa/
+- I'm from Norway. >>> Sono di Norvegia. >>> /ˈso.no di norˈve.dʒa/
+- Norwegian >>> Norvegese >>> /nor.veˈɡe.ze/
+- Do you speak? >>> Parli? >>> /ˈpar.li/
+- Do you speak Norwegian? >>> Parli norvegese? >>> /ˈpar.li nor.veˈɡe.ze/
+- Yes. >>> Sì. >>> /si/
+- I speak >>> Parlo >>> /ˈpar.lo/
+- I cannot >>> Non posso >>> /non ˈpɔs.so/
+- I cannot speak >>> Non posso parlare >>> /non ˈpɔs.so parˈla.re/
+- I cannot speak Norwegian. >>> Non posso parlare norvegese. >>> /non ˈpɔs.so parˈla.re nor.veˈɡe.ze/
+- I am learning Norwegian. >>> Sto imparando il norvegese. >>> /sto im.paˈran.do il nor.veˈɡe.ze/
+- Friend >>> Amico >>> /aˈmi.ko/
+- My >>> Mio >>> /ˈmi.o/
+- My friend >>> Il mio amico >>> /il ˈmi.o aˈmi.ko/
+- My friend is >>> Il mio amico è >>> /il ˈmi.o aˈmi.ko ɛ/
+- My friend is from >>> Il mio amico è di >>> /il ˈmi.o aˈmi.ko ɛ di/
+- Finland >>> Finlandia >>> /finˈlan.dja/
+- My friend is from Finland >>> Il mio amico è di Finlandia >>> /il ˈmi.o aˈmi.ko ɛ di finˈlan.dja/
+- He speaks >>> Lui parla >>> /ˈlui ˈpar.la/
+- Finnish >>> Finlandese >>> /fin.lanˈde.ze/
+- He speaks Finnish. >>> Lui parla finlandese. >>> /ˈlui ˈpar.la fin.lanˈde.ze/
+- Mother >>> Madre >>> /ˈma.dre/
+- Father >>> Padre >>> /ˈpa.dre/
+- His >>> Suo >>> /ˈsu.o/
+- His mother >>> Sua madre >>> /ˈsu.a ˈma.dre/
+- Hungarian >>> Ungherese >>> /uŋ.ɡeˈre.ze/
+- His mother is Hungarian. >>> Sua madre è ungherese. >>> /ˈsu.a ˈma.dre ɛ uŋ.ɡeˈre.ze/
+- She is from >>> Lei è di >>> /lɛi ɛ di/
+- She is from Hungary. >>> Lei è di Ungheria. >>> /lɛi ɛ di uŋɡeˈri.a/
+- But >>> Ma >>> /ma/
+- Father >>> Padre >>> /ˈpa.dre/
+- His father >>> Suo padre >>> /ˈsu.o ˈpa.dre/
+- Danish >>> Danese >>> /daˈne.ze/
+- His father is Danish. >>> Suo padre è danese. >>> /ˈsu.o ˈpa.dre ɛ daˈne.ze/
+- He is from >>> Lui è di >>> /ˈlui ɛ di/
+- He is from Denmark. >>> Lui è di Danimarca. >>> /ˈlui ɛ di daˈni.mar.ka/
+- Language >>> Lingua >>> /ˈliŋ.ɡwa/
+- What >>> Che cosa >>> /ke ˈko.za/
+- What languages >>> Che lingue >>> /ke ˈliŋ.ɡwe/
+- What languages do you speak? >>> Che lingue parli? >>> /ke ˈliŋ.ɡwe ˈpar.li/
+- Do you speak? >>> Parli? >>> /ˈpar.li/
+- Do you speak English? >>> Parli inglese? >>> /ˈpar.li iŋˈɡle.ze/
+- My friend >>> Il mio amico >>> /il ˈmi.o aˈmi.ko/
+- Nice >>> Simpatico >>> /simˈpa.ti.ko/
+- My friend is nice. >>> Il mio amico è simpatico. >>> /il ˈmi.o aˈmi.ko ɛ simˈpa.ti.ko/
+- You >>> Tu >>> /tu/
+- You are >>> Tu sei >>> /tu sɛi/
+- Tall >>> Alto >>> /ˈal.to/
+- You are tall. >>> Sei alto. >>> /sɛi ˈal.to/
+- I >>> Io >>> /ˈi.o/
+- I am >>> Io sono >>> /ˈi.o ˈso.no/
+- A man >>> Un uomo >>> /un ˈwɔ.mo/
+- I am a man. >>> Io sono un uomo. >>> /ˈi.o ˈso.no un ˈwɔ.mo/
+- You are >>> Tu sei >>> /tu sɛi/
+- A woman >>> Una donna >>> /ˈu.na ˈdɔn.na/
+- You are a woman. >>> Tu sei una donna. >>> /tu sɛi ˈu.na ˈdɔn.na/
+- Single >>> Single >>> /ˈsin.ɡle/
+- Are you single? >>> Sei single? >>> /sɛi ˈsin.ɡle/
+- Or >>> O >>> /o/
+- Married >>> Sposato >>> /spoˈza.to/
+- Or married? >>> O sposato? >>> /o spoˈza.to/
+- Are you married? >>> Sei sposato? >>> /sɛi spoˈza.to/
+- No >>> No >>> /nɔ/
+- No, I am >>> No, io sono >>> /nɔ ˈi.o ˈso.no/
+- No, I am single. >>> No, sono single. >>> /nɔ ˈso.no ˈsin.ɡle/
+- Yes >>> Sì >>> /si/
+- Yes, I am >>> Sì, io sono >>> /si ˈi.o ˈso.no/
+- Yes, I am married. >>> Sì, sono sposato. >>> /si ˈso.no spoˈza.to/
+- A Boy >>> Un ragazzo >>> /un raˈɡat.tso/
+- A Girl >>> Una ragazza >>> /ˈu.na raˈɡat.tsa/
+- I have >>> Io ho >>> /ˈi.o ɔ/
+- I have a boy. >>> Ho un ragazzo. >>> /ɔ un raˈɡat.tso/
+- I have a girl. >>> Ho una ragazza. >>> /ɔ ˈu.na raˈɡat.tsa/
+- You >>> Tu >>> /tu/
+- You are >>> Tu sei >>> /tu sɛi/
+- You are married. >>> Sei sposato. >>> /sɛi spoˈza.to/
+- But >>> Ma >>> /ma/
+- But I am >>> Ma io sono >>> /ma ˈi.o ˈso.no/
+- But I am single. >>> Ma sono single. >>> /ma ˈso.no ˈsin.ɡle/
+- Name >>> Nome >>> /ˈno.me/
+- My name is >>> Il mio nome è >>> /il ˈmi.o ˈno.me ɛ/
+- My name is Adrian. >>> Il mio nome è Adrian. >>> /il ˈmi.o ˈno.me ɛ ˈa.dri.an/
+- Your name is >>> Il tuo nome è >>> /il tu.o ˈno.me ɛ/
+- Your name is Adrian. >>> Il tuo nome è Adrian. >>> /il tu.o ˈno.me ɛ ˈa.dri.an/
+- I don't >>> Non >>> /non/
+- I don't know. >>> Non so. >>> /non so/
+- I know >>> So >>> /so/
+- I know your name. >>> So il tuo nome. >>> /so il tu.o ˈno.me/
+- You are Adrian. >>> Sei Adrian. >>> /sɛi ˈa.dri.an/
+- Again >>> Ancora >>> /aŋˈko.ra/
+- What is your name? >>> Come ti chiami? >>> /ˈko.me ti ˈkja.mi/
+- What is your name again? >>> Come ti chiami ancora? >>> /ˈko.me ti ˈkja.mi aŋˈko.ra/
+- How are you? >>> Come stai? >>> /ˈko.me stai/
+- Thanks >>> Grazie >>> /ˈɡrat.tsje/
+- Thank you >>> Grazie >>> /ˈɡrat.tsje/
+- I'm fine, thanks. >>> Sto bene, grazie. >>> /sto ˈbe.ne ˈɡrat.tsje/
+- OK >>> OK >>> /oˈke/
+- We are >>> Noi siamo >>> /nɔi ˈsja.mo/
+- Here >>> Qui >>> /kwi/
+- We are here. >>> Noi siamo qui. >>> /nɔi ˈsja.mo kwi/
+- To learn >>> Imparare >>> /im.paˈra.re/
+- New >>> Nuovo >>> /ˈnwɔ.vo/
+- Language >>> Lingua >>> /ˈliŋ.ɡwa/
+- A new language >>> Una nuova lingua >>> /ˈu.na ˈnwɔ.va ˈliŋ.ɡwa/
+- We are here to learn >>> Siamo qui per imparare >>> /ˈsja.mo kwi per im.paˈra.re/
+- We are here to learn a new language. >>> Siamo qui per imparare una nuova lingua. >>> /ˈsja.mo kwi per im.paˈra.re ˈu.na ˈnwɔ.va ˈliŋ.ɡwa/
+- Hi everyone. >>> Ciao a tutti. >>> /ˈtʃa.o a ˈtut.ti/
+- Hi everyone. How are you? >>> Ciao a tutti. Come state? >>> /ˈtʃa.o a ˈtut.ti ˈko.me ˈsta.te/
+- Welcome >>> Benvenuto >>> /ben.veˈnu.to/
+- We are >>> Noi siamo >>> /nɔi ˈsja.mo/
+- We are learning >>> Stiamo imparando >>> /ˈsja.mo im.paˈran.do/
+- A new >>> Un nuovo >>> /un ˈnwɔ.vo/
+- A new language >>> Una nuova lingua >>> /ˈu.na ˈnwɔ.va ˈliŋ.ɡwa/
+- We are here. >>> Noi siamo qui. >>> /nɔi ˈsja.mo kwi/
+- To learn >>> Imparare >>> /im.paˈra.re/
+- To learn a new language. >>> Imparare una nuova lingua. >>> /im.paˈra.re ˈu.na ˈnwɔ.va ˈliŋ.ɡwa/
+- Thank you >>> Grazie >>> /ˈɡrat.tsje/
+- Goodbye >>> Arrivederci >>> /ar.ri.veˈder.tʃi/
+- Take care >>> Stammi bene >>> /ˈstam.mi ˈbe.ne/
+- Bye >>> Ciao >>> /ˈtʃa.o/
