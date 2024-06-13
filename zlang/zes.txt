@@ -1,0 +1,286 @@
+Hola
+Hola
+Todos
+Hola a todos
+Bienvenido
+Curso
+Bienvenido a
+Este curso
+Bienvenido a este curso.
+Aprender
+Aprender
+Hablar
+Hablar
+Practicar
+Solo
+Solo practica.
+Escuchar
+Cuidadosamente
+Escucha cuidadosamente.
+Y
+Repetir
+Practicar
+Repite y practica.
+Yo
+Después
+Después de mí
+Repite después de mí.
+Escuchar
+Y repite después de mí.
+Cómo
+Cómo estás
+Tú
+¿Cómo estás?
+Yo
+Yo soy
+Estoy bien.
+Tu
+Tu nombre
+Qué
+¿Cuál es tu nombre?
+Mi
+Mi nombre
+Mi nombre es Adrián.
+Y
+¿Y tú?
+Tu nombre
+¿Tu nombre es Adrián?
+Sí
+Mi
+Sí, mi nombre es Adrián.
+No
+Tu nombre es Adrián.
+Todos
+Hola a todos.
+Encantado
+Encantado de conocerte.
+Encantado de verte.
+Gracias
+Gracias
+¿Cómo estás?
+Estoy bien, gracias.
+Aquí
+Estoy aquí.
+Dónde
+¿Dónde estás?
+Estoy aquí.
+Nosotros
+Nosotros somos
+Nosotros estamos aquí.
+Un hombre
+Una mujer
+Un niño
+Una niña
+Yo soy
+Yo soy un hombre.
+Tú eres
+Tú eres una mujer.
+Él es
+Él es un niño.
+Ella es
+Ella es una niña.
+Yo
+Es
+Soy yo.
+Dónde
+¿Dónde estás?
+¿De dónde eres?
+Inglaterra
+Yo soy de
+Yo soy de Inglaterra.
+Yo hablo
+Inglés
+Yo hablo inglés.
+Encantado de verte.
+¿De dónde eres?
+América
+Yo soy de
+Yo soy de América.
+Yo hablo
+Inglés
+Yo hablo inglés también.
+Encantado de verte.
+¿De dónde eres?
+Francia
+Yo soy
+Yo soy de
+Yo soy de Francia.
+Yo hablo
+Francés
+Yo hablo francés.
+Hola
+¿Cómo estás?
+¿Cuál es tu nombre?
+¿De dónde eres?
+Alemania
+Yo soy de Alemania.
+Alemán
+Yo hablo alemán.
+Aprender
+Yo soy
+Estoy aprendiendo
+Estoy aprendiendo alemán.
+Italia
+Todos
+Hola a todos.
+Yo soy de
+Yo soy de Italia.
+Italiano
+Y
+Yo hablo
+Y, hablo italiano.
+Estoy aprendiendo inglés.
+Estoy aprendiendo inglés y francés.
+¿Cómo estás?
+Gracias
+Estoy bien.
+¿Cuál es tu nombre?
+Adrián.
+¿Eres Adrián?
+Encantado de conocerte.
+¿De dónde eres?
+España
+Yo soy de España.
+Español
+¿Tú?
+¿Hablas?
+¿Hablas español?
+Sí.
+Estoy aprendiendo español.
+Hola.
+¿Cómo estás?
+Estoy bien, gracias.
+Yo soy de
+Yo soy de Suecia.
+Sueco
+Y
+Yo hablo
+Y, hablo sueco.
+Estoy aprendiendo
+Estoy aprendiendo alemán y español.
+¿Cómo estás?
+Gracias
+Estoy bien.
+¿Eres Adrián?
+Encantado de conocerte.
+¿De dónde eres?
+Noruega
+Yo soy de Noruega.
+Noruego
+¿Hablas?
+¿Hablas noruego?
+Sí.
+Yo hablo
+No puedo
+No puedo hablar
+No puedo hablar noruego.
+Estoy aprendiendo noruego.
+Amigo
+Mi
+Mi amigo
+Mi amigo es
+Mi amigo es de
+Finlandia
+Mi amigo es de Finlandia
+Él habla
+Finés
+Él habla finés.
+Madre
+Padre
+Su
+Su madre
+Húngaro
+Su madre es húngara.
+Ella es de
+Ella es de Hungría.
+Pero
+Padre
+Su padre
+Danés
+Su padre es danés.
+Él es de
+Él es de Dinamarca.
+Idioma
+Qué
+Qué idiomas
+¿Qué idiomas hablas?
+¿Hablas?
+¿Hablas inglés?
+Mi amigo
+Agradable
+Mi amigo es agradable.
+Tú
+Tú eres
+Alto
+Tú eres alto.
+Yo
+Yo soy
+Un hombre
+Yo soy un hombre.
+Tú eres
+Una mujer
+Tú eres una mujer.
+Soltero
+¿Eres soltero?
+O
+Casado
+¿O casado?
+¿Eres casado?
+No
+No, soy
+No, soy soltero.
+Sí
+Sí, soy
+Sí, soy casado.
+Un niño
+Una niña
+Yo tengo
+Yo tengo un niño.
+Yo tengo una niña.
+Tú
+Tú eres
+Tú eres casado.
+Pero
+Pero yo soy
+Pero yo soy soltero.
+Nombre
+Mi nombre es
+Mi nombre es Adrián.
+Tu nombre es
+Tu nombre es Adrián.
+No sé
+No lo sé.
+Yo sé
+Sé tu nombre.
+Tú eres Adrián.
+De nuevo
+¿Cuál es tu nombre?
+¿Cuál es tu nombre de nuevo?
+¿Cómo estás?
+Gracias
+Gracias
+Estoy bien, gracias.
+Vale
+Nosotros somos
+Aquí
+Estamos aquí.
+Aprender
+Nuevo
+Idioma
+Un nuevo idioma
+Estamos aquí para aprender
+Estamos aquí para aprender un nuevo idioma.
+Hola a todos.
+Hola a todos. ¿Cómo están?
+Bienvenido
+Nosotros somos
+Estamos aprendiendo
+Un nuevo
+Un nuevo idioma
+Estamos aquí.
+Aprender
+Aprender un nuevo idioma.
+Gracias
+Adiós
+Cuídate
+Adiós
