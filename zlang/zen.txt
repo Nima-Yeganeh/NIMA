@@ -1,286 +1,286 @@
-- Hi >>> Hola >>> /ˈo.la/
-- Hello >>> Hola >>> /ˈo.la/
-- Everyone >>> Todos >>> /ˈto.ðos/
-- Hello everyone >>> Hola a todos >>> /ˈo.la a ˈto.ðos/
-- Welcome >>> Bienvenido >>> /bjen.beˈni.do/
-- Course >>> Curso >>> /ˈkur.so/
-- Welcome to >>> Bienvenido a >>> /bjen.beˈni.do a/
-- This Course >>> Este curso >>> /ˈes.te ˈkur.so/
-- Welcome to this course. >>> Bienvenido a este curso. >>> /bjen.beˈni.do a ˈes.te ˈkur.so/
-- Learn >>> Aprender >>> /a.prenˈder/
-- To learn >>> Aprender >>> /a.prenˈder/
-- Speak >>> Hablar >>> /aˈβlar/
-- To speak >>> Hablar >>> /aˈβlar/
-- Practice >>> Practicar >>> /prak.tiˈkar/
-- Just >>> Solo >>> /ˈso.lo/
-- Just practice. >>> Solo practica. >>> /ˈso.lo prakˈti.ka/
-- Listen >>> Escuchar >>> /es.kuˈtʃar/
-- Carefully >>> Cuidadosamente >>> /kwi.daˈðo.sa.men.te/
-- Listen carefully. >>> Escucha cuidadosamente. >>> /es.kuˈtʃa kwi.daˈðo.sa.men.te/
-- And >>> Y >>> /i/
-- Repeat >>> Repetir >>> /re.peˈtir/
-- Practice >>> Practicar >>> /prak.tiˈkar/
-- Repeat and practice. >>> Repite y practica. >>> /reˈpi.te i prakˈti.ka/
-- Me >>> Yo >>> /ʝo/
-- After >>> Después >>> /desˈpwes/
-- After me >>> Después de mí >>> /desˈpwes de mi/
-- Repeat after me. >>> Repite después de mí. >>> /reˈpi.te desˈpwes de mi/
-- Listen >>> Escuchar >>> /es.kuˈtʃar/
-- And repeat after me. >>> Y repite después de mí. >>> /i reˈpi.te desˈpwes de mi/
-- How >>> Cómo >>> /ˈko.mo/
-- How are >>> Cómo estás >>> /ˈko.mo esˈtas/
-- You >>> Tú >>> /tu/
-- How are you? >>> ¿Cómo estás? >>> /ˈko.mo esˈtas/
-- I >>> Yo >>> /ʝo/
-- I am >>> Yo soy >>> /ʝo soi/
-- I'm fine. >>> Estoy bien. >>> /esˈtoj bjen/
-- Your >>> Tu >>> /tu/
-- Your name >>> Tu nombre >>> /tu ˈnom.bre/
-- What >>> Qué >>> /ke/
-- What is your name? >>> ¿Cuál es tu nombre? >>> /kwal es tu ˈnom.bre/
-- My >>> Mi >>> /mi/
-- My name >>> Mi nombre >>> /mi ˈnom.bre/
-- My name is Adrian. >>> Mi nombre es Adrián. >>> /mi ˈnom.bre es aˈðɾjan/
-- And >>> Y >>> /i/
-- And you? >>> ¿Y tú? >>> /i tu/
-- Your name >>> Tu nombre >>> /tu ˈnom.bre/
-- Your name is Adrian? >>> ¿Tu nombre es Adrián? >>> /tu ˈnom.bre es aˈðɾjan/
-- Yes >>> Sí >>> /si/
-- My >>> Mi >>> /mi/
-- Yes, my name is Adrian. >>> Sí, mi nombre es Adrián. >>> /si mi ˈnom.bre es aˈðɾjan/
-- No >>> No >>> /no/
-- Your name is Adrian. >>> Tu nombre es Adrián. >>> /tu ˈnom.bre es aˈðɾjan/
-- Everyone >>> Todos >>> /ˈto.ðos/
-- Hi everyone. >>> Hola a todos. >>> /ˈo.la a ˈto.ðos/
-- Nice >>> Encantado >>> /en.kanˈta.ðo/
-- Nice to meet you. >>> Encantado de conocerte. >>> /en.kanˈta.ðo de ko.noˈseɾ.te/
-- Nice to see you. >>> Encantado de verte. >>> /en.kanˈta.ðo de ˈbeɾ.te/
-- Thanks >>> Gracias >>> /ˈɡɾa.sjas/
-- Thanks you >>> Gracias >>> /ˈɡɾa.sjas/
-- How are you? >>> ¿Cómo estás? >>> /ˈko.mo esˈtas/
-- I'm fine, thanks. >>> Estoy bien, gracias. >>> /esˈtoj bjen ˈɡɾa.sjas/
-- Here >>> Aquí >>> /aˈki/
-- I'm here. >>> Estoy aquí. >>> /esˈtoj aˈki/
-- Where >>> Dónde >>> /ˈdon.de/
-- Where are you? >>> ¿Dónde estás? >>> /ˈdon.de esˈtas/
-- I'm here. >>> Estoy aquí. >>> /esˈtoj aˈki/
-- We >>> Nosotros >>> /noˈso.tɾos/
-- We are >>> Nosotros somos >>> /noˈso.tɾos ˈso.mos/
-- We are here. >>> Nosotros estamos aquí. >>> /noˈso.tɾos esˈta.mos aˈki/
-- A man >>> Un hombre >>> /un ˈom.bre/
-- A woman >>> Una mujer >>> /ˈu.na muˈxeɾ/
-- A boy >>> Un niño >>> /un ˈni.ɲo/
-- A girl >>> Una niña >>> /ˈu.na ˈni.ɲa/
-- I am >>> Yo soy >>> /ʝo soi/
-- I am a man. >>> Yo soy un hombre. >>> /ʝo soi un ˈom.bre/
-- You are >>> Tú eres >>> /tu ˈeɾes/
-- You are a woman. >>> Tú eres una mujer. >>> /tu ˈeɾes ˈu.na muˈxeɾ/
-- He is >>> Él es >>> /el es/
-- He is a boy. >>> Él es un niño. >>> /el es un ˈni.ɲo/
-- She is >>> Ella es >>> /ˈe.ʝa es/
-- She is a girl. >>> Ella es una niña. >>> /ˈe.ʝa es ˈu.na ˈni.ɲa/
-- Me >>> Yo >>> /ʝo/
-- It is >>> Es >>> /es/
-- It's me. >>> Soy yo. >>> /soi ʝo/
-- Where >>> Dónde >>> /ˈdon.de/
-- Where are you? >>> ¿Dónde estás? >>> /ˈdon.de esˈtas/
-- Where are you from? >>> ¿De dónde eres? >>> /de ˈdon.de ˈeɾes/
-- England >>> Inglaterra >>> /iŋɡlaˈte.ra/
-- I'm from >>> Yo soy de >>> /ʝo soi de/
-- I'm from England. >>> Yo soy de Inglaterra. >>> /ʝo soi de iŋɡlaˈte.ra/
-- I speak >>> Yo hablo >>> /ʝo ˈa.βlo/
-- English >>> Inglés >>> /iŋˈɡles/
-- I speak English. >>> Yo hablo inglés. >>> /ʝo ˈa.βlo iŋˈɡles/
-- Nice to see you. >>> Encantado de verte. >>> /en.kanˈta.ðo de ˈbeɾ.te/
-- Where are you from? >>> ¿De dónde eres? >>> /de ˈdon.de ˈeɾes/
-- America >>> América >>> /aˈme.ɾi.ka/
-- I'm from >>> Yo soy de >>> /ʝo soi de/
-- I'm from America. >>> Yo soy de América. >>> /ʝo soi de aˈme.ɾi.ka/
-- I speak >>> Yo hablo >>> /ʝo ˈa.βlo/
-- English >>> Inglés >>> /iŋˈɡles/
-- I speak English too. >>> Yo hablo inglés también. >>> /ʝo ˈa.βlo iŋˈɡles tamˈbjen/
-- Nice to see you. >>> Encantado de verte. >>> /en.kanˈta.ðo de ˈbeɾ.te/
-- Where are you from? >>> ¿De dónde eres? >>> /de ˈdon.de ˈeɾes/
-- France >>> Francia >>> /ˈfɾan.sja/
-- I am >>> Yo soy >>> /ʝo soi/
-- I am from >>> Yo soy de >>> /ʝo soi de/
-- I'm from France. >>> Yo soy de Francia. >>> /ʝo soi de ˈfɾan.sja/
-- I speak >>> Yo hablo >>> /ʝo ˈa.βlo/
-- French >>> Francés >>> /fɾanˈθes/
-- I speak French. >>> Yo hablo francés. >>> /ʝo ˈa.βlo fɾanˈθes/
-- Hi >>> Hola >>> /ˈo.la/
-- How are you? >>> ¿Cómo estás? >>> /ˈko.mo esˈtas/
-- What is your name? >>> ¿Cuál es tu nombre? >>> /kwal es tu ˈnom.bre/
-- Where are you from? >>> ¿De dónde eres? >>> /de ˈdon.de ˈeɾes/
-- Germany >>> Alemania >>> /aleˈma.nja/
-- I'm from Germany. >>> Yo soy de Alemania. >>> /ʝo soi de aleˈma.nja/
-- German >>> Alemán >>> /aleˈman/
-- I speak German. >>> Yo hablo alemán. >>> /ʝo ˈa.βlo aleˈman/
-- Learn >>> Aprender >>> /a.prenˈder/
-- I am >>> Yo soy >>> /ʝo soi/
-- I am learning >>> Estoy aprendiendo >>> /esˈtoj a.pɾenˈdjendo/
-- I am learning German. >>> Estoy aprendiendo alemán. >>> /esˈtoj a.pɾenˈdjendo aleˈman/
-- Italy >>> Italia >>> /iˈta.lja/
-- Everyone >>> Todos >>> /ˈto.ðos/
-- Hello everyone. >>> Hola a todos. >>> /ˈo.la a ˈto.ðos/
-- I'm from >>> Yo soy de >>> /ʝo soi de/
-- I'm from Italy. >>> Yo soy de Italia. >>> /ʝo soi de iˈta.lja/
-- Italian >>> Italiano >>> /itaˈlja.no/
-- And >>> Y >>> /i/
-- I speak >>> Yo hablo >>> /ʝo ˈa.βlo/
-- And, I speak Italian. >>> Y, hablo italiano. >>> /i ˈa.βlo itaˈlja.no/
-- I am learning English. >>> Estoy aprendiendo inglés. >>> /esˈtoj a.pɾenˈdjendo iŋˈɡles/
-- I am learning English and French. >>> Estoy aprendiendo inglés y francés. >>> /esˈtoj a.pɾenˈdjendo iŋˈɡles i fɾanˈθes/
-- How are you? >>> ¿Cómo estás? >>> /ˈko.mo esˈtas/
-- Thanks >>> Gracias >>> /ˈɡɾa.sjas/
-- I'm fine. >>> Estoy bien. >>> /esˈtoj bjen/
-- What is your name? >>> ¿Cuál es tu nombre? >>> /kwal es tu ˈnom.bre/
-- Adrian. >>> Adrián. >>> /aˈðɾjan/
-- Are you Adrian? >>> ¿Eres Adrián? >>> /ˈe.ɾes aˈðɾjan/
-- Nice to meet you. >>> Encantado de conocerte. >>> /en.kanˈta.ðo de ko.noˈseɾ.te/
-- Where are you from? >>> ¿De dónde eres? >>> /de ˈdon.de ˈeɾes/
-- Spain >>> España >>> /esˈpa.ɲa/
-- I'm from Spain. >>> Yo soy de España. >>> /ʝo soi de esˈpa.ɲa/
-- Spanish >>> Español >>> /es.paˈɲol/
-- Do you? >>> ¿Tú? >>> /tu/
-- Do you speak? >>> ¿Hablas? >>> /ˈa.βlas/
-- Do you speak Spanish? >>> ¿Hablas español? >>> /ˈa.βlas es.paˈɲol/
-- Yes. >>> Sí. >>> /si/
-- I am learning Spanish. >>> Estoy aprendiendo español. >>> /esˈtoj a.pɾenˈdjendo es.paˈɲol/
-- Hello. >>> Hola. >>> /ˈo.la/
-- How are you? >>> ¿Cómo estás? >>> /ˈko.mo esˈtas/
-- I'm fine, thanks. >>> Estoy bien, gracias. >>> /esˈtoj bjen ˈɡɾa.sjas/
-- I'm from >>> Yo soy de >>> /ʝo soi de/
-- I'm from Sweden. >>> Yo soy de Suecia. >>> /ʝo soi de ˈswe.sja/
-- Swedish >>> Sueco >>> /ˈswe.ko/
-- And >>> Y >>> /i/
-- I speak >>> Yo hablo >>> /ʝo ˈa.βlo/
-- And, I speak Swedish. >>> Y, hablo sueco. >>> /i ˈa.βlo ˈswe.ko/
-- I am learning >>> Estoy aprendiendo >>> /esˈtoj a.pɾenˈdjendo/
-- I am learning German and Spanish. >>> Estoy aprendiendo alemán y español. >>> /esˈtoj a.pɾenˈdjendo aleˈman i es.paˈɲol/
-- How are you? >>> ¿Cómo estás? >>> /ˈko.mo esˈtas/
-- Thanks >>> Gracias >>> /ˈɡɾa.sjas/
-- I'm fine. >>> Estoy bien. >>> /esˈtoj bjen/
-- Are you Adrian? >>> ¿Eres Adrián? >>> /ˈe.ɾes aˈðɾjan/
-- Nice to meet you. >>> Encantado de conocerte. >>> /en.kanˈta.ðo de ko.noˈseɾ.te/
-- Where are you from? >>> ¿De dónde eres? >>> /de ˈdon.de ˈeɾes/
-- Norway >>> Noruega >>> /noˈɾwe.ɣa/
-- I'm from Norway. >>> Yo soy de Noruega. >>> /ʝo soi de noˈɾwe.ɣa/
-- Norwegian >>> Noruego >>> /noˈɾwe.ɣo/
-- Do you speak? >>> ¿Hablas? >>> /ˈa.βlas/
-- Do you speak Norwegian? >>> ¿Hablas noruego? >>> /ˈa.βlas noˈɾwe.ɣo/
-- Yes. >>> Sí. >>> /si/
-- I speak >>> Yo hablo >>> /ʝo ˈa.βlo/
-- I cannot >>> No puedo >>> /no ˈpwe.do/
-- I cannot speak >>> No puedo hablar >>> /no ˈpwe.do aˈβlar/
-- I cannot speak Norwegian. >>> No puedo hablar noruego. >>> /no ˈpwe.do aˈβlar noˈɾwe.ɣo/
-- I am learning Norwegian. >>> Estoy aprendiendo noruego. >>> /esˈtoj a.pɾenˈdjendo noˈɾwe.ɣo/
-- Friend >>> Amigo >>> /aˈmi.ɣo/
-- My >>> Mi >>> /mi/
-- My friend >>> Mi amigo >>> /mi aˈmi.ɣo/
-- My friend is >>> Mi amigo es >>> /mi aˈmi.ɣo es/
-- My friend is from >>> Mi amigo es de >>> /mi aˈmi.ɣo es de/
-- Finland >>> Finlandia >>> /finˈlan.dja/
-- My friend is from Finland >>> Mi amigo es de Finlandia >>> /mi aˈmi.ɣo es de finˈlan.dja/
-- He speaks >>> Él habla >>> /el ˈa.βla/
-- Finnish >>> Finés >>> /fiˈnes/
-- He speaks Finnish. >>> Él habla finés. >>> /el ˈa.βla fiˈnes/
-- Mother >>> Madre >>> /ˈma.dɾe/
-- Father >>> Padre >>> /ˈpa.dɾe/
-- His >>> Su >>> /su/
-- His mother >>> Su madre >>> /su ˈma.dɾe/
-- Hungarian >>> Húngaro >>> /ˈuŋ.ɡa.ɾo/
-- His mother is Hungarian. >>> Su madre es húngara. >>> /su ˈma.dɾe es ˈuŋ.ɡa.ra/
-- She is from >>> Ella es de >>> /ˈe.ʝa es de/
-- She is from Hungary. >>> Ella es de Hungría. >>> /ˈe.ʝa es de uŋˈɡɾi.a/
-- But >>> Pero >>> /ˈpe.ɾo/
-- Father >>> Padre >>> /ˈpa.dɾe/
-- His father >>> Su padre >>> /su ˈpa.dɾe/
-- Danish >>> Danés >>> /daˈnes/
-- His father is Danish. >>> Su padre es danés. >>> /su ˈpa.dɾe es daˈnes/
-- He is from >>> Él es de >>> /el es de/
-- He is from Denmark. >>> Él es de Dinamarca. >>> /el es de dinaˈmaɾ.ka/
-- Language >>> Idioma >>> /iˈðjo.ma/
-- What >>> Qué >>> /ke/
-- What languages >>> Qué idiomas >>> /ke iˈðjo.mas/
-- What languages do you speak? >>> ¿Qué idiomas hablas? >>> /ke iˈðjo.mas ˈa.βlas/
-- Do you speak? >>> ¿Hablas? >>> /ˈa.βlas/
-- Do you speak English? >>> ¿Hablas inglés? >>> /ˈa.βlas iŋˈɡles/
-- My friend >>> Mi amigo >>> /mi aˈmi.ɣo/
-- Nice >>> Agradable >>> /a.ɣɾaˈða.βle/
-- My friend is nice. >>> Mi amigo es agradable. >>> /mi aˈmi.ɣo es a.ɣɾaˈða.βle/
-- You >>> Tú >>> /tu/
-- You are >>> Tú eres >>> /tu ˈe.ɾes/
-- Tall >>> Alto >>> /ˈal.to/
-- You are tall. >>> Tú eres alto. >>> /tu ˈe.ɾes ˈal.to/
-- I >>> Yo >>> /ʝo/
-- I am >>> Yo soy >>> /ʝo soi/
-- A man >>> Un hombre >>> /un ˈom.bre/
-- I am a man. >>> Yo soy un hombre. >>> /ʝo soi un ˈom.bre/
-- You are >>> Tú eres >>> /tu ˈe.ɾes/
-- A woman >>> Una mujer >>> /ˈu.na muˈxeɾ/
-- You are a woman. >>> Tú eres una mujer. >>> /tu ˈe.ɾes ˈu.na muˈxeɾ/
-- Single >>> Soltero >>> /solˈte.ro/
-- Are you single? >>> ¿Eres soltero? >>> /ˈe.ɾes solˈte.ro/
-- Or >>> O >>> /o/
-- Married >>> Casado >>> /kaˈsa.ðo/
-- Or married? >>> ¿O casado? >>> /o kaˈsa.ðo/
-- Are you married? >>> ¿Eres casado? >>> /ˈe.ɾes kaˈsa.ðo/
-- No >>> No >>> /no/
-- No, I am >>> No, soy >>> /no soi/
-- No, I am single. >>> No, soy soltero. >>> /no soi solˈte.ro/
-- Yes >>> Sí >>> /si/
-- Yes, I am >>> Sí, soy >>> /si soi/
-- Yes, I am married. >>> Sí, soy casado. >>> /si soi kaˈsa.ðo/
-- A Boy >>> Un niño >>> /un ˈni.ɲo/
-- A Girl >>> Una niña >>> /ˈu.na ˈni.ɲa/
-- I have >>> Yo tengo >>> /ʝo ˈten.ɡo/
-- I have a boy. >>> Yo tengo un niño. >>> /ʝo ˈten.ɡo un ˈni.ɲo/
-- I have a girl. >>> Yo tengo una niña. >>> /ʝo ˈten.ɡo ˈu.na ˈni.ɲa/
-- You >>> Tú >>> /tu/
-- You are >>> Tú eres >>> /tu ˈe.ɾes/
-- You are married. >>> Tú eres casado. >>> /tu ˈe.ɾes kaˈsa.ðo/
-- But >>> Pero >>> /ˈpe.ɾo/
-- But I am >>> Pero yo soy >>> /ˈpe.ɾo ʝo soi/
-- But I am single. >>> Pero yo soy soltero. >>> /ˈpe.ɾo ʝo soi solˈte.ro/
-- Name >>> Nombre >>> /ˈnom.bre/
-- My name is >>> Mi nombre es >>> /mi ˈnom.bre es/
-- My name is Adrian. >>> Mi nombre es Adrián. >>> /mi ˈnom.bre es aˈðɾjan/
-- Your name is >>> Tu nombre es >>> /tu ˈnom.bre es/
-- Your name is Adrian. >>> Tu nombre es Adrián. >>> /tu ˈnom.bre es aˈðɾjan/
-- I don't >>> No sé >>> /no se/
-- I don't know. >>> No lo sé. >>> /no lo se/
-- I know >>> Yo sé >>> /ʝo se/
-- I know your name. >>> Sé tu nombre. >>> /se tu ˈnom.bre/
-- You are Adrian. >>> Tú eres Adrián. >>> /tu ˈe.ɾes aˈðɾjan/
-- Again >>> De nuevo >>> /de ˈnwe.βo/
-- What is your name? >>> ¿Cuál es tu nombre? >>> /kwal es tu ˈnom.bre/
-- What is your name again? >>> ¿Cuál es tu nombre de nuevo? >>> /kwal es tu ˈnom.bre de ˈnwe.βo/
-- How are you? >>> ¿Cómo estás? >>> /ˈko.mo esˈtas/
-- Thanks >>> Gracias >>> /ˈɡɾa.sjas/
-- Thank you >>> Gracias >>> /ˈɡɾa.sjas/
-- I'm fine, thanks. >>> Estoy bien, gracias. >>> /esˈtoj bjen ˈɡɾa.sjas/
-- OK >>> Vale >>> /ˈba.le/
-- We are >>> Nosotros somos >>> /noˈso.tɾos ˈso.mos/
-- Here >>> Aquí >>> /aˈki/
-- We are here. >>> Estamos aquí. >>> /esˈta.mos aˈki/
-- To learn >>> Aprender >>> /a.prenˈder/
-- New >>> Nuevo >>> /ˈnwe.βo/
-- Language >>> Idioma >>> /iˈðjo.ma/
-- A new language >>> Un nuevo idioma >>> /un ˈnwe.βo iˈðjo.ma/
-- We are here to learn >>> Estamos aquí para aprender >>> /esˈta.mos aˈki ˈpa.ɾa a.prenˈder/
-- We are here to learn a new language. >>> Estamos aquí para aprender un nuevo idioma. >>> /esˈta.mos aˈki ˈpa.ɾa a.prenˈder un ˈnwe.βo iˈðjo.ma/
-- Hi everyone. >>> Hola a todos. >>> /ˈo.la a ˈto.ðos/
-- Hi everyone. How are you? >>> Hola a todos. ¿Cómo están? >>> /ˈo.la a ˈto.ðos ˈko.mo esˈtan/
-- Welcome >>> Bienvenido >>> /bjen.beˈni.do/
-- We are >>> Nosotros somos >>> /noˈso.tɾos ˈso.mos/
-- We are learning >>> Estamos aprendiendo >>> /esˈta.mos a.pɾenˈdjendo/
-- A new >>> Un nuevo >>> /un ˈnwe.βo/
-- A new language >>> Un nuevo idioma >>> /un ˈnwe.βo iˈðjo.ma/
-- We are here. >>> Estamos aquí. >>> /esˈta.mos aˈki/
-- To learn >>> Aprender >>> /a.prenˈder/
-- To learn a new language. >>> Aprender un nuevo idioma. >>> /a.prenˈder un ˈnwe.βo iˈðjo.ma/
-- Thank you >>> Gracias >>> /ˈɡɾa.sjas/
-- Goodbye >>> Adiós >>> /aˈðjos/
-- Take care >>> Cuídate >>> /ˈkwi.da.te/
-- Bye >>> Adiós >>> /aˈðjos/
+- Hi >>> Hej >>> /hej/
+- Hello >>> Hej >>> /hej/
+- Everyone >>> Alla >>> /ˈal.la/
+- Hello everyone >>> Hej allihopa >>> /hej ˈalːiˌhupa/
+- Welcome >>> Välkommen >>> /ˈvɛlːˌkɔmːɛn/
+- Course >>> Kurs >>> /kʉʂ/
+- Welcome to >>> Välkommen till >>> /ˈvɛlːˌkɔmːɛn tɪl/
+- This Course >>> Denna kurs >>> /ˈdɛnːa kʉʂ/
+- Welcome to this course >>> Välkommen till denna kurs >>> /ˈvɛlːˌkɔmːɛn tɪl ˈdɛnːa kʉʂ/
+- Learn >>> Lära >>> /ˈlæːra/
+- To learn >>> Att lära >>> /at ˈlæːra/
+- Speak >>> Tala >>> /ˈtɑːla/
+- To speak >>> Att tala >>> /at ˈtɑːla/
+- Practice >>> Öva >>> /ˈøːva/
+- Just >>> Bara >>> /ˈbɑːra/
+- Just practice >>> Bara öva >>> /ˈbɑːra ˈøːva/
+- Listen >>> Lyssna >>> /ˈlʏsːna/
+- Carefully >>> Noggrant >>> /ˈnʊɡːrant/
+- Listen carefully >>> Lyssna noggrant >>> /ˈlʏsːna ˈnʊɡːrant/
+- And >>> Och >>> /ɔk/
+- Repeat >>> Upprepa >>> /ˈʉpːˌreːpa/
+- Practice >>> Öva >>> /ˈøːva/
+- Repeat and practice >>> Upprepa och öva >>> /ˈʉpːˌreːpa ɔk ˈøːva/
+- Me >>> Mig >>> /mej/
+- After >>> Efter >>> /ˈɛfːtɛr/
+- After me >>> Efter mig >>> /ˈɛfːtɛr mej/
+- Repeat after me >>> Upprepa efter mig >>> /ˈʉpːˌreːpa ˈɛfːtɛr mej/
+- Listen >>> Lyssna >>> /ˈlʏsːna/
+- And repeat after me >>> Och upprepa efter mig >>> /ɔk ˈʉpːˌreːpa ˈɛfːtɛr mej/
+- How >>> Hur >>> /hʉːr/
+- How are >>> Hur är >>> /hʉːr ɛːr/
+- You >>> Du >>> /dʉː/
+- How are you? >>> Hur mår du? >>> /hʉːr mɔːr dʉː/
+- I >>> Jag >>> /jɑːɡ/
+- I am >>> Jag är >>> /jɑːɡ ɛːr/
+- I'm fine >>> Jag mår bra >>> /jɑːɡ mɔːr brɑː/
+- Your >>> Din >>> /dɪn/
+- Your name >>> Ditt namn >>> /dɪt ˈnamn/
+- What >>> Vad >>> /vɑːd/
+- What is your name? >>> Vad heter du? >>> /vɑːd ˈheːtɛr dʉː/
+- My >>> Mitt >>> /mɪt/
+- My name >>> Mitt namn >>> /mɪt ˈnamn/
+- My name is Adrian >>> Jag heter Adrian >>> /jɑːɡ ˈheːtɛr ˈɑːdrɪan/
+- And >>> Och >>> /ɔk/
+- And you? >>> Och du? >>> /ɔk dʉː/
+- Your name >>> Ditt namn >>> /dɪt ˈnamn/
+- Your name is Adrian? >>> Heter du Adrian? >>> /ˈheːtɛr dʉː ˈɑːdrɪan/
+- Yes >>> Ja >>> /jɑː/
+- My >>> Mitt >>> /mɪt/
+- Yes, my name is Adrian >>> Ja, jag heter Adrian >>> /jɑː jɑːɡ ˈheːtɛr ˈɑːdrɪan/
+- No >>> Nej >>> /nɛj/
+- Your name is Adrian >>> Du heter Adrian >>> /dʉː ˈheːtɛr ˈɑːdrɪan/
+- Everyone >>> Alla >>> /ˈalːa/
+- Hi everyone >>> Hej allihopa >>> /hej ˈalːiˌhupa/
+- Nice >>> Trevligt >>> /ˈtreːvlɪkt/
+- Nice to meet you >>> Trevligt att träffas >>> /ˈtreːvlɪkt at ˈtrɛfːas/
+- Nice to see you >>> Trevligt att se dig >>> /ˈtreːvlɪkt at seː dej/
+- Thanks >>> Tack >>> /tak/
+- Thank you >>> Tack >>> /tak/
+- How are you? >>> Hur mår du? >>> /hʉːr mɔːr dʉː/
+- I'm fine, thanks >>> Jag mår bra, tack >>> /jɑːɡ mɔːr brɑː tak/
+- Here >>> Här >>> /hæːr/
+- I'm here >>> Jag är här >>> /jɑːɡ ɛːr hæːr/
+- Where >>> Var >>> /vɑːr/
+- Where are you? >>> Var är du? >>> /vɑːr ɛːr dʉː/
+- I'm here >>> Jag är här >>> /jɑːɡ ɛːr hæːr/
+- We >>> Vi >>> /viː/
+- We are >>> Vi är >>> /viː ɛːr/
+- We are here >>> Vi är här >>> /viː ɛːr hæːr/
+- A man >>> En man >>> /ɛn man/
+- A woman >>> En kvinna >>> /ɛn ˈkvɪnːa/
+- A boy >>> En pojke >>> /ɛn ˈpɔjkɛ/
+- A girl >>> En flicka >>> /ɛn ˈflɪkːa/
+- I am >>> Jag är >>> /jɑːɡ ɛːr/
+- I am a man >>> Jag är en man >>> /jɑːɡ ɛːr ɛn man/
+- You are >>> Du är >>> /dʉː ɛːr/
+- You are a woman >>> Du är en kvinna >>> /dʉː ɛːr ɛn ˈkvɪnːa/
+- He is >>> Han är >>> /han ɛːr/
+- He is a boy >>> Han är en pojke >>> /han ɛːr ɛn ˈpɔjkɛ/
+- She is >>> Hon är >>> /hʊn ɛːr/
+- She is a girl >>> Hon är en flicka >>> /hʊn ɛːr ɛn ˈflɪkːa/
+- Me >>> Mig >>> /mej/
+- It is >>> Det är >>> /de ɛːr/
+- It's me >>> Det är jag >>> /de ɛːr jɑːɡ/
+- Where >>> Var >>> /vɑːr/
+- Where are you? >>> Var är du? >>> /vɑːr ɛːr dʉː/
+- Where are you from? >>> Var kommer du ifrån? >>> /vɑːr ˈkɔmːɛr dʉː iˈfrɔːn/
+- England >>> England >>> /ˈɛŋland/
+- I'm from >>> Jag är från >>> /jɑːɡ ɛːr frɔːn/
+- I'm from England >>> Jag är från England >>> /jɑːɡ ɛːr frɔːn ˈɛŋland/
+- I speak >>> Jag talar >>> /jɑːɡ ˈtɑːlar/
+- English >>> Engelska >>> /ˈɛŋːɛlska/
+- I speak English >>> Jag talar engelska >>> /jɑːɡ ˈtɑːlar ˈɛŋːɛlska/
+- Nice to see you >>> Trevligt att se dig >>> /ˈtreːvlɪkt at seː dej/
+- Where are you from? >>> Var kommer du ifrån? >>> /vɑːr ˈkɔmːɛr dʉː iˈfrɔːn/
+- America >>> Amerika >>> /aˈmeːrɪka/
+- I'm from >>> Jag är från >>> /jɑːɡ ɛːr frɔːn/
+- I'm from America >>> Jag är från Amerika >>> /jɑːɡ ɛːr frɔːn aˈmeːrɪka/
+- I speak >>> Jag talar >>> /jɑːɡ ˈtɑːlar/
+- English >>> Engelska >>> /ˈɛŋːɛlska/
+- I speak English too >>> Jag talar också engelska >>> /jɑːɡ ˈtɑːlar ˈʊkːsɔ ˈɛŋːɛlska/
+- Nice to see you >>> Trevligt att se dig >>> /ˈtreːvlɪkt at seː dej/
+- Where are you from? >>> Var kommer du ifrån? >>> /vɑːr ˈkɔmːɛr dʉː iˈfrɔːn/
+- France >>> Frankrike >>> /ˈfraŋkˌrikɛ/
+- I am >>> Jag är >>> /jɑːɡ ɛːr/
+- I am from >>> Jag är från >>> /jɑːɡ ɛːr frɔːn/
+- I'm from France >>> Jag är från Frankrike >>> /jɑːɡ ɛːr frɔːn ˈfraŋkˌrikɛ/
+- I speak >>> Jag talar >>> /jɑːɡ ˈtɑːlar/
+- French >>> Franska >>> /ˈfraŋska/
+- I speak French >>> Jag talar franska >>> /jɑːɡ ˈtɑːlar ˈfraŋska/
+- Hi >>> Hej >>> /hej/
+- How are you? >>> Hur mår du? >>> /hʉːr mɔːr dʉː/
+- What is your name? >>> Vad heter du? >>> /vɑːd ˈheːtɛr dʉː/
+- Where are you from? >>> Var kommer du ifrån? >>> /vɑːr ˈkɔmːɛr dʉː iˈfrɔːn/
+- Germany >>> Tyskland >>> /ˈtʏskland/
+- I'm from Germany >>> Jag är från Tyskland >>> /jɑːɡ ɛːr frɔːn ˈtʏskland/
+- German >>> Tyska >>> /ˈtʏska/
+- I speak German >>> Jag talar tyska >>> /jɑːɡ ˈtɑːlar ˈtʏska/
+- Learn >>> Lära >>> /ˈlæːra/
+- I am >>> Jag är >>> /jɑːɡ ɛːr/
+- I am learning >>> Jag lär mig >>> /jɑːɡ ˈlæːr mej/
+- I am learning German >>> Jag lär mig tyska >>> /jɑːɡ ˈlæːr mej ˈtʏska/
+- Italy >>> Italien >>> /iˈtaːlien/
+- Everyone >>> Alla >>> /ˈalːa/
+- Hello everyone >>> Hej allihopa >>> /hej ˈalːiˌhupa/
+- I'm from >>> Jag är från >>> /jɑːɡ ɛːr frɔːn/
+- I'm from Italy >>> Jag är från Italien >>> /jɑːɡ ɛːr frɔːn iˈtaːlien/
+- Italian >>> Italienska >>> /ˈiˈtaːliɛnska/
+- And >>> Och >>> /ɔk/
+- I speak >>> Jag talar >>> /jɑːɡ ˈtɑːlar/
+- And, I speak Italian >>> Och, jag talar italienska >>> /ɔk jɑːɡ ˈtɑːlar ˈiˈtaːliɛnska/
+- I am learning English >>> Jag lär mig engelska >>> /jɑːɡ ˈlæːr mej ˈɛŋːɛlska/
+- I am learning English and French >>> Jag lär mig engelska och franska >>> /jɑːɡ ˈlæːr mej ˈɛŋːɛlska ɔk ˈfraŋska/
+- How are you? >>> Hur mår du? >>> /hʉːr mɔːr dʉː/
+- Thanks >>> Tack >>> /tak/
+- I'm fine >>> Jag mår bra >>> /jɑːɡ mɔːr brɑː/
+- What is your name? >>> Vad heter du? >>> /vɑːd ˈheːtɛr dʉː/
+- Adrian >>> Adrian >>> /ˈɑːdrɪan/
+- Are you Adrian? >>> Är du Adrian? >>> /ɛːr dʉː ˈɑːdrɪan/
+- Nice to meet you >>> Trevligt att träffas >>> /ˈtreːvlɪkt at ˈtrɛfːas/
+- Where are you from? >>> Var kommer du ifrån? >>> /vɑːr ˈkɔmːɛr dʉː iˈfrɔːn/
+- Spain >>> Spanien >>> /ˈspɑːnien/
+- I'm from Spain >>> Jag är från Spanien >>> /jɑːɡ ɛːr frɔːn ˈspɑːnien/
+- Spanish >>> Spanska >>> /ˈspanska/
+- Do you? >>> Talar du? >>> /ˈtɑːlar dʉː/
+- Do you speak? >>> Talar du? >>> /ˈtɑːlar dʉː/
+- Do you speak Spanish? >>> Talar du spanska? >>> /ˈtɑːlar dʉː ˈspanska/
+- Yes >>> Ja >>> /jɑː/
+- I am learning Spanish >>> Jag lär mig spanska >>> /jɑːɡ ˈlæːr mej ˈspanska/
+- Hello >>> Hej >>> /hej/
+- How are you? >>> Hur mår du? >>> /hʉːr mɔːr dʉː/
+- I'm fine, thanks >>> Jag mår bra, tack >>> /jɑːɡ mɔːr brɑː tak/
+- I'm from >>> Jag är från >>> /jɑːɡ ɛːr frɔːn/
+- I'm from Sweden >>> Jag är från Sverige >>> /jɑːɡ ɛːr frɔːn ˈsværˌjɛ/
+- Swedish >>> Svenska >>> /ˈsvɛnska/
+- And >>> Och >>> /ɔk/
+- I speak >>> Jag talar >>> /jɑːɡ ˈtɑːlar/
+- And, I speak Swedish >>> Och, jag talar svenska >>> /ɔk jɑːɡ ˈtɑːlar ˈsvɛnska/
+- I am learning >>> Jag lär mig >>> /jɑːɡ ˈlæːr mej/
+- I am learning German and Spanish >>> Jag lär mig tyska och spanska >>> /jɑːɡ ˈlæːr mej ˈtʏska ɔk ˈspanska/
+- How are you? >>> Hur mår du? >>> /hʉːr mɔːr dʉː/
+- Thanks >>> Tack >>> /tak/
+- I'm fine >>> Jag mår bra >>> /jɑːɡ mɔːr brɑː/
+- Are you Adrian? >>> Är du Adrian? >>> /ɛːr dʉː ˈɑːdrɪan/
+- Nice to meet you >>> Trevligt att träffas >>> /ˈtreːvlɪkt at ˈtrɛfːas/
+- Where are you from? >>> Var kommer du ifrån? >>> /vɑːr ˈkɔmːɛr dʉː iˈfrɔːn/
+- Norway >>> Norge >>> /ˈnɔrˌjɛ/
+- I'm from Norway >>> Jag är från Norge >>> /jɑːɡ ɛːr frɔːn ˈnɔrˌjɛ/
+- Norwegian >>> Norska >>> /ˈnɔrska/
+- Do you speak? >>> Talar du? >>> /ˈtɑːlar dʉː/
+- Do you speak Norwegian? >>> Talar du norska? >>> /ˈtɑːlar dʉː ˈnɔrska/
+- Yes >>> Ja >>> /jɑː/
+- I speak >>> Jag talar >>> /jɑːɡ ˈtɑːlar/
+- I cannot >>> Jag kan inte >>> /jɑːɡ kan ˈɪntɛ/
+- I cannot speak >>> Jag kan inte tala >>> /jɑːɡ kan ˈɪntɛ ˈtɑːla/
+- I cannot speak Norwegian >>> Jag kan inte tala norska >>> /jɑːɡ kan ˈɪntɛ ˈtɑːla ˈnɔrska/
+- I am learning Norwegian >>> Jag lär mig norska >>> /jɑːɡ ˈlæːr mej ˈnɔrska/
+- Friend >>> Vän >>> /vɛn/
+- My >>> Min >>> /mɪn/
+- My friend >>> Min vän >>> /mɪn vɛn/
+- My friend is >>> Min vän är >>> /mɪn vɛn ɛːr/
+- My friend is from >>> Min vän är från >>> /mɪn vɛn ɛːr frɔːn/
+- Finland >>> Finland >>> /ˈfɪnˌland/
+- My friend is from Finland >>> Min vän är från Finland >>> /mɪn vɛn ɛːr frɔːn ˈfɪnˌland/
+- He speaks >>> Han talar >>> /han ˈtɑːlar/
+- Finnish >>> Finska >>> /ˈfɪnska/
+- He speaks Finnish >>> Han talar finska >>> /han ˈtɑːlar ˈfɪnska/
+- Mother >>> Mor >>> /muːr/
+- Father >>> Far >>> /fɑːr/
+- His >>> Hans >>> /hɑns/
+- His mother >>> Hans mor >>> /hɑns muːr/
+- Hungarian >>> Ungerska >>> /ˈʉŋːɛrska/
+- His mother is Hungarian >>> Hans mor är ungerska >>> /hɑns muːr ɛːr ˈʉŋːɛrska/
+- She is from >>> Hon är från >>> /hʊn ɛːr frɔːn/
+- She is from Hungary >>> Hon är från Ungern >>> /hʊn ɛːr frɔːn ˈʉŋːɛn/
+- But >>> Men >>> /mɛn/
+- Father >>> Far >>> /fɑːr/
+- His father >>> Hans far >>> /hɑns fɑːr/
+- Danish >>> Danska >>> /ˈdanska/
+- His father is Danish >>> Hans far är dansk >>> /hɑns fɑːr ɛːr dansk/
+- He is from >>> Han är från >>> /han ɛːr frɔːn/
+- He is from Denmark >>> Han är från Danmark >>> /han ɛːr frɔːn ˈdanˌmark/
+- Language >>> Språk >>> /sprɔːk/
+- What >>> Vad >>> /vɑːd/
+- What languages >>> Vilka språk >>> /ˈvɪlka sprɔːk/
+- What languages do you speak? >>> Vilka språk talar du? >>> /ˈvɪlka sprɔːk ˈtɑːlar dʉː/
+- Do you speak? >>> Talar du? >>> /ˈtɑːlar dʉː/
+- Do you speak English? >>> Talar du engelska? >>> /ˈtɑːlar dʉː ˈɛŋːɛlska/
+- My friend >>> Min vän >>> /mɪn vɛn/
+- Nice >>> Trevlig >>> /ˈtreːvlɪɡ/
+- My friend is nice >>> Min vän är trevlig >>> /mɪn vɛn ɛːr ˈtreːvlɪɡ/
+- You >>> Du >>> /dʉː/
+- You are >>> Du är >>> /dʉː ɛːr/
+- Tall >>> Lång >>> /lɔŋ/
+- You are tall >>> Du är lång >>> /dʉː ɛːr lɔŋ/
+- I >>> Jag >>> /jɑːɡ/
+- I am >>> Jag är >>> /jɑːɡ ɛːr/
+- A man >>> En man >>> /ɛn man/
+- I am a man >>> Jag är en man >>> /jɑːɡ ɛːr ɛn man/
+- You are >>> Du är >>> /dʉː ɛːr/
+- A woman >>> En kvinna >>> /ɛn ˈkvɪnːa/
+- You are a woman >>> Du är en kvinna >>> /dʉː ɛːr ɛn ˈkvɪnːa/
+- Single >>> Singel >>> /ˈsɪŋːɛl/
+- Are you single? >>> Är du singel? >>> /ɛːr dʉː ˈsɪŋːɛl/
+- Or >>> Eller >>> /ˈɛlːɛr/
+- Married >>> Gift >>> /jɪft/
+- Or married? >>> Eller gift? >>> /ˈɛlːɛr jɪft/
+- Are you married? >>> Är du gift? >>> /ɛːr dʉː jɪft/
+- No >>> Nej >>> /nɛj/
+- No, I am >>> Nej, jag är >>> /nɛj jɑːɡ ɛːr/
+- No, I am single >>> Nej, jag är singel >>> /nɛj jɑːɡ ɛːr ˈsɪŋːɛl/
+- Yes >>> Ja >>> /jɑː/
+- Yes, I am >>> Ja, jag är >>> /jɑː jɑːɡ ɛːr/
+- Yes, I am married >>> Ja, jag är gift >>> /jɑː jɑːɡ ɛːr jɪft/
+- A Boy >>> En pojke >>> /ɛn ˈpɔjkɛ/
+- A Girl >>> En flicka >>> /ɛn ˈflɪkːa/
+- I have >>> Jag har >>> /jɑːɡ hɑːr/
+- I have a boy >>> Jag har en pojke >>> /jɑːɡ hɑːr ɛn ˈpɔjkɛ/
+- I have a girl >>> Jag har en flicka >>> /jɑːɡ hɑːr ɛn ˈflɪkːa/
+- You >>> Du >>> /dʉː/
+- You are >>> Du är >>> /dʉː ɛːr/
+- You are married >>> Du är gift >>> /dʉː ɛːr jɪft/
+- But >>> Men >>> /mɛn/
+- But I am >>> Men jag är >>> /mɛn jɑːɡ ɛːr/
+- But I am single >>> Men jag är singel >>> /mɛn jɑːɡ ɛːr ˈsɪŋːɛl/
+- Name >>> Namn >>> /namn/
+- My name is >>> Mitt namn är >>> /mɪt namn ɛːr/
+- My name is Adrian >>> Mitt namn är Adrian >>> /mɪt namn ɛːr ˈɑːdrɪan/
+- Your name is >>> Ditt namn är >>> /dɪt namn ɛːr/
+- Your name is Adrian >>> Ditt namn är Adrian >>> /dɪt namn ɛːr ˈɑːdrɪan/
+- I don't >>> Jag vet inte >>> /jɑːɡ veːt ˈɪntɛ/
+- I don't know >>> Jag vet inte >>> /jɑːɡ veːt ˈɪntɛ/
+- I know >>> Jag vet >>> /jɑːɡ veːt/
+- I know your name >>> Jag vet ditt namn >>> /jɑːɡ veːt dɪt namn/
+- You are Adrian >>> Du är Adrian >>> /dʉː ɛːr ˈɑːdrɪan/
+- Again >>> Igen >>> /ɪˈjɛn/
+- What is your name? >>> Vad heter du? >>> /vɑːd ˈheːtɛr dʉː/
+- What is your name again? >>> Vad heter du igen? >>> /vɑːd ˈheːtɛr dʉː ɪˈjɛn/
+- How are you? >>> Hur mår du? >>> /hʉːr mɔːr dʉː/
+- Thanks >>> Tack >>> /tak/
+- Thank you >>> Tack >>> /tak/
+- I'm fine, thanks >>> Jag mår bra, tack >>> /jɑːɡ mɔːr brɑː tak/
+- OK >>> Okej >>> /ɔˈkej/
+- We are >>> Vi är >>> /viː ɛːr/
+- Here >>> Här >>> /hæːr/
+- We are here >>> Vi är här >>> /viː ɛːr hæːr/
+- To learn >>> Att lära >>> /at ˈlæːra/
+- New >>> Ny >>> /nyː/
+- Language >>> Språk >>> /sprɔːk/
+- A new language >>> Ett nytt språk >>> /ɛt nʏt ˈsprɔːk/
+- We are here to learn >>> Vi är här för att lära >>> /viː ɛːr hæːr fœr at ˈlæːra/
+- We are here to learn a new language. >>> Vi är här för att lära oss ett nytt språk. >>> /viː ær hæːr føːr at lɛːra ɔs ɛt nʏt sprɔːk/
+- Hi everyone. >>> Hej alla. >>> /hɛj ²alːa/
+- Hi everyone. How are you? >>> Hej alla. Hur mår ni? >>> /hɛj ²alːa hʉːr moːr niː/
+- Welcome >>> Välkommen >>> /vɛlˈkɔmɛn/
+- We are >>> Vi är >>> /viː ær/
+- We are learning >>> Vi lär oss >>> /viː læːr ɔs/
+- A new >>> En ny >>> /ɛn nyː/
+- A new language >>> Ett nytt språk >>> /ɛt nʏt sprɔːk/
+- We are here. >>> Vi är här. >>> /viː ær hæːr/
+- To learn >>> Att lära sig >>> /at ˈlæːra sɪɡ/
+- To learn a new language. >>> Att lära sig ett nytt språk. >>> /at ˈlæːra sɪɡ ɛt nʏt sprɔːk/
+- Thank you >>> Tack >>> /tak/
+- Goodbye >>> Adjö >>> /adˈjøː/
+- Take care >>> Var försiktig >>> /vaːr fœʂɪktɪɡ/
+- Bye >>> Hej då >>> /hɛj doː/
