@@ -1,0 +1,286 @@
+Hej
+Hej
+Alla
+Hej allihopa
+Välkommen
+Kurs
+Välkommen till
+Denna kurs
+Välkommen till denna kurs
+Lära
+Att lära
+Tala
+Att tala
+Öva
+Bara
+Bara öva
+Lyssna
+Noggrant
+Lyssna noggrant
+Och
+Upprepa
+Öva
+Upprepa och öva
+Mig
+Efter
+Efter mig
+Upprepa efter mig
+Lyssna
+Och upprepa efter mig
+Hur
+Hur är
+Du
+Hur mår du?
+Jag
+Jag är
+Jag mår bra
+Din
+Ditt namn
+Vad
+Vad heter du?
+Mitt
+Mitt namn
+Jag heter Adrian
+Och
+Och du?
+Ditt namn
+Heter du Adrian?
+Ja
+Mitt
+Ja, jag heter Adrian
+Nej
+Du heter Adrian
+Alla
+Hej allihopa
+Trevligt
+Trevligt att träffas
+Trevligt att se dig
+Tack
+Tack
+Hur mår du?
+Jag mår bra, tack
+Här
+Jag är här
+Var
+Var är du?
+Jag är här
+Vi
+Vi är
+Vi är här
+En man
+En kvinna
+En pojke
+En flicka
+Jag är
+Jag är en man
+Du är
+Du är en kvinna
+Han är
+Han är en pojke
+Hon är
+Hon är en flicka
+Mig
+Det är
+Det är jag
+Var
+Var är du?
+Var kommer du ifrån?
+England
+Jag är från
+Jag är från England
+Jag talar
+Engelska
+Jag talar engelska
+Trevligt att se dig
+Var kommer du ifrån?
+Amerika
+Jag är från
+Jag är från Amerika
+Jag talar
+Engelska
+Jag talar också engelska
+Trevligt att se dig
+Var kommer du ifrån?
+Frankrike
+Jag är
+Jag är från
+Jag är från Frankrike
+Jag talar
+Franska
+Jag talar franska
+Hej
+Hur mår du?
+Vad heter du?
+Var kommer du ifrån?
+Tyskland
+Jag är från Tyskland
+Tyska
+Jag talar tyska
+Lära
+Jag är
+Jag lär mig
+Jag lär mig tyska
+Italien
+Alla
+Hej allihopa
+Jag är från
+Jag är från Italien
+Italienska
+Och
+Jag talar
+Och, jag talar italienska
+Jag lär mig engelska
+Jag lär mig engelska och franska
+Hur mår du?
+Tack
+Jag mår bra
+Vad heter du?
+Adrian
+Är du Adrian?
+Trevligt att träffas
+Var kommer du ifrån?
+Spanien
+Jag är från Spanien
+Spanska
+Talar du?
+Talar du?
+Talar du spanska?
+Ja
+Jag lär mig spanska
+Hej
+Hur mår du?
+Jag mår bra, tack
+Jag är från
+Jag är från Sverige
+Svenska
+Och
+Jag talar
+Och, jag talar svenska
+Jag lär mig
+Jag lär mig tyska och spanska
+Hur mår du?
+Tack
+Jag mår bra
+Är du Adrian?
+Trevligt att träffas
+Var kommer du ifrån?
+Norge
+Jag är från Norge
+Norska
+Talar du?
+Talar du norska?
+Ja
+Jag talar
+Jag kan inte
+Jag kan inte tala
+Jag kan inte tala norska
+Jag lär mig norska
+Vän
+Min
+Min vän
+Min vän är
+Min vän är från
+Finland
+Min vän är från Finland
+Han talar
+Finska
+Han talar finska
+Mor
+Far
+Hans
+Hans mor
+Ungerska
+Hans mor är ungerska
+Hon är från
+Hon är från Ungern
+Men
+Far
+Hans far
+Danska
+Hans far är dansk
+Han är från
+Han är från Danmark
+Språk
+Vad
+Vilka språk
+Vilka språk talar du?
+Talar du?
+Talar du engelska?
+Min vän
+Trevlig
+Min vän är trevlig
+Du
+Du är
+Lång
+Du är lång
+Jag
+Jag är
+En man
+Jag är en man
+Du är
+En kvinna
+Du är en kvinna
+Singel
+Är du singel?
+Eller
+Gift
+Eller gift?
+Är du gift?
+Nej
+Nej, jag är
+Nej, jag är singel
+Ja
+Ja, jag är
+Ja, jag är gift
+En pojke
+En flicka
+Jag har
+Jag har en pojke
+Jag har en flicka
+Du
+Du är
+Du är gift
+Men
+Men jag är
+Men jag är singel
+Namn
+Mitt namn är
+Mitt namn är Adrian
+Ditt namn är
+Ditt namn är Adrian
+Jag vet inte
+Jag vet inte
+Jag vet
+Jag vet ditt namn
+Du är Adrian
+Igen
+Vad heter du?
+Vad heter du igen?
+Hur mår du?
+Tack
+Tack
+Jag mår bra, tack
+Okej
+Vi är
+Här
+Vi är här
+Att lära
+Ny
+Språk
+Ett nytt språk
+Vi är här för att lära
+Vi är här för att lära oss ett nytt språk.
+Hej alla.
+Hej alla. Hur mår ni?
+Välkommen
+Vi är
+Vi lär oss
+En ny
+Ett nytt språk
+Vi är här.
+Att lära sig
+Att lära sig ett nytt språk.
+Tack
+Adjö
+Var försiktig
+Hej då
