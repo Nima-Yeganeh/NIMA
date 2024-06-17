@@ -1,0 +1,286 @@
+Hei
+Hallo
+Alle
+Hei alle sammen
+Velkommen
+Kurs
+Velkommen til
+Dette kurset
+Velkommen til dette kurset.
+Lære
+Å lære
+Snakke
+Å snakke
+Øve
+Bare
+Bare øv.
+Lytte
+Nøye
+Lytt nøye.
+Og
+Gjenta
+Øv
+Gjenta og øv.
+Meg
+Etter
+Etter meg
+Gjenta etter meg.
+Lytt
+Og gjenta etter meg.
+Hvordan
+Hvordan er
+Du
+Hvordan har du det?
+Jeg
+Jeg er
+Jeg har det bra.
+Din
+Ditt navn
+Hva
+Hva heter du?
+Min
+Mitt navn
+Jeg heter Adrian.
+Og
+Og du?
+Ditt navn
+Heter du Adrian?
+Ja
+Min
+Ja, jeg heter Adrian.
+Nei
+Ditt navn er Adrian.
+Alle
+Hei alle sammen.
+Hyggelig
+Hyggelig å møte deg.
+Hyggelig å se deg.
+Takk
+Takk
+Hvordan har du det?
+Jeg har det bra, takk.
+Her
+Jeg er her.
+Hvor
+Hvor er du?
+Jeg er her.
+Vi
+Vi er
+Vi er her.
+En mann
+En kvinne
+En gutt
+En jente
+Jeg er
+Jeg er en mann.
+Du er
+Du er en kvinne.
+Han er
+Han er en gutt.
+Hun er
+Hun er en jente.
+Meg
+Det er
+Det er meg.
+Hvor
+Hvor er du?
+Hvor er du fra?
+England
+Jeg er fra
+Jeg er fra England.
+Jeg snakker
+Engelsk
+Jeg snakker engelsk.
+Hyggelig å se deg.
+Hvor er du fra?
+Amerika
+Jeg er fra
+Jeg er fra Amerika.
+Jeg snakker
+Engelsk
+Jeg snakker også engelsk.
+Hyggelig å se deg.
+Hvor er du fra?
+Frankrike
+Jeg er
+Jeg er fra
+Jeg er fra Frankrike.
+Jeg snakker
+Fransk
+Jeg snakker fransk.
+Hei
+Hvordan har du det?
+Hva heter du?
+Hvor er du fra?
+Tyskland
+Jeg er fra Tyskland.
+Tysk
+Jeg snakker tysk.
+Lære
+Jeg er
+Jeg lærer
+Jeg lærer tysk.
+Italia
+Alle
+Hei alle sammen.
+Jeg er fra
+Jeg er fra Italia.
+Italiensk
+Og
+Jeg snakker
+Og jeg snakker italiensk.
+Jeg lærer engelsk.
+Jeg lærer engelsk og fransk.
+Hvordan har du det?
+Takk
+Jeg har det bra.
+Hva heter du?
+Adrian.
+Heter du Adrian?
+Hyggelig å møte deg.
+Hvor er du fra?
+Spania
+Jeg er fra Spania.
+Spansk
+Gjør du?
+Snakker du?
+Snakker du spansk?
+Ja.
+Jeg lærer spansk.
+Hei.
+Hvordan har du det?
+Jeg har det bra, takk.
+Jeg er fra
+Jeg er fra Sverige.
+Svensk
+Og
+Jeg snakker
+Og jeg snakker svensk.
+Jeg lærer
+Jeg lærer tysk og spansk.
+Hvordan har du det?
+Takk
+Jeg har det bra.
+Heter du Adrian?
+Hyggelig å møte deg.
+Hvor er du fra?
+Norge
+Jeg er fra Norge.
+Norsk
+Snakker du?
+Snakker du norsk?
+Ja.
+Jeg snakker
+Jeg kan ikke
+Jeg kan ikke snakke
+Jeg kan ikke snakke norsk.
+Jeg lærer norsk.
+Venn
+Min
+Min venn
+Min venn er
+Min venn er fra
+Finland
+Min venn er fra Finland
+Han snakker
+Finsk
+Han snakker finsk.
+Mor
+Far
+Hans
+Hans mor
+Ungarsk
+Hans mor er ungarsk.
+Hun er fra
+Hun er fra Ungarn.
+Men
+Far
+Hans far
+Dansk
+Hans far er dansk.
+Han er fra
+Han er fra Danmark.
+Språk
+Hva
+Hvilke språk
+Hvilke språk snakker du?
+Snakker du?
+Snakker du engelsk?
+Min venn
+Hyggelig
+Min venn er hyggelig.
+Du
+Du er
+Høy
+Du er høy.
+Jeg
+Jeg er
+En mann
+Jeg er en mann.
+Du er
+En kvinne
+Du er en kvinne.
+Singel
+Er du singel?
+Eller
+Gift
+Eller gift?
+Er du gift?
+Nei
+Nei, jeg er
+Nei, jeg er singel.
+Ja
+Ja, jeg er
+Ja, jeg er gift.
+En gutt
+En jente
+Jeg har
+Jeg har en gutt.
+Jeg har en jente.
+Du
+Du er
+Du er gift.
+Men
+Men jeg er
+Men jeg er singel.
+Navn
+Mitt navn er
+Jeg heter Adrian.
+Ditt navn er
+Ditt navn er Adrian.
+Jeg gjør ikke
+Jeg vet ikke.
+Jeg vet
+Jeg vet ditt navn.
+Du er Adrian.
+Igjen
+Hva heter du?
+Hva heter du igjen?
+Hvordan har du det?
+Takk
+Takk
+Jeg har det bra, takk.
+OK
+Vi er
+Her
+Vi er her.
+Å lære
+Ny
+Språk
+Et nytt språk
+Vi er her for å lære
+Vi er her for å lære et nytt språk.
+Hei alle sammen.
+Hei alle sammen. Hvordan har dere det?
+Velkommen
+Vi er
+Vi lærer
+Et nytt
+Et nytt språk
+Vi er her.
+Å lære
+Å lære et nytt språk.
+Takk
+Adjø
+Ta vare
+Ha det
