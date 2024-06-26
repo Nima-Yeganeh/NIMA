@@ -1,286 +1,282 @@
-- Hi >>> Hei >>> /hɛɪ/
-- Hello >>> Hallo >>> /hɑˈlo/
-- Everyone >>> Alle >>> /ˈɑlə/
-- Hello everyone >>> Hei alle sammen >>> /hɛɪ ˈɑlə ˈsɑmən/
-- Welcome >>> Velkommen >>> /vɛlˈkɔmən/
-- Course >>> Kurs >>> /kʉrʂ/
-- Welcome to >>> Velkommen til >>> /vɛlˈkɔmən tɪl/
-- This course >>> Dette kurset >>> /ˈdɛtə ˈkʉrset/
-- Welcome to this course. >>> Velkommen til dette kurset. >>> /vɛlˈkɔmən tɪl ˈdɛtə ˈkʉrset/
-- Learn >>> Lære >>> /ˈlæːɾə/
-- To learn >>> Å lære >>> /oː ˈlæːɾə/
-- Speak >>> Snakke >>> /ˈsnakə/
-- To speak >>> Å snakke >>> /oː ˈsnakə/
-- Practice >>> Øve >>> /ˈøːvə/
-- Just >>> Bare >>> /ˈbɑːɾə/
-- Just practice. >>> Bare øv. >>> /ˈbɑːɾə øv/
-- Listen >>> Lytte >>> /ˈlʏtə/
-- Carefully >>> Nøye >>> /ˈnœjə/
-- Listen carefully. >>> Lytt nøye. >>> /lʏt ˈnœjə/
-- And >>> Og >>> /ɔg/
-- Repeat >>> Gjenta >>> /ˈjɛnˌta/
-- Practice >>> Øv >>> /øv/
-- Repeat and practice. >>> Gjenta og øv. >>> /ˈjɛnˌta ɔg øv/
-- Me >>> Meg >>> /mɑɪ/
-- After >>> Etter >>> /ˈɛtːər/
-- After me >>> Etter meg >>> /ˈɛtːər mɑɪ/
-- Repeat after me. >>> Gjenta etter meg. >>> /ˈjɛnˌta ˈɛtːər mɑɪ/
-- Listen >>> Lytt >>> /lʏt/
-- And repeat after me. >>> Og gjenta etter meg. >>> /ɔg ˈjɛnˌta ˈɛtːər mɑɪ/
-- How >>> Hvordan >>> /ˈʋʉrdɑn/
-- How are >>> Hvordan er >>> /ˈʋʉrdɑn æɾ/
-- You >>> Du >>> /dʉ/
-- How are you? >>> Hvordan har du det? >>> /ˈʋʉrdɑn hɑɾ dʉ dɛ/
-- I >>> Jeg >>> /jæɪ/
-- I am >>> Jeg er >>> /jæɪ æɾ/
-- I'm fine. >>> Jeg har det bra. >>> /jæɪ hɑɾ dɛ brɑ/
-- Your >>> Din >>> /din/
-- Your name >>> Ditt navn >>> /dɪt nɑvn/
-- What >>> Hva >>> /ʋɑ/
-- What is your name? >>> Hva heter du? >>> /ʋɑ ˈheːtər dʉ/
-- My >>> Min >>> /min/
-- My name >>> Mitt navn >>> /mɪt nɑvn/
-- My name is Adrian. >>> Jeg heter Adrian. >>> /jæɪ ˈheːtər ˈɑːdriɑn/
-- And >>> Og >>> /ɔg/
-- And you? >>> Og du? >>> /ɔg dʉ/
-- Your name >>> Ditt navn >>> /dɪt nɑvn/
-- Your name is Adrian? >>> Heter du Adrian? >>> /ˈheːtər dʉ ˈɑːdriɑn/
-- Yes >>> Ja >>> /jɑ/
-- My >>> Min >>> /min/
-- Yes, my name is Adrian. >>> Ja, jeg heter Adrian. >>> /jɑ jæɪ ˈheːtər ˈɑːdriɑn/
-- No >>> Nei >>> /næɪ/
-- Your name is Adrian. >>> Ditt navn er Adrian. >>> /dɪt nɑvn æɾ ˈɑːdriɑn/
-- Everyone >>> Alle >>> /ˈɑlə/
-- Hi everyone. >>> Hei alle sammen. >>> /hɛɪ ˈɑlə ˈsɑmən/
-- Nice >>> Hyggelig >>> /ˈhʏgːəli/
-- Nice to meet you. >>> Hyggelig å møte deg. >>> /ˈhʏgːəli oː ˈmøːtə dæɪ/
-- Nice to see you. >>> Hyggelig å se deg. >>> /ˈhʏgːəli oː se dæɪ/
-- Thanks >>> Takk >>> /tak/
-- Thank you >>> Takk >>> /tak/
-- How are you? >>> Hvordan har du det? >>> /ˈʋʉrdɑn hɑɾ dʉ dɛ/
-- I'm fine, thanks. >>> Jeg har det bra, takk. >>> /jæɪ hɑɾ dɛ brɑ, tak/
-- Here >>> Her >>> /hæɾ/
-- I'm here. >>> Jeg er her. >>> /jæɪ æɾ hæɾ/
-- Where >>> Hvor >>> /ʋʉr/
-- Where are you? >>> Hvor er du? >>> /ʋʉr æɾ dʉ/
-- I'm here. >>> Jeg er her. >>> /jæɪ æɾ hæɾ/
-- We >>> Vi >>> /vi/
-- We are >>> Vi er >>> /vi æɾ/
-- We are here. >>> Vi er her. >>> /vi æɾ hæɾ/
-- A man >>> En mann >>> /ɛn mɑn/
-- A woman >>> En kvinne >>> /ɛn ˈkvɪnːə/
-- A boy >>> En gutt >>> /ɛn gʉt/
-- A girl >>> En jente >>> /ɛn ˈjɛnˌtə/
-- I am >>> Jeg er >>> /jæɪ æɾ/
-- I am a man. >>> Jeg er en mann. >>> /jæɪ æɾ ɛn mɑn/
-- You are >>> Du er >>> /dʉ æɾ/
-- You are a woman. >>> Du er en kvinne. >>> /dʉ æɾ ɛn ˈkvɪnːə/
-- He is >>> Han er >>> /hɑn æɾ/
-- He is a boy. >>> Han er en gutt. >>> /hɑn æɾ ɛn gʉt/
-- She is >>> Hun er >>> /hʉn æɾ/
-- She is a girl. >>> Hun er en jente. >>> /hʉn æɾ ɛn ˈjɛnˌtə/
-- Me >>> Meg >>> /mɑɪ/
-- It is >>> Det er >>> /dɛ æɾ/
-- It's me. >>> Det er meg. >>> /dɛ æɾ mɑɪ/
-- Where >>> Hvor >>> /ʋʉr/
-- Where are you? >>> Hvor er du? >>> /ʋʉr æɾ dʉ/
-- Where are you from? >>> Hvor er du fra? >>> /ʋʉr æɾ dʉ frɑ/
-- England >>> England >>> /ˈeŋlɑnd/
-- I'm from >>> Jeg er fra >>> /jæɪ æɾ frɑ/
-- I'm from England. >>> Jeg er fra England. >>> /jæɪ æɾ frɑ ˈeŋlɑnd/
-- I speak >>> Jeg snakker >>> /jæɪ ˈsnakəɾ/
-- English >>> Engelsk >>> /ˈeŋəˌlsk/
-- I speak English. >>> Jeg snakker engelsk. >>> /jæɪ ˈsnakəɾ ˈeŋəˌlsk/
-- Nice to see you. >>> Hyggelig å se deg. >>> /ˈhʏgːəli oː se dæɪ/
-- Where are you from? >>> Hvor er du fra? >>> /ʋʉr æɾ dʉ frɑ/
-- America >>> Amerika >>> /ɑˈmeːɾikɑ/
-- I'm from >>> Jeg er fra >>> /jæɪ æɾ frɑ/
-- I'm from America. >>> Jeg er fra Amerika. >>> /jæɪ æɾ frɑ ɑˈmeːɾikɑ/
-- I speak >>> Jeg snakker >>> /jæɪ ˈsnakəɾ/
-- English >>> Engelsk >>> /ˈeŋəˌlsk/
-- I speak English too. >>> Jeg snakker også engelsk. >>> /jæɪ ˈsnakəɾ ˈɔsɔ ˈeŋəˌlsk/
-- Nice to see you. >>> Hyggelig å se deg. >>> /ˈhʏgːəli oː se dæɪ/
-- Where are you from? >>> Hvor er du fra? >>> /ʋʉr æɾ dʉ frɑ/
-- France >>> Frankrike >>> /ˈfrɑŋˌkriːkə/
-- I am >>> Jeg er >>> /jæɪ æɾ/
-- I am from >>> Jeg er fra >>> /jæɪ æɾ frɑ/
-- I'm from France. >>> Jeg er fra Frankrike. >>> /jæɪ æɾ frɑ ˈfrɑŋˌkriːkə/
-- I speak >>> Jeg snakker >>> /jæɪ ˈsnakəɾ/
-- French >>> Fransk >>> /frɑnsk/
-- I speak French. >>> Jeg snakker fransk. >>> /jæɪ ˈsnakəɾ frɑnsk/
-- Hi >>> Hei >>> /hɛɪ/
-- How are you? >>> Hvordan har du det? >>> /ˈʋʉrdɑn hɑɾ dʉ dɛ/
-- What is your name? >>> Hva heter du? >>> /ʋɑ ˈheːtər dʉ/
-- Where are you from? >>> Hvor er du fra? >>> /ʋʉr æɾ dʉ frɑ/
-- Germany >>> Tyskland >>> /ˈtʏsklɑn/
-- I'm from Germany. >>> Jeg er fra Tyskland. >>> /jæɪ æɾ frɑ ˈtʏsklɑn/
-- German >>> Tysk >>> /tʏsk/
-- I speak German. >>> Jeg snakker tysk. >>> /jæɪ ˈsnakəɾ tʏsk/
-- Learn >>> Lære >>> /ˈlæːɾə/
-- I am >>> Jeg er >>> /jæɪ æɾ/
-- I am learning >>> Jeg lærer >>> /jæɪ ˈlæːɾər/
-- I am learning German. >>> Jeg lærer tysk. >>> /jæɪ ˈlæːɾər tʏsk/
-- Italy >>> Italia >>> /iˈtɑːliɑ/
-- Everyone >>> Alle >>> /ˈɑlə/
-- Hello everyone. >>> Hei alle sammen. >>> /hɛɪ ˈɑlə ˈsɑmən/
-- I'm from >>> Jeg er fra >>> /jæɪ æɾ frɑ/
-- I'm from Italy. >>> Jeg er fra Italia. >>> /jæɪ æɾ frɑ iˈtɑːliɑ/
-- Italian >>> Italiensk >>> /iˈtɑːliensk/
-- And >>> Og >>> /ɔg/
-- I speak >>> Jeg snakker >>> /jæɪ ˈsnakəɾ/
-- And, I speak Italian. >>> Og jeg snakker italiensk. >>> /ɔg jæɪ ˈsnakəɾ iˈtɑːliensk/
-- I am learning English. >>> Jeg lærer engelsk. >>> /jæɪ ˈlæːɾər ˈeŋəˌlsk/
-- I am learning English and French. >>> Jeg lærer engelsk og fransk. >>> /jæɪ ˈlæːɾər ˈeŋəˌlsk ɔg frɑnsk/
-- How are you? >>> Hvordan har du det? >>> /ˈʋʉrdɑn hɑɾ dʉ dɛ/
-- Thanks >>> Takk >>> /tak/
-- I'm fine. >>> Jeg har det bra. >>> /jæɪ hɑɾ dɛ brɑ/
-- What is your name? >>> Hva heter du? >>> /ʋɑ ˈheːtər dʉ/
-- Adrian. >>> Adrian. >>> /ˈɑːdriɑn/
-- Are you Adrian? >>> Heter du Adrian? >>> /ˈheːtər dʉ ˈɑːdriɑn/
-- Nice to meet you. >>> Hyggelig å møte deg. >>> /ˈhʏgːəli oː ˈmøːtə dæɪ/
-- Where are you from? >>> Hvor er du fra? >>> /ʋʉr æɾ dʉ frɑ/
-- Spain >>> Spania >>> /ˈspɑːniɑ/
-- I'm from Spain. >>> Jeg er fra Spania. >>> /jæɪ æɾ frɑ ˈspɑːniɑ/
-- Spanish >>> Spansk >>> /spɑnsk/
-- Do you? >>> Gjør du? >>> /jœɾ dʉ/
-- Do you speak? >>> Snakker du? >>> /ˈsnakəɾ dʉ/
-- Do you speak Spanish? >>> Snakker du spansk? >>> /ˈsnakəɾ dʉ spɑnsk/
-- Yes. >>> Ja. >>> /jɑ/
-- I am learning Spanish. >>> Jeg lærer spansk. >>> /jæɪ ˈlæːɾər spɑnsk/
-- Hello. >>> Hei. >>> /hɛɪ/
-- How are you? >>> Hvordan har du det? >>> /ˈʋʉrdɑn hɑɾ dʉ dɛ/
-- I'm fine, thanks. >>> Jeg har det bra, takk. >>> /jæɪ hɑɾ dɛ brɑ, tak/
-- I'm from >>> Jeg er fra >>> /jæɪ æɾ frɑ/
-- I'm from Sweden. >>> Jeg er fra Sverige. >>> /jæɪ æɾ frɑ ˈsvæɾjə/
-- Swedish >>> Svensk >>> /svɛnsk/
-- And >>> Og >>> /ɔg/
-- I speak >>> Jeg snakker >>> /jæɪ ˈsnakəɾ/
-- And, I speak Swedish. >>> Og jeg snakker svensk. >>> /ɔg jæɪ ˈsnakəɾ svɛnsk/
-- I am learning >>> Jeg lærer >>> /jæɪ ˈlæːɾər/
-- I am learning German and Spanish. >>> Jeg lærer tysk og spansk. >>> /jæɪ ˈlæːɾər tʏsk ɔg spɑnsk/
-- How are you? >>> Hvordan har du det? >>> /ˈʋʉrdɑn hɑɾ dʉ dɛ/
-- Thanks >>> Takk >>> /tak/
-- I'm fine. >>> Jeg har det bra. >>> /jæɪ hɑɾ dɛ brɑ/
-- Are you Adrian? >>> Heter du Adrian? >>> /ˈheːtər dʉ ˈɑːdriɑn/
-- Nice to meet you. >>> Hyggelig å møte deg. >>> /ˈhʏgːəli oː ˈmøːtə dæɪ/
-- Where are you from? >>> Hvor er du fra? >>> /ʋʉr æɾ dʉ frɑ/
-- Norway >>> Norge >>> /ˈnɔɾgə/
-- I'm from Norway. >>> Jeg er fra Norge. >>> /jæɪ æɾ frɑ ˈnɔɾgə/
-- Norwegian >>> Norsk >>> /nɔʃk/
-- Do you speak? >>> Snakker du? >>> /ˈsnakəɾ dʉ/
-- Do you speak Norwegian? >>> Snakker du norsk? >>> /ˈsnakəɾ dʉ nɔʃk/
-- Yes. >>> Ja. >>> /jɑ/
-- I speak >>> Jeg snakker >>> /jæɪ ˈsnakəɾ/
-- I cannot >>> Jeg kan ikke >>> /jæɪ kɑn ˈɪkːə/
-- I cannot speak >>> Jeg kan ikke snakke >>> /jæɪ kɑn ˈɪkːə ˈsnakə/
-- I cannot speak Norwegian. >>> Jeg kan ikke snakke norsk. >>> /jæɪ kɑn ˈɪkːə ˈsnakə nɔʃk/
-- I am learning Norwegian. >>> Jeg lærer norsk. >>> /jæɪ ˈlæːɾər nɔʃk/
-- Friend >>> Venn >>> /vɛn/
-- My >>> Min >>> /min/
-- My friend >>> Min venn >>> /min vɛn/
-- My friend is >>> Min venn er >>> /min vɛn æɾ/
-- My friend is from >>> Min venn er fra >>> /min vɛn æɾ frɑ/
-- Finland >>> Finland >>> /ˈfɪnlɑnd/
-- My friend is from Finland >>> Min venn er fra Finland >>> /min vɛn æɾ frɑ ˈfɪnlɑnd/
-- He speaks >>> Han snakker >>> /hɑn ˈsnakəɾ/
-- Finnish >>> Finsk >>> /fɪnsk/
-- He speaks Finnish. >>> Han snakker finsk. >>> /hɑn ˈsnakəɾ fɪnsk/
-- Mother >>> Mor >>> /muːr/
-- Father >>> Far >>> /fɑr/
-- His >>> Hans >>> /hɑns/
-- His mother >>> Hans mor >>> /hɑns muːr/
-- Hungarian >>> Ungarsk >>> /ˈʉŋɑʃk/
-- His mother is Hungarian. >>> Hans mor er ungarsk. >>> /hɑns muːr æɾ ˈʉŋɑʃk/
-- She is from >>> Hun er fra >>> /hʉn æɾ frɑ/
-- She is from Hungary. >>> Hun er fra Ungarn. >>> /hʉn æɾ frɑ ˈʉŋɑrn/
-- But >>> Men >>> /mɛn/
-- Father >>> Far >>> /fɑr/
-- His father >>> Hans far >>> /hɑns fɑr/
-- Danish >>> Dansk >>> /dɑnsk/
-- His father is Danish. >>> Hans far er dansk. >>> /hɑns fɑr æɾ dɑnsk/
-- He is from >>> Han er fra >>> /hɑn æɾ frɑ/
-- He is from Denmark. >>> Han er fra Danmark. >>> /hɑn æɾ frɑ ˈdɑnmɑrk/
-- Language >>> Språk >>> /sprɔːk/
-- What >>> Hva >>> /ʋɑ/
-- What languages >>> Hvilke språk >>> /ˈʋɪlkə sprɔːk/
-- What languages do you speak? >>> Hvilke språk snakker du? >>> /ˈʋɪlkə sprɔːk ˈsnakəɾ dʉ/
-- Do you speak? >>> Snakker du? >>> /ˈsnakəɾ dʉ/
-- Do you speak English? >>> Snakker du engelsk? >>> /ˈsnakəɾ dʉ ˈeŋəˌlsk/
-- My friend >>> Min venn >>> /min vɛn/
-- Nice >>> Hyggelig >>> /ˈhʏgːəli/
-- My friend is nice. >>> Min venn er hyggelig. >>> /min vɛn æɾ ˈhʏgːəli/
-- You >>> Du >>> /dʉ/
-- You are >>> Du er >>> /dʉ æɾ/
-- Tall >>> Høy >>> /høy/
-- You are tall. >>> Du er høy. >>> /dʉ æɾ høy/
-- I >>> Jeg >>> /jæɪ/
-- I am >>> Jeg er >>> /jæɪ æɾ/
-- A man >>> En mann >>> /ɛn mɑn/
-- I am a man. >>> Jeg er en mann. >>> /jæɪ æɾ ɛn mɑn/
-- You are >>> Du er >>> /dʉ æɾ/
-- A woman >>> En kvinne >>> /ɛn ˈkvɪnːə/
-- You are a woman. >>> Du er en kvinne. >>> /dʉ æɾ ɛn ˈkvɪnːə/
-- Single >>> Singel >>> /ˈsɪŋəl/
-- Are you single? >>> Er du singel? >>> /æɾ dʉ ˈsɪŋəl/
-- Or >>> Eller >>> /ˈɛlər/
-- Married >>> Gift >>> /jɪft/
-- Or married? >>> Eller gift? >>> /ˈɛlər jɪft/
-- Are you married? >>> Er du gift? >>> /æɾ dʉ jɪft/
-- No >>> Nei >>> /næɪ/
-- No, I am >>> Nei, jeg er >>> /næɪ, jæɪ æɾ/
-- No, I am single. >>> Nei, jeg er singel. >>> /næɪ, jæɪ æɾ ˈsɪŋəl/
-- Yes >>> Ja >>> /jɑ/
-- Yes, I am >>> Ja, jeg er >>> /jɑ, jæɪ æɾ/
-- Yes, I am married. >>> Ja, jeg er gift. >>> /jɑ, jæɪ æɾ jɪft/
-- A Boy >>> En gutt >>> /ɛn gʉt/
-- A Girl >>> En jente >>> /ɛn ˈjɛnˌtə/
-- I have >>> Jeg har >>> /jæɪ hɑɾ/
-- I have a boy. >>> Jeg har en gutt. >>> /jæɪ hɑɾ ɛn gʉt/
-- I have a girl. >>> Jeg har en jente. >>> /jæɪ hɑɾ ɛn ˈjɛnˌtə/
-- You >>> Du >>> /dʉ/
-- You are >>> Du er >>> /dʉ æɾ/
-- You are married. >>> Du er gift. >>> /dʉ æɾ jɪft/
-- But >>> Men >>> /mɛn/
-- But I am >>> Men jeg er >>> /mɛn jæɪ æɾ/
-- But I am single. >>> Men jeg er singel. >>> /mɛn jæɪ æɾ ˈsɪŋəl/
-- Name >>> Navn >>> /nɑvn/
-- My name is >>> Mitt navn er >>> /mɪt nɑvn æɾ/
-- My name is Adrian. >>> Jeg heter Adrian. >>> /jæɪ ˈheːtər ˈɑːdriɑn/
-- Your name is >>> Ditt navn er >>> /dɪt nɑvn æɾ/
-- Your name is Adrian. >>> Ditt navn er Adrian. >>> /dɪt nɑvn æɾ ˈɑːdriɑn/
-- I don't >>> Jeg gjør ikke >>> /jæɪ jœɾ ˈɪkːə/
-- I don't know. >>> Jeg vet ikke. >>> /jæɪ veːt ˈɪkːə/
-- I know >>> Jeg vet >>> /jæɪ veːt/
-- I know your name. >>> Jeg vet ditt navn. >>> /jæɪ veːt dɪt nɑvn/
-- You are Adrian. >>> Du er Adrian. >>> /dʉ æɾ ˈɑːdriɑn/
-- Again >>> Igjen >>> /iˈjɛn/
-- What is your name? >>> Hva heter du? >>> /ʋɑ ˈheːtər dʉ/
-- What is your name again? >>> Hva heter du igjen? >>> /ʋɑ ˈheːtər dʉ iˈjɛn/
-- How are you? >>> Hvordan har du det? >>> /ˈʋʉrdɑn hɑɾ dʉ dɛ/
-- Thanks >>> Takk >>> /tak/
-- Thank you >>> Takk >>> /tak/
-- I'm fine, thanks. >>> Jeg har det bra, takk. >>> /jæɪ hɑɾ dɛ brɑ, tak/
-- OK >>> OK >>> /oˈke/
-- We are >>> Vi er >>> /vi æɾ/
-- Here >>> Her >>> /hæɾ/
-- We are here. >>> Vi er her. >>> /vi æɾ hæɾ/
-- To learn >>> Å lære >>> /oː ˈlæːɾə/
-- New >>> Ny >>> /ny/
-- Language >>> Språk >>> /sprɔːk/
-- A new language >>> Et nytt språk >>> /ɛt nʏt sprɔːk/
-- We are here to learn >>> Vi er her for å lære >>> /vi æɾ hæɾ fɔɾ oː ˈlæːɾə/
-- We are here to learn a new language. >>> Vi er her for å lære et nytt språk. >>> /vi æɾ hæɾ fɔɾ oː ˈlæːɾə ɛt nʏt sprɔːk/
-- Hi everyone. >>> Hei alle sammen. >>> /hɛɪ ˈɑlə ˈsɑmən/
-- Hi everyone. How are you? >>> Hei alle sammen. Hvordan har dere det? >>> /hɛɪ ˈɑlə ˈsɑmən. ˈʋʉrdɑn hɑɾ ˈdɛɾə dɛ/
-- Welcome >>> Velkommen >>> /vɛlˈkɔmən/
-- We are >>> Vi er >>> /vi æɾ/
-- We are learning >>> Vi lærer >>> /vi ˈlæːɾər/
-- A new >>> Et nytt >>> /ɛt nʏt/
-- A new language >>> Et nytt språk >>> /ɛt nʏt sprɔːk/
-- We are here. >>> Vi er her. >>> /vi æɾ hæɾ/
-- To learn >>> Å lære >>> /oː ˈlæːɾə/
-- To learn a new language. >>> Å lære et nytt språk. >>> /oː ˈlæːɾə ɛt nʏt sprɔːk/
-- Thank you >>> Takk >>> /tak/
-- Goodbye >>> Adjø >>> /aˈjøː/
-- Take care >>> Ta vare >>> /ta ˈvɑːɾə/
-- Bye >>> Ha det >>> /ha dɛ/
+- Hi >>> Hei >>> /hei/
+- Hello >>> Hei >>> /hei/
+- Everyone >>> Kaikki >>> /ˈkɑikki/
+- Hello everyone >>> Hei kaikki >>> /hei ˈkɑikki/
+- Welcome >>> Tervetuloa >>> /ˈterʋeˌtuloɑ/
+- Course >>> Kurssi >>> /ˈkurssi/
+- Welcome to >>> Tervetuloa >>> /ˈterʋeˌtuloɑ/
+- This Course >>> Tämä kurssi >>> /ˈtæmæ ˈkurssi/
+- Welcome to this course. >>> Tervetuloa tälle kurssille. >>> /ˈterʋeˌtuloɑ ˈtælle ˈkurssille/
+- Learn >>> Oppia >>> /ˈopiɑ/
+- To learn >>> Oppia >>> /ˈopiɑ/
+- Speak >>> Puhua >>> /ˈpuhuɑ/
+- To speak >>> Puhua >>> /ˈpuhuɑ/
+- Practice >>> Harjoitella >>> /ˈhɑrjoitellɑ/
+- Just >>> Vain >>> /ʋɑin/
+- Just practice. >>> Vain harjoitella. >>> /ʋɑin ˈhɑrjoitellɑ/
+- Listen >>> Kuunnella >>> /ˈkuːnnelɑ/
+- Carefully >>> Huolellisesti >>> /ˈhuolellisesti/
+- Listen carefully. >>> Kuunnella huolellisesti. >>> /ˈkuːnnelɑ ˈhuolellisesti/
+- And >>> Ja >>> /jɑ/
+- Repeat >>> Toistaa >>> /ˈtoistɑɑ/
+- Practice >>> Harjoitella >>> /ˈhɑrjoitellɑ/
+- Repeat and practice. >>> Toistaa ja harjoitella. >>> /ˈtoistɑɑ jɑ ˈhɑrjoitellɑ/
+- Me >>> Minä >>> /ˈminæ/
+- After >>> Jälkeen >>> /ˈjæːlkeen/
+- After me >>> Jälkeeni >>> /ˈjæːlkeːni/
+- Repeat after me. >>> Toista jälkeeni. >>> /ˈtoistɑ ˈjæːlkeːni/
+- Listen >>> Kuunnella >>> /ˈkuːnnelɑ/
+- And repeat after me. >>> Ja toista jälkeeni. >>> /jɑ ˈtoistɑ ˈjæːlkeːni/
+- How >>> Kuinka >>> /ˈkuinkɑ/
+- How are >>> Miten voit >>> /ˈmiten ˈvoit/
+- You >>> Sinä >>> /ˈsinæ/
+- How are you? >>> Kuinka voit? >>> /ˈkuinkɑ ˈvoit/
+- I >>> Minä >>> /ˈminæ/
+- I am >>> Minä olen >>> /ˈminæ ˈolen/
+- I'm fine. >>> Olen kunnossa. >>> /ˈolen ˈkunnossɑ/
+- Your >>> Sinun >>> /ˈsinun/
+- Your name >>> Nimesi >>> /ˈnimesi/
+- What >>> Mitä >>> /ˈmitæ/
+- What is your name? >>> Mikä on nimesi? >>> /ˈmikæ ˈon ˈnimesi/
+- My >>> Minun >>> /ˈminun/
+- My name >>> Nimeni >>> /ˈnimeni/
+- My name is Adrian. >>> Nimeni on Adrian. >>> /ˈnimeni ˈon ˈɑdrian/
+- And >>> Ja >>> /jɑ/
+- And you? >>> Entä sinä? >>> /ˈentæ ˈsinæ/
+- Your name >>> Nimesi >>> /ˈnimesi/
+- Your name is Adrian? >>> Nimesi on Adrian? >>> /ˈnimesi ˈon ˈɑdrian/
+- Yes >>> Kyllä >>> /ˈkylːæ/
+- Yes, my name is Adrian. >>> Kyllä, nimeni on Adrian. >>> /ˈkylːæ, ˈnimeni ˈon ˈɑdrian/
+- No >>> Ei >>> /ei/
+- Your name is Adrian. >>> Nimesi on Adrian. >>> /ˈnimesi ˈon ˈɑdrian/
+- Everyone >>> Kaikki >>> /ˈkɑikki/
+- Hi everyone. >>> Hei kaikki. >>> /hei ˈkɑikki/
+- Nice >>> Mukava >>> /ˈmukɑʋɑ/
+- Nice to meet you. >>> Hauska tavata. >>> /ˈhɑuskɑ ˈtɑʋɑtɑ/
+- Nice to see you. >>> Mukava nähdä sinua. >>> /ˈmukɑʋɑ ˈnæːdæ ˈsinuɑ/
+- Thanks >>> Kiitos >>> /ˈkiːtos/
+- Thanks you >>> Kiitos sinulle >>> /ˈkiːtos ˈsinulle/
+- How are you? >>> Kuinka voit? >>> /ˈkuinkɑ ˈvoit/
+- I'm fine, thanks. >>> Olen kunnossa, kiitos. >>> /ˈolen ˈkunnossɑ, ˈkiːtos/
+- Here >>> Tässä >>> /ˈtæssæ/
+- I'm here. >>> Olen täällä. >>> /ˈolen ˈtæːllæ/
+- Where >>> Missä >>> /ˈmissæ/
+- Where are you? >>> Missä olet? >>> /ˈmissæ ˈolet/
+- I'm here. >>> Olen täällä. >>> /ˈolen ˈtæːllæ/
+- We >>> Me >>> /me/
+- We are >>> Me olemme >>> /me ˈolemːe/
+- We are here. >>> Me olemme täällä. >>> /me ˈolemːe ˈtæːllæ/
+- A man >>> Mies >>> /mies/
+- A woman >>> Nainen >>> /ˈnɑiˌnen/
+- A boy >>> Poika >>> /ˈpoiˌkɑ/
+- A girl >>> Tyttö >>> /ˈtytːø/
+- I am >>> Minä olen >>> /ˈminæ ˈolen/
+- I am a man. >>> Olen mies. >>> /ˈolen ˈmies/
+- You are >>> Sinä olet >>> /ˈsinæ ˈolet/
+- You are a woman. >>> Olet nainen. >>> /ˈolet ˈnɑiˌnen/
+- He is >>> Hän on >>> /ˈhæn ˈon/
+- She is >>> Hän on >>> /ˈhæn ˈon/
+- Me >>> Minä >>> /ˈminæ/
+- It is >>> Se on >>> /se ˈon/
+- It's me. >>> Se olen minä. >>> /se ˈolen ˈminæ/
+- Where >>> Missä >>> /ˈmissæ/
+- Where are you? >>> Missä olet? >>> /ˈmissæ ˈolet/
+- Where are you from? >>> Mistä olet kotoisin? >>> /ˈmistæ ˈolet ˈkotoisin/
+- England >>> Englanti >>> /ˈeŋlɑnti/
+- I'm from >>> Olen kotoisin >>> /ˈolen ˈkotoisin/
+- I'm from England. >>> Olen kotoisin Englannista. >>> /ˈolen ˈkotoisin ˈeŋlɑnnistɑ/
+- I speak >>> Puhun >>> /ˈpuhun/
+- English >>> Englantia >>> /ˈeŋlɑntiɑ/
+- I speak English. >>> Puhun englantia. >>> /ˈpuhun ˈeŋlɑntiɑ/
+- Nice to see you. >>> Mukava nähdä sinua. >>> /ˈmukɑʋɑ ˈnæːdæ ˈsinuɑ/
+- Where are you from? >>> Mistä olet kotoisin? >>> /ˈmistæ ˈolet ˈkotoisin/
+- America >>> Amerikka >>> /ˈɑmerikkɑ/
+- I'm from >>> Olen kotoisin >>> /ˈolen ˈkotoisin/
+- I'm from America. >>> Olen kotoisin Amerikasta. >>> /ˈolen ˈkotoisin ˈɑmerikkɑstɑ/
+- I speak >>> Puhun >>> /ˈpuhun/
+- English >>> Englantia >>> /ˈeŋlɑntiɑ/
+- I speak English too. >>> Puhun myös englantia. >>> /ˈpuhun ˈmyøs ˈeŋlɑntiɑ/
+- Nice to see you. >>> Mukava nähdä sinua. >>> /ˈmukɑʋɑ ˈnæːdæ ˈsinuɑ/
+- Where are you from? >>> Mistä olet kotoisin? >>> /ˈmistæ ˈolet ˈkotoisin/
+- France >>> Ranska >>> /ˈrɑnskɑ/
+- I am >>> Minä olen >>> /ˈminæ ˈolen/
+- I am from >>> Olen kotoisin >>> /ˈolen ˈkotoisin/
+- I'm from France. >>> Olen kotoisin Ranskasta. >>> /ˈolen ˈkotoisin ˈrɑnskɑstɑ/
+- I speak >>> Puhun >>> /ˈpuhun/
+- French >>> Ranskaa >>> /ˈrɑnskɑː/
+- I speak French. >>> Puhun ranskaa. >>> /ˈpuhun ˈrɑnskɑː/
+- Hi >>> Hei >>> /hei/
+- How are you? >>> Kuinka voit? >>> /ˈkuinkɑ ˈvoit/
+- What is your name? >>> Mikä on nimesi? >>> /ˈmikæ ˈon ˈnimesi/
+- Where are you from? >>> Mistä olet kotoisin? >>> /ˈmistæ ˈolet ˈkotoisin/
+- Germany >>> Saksa >>> /ˈsɑksɑ/
+- I'm from Germany. >>> Olen kotoisin Saksasta. >>> /ˈolen ˈkotoisin ˈsɑksɑstɑ/
+- German >>> Saksaa >>> /ˈsɑksɑː/
+- I speak German. >>> Puhun saksaa. >>> /ˈpuhun ˈsɑksɑː/
+- Learn >>> Oppia >>> /ˈopiɑ/
+- I am >>> Minä olen >>> /ˈminæ ˈolen/
+- I am learning >>> Olen oppimassa >>> /ˈolen ˈopiˌmɑssɑ/
+- I am learning German. >>> Olen oppimassa saksaa. >>> /ˈolen ˈopiˌmɑssɑ ˈsɑksɑː/
+- Italy >>> Italia >>> /ˈitɑliɑ/
+- Everyone >>> Kaikki >>> /ˈkɑikki/
+- Hello everyone. >>> Hei kaikki. >>> /hei ˈkɑikki/
+- I'm from >>> Olen kotoisin >>> /ˈolen ˈkotoisin/
+- I'm from Italy. >>> Olen kotoisin Italiasta. >>> /ˈolen ˈkotoisin ˈitɑliɑstɑ/
+- Italian >>> Italiaa >>> /ˈitɑliɑː/
+- And >>> Ja >>> /jɑ/
+- I speak >>> Puhun >>> /ˈpuhun/
+- And, I speak Italian. >>> Ja puhun italiaa. >>> /jɑ ˈpuhun ˈitɑliɑː/
+- I am learning English. >>> Olen oppimassa englantia. >>> /ˈolen ˈopiˌmɑssɑ ˈeŋlɑntiɑ/
+- I am learning English and French. >>> Olen oppimassa englantia ja ranskaa. >>> /ˈolen ˈopiˌmɑssɑ ˈeŋlɑntiɑ jɑ ˈrɑnskɑː/
+- How are you? >>> Kuinka voit? >>> /ˈkuinkɑ ˈvoit/
+- Thanks >>> Kiitos >>> /ˈkiːtos/
+- I'm fine. >>> Olen kunnossa. >>> /ˈolen ˈkunnossɑ/
+- What is your name? >>> Mikä on nimesi? >>> /ˈmikæ ˈon ˈnimesi/
+- Adrian. >>> Adrian. >>> /ˈɑdriɑn/
+- Are you Adrian? >>> Oletko Adrian? >>> /ˈoletko ˈɑdriɑn/
+- Nice to meet you. >>> Hauska tavata. >>> /ˈhɑuskɑ ˈtɑʋɑtɑ/
+- Where are you from? >>> Mistä olet kotoisin? >>> /ˈmistæ ˈolet ˈkotoisin/
+- Spain >>> Espanja >>> /ˈesˌpɑnjɑ/
+- I'm from Spain. >>> Olen kotoisin Espanjasta. >>> /ˈolen ˈkotoisin ˈesˌpɑnjɑstɑ/
+- Spanish >>> Espanjaa >>> /ˈesˌpɑnjɑː/
+- Do you? >>> Teetkö? >>> /ˈteːtko/
+- Do you speak? >>> Puhutko? >>> /ˈpuhutko/
+- Do you speak Spanish? >>> Puhutko espanjaa? >>> /ˈpuhutko ˈesˌpɑnjɑː/
+- Yes. >>> Kyllä. >>> /ˈkylːæ/
+- I am learning Spanish. >>> Olen oppimassa espanjaa. >>> /ˈolen ˈopiˌmɑssɑ ˈesˌpɑnjɑː/
+- Hello. >>> Hei. >>> /hei/
+- How are you? >>> Kuinka voit? >>> /ˈkuinkɑ ˈvoit/
+- I'm fine, thanks. >>> Olen kunnossa, kiitos. >>> /ˈolen ˈkunnossɑ, ˈkiːtos/
+- I'm from >>> Olen kotoisin >>> /ˈolen ˈkotoisin/
+- I'm from Sweden. >>> Olen kotoisin Ruotsista. >>> /ˈolen ˈkotoisin ˈruotsistɑ/
+- Swedish >>> Ruotsia >>> /ˈruotsiɑ/
+- And >>> Ja >>> /jɑ/
+- I speak >>> Puhun >>> /ˈpuhun/
+- And, I speak Swedish. >>> Ja puhun ruotsia. >>> /jɑ ˈpuhun ˈruotsiɑ/
+- I am learning >>> Olen oppimassa >>> /ˈolen ˈopiˌmɑssɑ/
+- I am learning German and Spanish. >>> Olen oppimassa saksaa ja espanjaa. >>> /ˈolen ˈopiˌmɑssɑ ˈsɑksɑː jɑ ˈesˌpɑnjɑː/
+- How are you? >>> Kuinka voit? >>> /ˈkuinkɑ ˈvoit/
+- Thanks >>> Kiitos >>> /ˈkiːtos/
+- I'm fine. >>> Olen kunnossa. >>> /ˈolen ˈkunnossɑ/
+- Are you Adrian? >>> Oletko Adrian? >>> /ˈoletko ˈɑdriɑn/
+- Nice to meet you. >>> Hauska tavata. >>> /ˈhɑuskɑ ˈtɑʋɑtɑ/
+- Where are you from? >>> Mistä olet kotoisin? >>> /ˈmistæ ˈolet ˈkotoisin/
+- Norway >>> Norja >>> /ˈnorjɑ/
+- I'm from Norway. >>> Olen kotoisin Norjasta. >>> /ˈolen ˈkotoisin ˈnorjɑstɑ/
+- Norwegian >>> Norjaa >>> /ˈnorjɑː/
+- Do you speak? >>> Puhutko? >>> /ˈpuhutko/
+- Do you speak Norwegian? >>> Puhutko norjaa? >>> /ˈpuhutko ˈnorjɑː/
+- Yes. >>> Kyllä. >>> /ˈkylːæ/
+- I speak >>> Puhun >>> /ˈpuhun/
+- I cannot >>> En voi >>> /en ˈvoi/
+- I cannot speak >>> En voi puhua >>> /en ˈvoi ˈpuhuɑ/
+- I cannot speak Norwegian. >>> En voi puhua norjaa. >>> /en ˈvoi ˈpuhuɑ ˈnorjɑː/
+- Friend >>> Ystävä >>> /ˈystæˌʋæ/
+- My >>> Minun >>> /ˈminun/
+- My friend >>> Minun ystäväni >>> /ˈminun ˈystæˌʋæni/
+- My friend is >>> Ystäväni on >>> /ˈystæˌʋæni ˈon/
+- My friend is from >>> Ystäväni on kotoisin >>> /ˈystæˌʋæni ˈon ˈkotoisin/
+- Finland >>> Suomi >>> /ˈsuoˌmi/
+- My friend is from Finland >>> Ystäväni on kotoisin Suomesta >>> /ˈystæˌʋæni ˈon ˈkotoisin ˈsuomestɑ/
+- He speaks >>> Hän puhuu >>> /ˈhæn ˈpuhuː/
+- Finnish >>> Suomea >>> /ˈsuomeɑ/
+- He speaks Finnish. >>> Hän puhuu suomea. >>> /ˈhæn ˈpuhuː ˈsuomeɑ/
+- Mother >>> Äiti >>> /ˈæiti/
+- Father >>> Isä >>> /ˈisæ/
+- His >>> Hänen >>> /ˈhænən/
+- His mother >>> Hänen äitinsä >>> /ˈhænən ˈæitinsæ/
+- Hungarian >>> Unkaria >>> /ˈunkɑriɑ/
+- His mother is Hungarian. >>> Hänen äitinsä on unkarilainen. >>> /ˈhænən ˈæitinsæ ˈon ˈunkɑriˌlɑinen/
+- She is from >>> Hän on kotoisin >>> /ˈhæn ˈon ˈkotoisin/
+- She is from Hungary. >>> Hän on kotoisin Unkarista. >>> /ˈhæn ˈon ˈkotoisin ˈunkɑristɑ/
+- But >>> Mutta >>> /ˈmuttɑ/
+- Father >>> Isä >>> /ˈisæ/
+- His father >>> Hänen isänsä >>> /ˈhænən ˈisænsæ/
+- Danish >>> Tanskaa >>> /ˈtɑnskɑː/
+- His father is Danish. >>> Hänen isänsä on tanskalainen. >>> /ˈhænən ˈisænsæ ˈon ˈtɑnskɑˌlɑinen/
+- He is from >>> Hän on kotoisin >>> /ˈhæn ˈon ˈkotoisin/
+- He is from Denmark. >>> Hän on kotoisin Tanskasta. >>> /ˈhæn ˈon ˈkotoisin ˈtɑnskɑstɑ/
+- Language >>> Kieli >>> /ˈkieli/
+- What >>> Mitä >>> /ˈmitæ/
+- What languages >>> Mitä kieliä >>> /ˈmitæ ˈkieliæ/
+- What languages do you speak? >>> Mitä kieliä puhut? >>> /ˈmitæ ˈkieliæ ˈpuhut/
+- Do you speak? >>> Puhutko? >>> /ˈpuhutko/
+- Do you speak English? >>> Puhutko englantia? >>> /ˈpuhutko ˈeŋlɑntiɑ/
+- My friend >>> Ystäväni >>> /ˈystæˌʋæni/
+- Nice >>> Mukava >>> /ˈmukɑʋɑ/
+- My friend is nice. >>> Ystäväni on mukava. >>> /ˈystæˌʋæni ˈon ˈmukɑʋɑ/
+- You >>> Sinä >>> /ˈsinæ/
+- You are >>> Sinä olet >>> /ˈsinæ ˈolet/
+- Tall >>> Pitkä >>> /ˈpitkæ/
+- You are tall. >>> Olet pitkä. >>> /ˈolet ˈpitkæ/
+- I >>> Minä >>> /ˈminæ/
+- I am >>> Minä olen >>> /ˈminæ ˈolen/
+- A man >>> Mies >>> /mies/
+- I am a man. >>> Olen mies. >>> /ˈolen ˈmies/
+- You are >>> Sinä olet >>> /ˈsinæ ˈolet/
+- A woman >>> Nainen >>> /ˈnɑiˌnen/
+- You are a woman. >>> Olet nainen. >>> /ˈolet ˈnɑiˌnen/
+- Single >>> Yksin >>> /ˈyksin/
+- Are you single? >>> Oletko sinkku? >>> /ˈoletko ˈsinkːu/
+- Or >>> Tai >>> /tɑi/
+- Married >>> Naimisissa >>> /ˈnɑimisissɑ/
+- Or married? >>> Tai naimisissa? >>> /tɑi ˈnɑimisissɑ/
+- Are you married? >>> Oletko naimisissa? >>> /ˈoletko ˈnɑimisissɑ/
+- No >>> Ei >>> /ei/
+- No, I am >>> Ei, minä olen >>> /ei, ˈminæ ˈolen/
+- No, I am single. >>> Ei, olen sinkku. >>> /ei, ˈolen ˈsinkːu/
+- Yes >>> Kyllä >>> /ˈkylːæ/
+- Yes, I am >>> Kyllä, minä olen >>> /ˈkylːæ, ˈminæ ˈolen/
+- Yes, I am married. >>> Kyllä, olen naimisissa. >>> /ˈkylːæ, ˈolen ˈnɑimisissɑ/
+- A Boy >>> Poika >>> /ˈpoiˌkɑ/
+- A Girl >>> Tyttö >>> /ˈtytːø/
+- I have >>> Minulla on >>> /ˈminullɑ ˈon/
+- I have a boy. >>> Minulla on poika. >>> /ˈminullɑ ˈon ˈpoiˌkɑ/
+- I have a girl. >>> Minulla on tyttö. >>> /ˈminullɑ ˈon ˈtytːø/
+- You >>> Sinä >>> /ˈsinæ/
+- You are >>> Sinä olet >>> /ˈsinæ ˈolet/
+- You are married. >>> Olet naimisissa. >>> /ˈolet ˈnɑimisissɑ/
+- But >>> Mutta >>> /ˈmuttɑ/
+- But I am >>> Mutta minä olen >>> /ˈmuttɑ ˈminæ ˈolen/
+- But I am single. >>> Mutta olen sinkku. >>> /ˈmuttɑ ˈolen ˈsinkːu/
+- Name >>> Nimi >>> /ˈnimi/
+- My name is >>> Nimeni on >>> /ˈnimeni ˈon/
+- My name is Adrian. >>> Nimeni on Adrian. >>> /ˈnimeni ˈon ˈɑdrian/
+- Your name is >>> Nimesi on >>> /ˈnimesi ˈon/
+- Your name is Adrian. >>> Nimesi on Adrian. >>> /ˈnimesi ˈon ˈɑdrian/
+- I don't >>> En >>> /en/
+- I don't know. >>> En tiedä. >>> /en ˈtieˌdæ/
+- I know >>> Tiedän >>> /ˈtieˌdæn/
+- I know your name. >>> Tiedän nimesi. >>> /ˈtieˌdæn ˈnimesi/
+- You are Adrian. >>> Sinä olet Adrian. >>> /ˈsinæ ˈolet ˈɑdrian/
+- Again >>> Jälleen >>> /ˈjælːeːn/
+- What is your name? >>> Mikä on nimesi? >>> /ˈmikæ ˈon ˈnimesi/
+- What is your name again? >>> Mikä on nimesi jälleen? >>> /ˈmikæ ˈon ˈnimesi ˈjælːeːn/
+- How are you? >>> Kuinka voit? >>> /ˈkuinkɑ ˈvoit/
+- Thanks >>> Kiitos >>> /ˈkiːtos/
+- Thank you >>> Kiitos >>> /ˈkiːtos/
+- I'm fine, thanks. >>> Olen kunnossa, kiitos. >>> /ˈolen ˈkunnossɑ, ˈkiːtos/
+- OK >>> Ok >>> /ok/
+- We are >>> Me olemme >>> /me ˈolemːe/
+- Here >>> Tässä >>> /ˈtæssæ/
+- We are here. >>> Me olemme täällä. >>> /me ˈolemːe ˈtæːllæ/
+- To learn >>> Oppia >>> /ˈopiɑ/
+- New >>> Uusi >>> /ˈuːsi/
+- Language >>> Kieli >>> /ˈkieli/
+- A new language >>> Uusi kieli >>> /ˈuːsi ˈkieli/
+- We are here to learn >>> Olemme täällä oppimassa >>> /ˈolemːe ˈtæːllæ ˈopiˌmɑssɑ/
+- We are here to learn a new language. >>> Olemme täällä oppimassa uutta kieltä. >>> /ˈolemːe ˈtæːllæ ˈopiˌmɑssɑ ˈuːttɑ ˈkieltɑ/
+- Hi everyone. >>> Hei kaikki. >>> /hei ˈkɑikki/
+- Hi everyone. How are you? >>> Hei kaikki. Kuinka voit? >>> /hei ˈkɑikki. ˈkuinkɑ ˈvoit/
+- Welcome >>> Tervetuloa >>> /ˈterʋeˌtuloɑ/
+- We are >>> Me olemme >>> /me ˈolemːe/
+- We are learning >>> Olemme oppimassa >>> /ˈolemːe ˈopiˌmɑssɑ/
+- A new >>> Uusi >>> /ˈuːsi/
+- A new language >>> Uusi kieli >>> /ˈuːsi ˈkieli/
+- We are here. >>> Olemme täällä. >>> /ˈolemːe ˈtæːllæ/
+- To learn >>> Oppia >>> /ˈopiɑ/
+- To learn a new language. >>> Oppia uutta kieltä. >>> /ˈopiɑ ˈuːttɑ ˈkieltɑ/
+- Thank you >>> Kiitos >>> /ˈkiːtos/
+- Goodbye >>> Näkemiin >>> /ˈnækemiːn/
+- Take care >>> Pidä huolta >>> /ˈpidæ ˈhuoltɑ/
+- Bye >>> Hei hei >>> /hei hei/

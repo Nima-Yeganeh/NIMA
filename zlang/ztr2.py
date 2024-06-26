@@ -39,7 +39,7 @@ def main():
     en_path = 'zen.txt'
     output_folder = "./xyz/"
     # languages = ["fr", "de", "it", "es", "sv", "no", "fi", "hu", "da"]
-    languages = ["no"]
+    languages = ["fi"]
     for lang in languages:
         lang_path=f"z{lang}.txt"
         with open(en_path, 'r', encoding='utf-8') as file:
