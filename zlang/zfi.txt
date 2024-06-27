@@ -1,0 +1,282 @@
+Hei
+Hei
+Kaikki
+Hei kaikki
+Tervetuloa
+Kurssi
+Tervetuloa
+Tämä kurssi
+Tervetuloa tälle kurssille.
+Oppia
+Oppia
+Puhua
+Puhua
+Harjoitella
+Vain
+Vain harjoitella.
+Kuunnella
+Huolellisesti
+Kuunnella huolellisesti.
+Ja
+Toistaa
+Harjoitella
+Toistaa ja harjoitella.
+Minä
+Jälkeen
+Jälkeeni
+Toista jälkeeni.
+Kuunnella
+Ja toista jälkeeni.
+Kuinka
+Miten voit
+Sinä
+Kuinka voit?
+Minä
+Minä olen
+Olen kunnossa.
+Sinun
+Nimesi
+Mitä
+Mikä on nimesi?
+Minun
+Nimeni
+Nimeni on Adrian.
+Ja
+Entä sinä?
+Nimesi
+Nimesi on Adrian?
+Kyllä
+Kyllä, nimeni on Adrian.
+Ei
+Nimesi on Adrian.
+Kaikki
+Hei kaikki.
+Mukava
+Hauska tavata.
+Mukava nähdä sinua.
+Kiitos
+Kiitos sinulle
+Kuinka voit?
+Olen kunnossa, kiitos.
+Tässä
+Olen täällä.
+Missä
+Missä olet?
+Olen täällä.
+Me
+Me olemme
+Me olemme täällä.
+Mies
+Nainen
+Poika
+Tyttö
+Minä olen
+Olen mies.
+Sinä olet
+Olet nainen.
+Hän on
+Hän on
+Minä
+Se on
+Se olen minä.
+Missä
+Missä olet?
+Mistä olet kotoisin?
+Englanti
+Olen kotoisin
+Olen kotoisin Englannista.
+Puhun
+Englantia
+Puhun englantia.
+Mukava nähdä sinua.
+Mistä olet kotoisin?
+Amerikka
+Olen kotoisin
+Olen kotoisin Amerikasta.
+Puhun
+Englantia
+Puhun myös englantia.
+Mukava nähdä sinua.
+Mistä olet kotoisin?
+Ranska
+Minä olen
+Olen kotoisin
+Olen kotoisin Ranskasta.
+Puhun
+Ranskaa
+Puhun ranskaa.
+Hei
+Kuinka voit?
+Mikä on nimesi?
+Mistä olet kotoisin?
+Saksa
+Olen kotoisin Saksasta.
+Saksaa
+Puhun saksaa.
+Oppia
+Minä olen
+Olen oppimassa
+Olen oppimassa saksaa.
+Italia
+Kaikki
+Hei kaikki.
+Olen kotoisin
+Olen kotoisin Italiasta.
+Italiaa
+Ja
+Puhun
+Ja puhun italiaa.
+Olen oppimassa englantia.
+Olen oppimassa englantia ja ranskaa.
+Kuinka voit?
+Kiitos
+Olen kunnossa.
+Mikä on nimesi?
+Adrian.
+Oletko Adrian?
+Hauska tavata.
+Mistä olet kotoisin?
+Espanja
+Olen kotoisin Espanjasta.
+Espanjaa
+Teetkö?
+Puhutko?
+Puhutko espanjaa?
+Kyllä.
+Olen oppimassa espanjaa.
+Hei.
+Kuinka voit?
+Olen kunnossa, kiitos.
+Olen kotoisin
+Olen kotoisin Ruotsista.
+Ruotsia
+Ja
+Puhun
+Ja puhun ruotsia.
+Olen oppimassa
+Olen oppimassa saksaa ja espanjaa.
+Kuinka voit?
+Kiitos
+Olen kunnossa.
+Oletko Adrian?
+Hauska tavata.
+Mistä olet kotoisin?
+Norja
+Olen kotoisin Norjasta.
+Norjaa
+Puhutko?
+Puhutko norjaa?
+Kyllä.
+Puhun
+En voi
+En voi puhua
+En voi puhua norjaa.
+Ystävä
+Minun
+Minun ystäväni
+Ystäväni on
+Ystäväni on kotoisin
+Suomi
+Ystäväni on kotoisin Suomesta
+Hän puhuu
+Suomea
+Hän puhuu suomea.
+Äiti
+Isä
+Hänen
+Hänen äitinsä
+Unkaria
+Hänen äitinsä on unkarilainen.
+Hän on kotoisin
+Hän on kotoisin Unkarista.
+Mutta
+Isä
+Hänen isänsä
+Tanskaa
+Hänen isänsä on tanskalainen.
+Hän on kotoisin
+Hän on kotoisin Tanskasta.
+Kieli
+Mitä
+Mitä kieliä
+Mitä kieliä puhut?
+Puhutko?
+Puhutko englantia?
+Ystäväni
+Mukava
+Ystäväni on mukava.
+Sinä
+Sinä olet
+Pitkä
+Olet pitkä.
+Minä
+Minä olen
+Mies
+Olen mies.
+Sinä olet
+Nainen
+Olet nainen.
+Yksin
+Oletko sinkku?
+Tai
+Naimisissa
+Tai naimisissa?
+Oletko naimisissa?
+Ei
+Ei, minä olen
+Ei, olen sinkku.
+Kyllä
+Kyllä, minä olen
+Kyllä, olen naimisissa.
+Poika
+Tyttö
+Minulla on
+Minulla on poika.
+Minulla on tyttö.
+Sinä
+Sinä olet
+Olet naimisissa.
+Mutta
+Mutta minä olen
+Mutta olen sinkku.
+Nimi
+Nimeni on
+Nimeni on Adrian.
+Nimesi on
+Nimesi on Adrian.
+En
+En tiedä.
+Tiedän
+Tiedän nimesi.
+Sinä olet Adrian.
+Jälleen
+Mikä on nimesi?
+Mikä on nimesi jälleen?
+Kuinka voit?
+Kiitos
+Kiitos
+Olen kunnossa, kiitos.
+Ok
+Me olemme
+Tässä
+Me olemme täällä.
+Oppia
+Uusi
+Kieli
+Uusi kieli
+Olemme täällä oppimassa
+Olemme täällä oppimassa uutta kieltä.
+Hei kaikki.
+Hei kaikki. Kuinka voit?
+Tervetuloa
+Me olemme
+Olemme oppimassa
+Uusi
+Uusi kieli
+Olemme täällä.
+Oppia
+Oppia uutta kieltä.
+Kiitos
+Näkemiin
+Pidä huolta
+Hei hei
