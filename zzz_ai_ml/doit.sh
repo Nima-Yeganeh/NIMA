@@ -1,5 +1,9 @@
 
 #!/bin/bash
+sleeptime=10
+export LC_ALL=en_US.UTF-8
+numberoftopics=60
+# numberoftopics=60
 # Function to check if input is empty or consists only of whitespace
 is_empty_or_blank() {
     [[ -z "$1" || "$1" =~ ^[[:space:]]*$ ]]
@@ -18,11 +22,9 @@ echo "$input" > zkeywords.txt
 # read -p "Enter your keywords or topic: " input
 # echo "$input" > zkeywords.txt
 echo "Started..."
-sleeptime=10
-export LC_ALL=en_US.UTF-8
 zkeywords=$(cat zkeywords.txt | head -n1)
 echo "Keywords >> $zkeywords"
-python -m pytgpt generate "i have a course about $zkeywords - give me 60 topics and domains without explanation for students to learn in this course" > zcrsdomains.txt
+python -m pytgpt generate "I have a course about $zkeywords - give me $numberoftopics topics and domains without explanation for students to learn in this course" > zcrsdomains.txt
 sleep $sleeptime
 grep '^[0-9]\+' zcrsdomains.txt | sed 's/^[0-9]\+\.\s*//' > ztopics.txt
 # Read file into an array
@@ -31,14 +33,15 @@ echo > zzz.txt
 echo >> zzz.txt
 topic=$(cat zkeywords.txt | head -n 1)
 echo $topic
-python -m pytgpt generate "give me a course title min 50 and max 60 characters about $topic" | sed 's/"//g' >> zzz.txt
+crstitle=$(python -m pytgpt generate "give me a course title min 50 and max 60 characters about $topic" | sed 's/"//g')
 sleep $sleeptime
-echo >> zzz.txt
 # echo >> zzz.txt
-python -m pytgpt generate "give me a course subtitle min 110 to max 120 characters about $topic" | sed 's/"//g' >> zzz.txt
+# echo >> zzz.txt
+crssubtitle=$(python -m pytgpt generate "give me a course subtitle min 110 to max 120 characters about $topic" | sed 's/"//g')
 sleep $sleeptime
-echo >> zzz.txt
-echo >> zzz.txt
+echo "$crstitle - $crssubtitle" >> zzz.txt
+# echo >> zzz.txt
+# echo >> zzz.txt
 python -m pytgpt generate "give me a course description max 250 words what is $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
