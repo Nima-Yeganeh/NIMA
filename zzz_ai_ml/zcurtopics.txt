@@ -1,5 +1,5 @@
-Case Studies and Real-world Applications
-Project-Based Learning
-Understanding IP Networks
-Basic Troubleshooting Techniques
-Voice over LTE (VoLTE)
+SIP Testing and Troubleshooting Tools
+SIP Softphones vs. Hardphones
+WebRTC Integration with SIP
+Fax over IP (FoIP)
+Video over IP (VoIP)

@@ -28,7 +28,7 @@
 28. Forking in SIP
 29. Message Routing in SIP
 30. Priority Handling in SIP
-31. GRUU ( Globally Routable User Agent URI)
+31. GRUU (Globally Routable User Agent URI)
 32. Local Resource URIs
 33. Contact List Management
 34. SUBSCRIBE Method in SIP

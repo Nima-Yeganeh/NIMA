@@ -28,7 +28,7 @@ Back-to-Back User Agent (B2BUA)
 Forking in SIP
 Message Routing in SIP
 Priority Handling in SIP
-GRUU ( Globally Routable User Agent URI)
+GRUU (Globally Routable User Agent URI)
 Local Resource URIs
 Contact List Management
 SUBSCRIBE Method in SIP
