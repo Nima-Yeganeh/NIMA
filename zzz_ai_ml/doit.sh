@@ -47,27 +47,27 @@ python -m pytgpt generate "give me a course description max 250 words what is $t
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
-echo "Why Important?" >> zzz.txt
+echo "OK Why Important?" >> zzz.txt
 python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about why is it important $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
-echo "Advantages of Learning?" >> zzz.txt
+echo "OK Advantages of Learning?" >> zzz.txt
 python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about advantages of learning $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
-echo "Who Should Learn?" >> zzz.txt
+echo "OK Who Should Learn?" >> zzz.txt
 python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about who should learn $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
-echo "Basic Requirements?" >> zzz.txt
+echo "OK Basic Requirements?" >> zzz.txt
 python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about basic requirements to learn $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
-echo "Course Focus?" >> zzz.txt
+echo "OK Course Focus?" >> zzz.txt
 python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 50 words that this course is theoretical knowledge base to learn and understand topics and course not include lab or configure or setup in topics $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
