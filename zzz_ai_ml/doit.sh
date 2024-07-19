@@ -3,6 +3,7 @@
 sleeptime=10
 export LC_ALL=en_US.UTF-8
 numberoftopics=60
+batch_size=4
 # numberoftopics=60
 # Function to check if input is empty or consists only of whitespace
 is_empty_or_blank() {
@@ -74,7 +75,7 @@ echo >> zzz.txt
 echo >> zzz.txt
 echo >> zzz.txt
 # Initialize variables
-batch_size=5
+# batch_size=5
 total_lines=${#lines[@]}
 # Iterate over the lines in batches of 5
 for ((i=0; i<total_lines; i+=batch_size)); do
