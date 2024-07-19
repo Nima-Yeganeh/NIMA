@@ -1,0 +1,60 @@
+Introduction to SIP (Session Initiation Protocol)
+Understanding SIP Messages
+SIP Methods: INVITE, ACK, BYE, etc.
+SIP Headers: CSeq, Via, From, To, etc.
+SIP Addressing: URIs, User Agents, Domain Names
+SIP Registration Process
+SIP Call Flow Examples
+SIP Trunking Basics
+IP Telephony Fundamentals
+Session Description Protocol (SDP) Overview
+SDP Attributes: m=, c=, k=, a=
+RTP (Real-time Transport Protocol) Basics
+SRTP (Secure Real-time Transport Protocol)
+STUN (Session Traversal Utilities for NAT)
+TURN (Traversal Using Relays around NAT)
+ICE (Interactive Connectivity Establishment)
+SIP ALG (Application Layer Gateway)
+NAT (Network Address Translation) Types
+Firewall Considerations for SIP
+SIP Security: Authentication, Encryption, Integrity
+TLS (Transport Layer Security) in SIP
+SIPS (SIP over TLS)
+SIP Proxy Server Functionality
+Redirect Servers in SIP
+User Agent Client (UAC) Role
+User Agent Server (UAS) Role
+Back-to-Back User Agent (B2BUA)
+Forking in SIP
+Message Routing in SIP
+Priority Handling in SIP
+GRUU ( Globally Routable User Agent URI)
+Local Resource URIs
+Contact List Management
+SUBSCRIBE Method in SIP
+Presence Information in SIP
+Event State Models in SIP
+INFO Method in SIP
+REFER Method in SIP
+MESSAGE Method in SIP
+PUBLISH Method in SIP
+OPTIONS Method in SIP
+Reliable Provisional Responses
+Redundancy in SIP
+Load Balancing in SIP
+Failover Mechanisms in SIP
+Quality of Service (QoS) in SIP
+DSCP (Differentiated Services Code Point)
+Jitter Buffering
+Packet Loss Concealment
+SIP Performance Tuning
+SIP Testing and Troubleshooting Tools
+SIP Softphones vs. Hardphones
+WebRTC Integration with SIP
+Fax over IP (FoIP)
+Video over IP (VoIP)
+Emergency Calling in SIP
+E911 Requirements for VoIP
+ENUM (Electronic Numbering System)
+SIP Peering and Interconnect Agreements
+Future Trends in SIP Technology

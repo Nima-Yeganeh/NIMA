@@ -1,0 +1,60 @@
+1. Introduction to SIP (Session Initiation Protocol)
+2. Understanding SIP Messages
+3. SIP Methods: INVITE, ACK, BYE, etc.
+4. SIP Headers: CSeq, Via, From, To, etc.
+5. SIP Addressing: URIs, User Agents, Domain Names
+6. SIP Registration Process
+7. SIP Call Flow Examples
+8. SIP Trunking Basics
+9. IP Telephony Fundamentals
+10. Session Description Protocol (SDP) Overview
+11. SDP Attributes: m=, c=, k=, a=
+12. RTP (Real-time Transport Protocol) Basics
+13. SRTP (Secure Real-time Transport Protocol)
+14. STUN (Session Traversal Utilities for NAT)
+15. TURN (Traversal Using Relays around NAT)
+16. ICE (Interactive Connectivity Establishment)
+17. SIP ALG (Application Layer Gateway)
+18. NAT (Network Address Translation) Types
+19. Firewall Considerations for SIP
+20. SIP Security: Authentication, Encryption, Integrity
+21. TLS (Transport Layer Security) in SIP
+22. SIPS (SIP over TLS)
+23. SIP Proxy Server Functionality
+24. Redirect Servers in SIP
+25. User Agent Client (UAC) Role
+26. User Agent Server (UAS) Role
+27. Back-to-Back User Agent (B2BUA)
+28. Forking in SIP
+29. Message Routing in SIP
+30. Priority Handling in SIP
+31. GRUU ( Globally Routable User Agent URI)
+32. Local Resource URIs
+33. Contact List Management
+34. SUBSCRIBE Method in SIP
+35. Presence Information in SIP
+36. Event State Models in SIP
+37. INFO Method in SIP
+38. REFER Method in SIP
+39. MESSAGE Method in SIP
+40. PUBLISH Method in SIP
+41. OPTIONS Method in SIP
+42. Reliable Provisional Responses
+43. Redundancy in SIP
+44. Load Balancing in SIP
+45. Failover Mechanisms in SIP
+46. Quality of Service (QoS) in SIP
+47. DSCP (Differentiated Services Code Point)
+48. Jitter Buffering
+49. Packet Loss Concealment
+50. SIP Performance Tuning
+51. SIP Testing and Troubleshooting Tools
+52. SIP Softphones vs. Hardphones
+53. WebRTC Integration with SIP
+54. Fax over IP (FoIP)
+55. Video over IP (VoIP)
+56. Emergency Calling in SIP
+57. E911 Requirements for VoIP
+58. ENUM (Electronic Numbering System)
+59. SIP Peering and Interconnect Agreements
+60. Future Trends in SIP Technology
