@@ -1,5 +1,0 @@
-SIP Testing and Troubleshooting Tools
-SIP Softphones vs. Hardphones
-WebRTC Integration with SIP
-Fax over IP (FoIP)
-Video over IP (VoIP)
