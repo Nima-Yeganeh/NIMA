@@ -31,6 +31,7 @@ grep '^[0-9]\+' zcrsdomains.txt | sed 's/^[0-9]\+\.\s*//' > ztopics.txt
 mapfile -t lines < ztopics.txt
 echo > zzz.txt
 echo >> zzz.txt
+echo >> zzz.txt
 topic=$(cat zkeywords.txt | head -n 1)
 echo $topic
 crstitle=$(python -m pytgpt generate "give me a course title min 50 and max 60 characters about $topic" | sed 's/"//g')
@@ -71,6 +72,7 @@ python -m pytgpt generate "give me information in just one paragraph not seperat
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
+echo >> zzz.txt
 # Initialize variables
 batch_size=5
 total_lines=${#lines[@]}
@@ -89,6 +91,7 @@ for ((i=0; i<total_lines; i+=batch_size)); do
     done    
     echo "*****" >> zzz.txt
     echo "*****" >> zzz.txt
+    echo >> zzz.txt
     echo >> zzz.txt
     # cat zcurtopics.txt
     sessiontopics=$(awk '{printf "%s ", $0}' zcurtopics.txt | sed 's/ *$//')
@@ -120,6 +123,7 @@ for ((i=0; i<total_lines; i+=batch_size)); do
         sleep $sleeptime
         cat y | awk '{printf "%s ", $0}'  | sed 's/*$//'  | sed 's/   / /g' | sed 's/  / /g' >> zzz.txt
         echo > y
+        echo >> zzz.txt
         echo >> zzz.txt
         echo >> zzz.txt
         # sleep 1
