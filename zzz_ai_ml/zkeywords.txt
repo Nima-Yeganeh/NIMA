@@ -1,1 +1,1 @@
-LTE 4G 4g 4g lte diameter epc ims packet core volte	lte protocol test qxdm
+SIP
