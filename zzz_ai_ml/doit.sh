@@ -1,3 +1,4 @@
+
 #!/bin/bash
 read -p "Enter your keywords or topic: " input
 echo "$input" > zkeywords.txt
@@ -106,3 +107,4 @@ for ((i=0; i<total_lines; i+=batch_size)); do
 done
 rm -f zcurtopics.txt
 echo "Done!"
+
