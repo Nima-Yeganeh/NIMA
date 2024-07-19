@@ -1,9 +1,10 @@
 
+
 #!/bin/bash
 sleeptime=10
 export LC_ALL=en_US.UTF-8
 numberoftopics=60
-batch_size=4
+batch_size=5
 # numberoftopics=60
 # Function to check if input is empty or consists only of whitespace
 is_empty_or_blank() {
