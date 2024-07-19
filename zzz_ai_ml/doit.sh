@@ -1,7 +1,22 @@
 
 #!/bin/bash
-read -p "Enter your keywords or topic: " input
+# Function to check if input is empty or consists only of whitespace
+is_empty_or_blank() {
+    [[ -z "$1" || "$1" =~ ^[[:space:]]*$ ]]
+}
+# Loop until valid input is received
+while true; do
+    read -p "Enter your keywords or topic: " input
+    if ! is_empty_or_blank "$input"; then
+        break
+    else
+        echo "Input cannot be empty or blank. Please try again."
+    fi
+done
+# Save the input to the file
 echo "$input" > zkeywords.txt
+# read -p "Enter your keywords or topic: " input
+# echo "$input" > zkeywords.txt
 echo "Started..."
 sleeptime=10
 export LC_ALL=en_US.UTF-8
