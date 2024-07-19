@@ -34,7 +34,7 @@ echo $topic
 python -m pytgpt generate "give me a course title min 50 and max 60 characters about $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
-echo >> zzz.txt
+# echo >> zzz.txt
 python -m pytgpt generate "give me a course subtitle min 110 to max 120 characters about $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
@@ -85,6 +85,8 @@ for ((i=0; i<total_lines; i+=batch_size)); do
         echo "$line" >> zcurtopics.txt
     done    
     echo "*****" >> zzz.txt
+    echo "*****" >> zzz.txt
+    echo >> zzz.txt
     # cat zcurtopics.txt
     sessiontopics=$(awk '{printf "%s ", $0}' zcurtopics.txt | sed 's/ *$//')
     # echo $sessiontopics
