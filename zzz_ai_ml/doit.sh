@@ -4,7 +4,7 @@
 sleeptime=10
 export LC_ALL=en_US.UTF-8
 batch_size=3
-numberoftopics=12
+numberoftopics=66
 # numberoftopics=60
 # Function to check if input is empty or consists only of whitespace
 is_empty_or_blank() {
