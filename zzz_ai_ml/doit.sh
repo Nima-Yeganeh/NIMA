@@ -3,8 +3,8 @@
 #!/bin/bash
 sleeptime=10
 export LC_ALL=en_US.UTF-8
-numberoftopics=60
 batch_size=3
+numberoftopics=12
 # numberoftopics=60
 # Function to check if input is empty or consists only of whitespace
 is_empty_or_blank() {
@@ -123,7 +123,7 @@ for ((i=0; i<total_lines; i+=batch_size)); do
     do
         echo "OK $topic"
         echo "OK $topic" >> zzz.txt
-        python -m pytgpt generate "give me information not seperate paragraphs and not bullet point just one paragraph with minimum 250 words about $topic" > y
+        python -m pytgpt generate "give me information not seperate paragraphs and not bullet point just one paragraph with minimum 250 words about $zkeywords $topic" > y
         sleep $sleeptime
         cat y | awk '{printf "%s ", $0}'  | sed 's/*$//'  | sed 's/   / /g' | sed 's/  / /g' >> zzz.txt
         echo > y

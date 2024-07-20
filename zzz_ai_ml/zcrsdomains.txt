@@ -1,60 +1,60 @@
-1. Introduction to SIP (Session Initiation Protocol)
-2. Understanding VoIP (Voice over Internet Protocol)
-3. SIP vs. Traditional Telephony Systems
-4. SIP Protocol Stack and Components
-5. IP Addressing and DNS in SIP
-6. SIP Signaling and Media Channels
-7. SIP Messages: INVITE, ACK, BYE, etc.
-8. Session Description Protocol (SDP) Overview
-9. SDP Attributes and Negotiation
-10. SIP Registration and Authentication
-11. SIP Proxy Servers and Their Role
-12. User Agents in SIP Communication
-13. SIP Trunking and Its Applications
-14. NAT Traversal Techniques in SIP
-15. Security Considerations in SIP
-16. SIP ALG (Application Layer Gateway)
-17. ENUM (Electronic Numbering System) and SIP
-18. SIP URI (Uniform Resource Identifier) Structure
-19. SIP Response Codes and Meaning
-20. SIP Forking and Redirecting
-21. Call Flow Diagrams in SIP
-22. Handling Failures in SIP Calls
-23. Quality of Service (QoS) in SIP
-24. SIP Load Balancing and Redundancy
-25. SIP Dial Plans and Routing
-26. DTMF (Dual-Tone Multi-Frequency) Support in SIP
-27. Fax Transmission Over SIP
-28. Video Conferencing with SIP
-29. Presence Information in SIP
-30. Instant Messaging Over SIP
-31. Mobility Management in SIP
-32. Interworking Between SIP and Other Protocols
-33. SIP Servlets and Application Servers
-34. WebRTC and Its Impact on SIP
-35. SIP Softphones and Hard Phones
-36. Managing SIP Devices and Endpoints
-37. SIP Server Configuration and Troubleshooting
-38. SIP Security Measures: TLS, SIPS, and Certificates
-39. SIP Vulnerabilities and Attacks
-40. SIP Testing and Monitoring Tools
-41. SIP Peering and Federation
-42. SIP APIs and Development Tools
-43. SIP in Unified Communications
-44. SIP in Contact Centers
-45. SIP in IoT (Internet of Things) Applications
-46. SIP in Automotive and In-Vehicle Infotainment
-47. SIP in Healthcare and Telemedicine
-48. SIP in Financial Services
-49. SIP in Government and Public Sector
-50. SIP in Education and E-Learning
-51. SIP in Entertainment and Gaming
-52. SIP in Remote Work and Virtual Offices
-53. SIP in Disaster Recovery and Business Continuity Planning
-54. SIP in Cloud Computing Environments
-55. SIP in Mobile Networks and 5G
-56. SIP in Smart Cities and Urban Infrastructure
-57. SIP in Agriculture and Precision Farming
-58. SIP in Energy and Utilities
-59. SIP in Transportation and Logistics
-60. Future Trends and Innovations in SIP Technology
+1. Introduction to Zscaler Cybersecurity
+2. Understanding Cloud Security
+3. Zscaler Architecture Basics
+4. Secure Internet Gateway (SIG)
+5. Zscaler Private Access (ZPA)
+6. SSL VPN
+7. Zero Trust Network Access (ZTNA)
+8. App Security Policy
+9. User Access Management
+10. Data Loss Prevention (DLP)
+11. Threat Protection
+12. Advanced Threat Protection (ATP)
+13. Web Filtering
+14. Email Filtering
+15. URL Filtering
+16. Cloud Access Security Brokers (CASB)
+17. Mobile Device Management (MDM)
+18. Endpoint Detection and Response (EDR)
+19. Incident Response
+20. Compliance and Reporting
+21. Multi-Factor Authentication (MFA)
+22. Single Sign-On (SSO)
+23. Identity as a Service (IDaaS)
+24. API Security
+25. Secure Web Gateways (SWG)
+26. Content Filtering
+27. Application Firewall
+28. Intrusion Detection System (IDS)
+29. Intrusion Prevention System (IPS)
+30. Vulnerability Assessment
+31. Patch Management
+32. Security Information and Event Management (SIEM)
+33. Log Management
+34. Security Orchestration, Automation, and Response (SOAR)
+35. Managed Detection and Response (MDR)
+36. Red Team vs Blue Team Exercises
+37. Security Awareness Training
+38. Social Engineering Attacks
+39. Phishing Defense Techniques
+40. Malware Analysis
+41. Cryptography Fundamentals
+42. Public Key Infrastructure (PKI)
+43. Certificate Management
+44. Secure Coding Practices
+45. Software Composition Analysis (SCA)
+46. Container Security
+47. Serverless Function Security
+48. Kubernetes Security
+49. Cloud Native Security
+50. DevSecOps Integration
+51. Continuous Integration/Continuous Deployment (CI/CD) Security
+52. Infrastructure as Code (IaC) Security
+53. Configuration Management Security
+54. Privileged Access Management (PAM)
+55. Secure Remote Work Policies
+56. BYOD (Bring Your Own Device) Security
+57. IoT (Internet of Things) Security
+58. Edge Computing Security
+59. Quantum Computing Implications for Security
+60. Future Trends in Cybersecurity
