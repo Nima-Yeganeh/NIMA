@@ -37,10 +37,12 @@ echo >> zzz.txt
 topic=$(cat zkeywords.txt | head -n 1)
 echo $topic
 crstitle=$(python -m pytgpt generate "give me a course title min 50 and max 60 characters about $topic" | sed 's/"//g')
+echo $crstitle
 sleep $sleeptime
 # echo >> zzz.txt
 # echo >> zzz.txt
 crssubtitle=$(python -m pytgpt generate "give me a course subtitle min 110 to max 120 characters about $topic" | sed 's/"//g')
+echo $crssubtitle
 sleep $sleeptime
 echo "$crstitle - $crssubtitle" >> zzz.txt
 # echo >> zzz.txt
