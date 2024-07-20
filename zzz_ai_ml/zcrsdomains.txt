@@ -1,60 +1,12 @@
-1. Introduction to Zscaler Cybersecurity
-2. Understanding Cloud Security
-3. Zscaler Architecture Basics
-4. Secure Internet Gateway (SIG)
-5. Zscaler Private Access (ZPA)
-6. SSL VPN
-7. Zero Trust Network Access (ZTNA)
-8. App Security Policy
-9. User Access Management
-10. Data Loss Prevention (DLP)
-11. Threat Protection
-12. Advanced Threat Protection (ATP)
-13. Web Filtering
-14. Email Filtering
-15. URL Filtering
-16. Cloud Access Security Brokers (CASB)
-17. Mobile Device Management (MDM)
-18. Endpoint Detection and Response (EDR)
-19. Incident Response
-20. Compliance and Reporting
-21. Multi-Factor Authentication (MFA)
-22. Single Sign-On (SSO)
-23. Identity as a Service (IDaaS)
-24. API Security
-25. Secure Web Gateways (SWG)
-26. Content Filtering
-27. Application Firewall
-28. Intrusion Detection System (IDS)
-29. Intrusion Prevention System (IPS)
-30. Vulnerability Assessment
-31. Patch Management
-32. Security Information and Event Management (SIEM)
-33. Log Management
-34. Security Orchestration, Automation, and Response (SOAR)
-35. Managed Detection and Response (MDR)
-36. Red Team vs Blue Team Exercises
-37. Security Awareness Training
-38. Social Engineering Attacks
-39. Phishing Defense Techniques
-40. Malware Analysis
-41. Cryptography Fundamentals
-42. Public Key Infrastructure (PKI)
-43. Certificate Management
-44. Secure Coding Practices
-45. Software Composition Analysis (SCA)
-46. Container Security
-47. Serverless Function Security
-48. Kubernetes Security
-49. Cloud Native Security
-50. DevSecOps Integration
-51. Continuous Integration/Continuous Deployment (CI/CD) Security
-52. Infrastructure as Code (IaC) Security
-53. Configuration Management Security
-54. Privileged Access Management (PAM)
-55. Secure Remote Work Policies
-56. BYOD (Bring Your Own Device) Security
-57. IoT (Internet of Things) Security
-58. Edge Computing Security
-59. Quantum Computing Implications for Security
-60. Future Trends in Cybersecurity
+1. Introduction to Zscaler: Overview and Importance
+2. Understanding Cloud Security Challenges
+3. Zscaler Architecture and Components
+4. Implementing Zero Trust Security Principles
+5. Zscaler Private Access: Secure Access to Internal Applications
+6. SSL VPN and App Gateway: Differences and Use Cases
+7. Advanced Threat Protection Using Zscaler
+8. Integrating Zscaler with Other Security Tools
+9. Managing Users and Devices in Zscaler
+10. Zscaler Analytics and Reporting for Security Insights
+11. Securing Mobile and Remote Workers with Zscaler
+12. Best Practices for Configuring and Maintaining Zscaler

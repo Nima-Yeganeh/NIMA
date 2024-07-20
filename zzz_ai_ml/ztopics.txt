@@ -1,60 +1,12 @@
-Introduction to Zscaler Cybersecurity
-Understanding Cloud Security
-Zscaler Architecture Basics
-Secure Internet Gateway (SIG)
-Zscaler Private Access (ZPA)
-SSL VPN
-Zero Trust Network Access (ZTNA)
-App Security Policy
-User Access Management
-Data Loss Prevention (DLP)
-Threat Protection
-Advanced Threat Protection (ATP)
-Web Filtering
-Email Filtering
-URL Filtering
-Cloud Access Security Brokers (CASB)
-Mobile Device Management (MDM)
-Endpoint Detection and Response (EDR)
-Incident Response
-Compliance and Reporting
-Multi-Factor Authentication (MFA)
-Single Sign-On (SSO)
-Identity as a Service (IDaaS)
-API Security
-Secure Web Gateways (SWG)
-Content Filtering
-Application Firewall
-Intrusion Detection System (IDS)
-Intrusion Prevention System (IPS)
-Vulnerability Assessment
-Patch Management
-Security Information and Event Management (SIEM)
-Log Management
-Security Orchestration, Automation, and Response (SOAR)
-Managed Detection and Response (MDR)
-Red Team vs Blue Team Exercises
-Security Awareness Training
-Social Engineering Attacks
-Phishing Defense Techniques
-Malware Analysis
-Cryptography Fundamentals
-Public Key Infrastructure (PKI)
-Certificate Management
-Secure Coding Practices
-Software Composition Analysis (SCA)
-Container Security
-Serverless Function Security
-Kubernetes Security
-Cloud Native Security
-DevSecOps Integration
-Continuous Integration/Continuous Deployment (CI/CD) Security
-Infrastructure as Code (IaC) Security
-Configuration Management Security
-Privileged Access Management (PAM)
-Secure Remote Work Policies
-BYOD (Bring Your Own Device) Security
-IoT (Internet of Things) Security
-Edge Computing Security
-Quantum Computing Implications for Security
-Future Trends in Cybersecurity
+Introduction to Zscaler: Overview and Importance
+Understanding Cloud Security Challenges
+Zscaler Architecture and Components
+Implementing Zero Trust Security Principles
+Zscaler Private Access: Secure Access to Internal Applications
+SSL VPN and App Gateway: Differences and Use Cases
+Advanced Threat Protection Using Zscaler
+Integrating Zscaler with Other Security Tools
+Managing Users and Devices in Zscaler
+Zscaler Analytics and Reporting for Security Insights
+Securing Mobile and Remote Workers with Zscaler
+Best Practices for Configuring and Maintaining Zscaler
