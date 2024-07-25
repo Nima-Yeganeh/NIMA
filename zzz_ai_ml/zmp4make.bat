@@ -1,0 +1,1 @@
+ffmpeg -loop 1 -i "C:\Users\Nimay\Downloads\z.png" -i "C:\Users\Nimay\Downloads\tts_rvc_output.wav" -r 30 -c:v libx264 -tune stillimage -af "volume=10dB" -c:a libmp3lame -b:a 128k -ac 2 -shortest "C:\Users\Nimay\Downloads\zzzxyz.mp4"
