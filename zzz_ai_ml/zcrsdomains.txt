@@ -1,63 +1,51 @@
-1. Introduction to Cybersecurity in Finance
-2. Financial Data Privacy Laws and Regulations
-3. Cryptography Fundamentals
-4. Public Key Infrastructure (PKI)
-5. Secure Communication Protocols
-6. Encryption Algorithms
-7. Hash Functions
-8. Digital Signatures
-9. Blockchain Technology
-10. Smart Contracts
-11. Decentralized Finance (DeFi)
-12. Quantum Computing Implications
-13. Internet of Things (IoT) Security
-14. Mobile Banking Security
-15. Biometric Authentication
-16. Multi-Factor Authentication (MFA)
-17. Risk Management in Cybersecurity
-18. Incident Response Planning
-19. Threat Intelligence
-20. Vulnerability Assessment
-21. Penetration Testing
-22. Malware Analysis
-23. Network Security
-24. Application Security
-25. Cloud Security
-26. Identity and Access Management (IAM)
-27. Zero Trust Architecture
-28. Secure Coding Practices
-29. API Security
-30. Web Application Firewalls (WAFs)
-31. Intrusion Detection Systems (IDS)
-32. Intrusion Prevention Systems (IPS)
-33. Endpoint Security
-34. Data Loss Prevention (DLP)
-35. Compliance and Auditing
-36. Disaster Recovery Planning
-37. Business Continuity Management
-38. Cyber Insurance
-39. Forensic Analysis in Cybersecurity
-40. Ethical Hacking
-41. Social Engineering
-42. Phishing Attacks
-43. Ransomware
-44. Distributed Denial of Service (DDoS) Attacks
-45. Zero-Day Exploits
-46. Patch Management
-47. Software Defined Perimeter (SDP)
-48. Tokenization in Payment Processing
-49. Secure Socket Layer/Transport Layer Security (SSL/TLS)
-50. Certificate Authorities (CAs)
-51. Key Management
-52. Secure Transaction Processing
-53. Fraud Detection and Prevention
-54. Anti-Money Laundering (AML) Compliance
-55. Know Your Customer (KYC) Procedures
-56. Regulatory Reporting
-57. Cybersecurity Frameworks and Standards
-58. Continuous Monitoring and Improvement
-59. Post-Quantum Cryptography
-60. Artificial Intelligence and Machine Learning in Cybersecurity
-61. Cybersecurity Education and Training
-62. Cybersecurity Governance and Strategy
-63. Future Trends in Cybersecurity
+1. Introduction to FinOps for GenAI
+2. Understanding Global Infrastructure Costs
+3. Role of FinOps in AI Projects
+4. Strategic Planning for AI Infrastructure
+5. Cost Analysis Techniques for AI Infrastructure
+6. Cloud Computing for AI: Pricing Models
+7. Data Center Costs and Optimization
+8. Network Connectivity Expenses
+9. Security and Compliance Costs in AI Infrastructure
+10. Energy Consumption in AI Systems
+11. Cooling and Maintenance Costs
+12. Software Licenses and Subscriptions
+13. Hardware Acquisition and Depreciation
+14. Virtualization vs. Physical Servers
+15. Colocation Facilities: Costs and Benefits
+16. Telecommunications: Bandwidth and Latency
+17. Internet of Things (IoT) Integration Costs
+18. Edge Computing for AI Applications
+19. Hybrid Cloud Strategies for AI
+20. Multi-cloud Management for AI Workloads
+21. AI Infrastructure Budgeting and Forecasting
+22. Cost Allocation Methods for AI Projects
+23. Financial Analytics for AI Infrastructure
+24. Risk Management in AI Infrastructure Spending
+25. Procurement Processes for AI Hardware
+26. Vendor Negotiation Tactics for AI Infrastructure
+27. Contractual Agreements and SLAs
+28. Service Level Objectives (SLOs) and Service Level Agreements (SLAs)
+29. Performance Metrics for AI Infrastructure
+30. Cost Optimization Strategies for AI Infrastructure
+31. AI Infrastructure as a Service (IaaS)
+32. Platform as a Service (PaaS) for AI Development
+33. Software as a Service (SaaS) Considerations
+34. AI Infrastructure Lifecycle Management
+35. Asset Management for AI Hardware
+36. Inventory Management of AI Resources
+37. AI Infrastructure Audit and Review
+38. Disaster Recovery Plans for AI Systems
+39. Business Continuity Management for AI
+40. AI Infrastructure Scaling and Downsizing
+41. Cost-Benefit Analysis for AI Infrastructure Investments
+42. Return on Investment (ROI) for AI Projects
+43. Total Cost of Ownership (TCO) Calculation
+44. Financial Modeling for AI Infrastructure
+45. AI Infrastructure Project Evaluation Criteria
+46. Ethical Considerations in AI Infrastructure Finance
+47. Sustainable Practices in AI Infrastructure
+48. Environmental Impact Assessment for AI Systems
+49. Governance Frameworks for AI Infrastructure Finance
+50. Regulatory Compliance for AI Infrastructure
+51. Future Trends in AI Infrastructure Financing

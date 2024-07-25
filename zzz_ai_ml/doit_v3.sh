@@ -1,12 +1,11 @@
 
-
 #!/bin/bash
 zokok="OK"
 zokok=""
 sleeptime=10
 export LC_ALL=en_US.UTF-8
 batch_size=3
-numberoftopics=54
+numberoftopics=51
 # numberoftopics=60
 # Function to check if input is empty or consists only of whitespace
 is_empty_or_blank() {
@@ -61,27 +60,32 @@ python -m pytgpt generate "give me a course description max 250 words what is $t
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
-echo "$zokok Why Important?" >> zzz.txt
+# echo "$zokok Why Important?" >> zzz.txt
+echo "Why Important" >> zzz.txt
 python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about why is it important $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
-echo "$zokok Advantages of Learning?" >> zzz.txt
+# echo "$zokok Advantages of Learning?" >> zzz.txt
+echo "Advantages of Learning" >> zzz.txt
 python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about advantages of learning $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
-echo "$zokok Who Should Learn?" >> zzz.txt
+# echo "$zokok Who Should Learn?" >> zzz.txt
+echo "Who Should Learn" >> zzz.txt
 python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about who should learn $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
-echo "$zokok Basic Requirements?" >> zzz.txt
+# echo "$zokok Basic Requirements?" >> zzz.txt
+echo "Basic Requirements" >> zzz.txt
 python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about basic requirements to learn $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
-echo "$zokok Course Focus?" >> zzz.txt
+# echo "$zokok Course Focus?" >> zzz.txt
+echo "Course Focus" >> zzz.txt
 python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 50 words that this course is theoretical knowledge base to learn and understand topics and course not include lab or configure or setup in topics $topic" | sed 's/"//g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
@@ -103,8 +107,8 @@ for ((i=0; i<total_lines; i+=batch_size)); do
     for line in "${batch[@]}"; do
         echo "$line" >> zcurtopics.txt
     done    
-    echo "*****" >> zzz.txt
-    echo "*****" >> zzz.txt
+    # echo "*****" >> zzz.txt
+    # echo "*****" >> zzz.txt
     echo >> zzz.txt
     echo >> zzz.txt
     # cat zcurtopics.txt
@@ -132,8 +136,9 @@ for ((i=0; i<total_lines; i+=batch_size)); do
     # Echo each item in the array
     for topic in "${topics[@]}"
     do
-        echo "$zokok $topic"
-        echo "$zokok $topic" >> zzz.txt
+        echo "$topic"
+        echo "$topic" >> zzz.txt
+        # echo "$zokok $topic" >> zzz.txt
         python -m pytgpt generate "give me information not seperate paragraphs and not bullet point just one paragraph with minimum 250 words about $zmainidea $topic" > y
         sleep $sleeptime
         cat y | awk '{printf "%s ", $0}'  | sed 's/*$//'  | sed 's/   / /g' | sed 's/  / /g' | sed 's/\*\*//g' >> zzz.txt
