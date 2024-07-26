@@ -5,7 +5,7 @@ zokok=""
 sleeptime=10
 export LC_ALL=en_US.UTF-8
 batch_size=3
-numberoftopics=24
+numberoftopics=30
 is_empty_or_blank() {
     [[ -z "$1" || "$1" =~ ^[[:space:]]*$ ]]
 }
@@ -39,14 +39,14 @@ echo >> zzz.txt
 echo >> zzz.txt
 topic=$(cat zkeywords.txt | head -n 1)
 echo $topic
-crstitle=$(python -m pytgpt generate "give me a course title min 50 and max 60 characters about $topic" | sed 's/"//g' | sed 's/\// /g')
+crstitle=$(python -m pytgpt generate "give me a course title min 50 and max 60 characters about $topic" | sed 's/"//g' | sed 's/\// /g' | sed 's/://g')
 echo $crstitle
 sleep $sleeptime
-crssubtitle=$(python -m pytgpt generate "give me a course subtitle min 110 to max 120 characters about $topic" | sed 's/"//g' | sed 's/\// /g')
+crssubtitle=$(python -m pytgpt generate "give me a course subtitle min 110 to max 120 characters about $topic" | sed 's/"//g' | sed 's/\// /g' | sed 's/://g')
 echo $crssubtitle
 sleep $sleeptime
 echo "$crstitle - $crssubtitle" >> zzz.txt
-python -m pytgpt generate "give me a course description max 500 words what is $topic" | sed 's/"//g' | sed 's/\// /g' >> zzz.txt
+python -m pytgpt generate "give me a course description max 250 words what is $topic" | sed 's/"//g' | sed 's/\// /g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
@@ -109,7 +109,7 @@ for ((i=0; i<total_lines; i+=batch_size)); do
     for topic in "${topics[@]}"
     do
         echo "$topic"
-        echo "$topic" | sed 's/\// /g' | sed 's/://g' >> zzz.txt       
+        echo "$topic" | sed 's/\// /g' | sed 's/://g' | sed 's/,//g' >> zzz.txt
         python -m pytgpt generate "give me information not seperate paragraphs and not bullet point just one paragraph with minimum 650 words about $zmainidea $topic" > y
         sleep $sleeptime
         cat y | awk '{printf "%s ", $0}'  | sed 's/*$//'  | sed 's/   / /g' | sed 's/  / /g' | sed 's/\*\*//g' | sed 's/\// /g' >> zzz.txt
