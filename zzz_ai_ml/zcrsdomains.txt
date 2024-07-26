@@ -2,29 +2,29 @@
 2. Purpose and Scope of ISO/IEC 42001:2023
 3. Definitions and Terminology
 4. Context of the Organization
-5. Leadership
+5. Leadership Commitment
 6. Planning
 7. Support
 8. Operation
 9. Performance Evaluation
 10. Improvement
-11. Management System Documentation
-12. Internal Audit
-13. Management Review
-14. Nonconformity and Corrective Action
-15. Incident Management
-16. Emergency Preparedness and Response
-17. Information Security Risk Assessment
-18. Information Security Risk Treatment
-19. Information Security Controls Selection and Implementation
-20. Information Security Awareness, Training, and Competence
-21. Information Security Communication
-22. Information Security Incident Management
-23. Information Security Monitoring and Measurement
-24. Information Security Continuity Management
-25. Information Security Compliance
-26. Information Security Third-Party Management
-27. Information Security Aspects of Supplier Relationships
-28. Information Security Outsourcing Considerations
-29. Information Security Performance Evaluation
-30. Annexes (including A, B, C, D)
+11. Risk Management
+12. Legal and Contractual Requirements
+13. Business Continuity Management
+14. Incident Management
+15. Roles and Responsibilities
+16. Training and Awareness
+17. Communication
+18. Documented Information
+19. Records
+20. Monitoring, Measurement, Analysis, and Evaluation
+21. Internal Audit
+22. Nonconformities and Corrective Actions
+23. Management Review
+24. Changes to the ISMS
+25. Outsourcing
+26. Emergency Preparedness
+27. Information Security Risk Assessment
+28. Information Security Risk Treatment
+29. Information Security Performance Indicators
+30. Certification, Accreditation, and Surveillance
