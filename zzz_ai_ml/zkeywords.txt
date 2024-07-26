@@ -1,1 +1,1 @@
-FinOps for GenAI
+ISO/IEC 42001

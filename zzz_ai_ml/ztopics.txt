@@ -1,51 +1,24 @@
-Introduction to FinOps for GenAI
-Understanding Global Infrastructure Costs
-Role of FinOps in AI Projects
-Strategic Planning for AI Infrastructure
-Cost Analysis Techniques for AI Infrastructure
-Cloud Computing for AI: Pricing Models
-Data Center Costs and Optimization
-Network Connectivity Expenses
-Security and Compliance Costs in AI Infrastructure
-Energy Consumption in AI Systems
-Cooling and Maintenance Costs
-Software Licenses and Subscriptions
-Hardware Acquisition and Depreciation
-Virtualization vs. Physical Servers
-Colocation Facilities: Costs and Benefits
-Telecommunications: Bandwidth and Latency
-Internet of Things (IoT) Integration Costs
-Edge Computing for AI Applications
-Hybrid Cloud Strategies for AI
-Multi-cloud Management for AI Workloads
-AI Infrastructure Budgeting and Forecasting
-Cost Allocation Methods for AI Projects
-Financial Analytics for AI Infrastructure
-Risk Management in AI Infrastructure Spending
-Procurement Processes for AI Hardware
-Vendor Negotiation Tactics for AI Infrastructure
-Contractual Agreements and SLAs
-Service Level Objectives (SLOs) and Service Level Agreements (SLAs)
-Performance Metrics for AI Infrastructure
-Cost Optimization Strategies for AI Infrastructure
-AI Infrastructure as a Service (IaaS)
-Platform as a Service (PaaS) for AI Development
-Software as a Service (SaaS) Considerations
-AI Infrastructure Lifecycle Management
-Asset Management for AI Hardware
-Inventory Management of AI Resources
-AI Infrastructure Audit and Review
-Disaster Recovery Plans for AI Systems
-Business Continuity Management for AI
-AI Infrastructure Scaling and Downsizing
-Cost-Benefit Analysis for AI Infrastructure Investments
-Return on Investment (ROI) for AI Projects
-Total Cost of Ownership (TCO) Calculation
-Financial Modeling for AI Infrastructure
-AI Infrastructure Project Evaluation Criteria
-Ethical Considerations in AI Infrastructure Finance
-Sustainable Practices in AI Infrastructure
-Environmental Impact Assessment for AI Systems
-Governance Frameworks for AI Infrastructure Finance
-Regulatory Compliance for AI Infrastructure
-Future Trends in AI Infrastructure Financing
+Introduction to ISO/IEC 42001
+Purpose and Scope of ISO/IEC 42001
+Definitions and Abbreviations
+Context of the Organization
+Leadership
+Planning
+Support
+Operation
+Performance Evaluation
+Improvement
+Roles, Responsibilities, and Authorities
+Competence, Training, and Awareness
+Communication
+Documented Information
+Control of Changes
+Emergency Preparedness and Response
+Incident Management
+Nonconformity and Corrective Action
+Record Keeping
+Compliance Monitoring and Reporting
+Auditing and Assessment
+Relationship with Other Standards
+Annex A: Guidance on the Application of ISO/IEC 42001
+Annex B: Example of a Process Approach to Managing Medical Devices
