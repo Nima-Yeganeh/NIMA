@@ -1,30 +1,30 @@
-1. Introduction to ISO/IEC 42001
-2. Purpose and Scope of ISO/IEC 42001
-3. Definitions and Abbreviations
+1. Introduction to ISO/IEC 42001:2023
+2. Purpose and Scope of ISO/IEC 42001:2023
+3. Definitions and Terminology
 4. Context of the Organization
 5. Leadership
 6. Planning
 7. Support
-8. Communication
-9. Engagement of Interested Parties
-10. Plan Development
-11. Service Strategy
-12. Service Design
-13. Service Transition
-14. Service Operation
-15. Continual Service Improvement
-16. Knowledge Management
-17. Information Security Management
-18. Risk Management
-19. Incident Management
-20. Problem Management
-21. Change Management
-22. Availability Management
-23. Capacity Management
-24. IT Service Continuity Management
-25. Financial Management
-26. Human Resource Management
-27. Supplier Management
-28. Health and Safety Management
-29. Compliance Management
-30. Review and Assessment
+8. Operation
+9. Performance Evaluation
+10. Improvement
+11. Management System Documentation
+12. Internal Audit
+13. Management Review
+14. Nonconformity and Corrective Action
+15. Incident Management
+16. Emergency Preparedness and Response
+17. Information Security Risk Assessment
+18. Information Security Risk Treatment
+19. Information Security Controls Selection and Implementation
+20. Information Security Awareness, Training, and Competence
+21. Information Security Communication
+22. Information Security Incident Management
+23. Information Security Monitoring and Measurement
+24. Information Security Continuity Management
+25. Information Security Compliance
+26. Information Security Third-Party Management
+27. Information Security Aspects of Supplier Relationships
+28. Information Security Outsourcing Considerations
+29. Information Security Performance Evaluation
+30. Annexes (including A, B, C, D)
