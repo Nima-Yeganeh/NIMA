@@ -39,44 +39,44 @@ echo >> zzz.txt
 echo >> zzz.txt
 topic=$(cat zkeywords.txt | head -n 1)
 echo $topic
-crstitle=$(python -m pytgpt generate "give me a course title min 50 and max 60 characters about $topic" | sed 's/"//g')
+crstitle=$(python -m pytgpt generate "give me a course title min 50 and max 60 characters about $topic" | sed 's/"//g' | sed 's/\// /g')
 echo $crstitle
 sleep $sleeptime
-crssubtitle=$(python -m pytgpt generate "give me a course subtitle min 110 to max 120 characters about $topic" | sed 's/"//g')
+crssubtitle=$(python -m pytgpt generate "give me a course subtitle min 110 to max 120 characters about $topic" | sed 's/"//g' | sed 's/\// /g')
 echo $crssubtitle
 sleep $sleeptime
 echo "$crstitle - $crssubtitle" >> zzz.txt
-python -m pytgpt generate "give me a course description max 500 words what is $topic" | sed 's/"//g' >> zzz.txt
+python -m pytgpt generate "give me a course description max 500 words what is $topic" | sed 's/"//g' | sed 's/\// /g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
 echo >> zzz.txt
 echo "Why Important" >> zzz.txt
-python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 350 words about why is it important $topic" | sed 's/"//g' >> zzz.txt
+python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 350 words about why is it important $topic" | sed 's/"//g' | sed 's/\// /g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
 echo >> zzz.txt
 echo "Advantages of Learning" >> zzz.txt
-python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 350 words about advantages of learning $topic" | sed 's/"//g' >> zzz.txt
+python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 350 words about advantages of learning $topic" | sed 's/"//g' | sed 's/\// /g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
 echo >> zzz.txt
 echo "Who Should Learn" >> zzz.txt
-python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about who should learn $topic" | sed 's/"//g' >> zzz.txt
+python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about who should learn $topic" | sed 's/"//g' | sed 's/\// /g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
 echo >> zzz.txt
 echo "Basic Requirements" >> zzz.txt
-python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about basic requirements to learn $topic" | sed 's/"//g' >> zzz.txt
+python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 250 words about basic requirements to learn $topic" | sed 's/"//g' | sed 's/\// /g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
 echo >> zzz.txt
 echo "Course Focus" >> zzz.txt
-python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 200 words that this course is theoretical knowledge base to learn and understand topics and course not include lab or configure or setup in topics $topic" | sed 's/"//g' >> zzz.txt
+python -m pytgpt generate "give me information in just one paragraph not seperate paragraphs and not bullet point with minimum 200 words that this course is theoretical knowledge base to learn and understand topics and course not include lab or configure or setup in topics $topic" | sed 's/"//g' | sed 's/\// /g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
@@ -109,11 +109,10 @@ for ((i=0; i<total_lines; i+=batch_size)); do
     for topic in "${topics[@]}"
     do
         echo "$topic"
-        echo "$topic" >> zzz.txt
-        
+        echo "$topic" | sed 's/\// /g' | sed 's/://g' >> zzz.txt       
         python -m pytgpt generate "give me information not seperate paragraphs and not bullet point just one paragraph with minimum 500 words about $zmainidea $topic" > y
         sleep $sleeptime
-        cat y | awk '{printf "%s ", $0}'  | sed 's/*$//'  | sed 's/   / /g' | sed 's/  / /g' | sed 's/\*\*//g' >> zzz.txt
+        cat y | awk '{printf "%s ", $0}'  | sed 's/*$//'  | sed 's/   / /g' | sed 's/  / /g' | sed 's/\*\*//g' | sed 's/\// /g' >> zzz.txt
         echo > y
         echo >> zzz.txt
         echo >> zzz.txt
