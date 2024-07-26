@@ -1,30 +1,30 @@
-Introduction to ISO/IEC 42001:2023
-Purpose and Scope of ISO/IEC 42001:2023
-Definitions and Terminology
-Context of the Organization
-Leadership Commitment
-Planning
-Support
-Operation
-Performance Evaluation
-Improvement
-Risk Management
-Legal and Contractual Requirements
-Business Continuity Management
-Incident Management
-Roles and Responsibilities
-Training and Awareness
-Communication
-Documented Information
-Records
-Monitoring, Measurement, Analysis, and Evaluation
-Internal Audit
-Nonconformities and Corrective Actions
-Management Review
-Changes to the ISMS
-Outsourcing
-Emergency Preparedness
-Information Security Risk Assessment
-Information Security Risk Treatment
-Information Security Performance Indicators
-Certification, Accreditation, and Surveillance
+Introduction to ISO/IEC 42001: Overview and Importance
+Understanding Information Security Management Systems (ISMS)
+ISO/IEC 42001 Standard Structure and Requirements
+Planning for ISO/IEC 42001 Implementation
+Risk Assessment and Management in ISMS
+Legal and Contractual Issues Related to Information Security
+Information Security Policy Development
+Organizational Security: Roles and Responsibilities
+Asset Management within ISMS
+Access Control Measures and Policies
+Cryptography and Secure Communication
+Incident Management and Response Procedures
+Business Continuity Management in ISMS
+Compliance Monitoring and Reporting
+Performance Evaluation and Improvement
+Training and Awareness Programs for Employees
+Physical and Environmental Security Controls
+Information Security Technology and Software Selection
+Outsourcing and Third-party Service Provider Management
+Information Security Governance Frameworks
+Data Protection Laws and Regulations Globally
+Privacy by Design Principles
+Forensic Investigation Techniques for Security Incidents
+Ethical Hacking and Penetration Testing
+Security Architecture and Engineering Concepts
+Identity and Access Management Best Practices
+Secure Coding Practices and Vulnerability Management
+Disaster Recovery Planning and Execution
+Post-Incident Analysis and Continuous Learning
+Future Trends in Information Security Management
