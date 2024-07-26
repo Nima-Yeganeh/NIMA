@@ -5,20 +5,26 @@
 5. Leadership
 6. Planning
 7. Support
-8. Operation
-9. Performance Evaluation
-10. Improvement
-11. Roles, Responsibilities, and Authorities
-12. Competence, Training, and Awareness
-13. Communication
-14. Documented Information
-15. Control of Changes
-16. Emergency Preparedness and Response
-17. Incident Management
-18. Nonconformity and Corrective Action
-19. Record Keeping
-20. Compliance Monitoring and Reporting
-21. Auditing and Assessment
-22. Relationship with Other Standards
-23. Annex A: Guidance on the Application of ISO/IEC 42001
-24. Annex B: Example of a Process Approach to Managing Medical Devices
+8. Communication
+9. Engagement of Interested Parties
+10. Plan Development
+11. Service Strategy
+12. Service Design
+13. Service Transition
+14. Service Operation
+15. Continual Service Improvement
+16. Knowledge Management
+17. Information Security Management
+18. Risk Management
+19. Incident Management
+20. Problem Management
+21. Change Management
+22. Availability Management
+23. Capacity Management
+24. IT Service Continuity Management
+25. Financial Management
+26. Human Resource Management
+27. Supplier Management
+28. Health and Safety Management
+29. Compliance Management
+30. Review and Assessment

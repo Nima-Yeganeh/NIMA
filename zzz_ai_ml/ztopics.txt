@@ -5,20 +5,26 @@ Context of the Organization
 Leadership
 Planning
 Support
-Operation
-Performance Evaluation
-Improvement
-Roles, Responsibilities, and Authorities
-Competence, Training, and Awareness
 Communication
-Documented Information
-Control of Changes
-Emergency Preparedness and Response
+Engagement of Interested Parties
+Plan Development
+Service Strategy
+Service Design
+Service Transition
+Service Operation
+Continual Service Improvement
+Knowledge Management
+Information Security Management
+Risk Management
 Incident Management
-Nonconformity and Corrective Action
-Record Keeping
-Compliance Monitoring and Reporting
-Auditing and Assessment
-Relationship with Other Standards
-Annex A: Guidance on the Application of ISO/IEC 42001
-Annex B: Example of a Process Approach to Managing Medical Devices
+Problem Management
+Change Management
+Availability Management
+Capacity Management
+IT Service Continuity Management
+Financial Management
+Human Resource Management
+Supplier Management
+Health and Safety Management
+Compliance Management
+Review and Assessment
