@@ -1,30 +1,24 @@
-1. Introduction to ISO/IEC 42001: Overview and Importance
-2. Understanding Information Security Management Systems (ISMS)
-3. ISO/IEC 42001 Standard Structure and Requirements
-4. Planning for ISO/IEC 42001 Implementation
-5. Risk Assessment and Management in ISMS
-6. Legal and Contractual Issues Related to Information Security
-7. Information Security Policy Development
-8. Organizational Security: Roles and Responsibilities
-9. Asset Management within ISMS
-10. Access Control Measures and Policies
-11. Cryptography and Secure Communication
-12. Incident Management and Response Procedures
-13. Business Continuity Management in ISMS
-14. Compliance Monitoring and Reporting
-15. Performance Evaluation and Improvement
-16. Training and Awareness Programs for Employees
-17. Physical and Environmental Security Controls
-18. Information Security Technology and Software Selection
-19. Outsourcing and Third-party Service Provider Management
-20. Information Security Governance Frameworks
-21. Data Protection Laws and Regulations Globally
-22. Privacy by Design Principles
-23. Forensic Investigation Techniques for Security Incidents
-24. Ethical Hacking and Penetration Testing
-25. Security Architecture and Engineering Concepts
-26. Identity and Access Management Best Practices
-27. Secure Coding Practices and Vulnerability Management
-28. Disaster Recovery Planning and Execution
-29. Post-Incident Analysis and Continuous Learning
-30. Future Trends in Information Security Management
+1. Introduction to Generative AI and Automation
+2. Understanding Organizational Structures Impact
+3. Workflow Analysis Before and After AI Integration
+4. Employee Role Evolution in AI-Driven Environments
+5. Navigating Challenges of AI Implementation
+6. Adaptability Strategies for Employees
+7. Transition Planning for AI-Driven Processes
+8. Risk Assessment in AI and Automation Projects
+9. Change Management Frameworks Applied to AI
+10. Stakeholder Engagement in AI Transformation
+11. Communication Strategies for AI Initiatives
+12. Training Programs for AI Skills Development
+13. Performance Metrics Post-AI Integration
+14. Case Studies in Successful AI Adoption
+15. Ethical Considerations in AI and Automation
+16. Legal Implications of AI in the Workplace
+17. Cybersecurity Risks Associated with AI Systems
+18. Financial Impacts of AI and Automation
+19. Supply Chain Optimization through AI
+20. Customer Experience Enhancement with AI
+21. Leadership Roles in AI-Driven Organizations
+22. Team Dynamics in AI Innovation Teams
+23. Continuous Learning and Up-skilling in AI Era
+24. Future Trends in AI and Automation
