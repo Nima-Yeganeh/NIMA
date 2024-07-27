@@ -33,4 +33,5 @@ fi
 ffmpeg -loop 1 -i "C:\Users\Nimay\Downloads\z.png" -i "C:\Users\Nimay\Downloads\tts_rvc_output.wav" -r 30 -c:v libx264 -tune stillimage -af "volume=10dB" -c:a libmp3lame -b:a 128k -ac 2 -shortest "C:\Users\Nimay\Downloads\zzzxyz.mp4"
 rm -f "C:\Users\Nimay\Downloads\tts_rvc_output.wav"
 rm -f "C:\Users\Nimay\Downloads\z.png"
-mv -f "C:\Users\Nimay\Downloads\zzzxyz.mp4" "C:\\Users\\Nimay\\Downloads\\$input.mp4"
+znewfilename=$(echo $input | sed 's/:/ /g' | sed 's/\// /g' | sed 's/,/ /g')
+mv -f "C:\Users\Nimay\Downloads\zzzxyz.mp4" "C:\\Users\\Nimay\\Downloads\\$znewfilename.mp4"

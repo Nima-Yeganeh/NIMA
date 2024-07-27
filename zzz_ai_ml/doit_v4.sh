@@ -5,7 +5,7 @@ zokok=""
 sleeptime=10
 export LC_ALL=en_US.UTF-8
 batch_size=3
-numberoftopics=30
+numberoftopics=24
 is_empty_or_blank() {
     [[ -z "$1" || "$1" =~ ^[[:space:]]*$ ]]
 }
@@ -46,7 +46,7 @@ crssubtitle=$(python -m pytgpt generate "give me a course subtitle min 110 to ma
 echo $crssubtitle
 sleep $sleeptime
 echo "$crstitle - $crssubtitle" >> zzz.txt
-python -m pytgpt generate "give me a course description max 250 words what is $topic" | sed 's/"//g' | sed 's/\// /g' >> zzz.txt
+python -m pytgpt generate "give me a description max 250 words what is $topic" | sed 's/"//g' | sed 's/\// /g' >> zzz.txt
 sleep $sleeptime
 echo >> zzz.txt
 echo >> zzz.txt
