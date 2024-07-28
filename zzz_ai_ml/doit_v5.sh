@@ -105,7 +105,7 @@ for ((i=0; i<total_lines; i+=batch_size)); do
         echo >> zzz.txt
         echo "********************" >> zzz.txt
         echo >> zzz.txt
-        echo "$topic" | sed 's/\// /g' | sed 's/:/ /g' | sed 's/,//g' >> zzz.txt
+        echo "$topic" | sed 's/\// /g' | sed 's/://g' | sed 's/,//g' >> zzz.txt
         python -m pytgpt generate "give me information not seperate paragraphs and not bullet point just one paragraph with minimum 650 words about $topic $zmainidea" > y
         sleep $sleeptime
         cat y | awk '{printf "%s ", $0}'  | sed 's/*$//'  | sed 's/   / /g' | sed 's/  / /g' | sed 's/\*\*//g' | sed 's/\// /g' >> zzz.txt
