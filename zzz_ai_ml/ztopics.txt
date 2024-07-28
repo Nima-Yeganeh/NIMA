@@ -1,3 +1,39 @@
 Introduction to Business Process Management (BPM)
-Understanding and Implementing BPMN (Business Process Model and Notation)
-Advanced Process Automation Techniques
+Overview of Camunda Platform
+Understanding BPMN (Business Process Model and Notation)
+Introduction to CMMN (Case Management Model and Notation)
+DMN (Decision Model and Notation) for Business Rules
+Introduction to Event-Driven Architecture
+Process Orchestration vs. Choreography
+Long-Running Processes in Camunda
+Parallel Execution in Camunda
+Error Handling and Compensation in Camunda
+Human Tasks and User Interaction in Camunda
+Integration Patterns in Camunda
+External System Integration with Camunda
+Data Persistence and Database Configuration
+Camunda Engine and Runtime Environment
+Process Variables and Data Management
+Tasklist and Task Management
+Camunda Forms for Dynamic User Input
+Event-Driven Processes and Event Sourcing
+Complex Events Processing (CEP) with Camunda
+Microservices Orchestration with Camunda
+API Gateway Pattern and Camunda
+Service Virtualization and Mocking in Camunda
+Testing and Quality Assurance in Camunda
+Deployment Strategies for Camunda Applications
+Scalability and Performance Tuning in Camunda
+Security Considerations in Camunda
+Audit and Monitoring in Camunda
+DevOps Practices for Camunda Projects
+Continuous Integration and Delivery with Camunda
+Process Analytics and Reporting in Camunda
+Decision Analytics with DMN in Camunda
+Case Management with CMMN in Camunda
+Workflow Automation with Camunda BPM
+Rule-Based Decisions and DMN Models
+Adaptive Case Management Scenarios
+Process Optimization and Simulation Tools
+Real-world Use Cases of Camunda
+Future Trends in Process Automation
