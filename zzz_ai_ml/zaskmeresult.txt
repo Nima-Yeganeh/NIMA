@@ -1,0 +1,11 @@
+
+
+
+Decision Model and Notation (DMN) is a standardized notation for decision-making within business processes. It was developed by the Object Management Group (OMG) to provide a graphical representation for defining and managing decision logic separately from the business process models. This separation allows for clearer communication of decision criteria and rules, making it easier to understand, maintain, and update decision-making processes.
+
+The relationship between DMN and Camunda is that Camunda supports the integration of DMN models into its workflow and decision automation platform. This means that organizations can use Camunda to model and automate their business processes, including the decision-making aspects, by leveraging DMN for the decision logic. 
+
+In Camunda, DMN models can be used to define decision tables, rule sets, and other decision constructs that determine how a process should proceed based on certain conditions. These decisions can then be integrated seamlessly into the broader business process flows defined in BPMN. This integration enables organizations to have a unified view of both the operational processes and the underlying decision logic, facilitating better decision-making and process optimization.
+
+By supporting DMN, Camunda enhances its capability to handle complex business scenarios where decisions play a crucial role. It allows for the dynamic evaluation of decision criteria, the application of business rules, and the integration of external data sources to inform decision-making processes. This makes Camunda a comprehensive solution for automating not only the operational aspects but also the strategic decision-making processes within an organization.
+
