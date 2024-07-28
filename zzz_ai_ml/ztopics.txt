@@ -1,24 +1,3 @@
-Introduction to Generative AI and Automation
-Understanding Organizational Structures Impact
-Workflow Analysis Before and After AI Integration
-Employee Role Evolution in AI-Driven Environments
-Navigating Challenges of AI Implementation
-Adaptability Strategies for Employees
-Transition Planning for AI-Driven Processes
-Risk Assessment in AI and Automation Projects
-Change Management Frameworks Applied to AI
-Stakeholder Engagement in AI Transformation
-Communication Strategies for AI Initiatives
-Training Programs for AI Skills Development
-Performance Metrics Post-AI Integration
-Case Studies in Successful AI Adoption
-Ethical Considerations in AI and Automation
-Legal Implications of AI in the Workplace
-Cybersecurity Risks Associated with AI Systems
-Financial Impacts of AI and Automation
-Supply Chain Optimization through AI
-Customer Experience Enhancement with AI
-Leadership Roles in AI-Driven Organizations
-Team Dynamics in AI Innovation Teams
-Continuous Learning and Up-skilling in AI Era
-Future Trends in AI and Automation
+Introduction to Business Process Management (BPM)
+Understanding and Implementing BPMN (Business Process Model and Notation)
+Advanced Process Automation Techniques
