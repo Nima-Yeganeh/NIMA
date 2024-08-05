@@ -9,8 +9,8 @@ export LANG=en_US.UTF-8
 # realdomainname=""
 
 zzzport="443"
-realdomainname="zizigooloovpn.com"
-domain_hostname="zxyzvls2"
+realdomainname="xyzabcdzizi.site"
+domain_hostname="zxyzvls21"
 zzzdomain="$domain_hostname.$realdomainname"
 
 echo $domain_hostname
