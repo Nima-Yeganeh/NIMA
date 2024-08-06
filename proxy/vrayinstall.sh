@@ -10,7 +10,7 @@ export LANG=en_US.UTF-8
 
 zzzport="443"
 realdomainname="xyzabcdzizi.site"
-domain_hostname="zxyzvls21"
+domain_hostname="zxyzvls22"
 zzzdomain="$domain_hostname.$realdomainname"
 
 echo $domain_hostname
