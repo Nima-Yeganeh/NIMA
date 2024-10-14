@@ -297,8 +297,7 @@ Security
 Know how to use Security Groups and Network ACLs to secure EC2 instances and understand their differences.
 
 
+Thank you for listening.
 
 ##########
-
-
 
