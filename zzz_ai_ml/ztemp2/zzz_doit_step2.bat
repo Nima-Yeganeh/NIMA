@@ -28,7 +28,7 @@ set "output_2kfile=C:\Users\Nimay\Downloads\output2k.mp4"
 set "video_2kfile=C:\Users\Nimay\Downloads\output2k.mp4"
 
 :: Increase audio gain by 10 dB (change to 15dB if needed)
-set "audio_gain=5dB"
+set "audio_gain=0dB"
 
 :: Use FFmpeg to replace the audio in the MP4 file with the WAV file, increase the audio gain, and set audio bitrate to 320k
 :: ffmpeg -i "%video_file%" -i "%audio_file%" -c:v copy -c:a aac -b:a 320k -af "volume=%audio_gain%" -map 0:v:0 -map 1:a:0 "%output_file%"
@@ -56,7 +56,8 @@ set "audio_gain=5dB"
 
 ffmpeg -i "%video_file%" -an -c:v copy "%output_tempfile%"
 :: ffmpeg -i "%output_tempfile%" -i "%orgaudio_file%" -c:v copy -c:a aac -b:a 192k -ac 2 -af "volume=%audio_gain%" -shortest "%output_file%"
-ffmpeg -i "%output_tempfile%" -i "%audio_file%" -c:v copy -c:a aac -b:a 192k -ac 2 -af "volume=%audio_gain%" -shortest "%output_file%"
+:: ffmpeg -i "%output_tempfile%" -i "%audio_file%" -c:v copy -c:a aac -b:a 192k -ac 2 -af "volume=%audio_gain%" -shortest "%output_file%"
+ffmpeg -i "%output_tempfile%" -i "%audio_file%" -c:v copy -c:a aac -b:a 192k -ac 2 -shortest "%output_file%"
 
 :: ffmpeg -i "%output_2kfile%" -i "%audio_file%" -c:v copy -c:a aac -b:a 192k -strict experimental -shortest "%output_file%"
 
