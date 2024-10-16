@@ -1,2 +1,7 @@
 
+.\env\python.exe core.py infer --f0method harvest --input_path .\assets\audios\tts_rvc_output.mp3 --output_path .\assets\audios\zzztts_rvc_output.wav --pth_path .\logs\experiment_nimax3\experiment_nimax3.pth --index_path .\logs\experiment_nimax3\added_IVF5015_Flat_nprobe_1_experiment_nimax3_v2.index
+
+.\env\python.exe core.py tts --f0method harvest --output_rvc_path .\assets\audios\zzztts_rvc_output.wav --pth_path .\logs\experiment_nimax3\experiment_nimax3.pth --index_path .\logs\experiment_nimax3\added_IVF5015_Flat_nprobe_1_experiment_nimax3_v2.index --tts_voice es-US --tts_text es-US
+
+.\env\python.exe core.py infer --f0method harvest --pth_path C:\Users\Nimay\Downloads\ApplioV3.2.1_MINE\logs\experiment_nimax3\experiment_nimax3.pth --index_path C:\Users\Nimay\Downloads\ApplioV3.2.1_MINE\logs\experiment_nimax3\added_IVF5015_Flat_nprobe_1_experiment_nimax3_v2.index --input_path C:\Users\Nimay\Downloads\tts_rvc_output.mp3 --output_path C:\Users\Nimay\Downloads\zzztts_rvc_output.wav
 

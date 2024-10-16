@@ -1,0 +1,29 @@
+import PyPDF2
+
+def convert_pdf_to_text_per_page(pdf_path, output_dir):
+    # Open the PDF file in binary mode
+    with open(pdf_path, "rb") as pdf_file:
+        # Create a PDF reader object
+        pdf_reader = PyPDF2.PdfReader(pdf_file)
+        
+        # Iterate over each page in the PDF
+        for page_num in range(len(pdf_reader.pages)):
+            # Extract text from the current page
+            page = pdf_reader.pages[page_num]
+            text = page.extract_text() if page.extract_text() else ""
+            
+            # Create the output file path for the current page
+            output_txt_path = f"{output_dir}\\{page_num + 1}_pdf_output.txt"
+            
+            # Write the extracted text to the output text file
+            with open(output_txt_path, "w", encoding="utf-8") as text_file:
+                text_file.write(text)
+
+# File paths
+pdf_file_path = r"C:\Users\Nimay\Downloads\Amazon-EC2-Core-of-AWS-Cloud-Computing.pdf"
+output_directory = r"C:\Users\Nimay\Downloads"
+
+# Convert PDF to text, saving each page to a separate file
+convert_pdf_to_text_per_page(pdf_file_path, output_directory)
+
+print("PDF has been successfully converted to text files for each page.")
