@@ -68,7 +68,7 @@ for /L %%i in (1,1,50) do (
                 C:\ProgramData\chocolatey\bin\ffprobe.exe -i "!output_file!" -show_entries format=duration -v quiet -of csv="p=0" > test2.txt
                 set /p duration=<"test2.txt"
                 echo Audio duration: !duration!
-                C:\ProgramData\chocolatey\bin\ffmpeg -loop 1 -i "%%f" -i "!output_file!" -tune stillimage -vf "scale=2560:1440, fps=30" -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 320k -ar 44100 -ac 2 -shortest -t "!duration!" "!mp4output_file!"
+                C:\ProgramData\chocolatey\bin\ffmpeg -loop 1 -i "%%f" -i "!output_file!" -tune stillimage -vf "scale=2560:1440, fps=1" -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 320k -ar 44100 -ac 2 -shortest -t "!duration!" "!mp4output_file!"
                 echo Output file created: !mp4output_file!
                 del !output_file!
             )           
@@ -81,10 +81,6 @@ del C:\Users\Nimay\Downloads\*.png
 
 :: mergemp4.bat
 python makemp4filelisttomerge.py
-C:\ProgramData\chocolatey\bin\ffmpeg -f concat -safe 0 -i filelist.txt -vf "scale=2560:1440, fps=30" -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 320k -ar 44100 -ac 2 -shortest "C:\Users\Nimay\Downloads\output.mp4"
+C:\ProgramData\chocolatey\bin\ffmpeg -f concat -safe 0 -i filelist.txt -vf "scale=2560:1440, fps=1" -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 320k -ar 44100 -ac 2 -shortest "C:\Users\Nimay\Downloads\output.mp4"
 python removemp4tempfiles.py
-
-:: Final_MP4
-C:\ProgramData\chocolatey\bin\ffmpeg -i "C:\Users\Nimay\Downloads\output.mp4" -vf "scale=2560:1440, fps=5" -c:v libx264 -preset slow -crf 35 -c:a aac -b:a 128k -ar 44100 -ac 2 -shortest "C:\Users\Nimay\Downloads\output_final.mp4"
-del "C:\Users\Nimay\Downloads\output.mp4"
 
