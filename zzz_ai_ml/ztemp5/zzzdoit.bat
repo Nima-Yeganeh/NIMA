@@ -81,7 +81,7 @@ del C:\Users\Nimay\Downloads\*.png
 
 :: mergemp4.bat
 python makemp4filelisttomerge.py
-C:\ProgramData\chocolatey\bin\ffmpeg -f concat -safe 0 -i filelist.txt -vf "scale=2560:1440, fps=30" -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 320k -ar 44100 -ac 2 -shortest "C:\Users\Nimay\Downloads\output.mp4"
+C:\ProgramData\chocolatey\bin\ffmpeg -f concat -safe 0 -i filelist.txt -vf "scale=2560:1440, fps=1" -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 320k -ar 44100 -ac 2 -shortest "C:\Users\Nimay\Downloads\output.mp4"
 python removemp4tempfiles.py
 
 :: Final_MP4
