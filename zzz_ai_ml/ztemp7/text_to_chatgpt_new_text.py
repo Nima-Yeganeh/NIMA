@@ -29,7 +29,7 @@ for i in range(1, 51):
         try:
             # Run the pytgpt command, sending the prompt_content as input
             result = subprocess.run(
-                ["python", "-m", "pytgpt", "generate", "--provider", "koboldai", prompt_content],
+                ["python", "-m", "pytgpt", "generate", "--provider", "auto", prompt_content],
                 capture_output=True,
                 text=True,
                 shell=True  # Use shell=True to enable command line interpretation
