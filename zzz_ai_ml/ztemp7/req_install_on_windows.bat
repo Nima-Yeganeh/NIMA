@@ -19,3 +19,7 @@ pip install Pillow
 pip uninstall Pillow
 pip install Pillow==9.5.0
 pip install --upgrade python-tgpt
+
+pip install  --upgrade "python-tgpt[all]"
+pip install --upgrade python-tgpt
+pip install  --upgrade "python-tgpt[termux-all]"

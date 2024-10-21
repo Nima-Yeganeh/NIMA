@@ -58,7 +58,7 @@ for /L %%i in (1,1,50) do (
 setlocal EnableDelayedExpansion
 :: Loop through numbers 1 to 50
 for /L %%i in (1,1,50) do (
-    for %%f in (.\%%i_*.png) do (
+    for %%f in (.\%%i_image_newconverted_scale.png) do (
         if exist "%%f" (
             set "output_file=.\%%i_tts_rvc_output.wav"
             if exist "!output_file!" (
@@ -68,8 +68,9 @@ for /L %%i in (1,1,50) do (
                 set "mp4output_file=.\zzzxyy_!datetime!.mp4"
                 C:\ProgramData\chocolatey\bin\ffprobe.exe -i "!output_file!" -show_entries format=duration -v quiet -of csv="p=0" > temp
                 set /p duration=<"temp"
+                for /f %%j in ('powershell -command "[float]::Parse('!duration!') + 2"') do set duration=%%j
                 echo Audio duration: !duration!
-                C:\ProgramData\chocolatey\bin\ffmpeg -loop 1 -i "%%f" -i "!output_file!" -tune stillimage -vf "scale=2560:1440, fps=30" -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 320k -ar 44100 -ac 2 -shortest -t "!duration!" "!mp4output_file!"
+                C:\ProgramData\chocolatey\bin\ffmpeg -loop 1 -i "%%f" -i "!output_file!" -tune stillimage -vf "scale=2560:1440, fps=1" -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 320k -ar 44100 -ac 2 -shortest -t "!duration!" "!mp4output_file!"
                 echo Output file created: !mp4output_file!
                 del !output_file!
             )           

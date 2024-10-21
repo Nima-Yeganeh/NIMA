@@ -1,4 +1,6 @@
 
+del .\*.mp4
+
 python .\pdf_to_txt_v2.py
 python .\pdf_to_png.py
 python .\png_to_new_png_scale_step1.py
@@ -56,7 +58,7 @@ for /L %%i in (1,1,50) do (
 setlocal EnableDelayedExpansion
 :: Loop through numbers 1 to 50
 for /L %%i in (1,1,50) do (
-    for %%f in (.\%%i_*.png) do (
+    for %%f in (.\%%i_image_newconverted_scale.png) do (
         if exist "%%f" (
             set "output_file=.\%%i_tts_rvc_output.wav"
             if exist "!output_file!" (
@@ -87,3 +89,7 @@ del .\*.txt
 :: Final_MP4
 C:\ProgramData\chocolatey\bin\ffmpeg -i ".\output.mp4" -vf "scale=2560:1440, fps=5" -c:v libx264 -preset slow -crf 35 -c:a aac -b:a 128k -ar 44100 -ac 2 -shortest ".\output_final.mp4"
 del ".\output.mp4"
+
+del .\temp
+python .\rename.py
+
