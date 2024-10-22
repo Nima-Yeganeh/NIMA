@@ -4,6 +4,7 @@ import asyncio
 import re
 import os
 import glob
+import time
 
 # Function to convert text to speech and save to file
 async def text_to_speech(text, output_file='output.wav', voice='en-US-GuyNeural', format="riff-48khz-32it-mono-pcm"):
@@ -48,6 +49,7 @@ for i in range(1, 51):
                 format = "riff-48khz-32it-mono-pcm"
                 # Run the async function
                 asyncio.run(text_to_speech(content, output_file, voice, format))
+                time.sleep(65)
 
 # Print the contents of the variable
 # print(all_texts)
