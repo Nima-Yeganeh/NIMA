@@ -92,4 +92,3 @@ del ".\output.mp4"
 
 del .\temp
 python .\rename.py
-
