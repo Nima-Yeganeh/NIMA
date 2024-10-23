@@ -43,7 +43,7 @@ for i in range(1, 51):
                 with open(output_file_path, 'w', encoding='utf-8') as output_file:
                     output_file.write(generated_text)
                 print(f"Generated content saved to {output_file_name}")
-                time.sleep(350)
+                time.sleep(10)
             else:
                 print(f"Failed to generate text for {input_file_name}")
                 print(result.stderr)
