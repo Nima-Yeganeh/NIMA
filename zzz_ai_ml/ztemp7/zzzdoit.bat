@@ -1,6 +1,8 @@
 
+
 del .\*.mp4
 
+python .\wait.py
 python .\pdf_to_txt_v2.py
 python .\pdf_to_png.py
 python .\png_to_new_png_scale_step1.py
@@ -92,3 +94,5 @@ del ".\output.mp4"
 
 del .\temp
 python .\rename.py
+
+

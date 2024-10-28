@@ -49,7 +49,8 @@ for i in range(1, 51):
                 format = "riff-48khz-32it-mono-pcm"
                 # Run the async function
                 asyncio.run(text_to_speech(content, output_file, voice, format))
-                time.sleep(1)
+                time.sleep(10)
 
 # Print the contents of the variable
 # print(all_texts)
+
