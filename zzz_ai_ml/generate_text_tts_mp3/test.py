@@ -60,3 +60,4 @@ while True:
         break  # Exit the loop if we have valid input
     else:
         print("Input cannot be empty. Please try again.")
+
